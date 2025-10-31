@@ -1,6 +1,0 @@
-[submodule "frida/frida-glib"]
-	path = frida/frida-glib
-	url = https://github.com/sec-staff-lilithgames/Sunda---the-brother-of-Frida.git
-[submodule "frida/frida17.4.1"]
-	path = frida/frida17.4.1
-	url = https://github.com/sec-staff-lilithgames/Sunda---the-brother-of-Frida.git

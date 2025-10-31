@@ -1,0 +1,14 @@
+[binaries]
+c =   '/Users/kwai-sec/Desktop/sunda/android-ndk-r25c/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang'
+ar =  '/Users/kwai-sec/Desktop/sunda/android-ndk-r25c/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar'
+strip='/Users/kwai-sec/Desktop/sunda/android-ndk-r25c/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip'
+pkgconfig = 'pkg-config'
+
+[host_machine]
+system = 'android'
+cpu_family = 'aarch64'
+cpu = 'armv8-a'
+endian = 'little'
+
+[properties]
+needs_exe_wrapper = true

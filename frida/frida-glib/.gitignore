@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6daf7d9fe85992688f073456cc1c26ef144f3b0a
+# for all subdirectories
+TAGS
+tags
+.libs
+.deps
+*.o
+*.lo
+*.la
+*.pc
+.*.swp
+.sw?
+*.rc
+*.gcno
+*.gcda
+*.gcov
+*.sourcefiles
+*.stp
+*.exe
+*.def
+*.test
+*.log
+*.trs
+
+/glib-lcov.info
+/glib-lcov/
+
+# Meson
+/meson-build/
+/subprojects/*/
+<<<<<<< HEAD
+=======
+/build/
+/deps/
+/releng/__pycache__/
+/releng/modules/frida-gadget-ios/*.dylib
+/releng/modules/frida-gadget-ios/node_modules
+/subprojects/*
+>>>>>>> 4a7254c503971088297a01c775e4810597e83d74
+=======
+>>>>>>> 6daf7d9fe85992688f073456cc1c26ef144f3b0a
