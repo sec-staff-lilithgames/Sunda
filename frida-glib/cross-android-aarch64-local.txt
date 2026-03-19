@@ -1,0 +1,18 @@
+[binaries]
+c =   '/Users/kwai-sec/Library/Android/sdk/ndk/29.0.13846066/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang'
+cpp = '/Users/kwai-sec/Library/Android/sdk/ndk/29.0.13846066/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++'
+ar =  '/Users/kwai-sec/Library/Android/sdk/ndk/29.0.13846066/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar'
+strip = '/Users/kwai-sec/Library/Android/sdk/ndk/29.0.13846066/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip'
+pkg-config = 'false'  # Disable pkg-config to avoid picking up host libraries
+
+[host_machine]
+system = 'android'
+cpu_family = 'aarch64'
+cpu = 'armv8-a'
+endian = 'little'
+
+[properties]
+needs_exe_wrapper = true
+# Set environment variables for cross-compilation
+cmake_defaults = true
+sys_root = '/Users/kwai-sec/Library/Android/sdk/ndk/29.0.13846066/toolchains/llvm/prebuilt/darwin-x86_64/sysroot'
