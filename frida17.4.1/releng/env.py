@@ -203,6 +203,14 @@ def generate_machine_config(machine: MachineSpec,
 
     pkg_config_path = shlex.split(environ.get("PKG_CONFIG_PATH", "").replace("\\", "\\\\"))
 
+    if machine.os == "android":
+        local_glib_pkgconfig = environ.get("FRIDA_LOCAL_GLIB_PKGCONFIG_PATH")
+        if local_glib_pkgconfig is not None:
+            local_glib_pkgconfig_dir = Path(local_glib_pkgconfig)
+            if local_glib_pkgconfig_dir.exists():
+                # Sunda override: prefer the bundled local GLib pkg-config overlay before pulled SDK entries.
+                pkg_config_path = [str(local_glib_pkgconfig_dir)] + pkg_config_path
+
     if sdk_prefix is not None:
         builtin_options["vala_args"] = strv_to_meson([
             "--vapidir=" + str(sdk_prefix / "share" / "vala" / "vapi")

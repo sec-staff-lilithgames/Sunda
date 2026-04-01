@@ -2423,7 +2423,7 @@ g_source_unref_internal (GSource      *source,
       if (context)
 	{
 	  if (!SOURCE_DESTROYED (source))
-	    g_warning (G_STRLOC ": ref_count == 0, but source was still attached to a context!");
+	    g_warning ("Sunda main-loop source leaked while still attached to a context");
 	  source_remove_from_context (source, context);
 
           g_hash_table_remove (context->sources, GUINT_TO_POINTER (source->source_id));

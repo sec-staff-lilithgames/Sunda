@@ -5,6 +5,7 @@ from dataclasses import dataclass
 import os
 from pathlib import Path
 import subprocess
+import re
 import sys
 from typing import List
 
@@ -40,6 +41,10 @@ def detect(repo: Path) -> FridaVersion:
     nano = 0
     commit = ""
 
+    env_version = os.environ.get("FRIDA_VERSION")
+    if env_version:
+        return parse(env_version)
+
     if (repo / ".git").exists():
         description = subprocess.run(["git", "describe", "--tags", "--always", "--long"],
                                      cwd=repo,
@@ -64,6 +69,20 @@ def detect(repo: Path) -> FridaVersion:
             commit = tokens[0]
 
     return FridaVersion(version_name, major, minor, micro, nano, commit)
+
+
+def parse(raw_version: str) -> FridaVersion:
+    match = re.fullmatch(r"(\d+)\.(\d+)\.(\d+)(?:-dev\.(\d+))?", raw_version)
+    if match is None:
+        raise ValueError(f"Unsupported FRIDA_VERSION: {raw_version}")
+
+    major = int(match.group(1))
+    minor = int(match.group(2))
+    micro = int(match.group(3))
+    dev = match.group(4)
+    nano = 0 if dev is None else int(dev) + 1
+
+    return FridaVersion(raw_version, major, minor, micro, nano, "")
 
 
 if __name__ == "__main__":

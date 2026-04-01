@@ -200,10 +200,15 @@ def configure(sourcedir: Path,
         except deps.BundleNotFoundError as e:
             raise_sdk_not_found(e, "host", host_machine)
 
+    config_environ = dict(environ)
+    local_glib_pkgconfig_path = prepare_local_android_glib_pkgconfig_path(sourcedir, builddir, host_machine)
+    if local_glib_pkgconfig_path is not None:
+        config_environ["FRIDA_LOCAL_GLIB_PKGCONFIG_PATH"] = str(local_glib_pkgconfig_path)
+
     build_config, host_config = \
             env.generate_machine_configs(build_machine,
                                          host_machine,
-                                         environ,
+                                         config_environ,
                                          toolchain_prefix,
                                          build_sdk_prefix,
                                          host_sdk_prefix,
@@ -242,6 +247,41 @@ def parse_prefix(raw_prefix: str) -> Path:
     if not prefix.is_absolute():
         prefix = Path(os.getcwd()) / prefix
     return prefix
+
+
+def prepare_local_android_glib_pkgconfig_path(sourcedir: Path,
+                                              builddir: Path,
+                                              host_machine: MachineSpec) -> Optional[Path]:
+    if host_machine.os != "android":
+        return None
+
+    local_prefix = sourcedir.parent / "frida-glib" / f"prefix-{host_machine.identifier}"
+    if not local_prefix.exists():
+        return None
+
+    embedded_pkgconfig = local_prefix / "lib" / "pkgconfig"
+    if (embedded_pkgconfig / "glib-2.0.pc").exists():
+        return embedded_pkgconfig
+
+    current_overlay = builddir / "target-pkgconfig"
+    if (current_overlay / "glib-2.0.pc").exists():
+        return current_overlay
+
+    bootstrap_overlay = sourcedir / "build-android-arm64-server" / "target-pkgconfig"
+    if not (bootstrap_overlay / "glib-2.0.pc").exists():
+        return None
+
+    current_overlay.mkdir(parents=True, exist_ok=True)
+    for src in bootstrap_overlay.glob("*.pc"):
+        dst = current_overlay / src.name
+        text = src.read_text(encoding="utf-8")
+        if src.name == "gio-2.0.pc":
+            # Sunda Android local GLib overlay: the vendored bootstrap pc file still carries -lresolv,
+            # but the current Android NDK/sysroot in this repo does not provide libresolv.
+            text = text.replace(" -lresolv", "")
+        dst.write_text(text, encoding="utf-8")
+
+    return current_overlay
 
 
 def query_supported_bundle_types(include_wildcards: bool) -> List[str]:
