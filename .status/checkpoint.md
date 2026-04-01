@@ -2,13 +2,13 @@
 
 - p0: `gmain` root cause is now identified and the build path is corrected. The old successful Android build was preferring `deps/sdk-android-arm64/lib/pkgconfig` over the local GLib tree, so root-level `frida-glib/glib/gmain.c` edits never reached runtime. `releng/meson_configure.py` and `releng/env.py` now prepare and prepend a local Android GLib pkg-config overlay before the pulled SDK path.
 - p0: The local GLib route needed one extra fix: the bootstrap `gio-2.0.pc` carried `-lresolv`, which is not present in the current Android toolchain/sysroot. Overlay generation now strips that stale linker flag before configure.
-- p0: Runtime evidence improved after switching to the local GLib-backed Android build. On-device `sunda` thread names changed from `gmain/gdbus/pool-sunda/sunda` to `Saturday/Thursday/sunda`, which confirms the GLib worker-thread rename from the local `frida-glib` tree is finally reaching runtime.
-- p0: Residual `frida-*` cleanup is partially landed but not fully revalidated yet. A second patch wave renamed high-signal Android/Linux runtime strings and filenames:
+- p0: Runtime evidence improved after switching to the local GLib-backed Android build. On-device `sunda` thread names changed from `gmain/gdbus/pool-sunda/sunda` to `Saturday/Thursday/pool-sunda/sunda`, which confirms the GLib worker-thread rename from the local `frida-glib` tree is finally reaching runtime.
+- p0: High-signal `frida-*` cleanup is now revalidated on the current Android build. The second patch wave renamed high-signal Android/Linux runtime strings and filenames:
   `frida-main-loop` -> `sunda-main-loop`
   `frida-agent-*` -> `sunda-agent-*`
   `frida-helper-*` -> `sunda-helper-*`
   several `remote frida-server` user-facing strings -> `remote sunda daemon`
-  This patch set still needs one clean rebuild-and-rescan pass to confirm the final binary no longer exposes those strings in the active Android build.
+- p1: Low-priority static residue still exists in the rebuilt server binary, mainly source-file path strings such as `../glib/gmain.c` and internal build artifact names such as `libsunda-agent-raw.so`. These are not the high-signal runtime-facing fingerprints that were targeted in this round.
 - p1: Core Android runtime remains usable but unstable under pressure. Verified:
   `sunda --version` returns `17.4.1`
   daemon can listen on `127.0.0.1:27042`
