@@ -1,31 +1,14 @@
 # Checkpoint
 
-- p0: `gmain` root cause is now identified and the build path is corrected. The old successful Android build was preferring `deps/sdk-android-arm64/lib/pkgconfig` over the local GLib tree, so root-level `frida-glib/glib/gmain.c` edits never reached runtime. `releng/meson_configure.py` and `releng/env.py` now prepare and prepend a local Android GLib pkg-config overlay before the pulled SDK path.
-- p0: The local GLib route needed one extra fix: the bootstrap `gio-2.0.pc` carried `-lresolv`, which is not present in the current Android toolchain/sysroot. Overlay generation now strips that stale linker flag before configure.
-- p0: Runtime evidence improved after switching to the local GLib-backed Android build. On-device `sunda` thread names changed from `gmain/gdbus/pool-sunda/sunda` to `Saturday/Thursday/pool-sunda/sunda`, which confirms the GLib worker-thread rename from the local `frida-glib` tree is finally reaching runtime.
-- p0: High-signal `frida-*` cleanup is now revalidated on the current Android build. The second patch wave renamed high-signal Android/Linux runtime strings and filenames:
-  `frida-main-loop` -> `sunda-main-loop`
-  `frida-agent-*` -> `sunda-agent-*`
-  `frida-helper-*` -> `sunda-helper-*`
-  several `remote frida-server` user-facing strings -> `remote sunda daemon`
-- p1: Low-priority static residue still exists in the rebuilt server binary, mainly source-file path strings such as `../glib/gmain.c` and internal build artifact names such as `libsunda-agent-raw.so`. These are not the high-signal runtime-facing fingerprints that were targeted in this round.
-- p1: Core Android runtime remains usable but unstable under pressure. Verified:
-  `sunda --version` returns `17.4.1`
-  daemon can listen on `127.0.0.1:27042`
-  host can discover the USB device
-  but a 10-iteration Python stress loop of `enumerate_processes()` failed 10/10 with `NotSupportedError: cannot read properties of undefined (reading getRunningAppProcesses)`
-- p0: Host CLI packaging has a real regression. Global `frida` and `frida-tools` now report `17.4.1`, but filesystem commands are broken:
-  `frida-push` and `frida-pull` fail with `ModuleNotFoundError: frida_tools.stream_controller`
-  root cause is visible in `frida17.4.1/subprojects/frida-tools/frida_tools/meson.build`, which omits existing modules such as `stream_controller.py`, `itracer.py`, and `units.py`
-- p1: CLI smoke is mixed instead of clean:
-  `frida-ls-devices` prints device rows but still crashes/hangs in non-TTY mode with prompt-toolkit input attachment errors
-  `frida-ps -U` and `frida-ps -Uai` do not return cleanly within the current timeout budget
-  `frida-ls -U /data/local/.sunday` also failed to return within the current timeout budget
-- p1: Attach/spawn coverage is not yet healthy. Direct attach to the earlier `Settings` PID failed (`ProcessNotFoundError` after the process disappeared), so a stable attach smoke target still needs to be selected before the next fix round.
-- p1: Version detection in vendored Frida trees now honors `FRIDA_VERSION`, which is required because these vendored directories are not git roots and otherwise resolve to `0.0.0`. This fix was applied in the top-level `frida17.4.1/releng/frida_version.py` and the duplicated releng copies under `subprojects/frida-python/` and `subprojects/frida-tools/`.
-- p1: Host `frida-python` source build needed two local build fixes before it became usable:
-  `subprojects/frida-python/setup.py` now supports `-V` for Meson version probing
-  macOS helper post-processing requires ad-hoc signing through `MACOS_CERTID=-`
-- p1: Root launch matters on device. Running `/data/local/.sunday/sunda` as `shell` reproduced `ProcessNotFoundError unable to find process with name 'system_server'` during host enumeration; launching through `zoey sh -c 'nohup /data/local/.sunday/sunda ... &'` fixed process enumeration stability across repeated runs.
-- p1: `frida-tools` wheel generation needed JS build hardening. Switching the helper scripts from `npm install` to `npm ci --no-audit --no-fund`, plus one-time prewarming of the six package directories, unblocked the final wheel build.
-- p2: Repository structure and architecture diagram still match the current tree shape; this turn changed build/config/runtime behavior only and did not change module boundaries.
+- p0: A new top-level `demo/` Android app now exists as the fingerprint canary. It builds and installs on the Pixel 8a, exposes a debug-only `com.sunda.demo.SCAN` receiver, writes JSON reports under app-specific external files, and includes a native scanner plus a host-side Python driver under `demo/tools/`.
+- p0: The demo scanner now has a working self-calibration path. It no longer embeds raw `frida` literals in the app binary, and a dedicated calibration run proves the matcher can find injected ASCII / UTF-16LE test bytes before cleanup and reaches zero after cleanup.
+- p0: Android 16 blocks `/proc/self/mem` even for the app itself, so process-space scanning had to switch to direct reads of selected readable mappings with SIGBUS / SIGSEGV guards. This avoids the earlier `Permission denied` path and keeps scans alive when GPU / binder mappings fault on access.
+- p1: The demo baseline is not clean even before any explicit host-side attach/spawn. A fresh app launch with `sunda` stopped still reports 3 stable `frida` hits from anonymous `rwxp` pages containing `agent_main` and `/frida-...`. This is external environment contamination and blocks a strict “baseline must be zero” acceptance claim on the current device.
+- p0: Attach evidence is now concrete on the current working server path. On the last successful attach run:
+  baseline = 3 hits
+  injected = 274 hits
+  the dominant source is `/memfd:sunda-agent-64.so (deleted)` with 199 hits, plus 1 thread-name hit
+  the new hits are mostly `Frida.Agent.*`, `re.frida.*`, `frida:rpc`, and embedded `subprojects/frida-*` / `/frida/` source-path strings inside the agent payload.
+- p1: The first agent cleanup attempt was tested as a local Android build experiment against the embedded agent payload, but the rebuilt Android `sunda` server is currently not deployable: both the wrapped `sunda` and `frida-server-raw` variants fail to stay up on-device, and logcat shows repeated startup `SIGBUS` crashes. The crashing patch path was not kept in the repo, so this remains an open investigation item rather than a landed change.
+- p1: Spawn-gating validation is still pending. The driver now captures baseline vs injected reports for both attach and spawn paths, but the attach-side external contamination plus the crashing rebuilt server means the intended iterative “rebuild -> redeploy -> compare” loop is not yet back to a usable state.
+- p2: Repo hygiene changed this turn: `.findings.sqlite` is still intentionally present and should be tracked with the repo state rather than left as an untracked local artifact.

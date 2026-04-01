@@ -1,0 +1,38 @@
+flowchart TD
+  Root["Sunda (top repo)\nRole: self-contained source repo\nTracked items: README + vendored source directories"]
+
+  FG["frida-glib\nVendored GLib-derived source tree\nEntrypoints: meson.build, configure, Makefile"]
+  F17["frida17.4.1\nVendored Frida-derived source tree\nEntrypoints: meson.build, configure, Makefile"]
+  Demo["demo\nAndroid fingerprint canary app\nEntrypoints: Gradle app, JNI scanner, host driver"]
+
+  FGCore["GLib core modules\nDirectories: glib/, gio/, gobject/, gthread/, gmodule/"]
+  FGDeps["GLib bundled subprojects\nExamples: gvdb, frida-* bridges, releng"]
+
+  F17Core["Frida core engine\nsubprojects/frida-core\nServer / gadget / agent / inject"]
+  F17Gum["Instrumentation engine\nsubprojects/frida-gum"]
+  F17Bindings["Language bindings and tools\nsubprojects/frida-python/node/go/swift/clr/qml/tools"]
+  F17Releng["Build and release glue\nreleng/"]
+  DemoApp["Android app shell\nMainActivity + ScanReceiver\nReport writer + status UI"]
+  DemoNative["Native scanner\nJNI + mapping / proc surfaces\nASCII / UTF-16LE matcher"]
+  DemoDriver["Host validation driver\nPython + adb + frida API\nattach / spawn orchestration"]
+
+  Root --> FG
+  Root --> F17
+  Root --> Demo
+
+  FG --> FGCore
+  FG --> FGDeps
+
+  F17 --> F17Core
+  F17 --> F17Gum
+  F17 --> F17Bindings
+  F17 --> F17Releng
+
+  Demo --> DemoApp
+  Demo --> DemoNative
+  Demo --> DemoDriver
+
+  F17Core --> F17Gum
+  F17 -. "repo contains both trees directly" .-> FG
+  DemoDriver -. "runtime validation target" .-> DemoApp
+  DemoDriver -. "injects through current Sunda toolchain" .-> F17Core

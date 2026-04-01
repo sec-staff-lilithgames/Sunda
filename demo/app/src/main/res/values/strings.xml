@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sunda Demo</string>
+    <string name="hello_title">Hello World from Sunda Demo</string>
+    <string name="no_summary">No scans have completed yet.</string>
+    <string name="scan_now">Scan Now</string>
+    <string name="run_calibration">Run Calibration</string>
+</resources>
