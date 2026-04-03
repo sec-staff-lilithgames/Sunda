@@ -60,6 +60,9 @@ struct Hit {
   std::string module_path;
   std::string encoding;
   std::string preview_hex;
+  std::string match_text;
+  std::string bucket;
+  std::string why;
   int count = 1;
 };
 
@@ -68,6 +71,8 @@ struct ScanReport {
   int pid = getpid();
   std::vector<Hit> hits;
   std::unordered_map<std::string, int> surface_counts;
+  std::unordered_map<std::string, int> bucket_counts;
+  std::unordered_map<std::string, int> module_counts;
   size_t total_hits = 0;
   bool truncated = false;
 };
@@ -192,6 +197,206 @@ std::string hex_preview(const uint8_t *data, size_t size, size_t start, size_t l
   return stream.str();
 }
 
+std::string limit_text(std::string value, size_t max_size) {
+  if (value.size() <= max_size) {
+    return value;
+  }
+  return value.substr(0, max_size - 3) + "...";
+}
+
+bool is_printable_ascii(uint8_t c) {
+  return c >= 0x20 && c <= 0x7e;
+}
+
+bool is_printable_utf16le(uint8_t lo, uint8_t hi) {
+  return hi == 0x00 && is_printable_ascii(lo);
+}
+
+bool contains_needle_ascii(std::string_view input) {
+  if (input.size() < kAsciiNeedleSize) {
+    return false;
+  }
+
+  for (size_t offset = 0; offset + kAsciiNeedleSize <= input.size(); offset++) {
+    bool matched = true;
+    for (size_t i = 0; i != kAsciiNeedleSize; i++) {
+      if (ascii_lower(static_cast<uint8_t>(input[offset + i])) != needle_byte(i)) {
+        matched = false;
+        break;
+      }
+    }
+    if (matched) {
+      return true;
+    }
+  }
+  return false;
+}
+
+bool contains_fragments(std::string_view input, std::initializer_list<std::string_view> fragments) {
+  size_t cursor = 0;
+  for (std::string_view fragment : fragments) {
+    size_t pos = input.find(fragment, cursor);
+    if (pos == std::string_view::npos) {
+      return false;
+    }
+    cursor = pos + fragment.size();
+  }
+  return true;
+}
+
+std::string lowercase_ascii(std::string_view input) {
+  std::string out(input);
+  for (char &c : out) {
+    c = static_cast<char>(ascii_lower(static_cast<uint8_t>(c)));
+  }
+  return out;
+}
+
+std::string extract_ascii_match_text(const uint8_t *data, size_t size, size_t offset) {
+  size_t left = offset;
+  while (left > 0 && is_printable_ascii(data[left - 1]) && (offset - left) < 80) {
+    left--;
+  }
+
+  size_t right = offset + kAsciiNeedleSize;
+  while (right < size && is_printable_ascii(data[right]) && (right - left) < 160) {
+    right++;
+  }
+
+  return limit_text(trim(std::string(reinterpret_cast<const char *>(data + left), right - left)), 120);
+}
+
+std::string extract_utf16_match_text(const uint8_t *data, size_t size, size_t offset) {
+  size_t left = offset;
+  while (left >= 2 && is_printable_utf16le(data[left - 2], data[left - 1]) && (offset - left) < 160) {
+    left -= 2;
+  }
+
+  size_t right = offset + kUtf16NeedleSize;
+  while (right + 1 < size && is_printable_utf16le(data[right], data[right + 1]) && (right - left) < 320) {
+    right += 2;
+  }
+
+  std::string out;
+  out.reserve((right - left) / 2);
+  for (size_t i = left; i + 1 < right; i += 2) {
+    out.push_back(static_cast<char>(data[i]));
+  }
+  return limit_text(trim(out), 120);
+}
+
+std::string normalize_module_path(std::string_view module_path) {
+  return module_path.empty() ? "<anonymous>" : std::string(module_path);
+}
+
+struct HitClassification {
+  std::string bucket;
+  std::string why;
+};
+
+std::string why_for_bucket(std::string_view bucket) {
+  if (bucket == "source_debug_path") {
+    return "Matched build-time source or debug path residue.";
+  }
+  if (bucket == "source_subprojects_path") {
+    return "Matched vendored subproject source path residue.";
+  }
+  if (bucket == "protocol_namespace") {
+    return "Matched protocol, interface, or namespace identifier.";
+  }
+  if (bucket == "runtime_asset_path") {
+    return "Matched embedded runtime asset path.";
+  }
+  if (bucket == "rpc_channel") {
+    return "Matched RPC channel literal.";
+  }
+  if (bucket == "symbolic_brand") {
+    return "Matched brand-facing class, symbol, or type name.";
+  }
+  if (bucket == "other_literal_or_path") {
+    return "Matched an uncategorized literal or path fragment.";
+  }
+  return "Matched the generic token without a stronger local pattern.";
+}
+
+HitClassification classify_hit(std::string_view match_text) {
+  std::string lower = lowercase_ascii(match_text);
+
+  if (contains_fragments(lower, {"/__w/", "fri", "da/", "fri", "da/"})) {
+    return {
+        "source_debug_path",
+        why_for_bucket("source_debug_path"),
+    };
+  }
+
+  if (contains_fragments(lower, {"subprojects/", "fri", "da-"})) {
+    return {
+        "source_subprojects_path",
+        why_for_bucket("source_subprojects_path"),
+    };
+  }
+
+  if (contains_fragments(lower, {"re.", "fri", "da"}) ||
+      contains_fragments(lower, {"/re/", "fri", "da/"})) {
+    return {
+        "protocol_namespace",
+        why_for_bucket("protocol_namespace"),
+    };
+  }
+
+  if (contains_fragments(lower, {"file:///", "fri", "da/runtime/"}) ||
+      contains_fragments(lower, {"/", "fri", "da/runtime/"})) {
+    return {
+        "runtime_asset_path",
+        why_for_bucket("runtime_asset_path"),
+    };
+  }
+
+  if (contains_fragments(lower, {"fri", "da:rpc"})) {
+    return {
+        "rpc_channel",
+        why_for_bucket("rpc_channel"),
+    };
+  }
+
+  if (contains_fragments(match_text, {"Fri", "da"}) ||
+      contains_fragments(lower, {"fri", "da."})) {
+    return {
+        "symbolic_brand",
+        why_for_bucket("symbolic_brand"),
+    };
+  }
+
+  if (contains_fragments(lower, {"/", "fri", "da/"}) ||
+      contains_fragments(lower, {"fri", "da-"}) ||
+      contains_needle_ascii(lower)) {
+    return {
+        "other_literal_or_path",
+        why_for_bucket("other_literal_or_path"),
+    };
+  }
+
+  return {
+      "generic_token",
+      why_for_bucket("generic_token"),
+  };
+}
+
+template <typename Map>
+std::vector<std::pair<std::string, int>> sort_counts(const Map &counts, size_t limit = 0) {
+  std::vector<std::pair<std::string, int>> sorted(counts.begin(), counts.end());
+  std::sort(sorted.begin(), sorted.end(), [](const auto &lhs, const auto &rhs) {
+    if (lhs.second != rhs.second) {
+      return lhs.second > rhs.second;
+    }
+    return lhs.first < rhs.first;
+  });
+  if (limit != 0 && sorted.size() > limit) {
+    sorted.resize(limit);
+  }
+  return sorted;
+}
+
 std::string describe_address(uint64_t address) {
   char buf[32];
   snprintf(buf, sizeof(buf), "0x%016" PRIx64, address);
@@ -261,9 +466,13 @@ void record_hit(ScanReport &report,
                 const std::string &address,
                 const std::string &module_path,
                 const std::string &encoding,
-                const std::string &preview_hex) {
+                const std::string &preview_hex,
+                const std::string &match_text) {
+  HitClassification classification = classify_hit(match_text);
   report.total_hits++;
   report.surface_counts[surface]++;
+  report.bucket_counts[classification.bucket]++;
+  report.module_counts[normalize_module_path(module_path)]++;
   if (report.hits.size() >= kMaxRecordedHits) {
     report.truncated = true;
     return;
@@ -276,6 +485,9 @@ void record_hit(ScanReport &report,
       .module_path = module_path,
       .encoding = encoding,
       .preview_hex = preview_hex,
+      .match_text = match_text,
+      .bucket = classification.bucket,
+      .why = classification.why,
       .count = 1,
   });
 }
@@ -338,7 +550,8 @@ void scan_blob(ScanReport &report,
                base_address != 0 ? describe_address(base_address + offset) : "",
                mapping != nullptr ? mapping->path : "",
                "ascii-ci",
-               hex_preview(data, size, preview_start, preview_length));
+               hex_preview(data, size, preview_start, preview_length),
+               extract_ascii_match_text(data, size, offset));
   }
 
   for (size_t offset = 0; offset < utf16_limit; offset++) {
@@ -354,7 +567,8 @@ void scan_blob(ScanReport &report,
                base_address != 0 ? describe_address(base_address + offset) : "",
                mapping != nullptr ? mapping->path : "",
                "utf16le-ci",
-               hex_preview(data, size, preview_start, preview_length));
+               hex_preview(data, size, preview_start, preview_length),
+               extract_utf16_match_text(data, size, offset));
   }
 }
 
@@ -568,7 +782,8 @@ void scan_memory_mappings(ScanReport &report) {
         size_t preview_length = kAsciiNeedleSize + (offset - preview_start) + kPreviewBytes;
         record_hit(report, "mapping_bytes", describe_range(local_mapping.start, local_mapping.end), local_mapping.perms,
                    describe_address(absolute), local_mapping.path, "ascii-ci",
-                   hex_preview(buffer.data(), total, preview_start, preview_length));
+                   hex_preview(buffer.data(), total, preview_start, preview_length),
+                   extract_ascii_match_text(buffer.data(), total, offset));
       }
 
       for (size_t offset = 0; offset < utf16_limit; offset++) {
@@ -583,7 +798,8 @@ void scan_memory_mappings(ScanReport &report) {
         size_t preview_length = kUtf16NeedleSize + (offset - preview_start) + kPreviewBytes;
         record_hit(report, "mapping_bytes", describe_range(local_mapping.start, local_mapping.end), local_mapping.perms,
                    describe_address(absolute), local_mapping.path, "utf16le-ci",
-                   hex_preview(buffer.data(), total, preview_start, preview_length));
+                   hex_preview(buffer.data(), total, preview_start, preview_length),
+                   extract_utf16_match_text(buffer.data(), total, offset));
       }
 
       carry = std::min(kChunkOverlap, total);
@@ -604,14 +820,51 @@ std::string report_to_json(const ScanReport &report) {
   stream << "\"truncated\":" << (report.truncated ? "true" : "false") << ",";
   stream << "\"surfaceCounts\":{";
   bool first_surface = true;
-  for (const auto &entry : report.surface_counts) {
+  for (const auto &entry : sort_counts(report.surface_counts)) {
     if (!first_surface) {
       stream << ",";
     }
     first_surface = false;
     stream << "\"" << json_escape(entry.first) << "\":" << entry.second;
   }
-  stream << "}";
+  stream << "},";
+  stream << "\"bucketCounts\":{";
+  bool first_bucket = true;
+  for (const auto &entry : sort_counts(report.bucket_counts)) {
+    if (!first_bucket) {
+      stream << ",";
+    }
+    first_bucket = false;
+    stream << "\"" << json_escape(entry.first) << "\":" << entry.second;
+  }
+  stream << "},";
+  stream << "\"bucketDetails\":[";
+  bool first_bucket_detail = true;
+  for (const auto &entry : sort_counts(report.bucket_counts)) {
+    if (!first_bucket_detail) {
+      stream << ",";
+    }
+    first_bucket_detail = false;
+    stream << "{";
+    stream << "\"bucket\":\"" << json_escape(entry.first) << "\",";
+    stream << "\"count\":" << entry.second << ",";
+    stream << "\"why\":\"" << json_escape(why_for_bucket(entry.first)) << "\"";
+    stream << "}";
+  }
+  stream << "],";
+  stream << "\"topModules\":[";
+  bool first_module = true;
+  for (const auto &entry : sort_counts(report.module_counts, 8)) {
+    if (!first_module) {
+      stream << ",";
+    }
+    first_module = false;
+    stream << "{";
+    stream << "\"modulePath\":\"" << json_escape(entry.first) << "\",";
+    stream << "\"count\":" << entry.second;
+    stream << "}";
+  }
+  stream << "]";
   stream << "},";
   stream << "\"hits\":[";
   for (size_t i = 0; i != report.hits.size(); i++) {
@@ -627,6 +880,9 @@ std::string report_to_json(const ScanReport &report) {
     stream << "\"modulePath\":\"" << json_escape(hit.module_path) << "\",";
     stream << "\"encoding\":\"" << json_escape(hit.encoding) << "\",";
     stream << "\"previewHex\":\"" << json_escape(hit.preview_hex) << "\",";
+    stream << "\"matchText\":\"" << json_escape(hit.match_text) << "\",";
+    stream << "\"bucket\":\"" << json_escape(hit.bucket) << "\",";
+    stream << "\"why\":\"" << json_escape(hit.why) << "\",";
     stream << "\"count\":" << hit.count;
     stream << "}";
   }

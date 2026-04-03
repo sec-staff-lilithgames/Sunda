@@ -1638,7 +1638,7 @@ namespace Frida.Agent {
 				id: id,
 				persist_timeout: persist_timeout,
 				message_sink: sink,
-				frida_context: MainContext.ref_thread_default (),
+				main_context: MainContext.ref_thread_default (),
 				dbus_context: dbus_context
 			);
 		}

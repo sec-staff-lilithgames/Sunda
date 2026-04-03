@@ -6,6 +6,7 @@ import android.os.SystemClock;
 import android.util.Log;
 
 import org.json.JSONObject;
+import org.json.JSONArray;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -98,16 +99,67 @@ final class ScanCoordinator {
             }
 
             JSONObject summary = root.getJSONObject("summary");
-            return "scan reason=" + reason +
-                    " totalHits=" + summary.optInt("totalHits", -1) +
-                    " truncated=" + summary.optBoolean("truncated", false) +
-                    " file=" + latestFile.getAbsolutePath() +
-                    " elapsedMs=" + elapsedMs;
+            StringBuilder builder = new StringBuilder();
+            builder.append("scan reason=").append(reason)
+                    .append(" totalHits=").append(summary.optInt("totalHits", -1))
+                    .append(" truncated=").append(summary.optBoolean("truncated", false))
+                    .append('\n')
+                    .append("topBuckets=").append(formatBucketDetails(summary.optJSONArray("bucketDetails")))
+                    .append('\n')
+                    .append("topModules=").append(formatTopModules(summary.optJSONArray("topModules")))
+                    .append('\n')
+                    .append("file=").append(latestFile.getAbsolutePath())
+                    .append(" elapsedMs=").append(elapsedMs);
+            return builder.toString();
         } catch (Exception e) {
             return "scan reason=" + reason +
                     " parseError=" + e.getClass().getSimpleName() +
                     " file=" + latestFile.getAbsolutePath() +
                     " elapsedMs=" + elapsedMs;
         }
+    }
+
+    private static String formatBucketDetails(JSONArray bucketDetails) {
+        if (bucketDetails == null || bucketDetails.length() == 0) {
+            return "none";
+        }
+
+        StringBuilder builder = new StringBuilder();
+        int limit = Math.min(3, bucketDetails.length());
+        for (int i = 0; i < limit; i++) {
+            JSONObject item = bucketDetails.optJSONObject(i);
+            if (item == null) {
+                continue;
+            }
+            if (builder.length() > 0) {
+                builder.append("; ");
+            }
+            builder.append(item.optString("bucket", "unknown"))
+                    .append('=')
+                    .append(item.optInt("count", -1));
+        }
+        return builder.length() == 0 ? "none" : builder.toString();
+    }
+
+    private static String formatTopModules(JSONArray topModules) {
+        if (topModules == null || topModules.length() == 0) {
+            return "none";
+        }
+
+        StringBuilder builder = new StringBuilder();
+        int limit = Math.min(2, topModules.length());
+        for (int i = 0; i < limit; i++) {
+            JSONObject item = topModules.optJSONObject(i);
+            if (item == null) {
+                continue;
+            }
+            if (builder.length() > 0) {
+                builder.append("; ");
+            }
+            builder.append(item.optString("modulePath", "unknown"))
+                    .append('=')
+                    .append(item.optInt("count", -1));
+        }
+        return builder.length() == 0 ? "none" : builder.toString();
     }
 }

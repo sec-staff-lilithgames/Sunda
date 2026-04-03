@@ -5,6 +5,15 @@ import sys
 import struct
 
 
+LITERAL_REWRITES = [
+    (b"-frida", b"-sunda"),
+    (b"frida-error-quark", b"sunda-error-quark"),
+    (b"pool-frida", b"pool-sunda"),
+    (b"10.9.42-frida", b"10.9.42-sunda"),
+    (b"0.9.27-frida", b"0.9.27-sunda"),
+]
+
+
 def main(argv):
     args = argv[1:]
     host_os = args.pop(0)
@@ -77,6 +86,7 @@ def main(argv):
             embedded_agent = priv_dir / f"sunda-agent-{flavor}.so"
             if agent is not None:
                 shutil.copy(agent, embedded_agent)
+                rewrite_agent_literals(embedded_agent)
             else:
                 embedded_agent.write_bytes(b"")
             embedded_assets += [embedded_agent]
@@ -96,6 +106,18 @@ def main(argv):
         "--config-filename", resource_config,
         "--output-basename", output_dir / "frida-data-agent",
     ] + embedded_assets, check=True)
+
+
+def rewrite_agent_literals(path: Path):
+    data = path.read_bytes()
+    patched = data
+
+    for old, new in LITERAL_REWRITES:
+        assert len(old) == len(new)
+        patched = patched.replace(old, new)
+
+    if patched != data:
+        path.write_bytes(patched)
 
 
 def pop_cmd_array_arg(args):

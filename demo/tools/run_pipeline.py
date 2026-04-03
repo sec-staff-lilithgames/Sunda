@@ -103,6 +103,28 @@ def latest_total_hits(report):
     return report["summary"]["totalHits"]
 
 
+def summarize_report(report):
+    summary = report.get("summary", {})
+    bucket_details = summary.get("bucketDetails") or []
+    top_modules = summary.get("topModules") or []
+
+    bucket_parts = [
+        f"{item.get('bucket', 'unknown')}={item.get('count', '?')}"
+        for item in bucket_details[:4]
+    ]
+    module_parts = [
+        f"{item.get('modulePath', '<unknown>')}={item.get('count', '?')}"
+        for item in top_modules[:3]
+    ]
+
+    parts = [f"totalHits={summary.get('totalHits', '?')}"]
+    if bucket_parts:
+        parts.append("topBuckets=" + "; ".join(bucket_parts))
+    if module_parts:
+        parts.append("topModules=" + "; ".join(module_parts))
+    return " ".join(parts)
+
+
 def wait_for_ready_line(proc, timeout=45):
     deadline = time.time() + timeout
     while time.time() < deadline:
@@ -175,7 +197,8 @@ def run_attach(iterations):
             })
             if latest_total_hits(report) > baseline_hits:
                 raise RuntimeError(
-                    f"attach iteration {idx} saw injected hits={latest_total_hits(report)} baseline={baseline_hits}"
+                    f"attach iteration {idx} saw injected hits={latest_total_hits(report)} baseline={baseline_hits} "
+                    f"{summarize_report(report)}"
                 )
         finally:
             stop_holder(holder)
@@ -206,7 +229,8 @@ def run_spawn(iterations):
             })
             if latest_total_hits(report) > baseline_hits:
                 raise RuntimeError(
-                    f"spawn iteration {idx} saw injected hits={latest_total_hits(report)} baseline={baseline_hits}"
+                    f"spawn iteration {idx} saw injected hits={latest_total_hits(report)} baseline={baseline_hits} "
+                    f"{summarize_report(report)}"
                 )
         finally:
             stop_holder(holder)
