@@ -1,7 +1,0 @@
-{
-  global:
-    _sunda_compiler_backend_*;
-
-  local:
-    *;
-};

@@ -4,7 +4,7 @@ Sunda 是面向 Android ARM64 的 Frida 定制分支。
 
 当前仓库路线已经切到：
 
-- `frida17.4.1/` 目录名保留不变，但其内容已迁到 Frida `17.8.0` 主线
+- `frida17.8.0/` 目录名与当前 Frida 基线版本保持一致
 - `frida-glib/` 继续作为本地保留组件维护
 - 本地去指纹化与本地 GLib 选择 glue 已重新回放到迁移后的树
 
@@ -12,8 +12,8 @@ Sunda 是面向 Android ARM64 的 Frida 定制分支。
 
 ## 目录
 
-- `frida17.4.1/`
-  目录名历史保留，当前实际承载的是 `17.8.0` 的顶层、`releng`、`frida-core`、`frida-gum`
+- `frida17.8.0/`
+  当前实际承载的是 `17.8.0` 的顶层、`releng`、`frida-core`、`frida-gum`
 - `frida-glib/`
   本地保留的 GLib 派生树
 - `demo/`
@@ -31,7 +31,7 @@ Sunda 是面向 Android ARM64 的 Frida 定制分支。
 当前验证通过的构建方式：
 
 ```bash
-cd frida17.4.1
+cd frida17.8.0
 
 export ANDROID_NDK_ROOT="$ANDROID_NDK_HOME"
 export SSL_CERT_FILE="/Users/siberia/Library/Python/3.12/lib/python/site-packages/certifi/cacert.pem"
@@ -46,13 +46,13 @@ SSL_CERT_FILE="$SSL_CERT_FILE" ANDROID_NDK_ROOT="$ANDROID_NDK_ROOT" ninja -v sub
 生成的 server 产物路径：
 
 ```bash
-frida17.4.1/build-android-arm64-server-cert/subprojects/frida-core/server/sunda
+frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/server/sunda
 ```
 
 ## 设备验证
 
 ```bash
-adb push frida17.4.1/build-android-arm64-server-cert/subprojects/frida-core/server/sunda /data/local/tmp/sunda
+adb push frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/server/sunda /data/local/tmp/sunda
 adb shell chmod 755 /data/local/tmp/sunda
 adb shell /data/local/tmp/sunda
 frida-ps -U
