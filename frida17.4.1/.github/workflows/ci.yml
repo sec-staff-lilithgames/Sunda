@@ -23,6 +23,9 @@ jobs:
       - package-apple-universal
       - assemble-ios-assets
       - assemble-tvos-assets
+    permissions:
+      contents: write
+      id-token: write
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -41,7 +44,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y reprepro
-          sudo npm install -g cloudflare-cli
+          sudo npm install -g cloudflare-cli@5.0.5
       - name: Download release assets
         uses: actions/download-artifact@v4
         with:
@@ -92,8 +95,6 @@ jobs:
         uses: ./.github/actions/package-ios-assets
       - name: Package tvOS assets
         uses: ./.github/actions/package-tvos-assets
-      - name: Package Cirrus CI artifacts
-        run: .github/scripts/package-cirrus-ci-artifacts.sh ${{ github.sha }}
       - name: Rename release assets
         run: .github/scripts/rename-release-assets.sh
       - name: Publish release to GitHub
@@ -107,31 +108,23 @@ jobs:
       - name: Publish Python bindings to pypi.org
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          password: ${{ secrets.PYPI_API_TOKEN }}
           packages-dir: build/python-packages/
       - name: Publish .deb packages
         uses: ./.github/actions/publish-debs
         with:
           site: production
-      - name: Setup npm authentication
-        uses: actions/setup-node@v4
-        with:
-          registry-url: "https://registry.npmjs.org"
+      - name: Trigger frida-node publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Publish Node.js bindings to npm
+          GH_TOKEN: ${{ secrets.FRIDA_NODE_BOT_PAT }}
+          FRIDA_VERSION: ${{ env.FRIDA_VERSION }}
         run: |
-          export FRIDA_DEPS=$PWD/deps
-          cd subprojects/frida-node/subprojects
-          ln -s ../../frida-gum .
-          ln -s ../../frida-core .
-          cd ..
-          git submodule update --init --recursive
-          npm version $FRIDA_VERSION
-          ./configure -- -Dfrida-core:compat=disabled
-          make
-          npm install
-          npm publish
+          gh api repos/frida/frida-node/dispatches \
+              -f event_type=publish-prod-started \
+              -f client_payload[frida_version]="${FRIDA_VERSION}"
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
       - name: Publish frida-gadget-ios to npm
         run: |
           cd releng/modules/frida-gadget-ios
@@ -155,6 +148,8 @@ jobs:
       - frida-linux
       - assemble-ios-assets
       - assemble-tvos-assets
+    permissions:
+      id-token: write
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -173,7 +168,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y reprepro
-          sudo npm install -g cloudflare-cli
+          sudo npm install -g cloudflare-cli@5.0.5
       - name: Package iOS assets
         uses: ./.github/actions/package-ios-assets
       - name: Package tvOS assets
@@ -183,7 +178,6 @@ jobs:
       - name: Publish Python bindings to TestPyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
           packages-dir: build/python-packages/
           repository-url: https://test.pypi.org/legacy/
       - name: Publish .deb packages
@@ -449,34 +443,6 @@ jobs:
         with:
           name: release-asset-frida-gadget-tvos-arm64-simulator
           path: frida-gadget-tvos-arm64-simulator.dylib.xz
-      - name: Download Swift bindings for macOS/x86_64
-        uses: actions/download-artifact@v4
-        with:
-          name: frida-swift-macos-x86_64
-          path: macos-x86_64/
-      - name: Download Swift bindings for macOS/arm64
-        uses: actions/download-artifact@v4
-        with:
-          name: frida-swift-macos-arm64
-          path: macos-arm64/
-      - name: Create universal Swift bindings for macOS
-        run: |
-          lipo \
-              macos-x86_64/Frida.framework/Frida \
-              macos-arm64/Frida.framework/Frida \
-              -create -output Frida.framework
-      - name: Package universal Swift bindings for macOS
-        run: |
-          tar \
-              -cJf frida-swift-macos-universal.tar.xz \
-              Frida.framework
-        env:
-          XZ_OPT: "-T 0"
-      - name: Upload universal Swift bindings for macOS
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-assets
-          path: frida-swift-macos-universal.tar.xz
 
   package-windows:
     if: startsWith(github.ref, 'refs/tags/')
@@ -1161,7 +1127,6 @@ jobs:
           --enable-portal
           --enable-inject
           --enable-frida-python
-          --enable-frida-swift
           --
           -Dfrida_qml=${{ matrix.arch != 'arm64e' && 'enabled' || 'disabled' }}
           -Dfrida-gum:graft_tool=enabled
@@ -1214,12 +1179,6 @@ jobs:
         with:
           name: frida-gadget-macos-${{ matrix.arch }}
           path: ${{ env.FRIDA_PREFIX }}/lib/frida/frida-gadget.dylib
-      - name: Upload Swift bindings
-        if: matrix.arch != 'arm64e'
-        uses: actions/upload-artifact@v4
-        with:
-          name: frida-swift-macos-${{ matrix.arch }}
-          path: ${{ env.FRIDA_PREFIX }}/Frameworks/
       - name: Package Python bindings
         run: |
           export FRIDA_EXTENSION=$(find "$FRIDA_PREFIX" -name _frida.abi3.so)

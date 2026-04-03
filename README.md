@@ -1,36 +1,64 @@
 # Sunda
 
-Sunda 是 Frida 的魔改项目。仓库直接包含 `frida-glib` 和 `frida17.4.1` 的源码目录，不再依赖顶层子模块指针。
+Sunda 是面向 Android ARM64 的 Frida 定制分支。
 
-## 特性
+当前仓库路线已经切到：
 
-- 去掉常见线程名称 frida-xx，gmain，gum-js-loop 等一众常见检测点
-- 目前只改了 Android ARM64，在 Pixel 8a Android 16 上测试有效
-- 当前针对的修改参照是某粉色视频网站 app 的通用检测手段
+- `frida17.4.1/` 目录名保留不变，但其内容已迁到 Frida `17.8.0` 主线
+- `frida-glib/` 继续作为本地保留组件维护
+- 本地去指纹化与本地 GLib 选择 glue 已重新回放到迁移后的树
 
-## 获取源码
+这意味着当前工作目标不再是继续修补旧 `17.4.1` Android 路径，而是在 `17.8.0` 基线之上继续做 Android 可用性与去指纹化收敛。
 
-```bash
-git clone https://github.com/sec-staff-lilithgames/Sunda.git
-cd Sunda
-```
+## 目录
 
-## 构建
-
-源码主目录：
-
-- `frida-glib/`
 - `frida17.4.1/`
+  目录名历史保留，当前实际承载的是 `17.8.0` 的顶层、`releng`、`frida-core`、`frida-gum`
+- `frida-glib/`
+  本地保留的 GLib 派生树
+- `demo/`
+  Android 指纹 canary app、JNI scanner、host 侧验证脚本
 
-按目标平台进入对应目录构建即可。Android ARM64 相关产物通常从 `frida17.4.1/` 开始配置和编译，具体流程可参考 Frida 官方文档与目录内构建脚本。
+## 当前状态
 
-## 运行
+- 当前连接的 Pixel 8a / Android 16 上，官方 `frida-server` `17.4.1` 与旧本地 `17.4.1` 都会因为旧 Android host-session 路径失败
+- 官方 `17.8.0` 在同设备可用
+- 当前本地迁移树已能编出可运行的 `sunda` server，并在设备上通过 `frida-ps -U`
+- `spawn + attach` 对 `/system/bin/sleep` 仍存在 parity 问题，但官方 `17.8.0` 在同设备同样复现，不视为本地迁移回归
 
-下载并运行预编译二进制：
+## Android ARM64 构建
+
+当前验证通过的构建方式：
 
 ```bash
-adb push frida-server /data/local/tmp
-chmod 777 /data/local/tmp/frida-server
-/data/local/tmp/frida-server
+cd frida17.4.1
+
+export ANDROID_NDK_ROOT="$ANDROID_NDK_HOME"
+export SSL_CERT_FILE="/Users/siberia/Library/Python/3.12/lib/python/site-packages/certifi/cacert.pem"
+
+mkdir -p build-android-arm64-server-cert
+cd build-android-arm64-server-cert
+
+../configure --host=android-arm64
+SSL_CERT_FILE="$SSL_CERT_FILE" ANDROID_NDK_ROOT="$ANDROID_NDK_ROOT" ninja -v subprojects/frida-core/server/sunda
 ```
 
+生成的 server 产物路径：
+
+```bash
+frida17.4.1/build-android-arm64-server-cert/subprojects/frida-core/server/sunda
+```
+
+## 设备验证
+
+```bash
+adb push frida17.4.1/build-android-arm64-server-cert/subprojects/frida-core/server/sunda /data/local/tmp/sunda
+adb shell chmod 755 /data/local/tmp/sunda
+adb shell /data/local/tmp/sunda
+frida-ps -U
+```
+
+## 说明
+
+- 当前二进制里已经有 `sunda-*` 命名面，如 `sunda-agent-*`、`sunda-helper-*`、`sunda-main-loop`
+- 17.8.0 新引入的 Android helper/session 面仍有部分上游 `re.frida.*` 与 helper 路径字符串，后续会继续清理

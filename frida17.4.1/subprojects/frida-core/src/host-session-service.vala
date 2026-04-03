@@ -183,6 +183,16 @@ namespace Frida {
 		public abstract void unlink_service_session (HostSession host_session, ServiceSessionId id);
 	}
 
+	public interface HostSessionConnection : Object {
+		public abstract HostSession host_session {
+			get;
+		}
+
+		public abstract async AgentSession link_agent_session (AgentSessionId id, AgentMessageSink sink,
+			Cancellable? cancellable = null) throws Error, IOError;
+		public abstract void unlink_agent_session (AgentSessionId id);
+	}
+
 	public interface HostSessionHub : Object {
 		public abstract async HostSessionEntry resolve_host_session (string id, Cancellable? cancellable) throws Error, IOError;
 	}
@@ -351,10 +361,17 @@ namespace Frida {
 
 		public async ServiceSession link_service_session (HostSession host_session, ServiceSessionId id, Cancellable? cancellable)
 				throws Error, IOError {
-			throw new Error.NOT_SUPPORTED ("Services are not supported by this backend");
+			if (host_session != this.host_session)
+				throw new Error.INVALID_ARGUMENT ("Invalid host session");
+
+			return this.host_session.link_service_session (id);
 		}
 
 		public void unlink_service_session (HostSession host_session, ServiceSessionId id) {
+			if (host_session != this.host_session)
+				return;
+
+			this.host_session.unlink_service_session (id);
 		}
 
 		private void on_agent_session_detached (AgentSessionId id, SessionDetachReason reason, CrashInfo crash) {
@@ -362,7 +379,13 @@ namespace Frida {
 		}
 	}
 
-	public abstract class LocalHostSession : Object, HostSession, AgentController {
+	public abstract class LocalHostSession : Object, HostSession, HostSessionConnection, AgentController {
+		public HostSession host_session {
+			get {
+				return this;
+			}
+		}
+
 		private Gee.HashMap<uint, Cancellable> pending_establish_ops = new Gee.HashMap<uint, Cancellable> ();
 
 		private Gee.HashMap<uint, Future<AgentEntry>> agent_entries = new Gee.HashMap<uint, Future<AgentEntry>> ();
@@ -380,6 +403,8 @@ namespace Frida {
 
 		protected Injector injector;
 		protected Gee.HashMap<uint, uint> injectee_by_pid = new Gee.HashMap<uint, uint> ();
+
+		protected ServiceSessionRegistry service_session_registry = new ServiceSessionRegistry ();
 
 		protected Cancellable io_cancellable = new Cancellable ();
 
@@ -932,8 +957,16 @@ namespace Frida {
 			throw new Error.NOT_SUPPORTED ("Channels are not supported by this backend");
 		}
 
-		public async ServiceSessionId open_service (string address, Cancellable? cancellable) throws Error, IOError {
+		public virtual async ServiceSessionId open_service (string address, Cancellable? cancellable) throws Error, IOError {
 			throw new Error.NOT_SUPPORTED ("Services are not supported by this backend");
+		}
+
+		public ServiceSession link_service_session (ServiceSessionId id) throws Error {
+			return service_session_registry.link (id);
+		}
+
+		public void unlink_service_session (ServiceSessionId id) {
+			service_session_registry.unlink (id);
 		}
 
 #if !WINDOWS
@@ -1454,7 +1487,7 @@ namespace Frida {
 	public abstract class InternalAgent : Object, AgentMessageSink, RpcPeer {
 		public signal void unloaded ();
 
-		public weak LocalHostSession host_session {
+		public weak HostSessionConnection connection {
 			get;
 			construct;
 		}
@@ -1478,11 +1511,7 @@ namespace Frida {
 		construct {
 			rpc_client = new RpcClient (this);
 
-			host_session.agent_session_detached.connect (on_agent_session_detached);
-		}
-
-		~InternalAgent () {
-			host_session.agent_session_detached.disconnect (on_agent_session_detached);
+			connection.host_session.agent_session_detached.connect (on_agent_session_detached);
 		}
 
 		public async void close (Cancellable? cancellable) throws IOError {
@@ -1494,6 +1523,8 @@ namespace Frida {
 			}
 
 			yield ensure_unloaded (cancellable);
+
+			connection.host_session.agent_session_detached.disconnect (on_agent_session_detached);
 		}
 
 		protected abstract async uint get_target_pid (Cancellable? cancellable) throws Error, IOError;
@@ -1547,9 +1578,9 @@ namespace Frida {
 				target_pid = yield get_target_pid (cancellable);
 
 				try {
-					session_id = yield host_session.attach (target_pid, attach_options, cancellable);
+					session_id = yield connection.host_session.attach (target_pid, attach_options, cancellable);
 
-					session = yield host_session.link_agent_session (session_id, (AgentMessageSink) this, cancellable);
+					session = yield connection.link_agent_session (session_id, (AgentMessageSink) this, cancellable);
 
 					string? source = yield load_source (cancellable);
 					if (source != null) {

@@ -2171,7 +2171,10 @@ namespace Frida {
 
 		public static string enum_to_nick<T> (int val) {
 			var klass = (EnumClass) typeof (T).class_ref ();
-			return klass.get_value (val).value_nick;
+			unowned EnumValue? v = klass.get_value (val);
+			if (v == null)
+				return "unknown-0x%x".printf (val);
+			return v.value_nick;
 		}
 	}
 
@@ -2196,6 +2199,14 @@ namespace Frida {
 			uint64 a = val_a;
 			uint64 b = val_b;
 			return a == b;
+		}
+
+		public uint bytes_hash (Bytes b) {
+			return b.hash ();
+		}
+
+		public static bool bytes_equal (Bytes a, Bytes b) {
+			return a.compare (b) == 0;
 		}
 	}
 }

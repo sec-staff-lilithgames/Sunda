@@ -28,7 +28,13 @@ if host_os_family == 'windows'
 elif host_os_family == 'darwin'
   extra_link_args += '-Wl,-exported_symbol,_frida_agent_main'
 else
-  symscript = (host_os == 'android') ? 'frida-agent-android.version' : 'frida-agent.version'
+  if libc == 'glibc'
+    symscript = 'frida-agent-glibc.version'
+  elif host_os == 'android'
+    symscript = 'frida-agent-android.version'
+  else
+    symscript = 'frida-agent.version'
+  endif
   extra_link_args += '-Wl,--version-script,' + meson.current_source_dir() / symscript
   extra_link_depends += symscript
 endif
@@ -50,9 +56,9 @@ raw_agent = shared_library('sunda-agent-raw', agent_sources,
   dependencies: [gio_dep, gee_dep, gum_dep, gumjs_dep, base_dep, pipe_dep, tls_provider_dep, payload_dep],
 )
 
-operations = ['--move', 'constructor', 'frida_init_memory', 'first']
+operations = ['--move', 'constructor', 'frida_libc_shim_init', 'first']
 if host_os_family != 'darwin'
-  operations += ['--move', 'destructor', 'frida_deinit_memory', 'first']
+  operations += ['--move', 'destructor', 'frida_libc_shim_deinit', 'first']
 endif
 modulated_agent = custom_target('sunda-agent-modulated',
   input: raw_agent,

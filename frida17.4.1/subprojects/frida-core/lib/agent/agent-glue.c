@@ -24,7 +24,9 @@ _frida_agent_environment_init (void)
   been_here = TRUE;
 #endif
 
-  gum_init_embedded ();
+#ifdef _MSC_VER
+  frida_libc_shim_init ();
+#endif
   gio_init ();
 
   g_thread_set_garbage_handler (_frida_agent_on_pending_thread_garbage, NULL);
@@ -49,18 +51,18 @@ void
 _frida_agent_environment_deinit (void)
 {
 #ifndef HAVE_MUSL
+  frida_libc_shim_prepare_to_deinit ();
+
   gum_shutdown ();
   gio_shutdown ();
   glib_shutdown ();
 
   gio_deinit ();
-  gum_deinit_embedded ();
 
   frida_run_atexit_handlers ();
 
-# ifdef HAVE_DARWIN
-  /* Do what frida_deinit_memory() does on the other platforms. */
-  gum_internal_heap_unref ();
+# if defined (_MSC_VER) || defined (HAVE_DARWIN)
+  frida_libc_shim_deinit ();
 # endif
 #endif
 }

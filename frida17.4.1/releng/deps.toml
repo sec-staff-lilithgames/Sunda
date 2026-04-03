@@ -1,5 +1,5 @@
 [dependencies]
-version = "20250919"
+version = "20260216"
 bootstrap_version = "20250801"
 
 [ninja]
@@ -20,7 +20,7 @@ dependencies = [
 [vala]
 scope = "toolchain"
 name = "Vala"
-version = "9feabf0f8076c33b702d7cba612edfe0c1e45a00"
+version = "172348fa9123ff4a95d541c5f9e56837434c4b6e"
 url = "https://github.com/frida/vala.git"
 dependencies = [
     "glib",
@@ -65,7 +65,7 @@ options = [
 [selinux]
 when = "machine.os == 'android'"
 name = "SELinux Userspace"
-version = "6d5513fd8069e9ff9b7aa10970d34457b32970c8"
+version = "b7c8cd70d821bb3fc69500e6273149299b80b923"
 url = "https://github.com/frida/selinux.git"
 options = [
     "-Dregex=disabled",
@@ -73,7 +73,7 @@ options = [
 
 [glib]
 name = "GLib"
-version = "9dc59b1b5503789ada22f7699e53256fa3287217"
+version = "81b631758fe5c665ade9d869554148f6160fe681"
 url = "https://github.com/frida/glib.git"
 options = [
     "-Dcocoa=disabled",
@@ -102,6 +102,15 @@ dependencies = [
                               """ }
 ]
 
+[elfutils]
+when = "machine.os in {'linux', 'android'}"
+name = "elfutils"
+version = "1284bbc128473aea220337685985d465607fbac8"
+url = "https://github.com/frida/elfutils.git"
+dependencies = [
+    "zlib",
+]
+
 [libdwarf]
 when = "machine.os in {'linux', 'android', 'freebsd', 'qnx'}"
 name = "libdwarf"
@@ -109,6 +118,16 @@ version = "50e3115b340c6a58d2f61af96f120a9d111ac024"
 url = "https://github.com/frida/libdwarf.git"
 options = [
     "-Ddecompression=false",
+]
+
+[libbpf]
+when = "machine.os in {'linux', 'android'}"
+name = "libbpf"
+version = "6c8d0d00a122fe126b7a3094f0785340128506f5"
+url = "https://github.com/frida/libbpf.git"
+dependencies = [
+    "elfutils",
+    "zlib",
 ]
 
 [xz]
@@ -218,7 +237,7 @@ url = "https://github.com/frida/libusb.git"
 [lwip]
 when = "machine.os != 'none'"
 name = "lwIP"
-version = "4fe7223c2e80dc328266fb2483e789ee5fad7c79"
+version = "334ebb20a22023db2f0d5017e96eb0c7798082fd"
 url = "https://github.com/frida/lwip.git"
 options = [
     "-Dipv4=disabled",
@@ -310,7 +329,7 @@ url = "https://github.com/frida/nghttp2.git"
 [libsoup]
 when = "machine.os != 'none'"
 name = "libsoup"
-version = "80dc080951c9037aef51a40ffbe4508d3ce98d1b"
+version = "4fd67869310b9de8fe2947bc8504ccbcf1abf285"
 url = "https://github.com/frida/libsoup.git"
 options = [
     "-Dgssapi=disabled",
@@ -334,7 +353,7 @@ dependencies = [
 
 [capstone]
 name = "Capstone"
-version = "27fb5a53bc77baf3c3af7ccd466041418cecca35"
+version = "fecd93b6e54c0a1df285841620192ffff916a031"
 url = "https://github.com/frida/capstone.git"
 options = [
     "-Darchs=all",
@@ -370,7 +389,7 @@ url = "https://github.com/frida/tinycc.git"
 [openssl]
 when = "machine.os != 'none'"
 name = "OpenSSL"
-version = "5029c4562d23547d8e29768e1b0de573c52bf3fc"
+version = "fa60a1c8c704e4ca0cc0dcb289c3be1fea1b50ff"
 url = "https://github.com/frida/openssl.git"
 options = [
     "-Dcli=disabled",
@@ -386,7 +405,7 @@ when = """ \
        and machine.os not in {'none', 'qnx'} \
        """
 name = "V8"
-version = "669119f601663b73fc01f8eee02cf2f093bbf25b"
+version = "a07af892420dfd873b33bd4ce4ba9d963072e1b9"
 url = "https://github.com/frida/v8.git"
 options = [
     "-Ddebug=false",
