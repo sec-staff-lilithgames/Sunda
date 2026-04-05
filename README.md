@@ -58,6 +58,33 @@ adb shell /data/local/tmp/sunda
 frida-ps -U
 ```
 
+## 功能测试基线
+
+当前 repo 已固化一条面向 demo Java/native 子功能的设备功能测试基线：
+
+```bash
+python3 demo/tools/run_feature_tests.py
+```
+
+该脚本会以 `zoey` 拉起设备侧 `sunda`，并串行验证：
+
+- Activity 启动
+- Broadcast 扫描
+- Broadcast 校准
+- UI 扫描按钮
+- UI 校准按钮
+- attach 注入路径
+- spawn 注入路径
+
+当前基线期望：
+
+- `broadcast_scan`: `totalHits=0`
+- `broadcast_calibration`: `beforeHits>0`, `afterHits=0`
+- `ui_scan_button`: `activity_button`, `totalHits=0`
+- `ui_calibration_button`: `activity_calibration`, `beforeHits>0`, `afterHits=0`
+- `attach_path`: `baselineHits=0`, `injectedHits=0`
+- `spawn_path`: `baselineHits=0`, `injectedHits=0`
+
 ## 说明
 
 - 当前二进制里已经有 `sunda-*` 命名面，如 `sunda-agent-*`、`sunda-helper-*`、`sunda-main-loop`

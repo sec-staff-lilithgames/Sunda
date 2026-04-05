@@ -45,12 +45,25 @@ def ensure_installed():
     adb("install", "-r", str(apk), capture=False)
 
 
+def clear_reports_dir():
+    # Reinstalling the demo can change its app UID, which leaves old external
+    # report files unreadable or unwritable by the new install.
+    adb(
+        "shell",
+        "zoey",
+        "-c",
+        f"rm -rf {REPORT_DIR}",
+        check=False,
+        capture=False,
+    )
+
+
 def force_stop():
     adb("shell", "am", "force-stop", PACKAGE)
 
 
 def launch():
-    adb("shell", "monkey", "-p", PACKAGE, "-c", "android.intent.category.LAUNCHER", "1", capture=False)
+    adb("shell", "am", "start", "-W", "-n", ACTIVITY, capture=False)
 
 
 def wait_for_pid(timeout=15):
@@ -300,6 +313,8 @@ def main():
     if args.command == "_hold_spawn":
         holder_spawn(extras[0], extras[1])
         return
+
+    clear_reports_dir()
 
     if args.command in {"build", "all"}:
         ensure_built()
