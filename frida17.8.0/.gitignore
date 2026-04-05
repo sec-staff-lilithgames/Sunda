@@ -4,3 +4,16 @@
 /releng/modules/frida-gadget-ios/*.dylib
 /releng/modules/frida-gadget-ios/node_modules
 /subprojects/*
+!/subprojects/frida-tools/
+/subprojects/frida-tools/*
+!/subprojects/frida-tools/bridges/
+/subprojects/frida-tools/bridges/*
+!/subprojects/frida-tools/bridges/node_modules/
+/subprojects/frida-tools/bridges/node_modules/*
+!/subprojects/frida-tools/bridges/node_modules/frida-java-bridge/
+/subprojects/frida-tools/bridges/node_modules/frida-java-bridge/*
+!/subprojects/frida-tools/bridges/node_modules/frida-java-bridge/lib/
+/subprojects/frida-tools/bridges/node_modules/frida-java-bridge/lib/*
+# Keep only the Android 16 Java bridge hotfix sources reviewable in this repo.
+!/subprojects/frida-tools/bridges/node_modules/frida-java-bridge/lib/android.js
+!/subprojects/frida-tools/bridges/node_modules/frida-java-bridge/lib/class-model.js
