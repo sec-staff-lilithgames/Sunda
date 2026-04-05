@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <TextView
+        android:textSize="@dimen/language_item_name"
+        android:textColor="@color/menu_cell_text_color"
+        android:gravity="center"
+        android:id="@+id/language_name"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="@dimen/language_name_margin_left"
+        android:text="Name"/>
+    <ImageView
+        android:id="@+id/cocheLangue"
+        android:background="@drawable/checkmark_language"
+        android:visibility="invisible"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:background="@color/menu_cell_separate_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_cell_separator_heigth"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.2"/>
+</RelativeLayout>

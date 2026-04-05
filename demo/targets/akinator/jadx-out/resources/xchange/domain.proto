@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto/xchange;proto_xchange";
+package xchange;
+
+import "google/protobuf/timestamp.proto";
+
+message Account {
+    // unique
+    string id = 1;
+    string name = 2;
+    // optionnal if client is IAB registered
+    uint32 iab_id = 3;
+
+    repeated string purchase_orders = 4;
+    repeated string sale_orders = 5;
+}
+
+message PurchaseOrder {
+    // unique uuidv4
+    string id = 1;
+    // formatted as follow : "PS<AAAA><MM><DD><XXXX>"
+    string order_number = 2;
+    google.protobuf.Timestamp start_date = 3;
+    google.protobuf.Timestamp end_date = 4;
+
+    // seller_id is Account.id
+    string seller_id = 5;
+
+    // buyer_id is Account.id
+    repeated string buyer_id = 6;
+
+    repeated string available_fields = 7;
+
+    repeated uint32 sources = 8;
+
+    repeated string app_keys = 9;
+
+    bool acceptPrivacyShield = 10;
+
+    bool active = 11;
+
+    repeated string blacklisted_ids = 12;
+}
+
+message SaleOrder {
+    // unique uuidv4
+    string id = 1;
+}

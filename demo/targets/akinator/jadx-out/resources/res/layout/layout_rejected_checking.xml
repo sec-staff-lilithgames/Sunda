@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/badge_rejected_width"
+    android:layout_height="@dimen/badge_rejected_heigth">
+    <ImageView
+        android:id="@+id/rejectedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/badge_validity_check_rejete"/>
+    <TextView
+        android:textSize="25sp"
+        android:gravity="center"
+        android:id="@+id/rejectedText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/badge_rejected_heigth_text"
+        android:layout_marginTop="@dimen/badge_rejected_margin_top_text"
+        android:text="Toto"
+        android:textAlignment="center"/>
+</RelativeLayout>

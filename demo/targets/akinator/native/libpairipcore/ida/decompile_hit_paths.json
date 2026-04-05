@@ -1,0 +1,16 @@
+[
+  {
+    "query_ea": 192212,
+    "function_ea": 192212,
+    "function_name": "sub_2EED4",
+    "pseudocode": null,
+    "error": "decompile returned none"
+  },
+  {
+    "query_ea": 339744,
+    "function_ea": 339744,
+    "function_name": "pairip_vm_interpreter_core_tentative",
+    "pseudocode": null,
+    "error": "module 'idc' has no attribute 'tag_remove'"
+  }
+]

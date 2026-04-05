@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="appconsent_v3_image_size_xxl">72dp</dimen>
+    <dimen name="appconsent_v3_image_size_xxxl">100dp</dimen>
+    <dimen name="appconsent_v3_image_size_xxxxl">250dp</dimen>
+    <dimen name="appconsent_v3_intro_app_image_size">80dp</dimen>
+    <dimen name="appconsent_v3_letter_spacing">-0.05</dimen>
+    <dimen name="appconsent_v3_margin_large">24dp</dimen>
+    <dimen name="appconsent_v3_margin_medium">18dp</dimen>
+    <dimen name="appconsent_v3_margin_small">12dp</dimen>
+    <dimen name="appconsent_v3_margin_xl">32dp</dimen>
+    <dimen name="appconsent_v3_margin_xs">8dp</dimen>
+    <dimen name="appconsent_v3_margin_xxl">50dp</dimen>
+    <dimen name="appconsent_v3_margin_xxs">5dp</dimen>
+    <dimen name="appconsent_v3_margin_xxxs">2dp</dimen>
+    <dimen name="appconsent_v3_padding_large">18dp</dimen>
+    <dimen name="appconsent_v3_padding_medium">10dp</dimen>
+    <dimen name="appconsent_v3_padding_small">6dp</dimen>
+    <dimen name="appconsent_v3_padding_xl">24dp</dimen>
+    <dimen name="appconsent_v3_padding_xs">4dp</dimen>
+    <dimen name="appconsent_v3_padding_xxl">30dp</dimen>
+    <dimen name="appconsent_v3_padding_xxxl">36dp</dimen>
+    <dimen name="appconsent_v3_switch_background_corner">50dp</dimen>
+    <dimen name="appconsent_v3_switch_padding">6dp</dimen>
+    <dimen name="appconsent_v3_switch_padding_child">3dp</dimen>
+    <dimen name="appconsent_v3_switch_padding_parent">12dp</dimen>
+    <dimen name="appconsent_v3_switch_size_icon">30dp</dimen>
+    <dimen name="appconsent_v3_switch_width">76dp</dimen>
+    <dimen name="appconsent_v3_text_size_textview_extra_small">11sp</dimen>
+    <dimen name="appconsent_v3_text_size_textview_large">17sp</dimen>
+    <dimen name="appconsent_v3_text_size_textview_medium">15sp</dimen>
+    <dimen name="appconsent_v3_text_size_textview_small">13sp</dimen>
+    <dimen name="appconsent_v3_text_size_textview_xl">20sp</dimen>
+</resources>

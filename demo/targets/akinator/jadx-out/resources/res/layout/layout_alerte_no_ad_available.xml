@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_pop_up_no_video"
+        android:layout_width="@dimen/no_ad_avail_alert_width"
+        android:layout_height="@dimen/no_ad_avail_alert_height"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:textSize="@dimen/bulle_text_size"
+            android:textColor="@color/black_color"
+            android:id="@+id/textLigne1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"/>
+        <TextView
+            android:textSize="@dimen/bulle_text_size"
+            android:textColor="@color/black_color"
+            android:id="@+id/textLigne2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+        <com.digidust.elokence.akinator.graphic.AkinatorSmallButton
+            android:id="@+id/okButton"
+            android:layout_width="@dimen/gen_small_button_width"
+            android:layout_height="@dimen/gen_button_height"
+            android:layout_margin="10dp"
+            android:text="OK"/>
+    </LinearLayout>
+</RelativeLayout>

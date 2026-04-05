@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_footer"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/appconsent_v3_padding_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appconsent_geolocation_footer"
+        style="@style/AppConsentV3Theme.TextView.Description"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/dialog_container"
+    android:background="@color/appconsent_v3_white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/appconsent_v3_margin_small"/>
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/text_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/appconsent_v3_margin_xs"
+        android:layout_marginRight="@dimen/appconsent_v3_margin_xs"
+        android:text="@string/progress_loading"
+        android:layout_marginStart="@dimen/appconsent_v3_margin_xs"
+        android:layout_marginEnd="@dimen/appconsent_v3_margin_xs"
+        style="@style/AppConsentV3Theme.TextView"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

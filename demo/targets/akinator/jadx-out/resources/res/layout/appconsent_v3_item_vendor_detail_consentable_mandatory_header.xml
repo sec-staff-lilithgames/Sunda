@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:paddingLeft="@dimen/appconsent_v3_padding_large"
+    android:paddingTop="@dimen/appconsent_v3_padding_xxl"
+    android:paddingRight="@dimen/appconsent_v3_padding_large"
+    android:paddingBottom="@dimen/appconsent_v3_padding_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_vendor_header"
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/appconsent_vendor_details_label_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/AppConsentV3Theme.TextView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,148 @@
+package com.google.android.gms.internal.ads;
+
+import android.app.Activity;
+import android.content.Context;
+import android.view.View;
+import java.util.Map;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes6.dex */
+final class zzfyj implements zzgbi {
+    private final zzfxz zzA;
+    private final zzfyf zzB;
+    final zzifq zza;
+    final zzifq zzb;
+    final zzifq zzc;
+    final zzifq zzd;
+    final zzifq zze;
+    final zzifq zzf;
+    final zzifq zzg;
+    final zzifq zzh;
+    final zzifq zzi;
+    final zzifq zzj;
+    final zzifq zzk;
+    final zzifq zzl;
+    final zzifq zzm;
+    final zzifq zzn;
+    final zzifq zzo;
+    final zzifq zzp;
+    final zzifq zzq;
+    final zzifq zzr;
+    final zzifq zzs;
+    final zzifq zzt;
+    final zzifq zzu;
+    final zzifq zzv;
+    final zzifq zzw;
+    final zzifq zzx;
+    final zzifq zzy;
+    final zzifq zzz;
+
+    public zzfyj(zzfxz zzfxzVar, zzfyf zzfyfVar, Context context, View view, Activity activity, String str, Map map, zzauc zzaucVar, zzfyq zzfyqVar) {
+        this.zzA = zzfxzVar;
+        this.zzB = zzfyfVar;
+        zzifh zzifhVarZza = zzifi.zza(zzfyqVar);
+        this.zza = zzifhVarZza;
+        zzifh zzifhVarZzc = zzifi.zzc(str);
+        this.zzb = zzifhVarZzc;
+        zzifh zzifhVarZza2 = zzifi.zza(zzaucVar);
+        this.zzc = zzifhVarZza2;
+        zzifq zzifqVar = zzfyfVar.zzb;
+        zzifq zzifqVar2 = zzfxzVar.zza;
+        zzifq zzifqVar3 = zzfxzVar.zzr;
+        zzgct zzgctVarZza = zzgct.zza(zzifhVarZza2, zzifqVar, zzifqVar2, zzifqVar3);
+        this.zzd = zzgctVarZza;
+        zzgcr zzgcrVarZza = zzgcr.zza(zzifhVarZza2, zzifqVar, zzifqVar3);
+        this.zze = zzgcrVarZza;
+        zzifh zzifhVarZza3 = zzifi.zza(map);
+        this.zzf = zzifhVarZza3;
+        zzifq zzifqVar4 = zzfyfVar.zzb;
+        zzifq zzifqVar5 = zzfxzVar.zzr;
+        zzgcz zzgczVarZza = zzgcz.zza(zzifhVarZza2, zzifqVar4, zzifhVarZza3, zzifqVar5);
+        this.zzg = zzgczVarZza;
+        zzgcv zzgcvVarZza = zzgcv.zza(zzifhVarZza2, zzifqVar4, zzfxzVar.zzh, zzifqVar5);
+        this.zzh = zzgcvVarZza;
+        zzgdj zzgdjVarZza = zzgdj.zza(zzifhVarZza2, zzifqVar4, zzifhVarZza, zzifhVarZza3, zzifqVar5);
+        this.zzi = zzgdjVarZza;
+        zzgcx zzgcxVarZza = zzgcx.zza(zzifhVarZza2, zzifqVar4, zzifqVar5);
+        this.zzj = zzgcxVarZza;
+        zzifh zzifhVarZza4 = zzifi.zza(context);
+        this.zzk = zzifhVarZza4;
+        zzifq zzifqVar6 = zzfyfVar.zzb;
+        zzifq zzifqVar7 = zzfxzVar.zzr;
+        zzgdf zzgdfVarZza = zzgdf.zza(zzifhVarZza2, zzifqVar6, zzifhVarZza, zzifhVarZza4, zzifhVarZza3, zzifqVar7);
+        this.zzl = zzgdfVarZza;
+        zzifq zzifqVar8 = zzfxzVar.zza;
+        zzifq zzifqVar9 = zzfxzVar.zzh;
+        zzgcp zzgcpVarZza = zzgcp.zza(zzifhVarZza2, zzifqVar6, zzifhVarZza3, zzifqVar8, zzifhVarZza, zzifqVar9, zzifqVar7);
+        this.zzm = zzgcpVarZza;
+        zzgdb zzgdbVarZza = zzgdb.zza(zzifhVarZza2, zzifqVar6, zzifqVar8, zzifqVar7);
+        this.zzn = zzgdbVarZza;
+        zzgdd zzgddVarZza = zzgdd.zza(zzifhVarZza2, zzifqVar6, zzifhVarZza3, zzifqVar8, zzifqVar7);
+        this.zzo = zzgddVarZza;
+        zzgcn zzgcnVarZza = zzgcn.zza(zzifhVarZza2, zzifhVarZza3, zzifqVar9, zzifqVar7);
+        this.zzp = zzgcnVarZza;
+        zzifs zzifsVarZza = zzift.zza(11, 0);
+        zzifsVarZza.zza(zzgctVarZza);
+        zzifsVarZza.zza(zzgcrVarZza);
+        zzifsVarZza.zza(zzgczVarZza);
+        zzifsVarZza.zza(zzgcvVarZza);
+        zzifsVarZza.zza(zzgdjVarZza);
+        zzifsVarZza.zza(zzgcxVarZza);
+        zzifsVarZza.zza(zzgdfVarZza);
+        zzifsVarZza.zza(zzgcpVarZza);
+        zzifsVarZza.zza(zzgdbVarZza);
+        zzifsVarZza.zza(zzgddVarZza);
+        zzifsVarZza.zza(zzgcnVarZza);
+        zzift zziftVarZzc = zzifsVarZza.zzc();
+        this.zzq = zziftVarZzc;
+        zzifh zzifhVarZzc2 = zzifi.zzc(view);
+        this.zzr = zzifhVarZzc2;
+        zzifh zzifhVarZzc3 = zzifi.zzc(activity);
+        this.zzs = zzifhVarZzc3;
+        zzifq zzifqVar10 = zzfyfVar.zzb;
+        zzifq zzifqVar11 = zzfxzVar.zzr;
+        zzgcl zzgclVarZza = zzgcl.zza(zzifhVarZza2, zzifqVar10, zzifhVarZzc2, zzifhVarZzc3, zzifqVar11);
+        this.zzt = zzgclVarZza;
+        zzifq zzifqVarZza = zzifg.zza(zzgbj.zza(zzifhVarZza4));
+        this.zzu = zzifqVarZza;
+        zzgdn zzgdnVarZza = zzgdn.zza(zzifhVarZza2, zzifqVar10, zzifqVarZza, zzifhVarZzc2, zzifqVar11);
+        this.zzv = zzgdnVarZza;
+        zzifs zzifsVarZza2 = zzift.zza(11, 0);
+        zzifsVarZza2.zza(zzgctVarZza);
+        zzifsVarZza2.zza(zzgcrVarZza);
+        zzifsVarZza2.zza(zzgcvVarZza);
+        zzifsVarZza2.zza(zzgclVarZza);
+        zzifsVarZza2.zza(zzgdnVarZza);
+        zzifsVarZza2.zza(zzgdjVarZza);
+        zzifsVarZza2.zza(zzgcxVarZza);
+        zzifsVarZza2.zza(zzgdfVarZza);
+        zzifsVarZza2.zza(zzgcpVarZza);
+        zzifsVarZza2.zza(zzgdbVarZza);
+        zzifsVarZza2.zza(zzgddVarZza);
+        zzift zziftVarZzc2 = zzifsVarZza2.zzc();
+        this.zzw = zziftVarZzc2;
+        zzgdl zzgdlVarZza = zzgdl.zza(zzifhVarZza2, zzfyfVar.zzb, zzifhVarZza3, zzifqVarZza, zzfxzVar.zzr);
+        this.zzx = zzgdlVarZza;
+        zzifs zzifsVarZza3 = zzift.zza(12, 0);
+        zzifsVarZza3.zza(zzgctVarZza);
+        zzifsVarZza3.zza(zzgcrVarZza);
+        zzifsVarZza3.zza(zzgcvVarZza);
+        zzifsVarZza3.zza(zzgclVarZza);
+        zzifsVarZza3.zza(zzgdnVarZza);
+        zzifsVarZza3.zza(zzgdjVarZza);
+        zzifsVarZza3.zza(zzgcxVarZza);
+        zzifsVarZza3.zza(zzgdfVarZza);
+        zzifsVarZza3.zza(zzgcpVarZza);
+        zzifsVarZza3.zza(zzgdbVarZza);
+        zzifsVarZza3.zza(zzgddVarZza);
+        zzifsVarZza3.zza(zzgdlVarZza);
+        zzift zziftVarZzc3 = zzifsVarZza3.zzc();
+        this.zzy = zziftVarZzc3;
+        this.zzz = zzifg.zza(zzgbg.zza(zzfxzVar.zzu, zzfxzVar.zzD, zzfyfVar.zzb, zzifhVarZza, zzifhVarZzc, zzifhVarZza2, zziftVarZzc, zziftVarZzc2, zziftVarZzc3, zzfxzVar.zzr));
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgbi
+    public final zzgbf zza() {
+        return (zzgbf) this.zzz.zzb();
+    }
+}

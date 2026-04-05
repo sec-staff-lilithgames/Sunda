@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/gen_little_button_text_size"
+        android:textColor="@color/addmagic_text_color"
+        android:id="@+id/linkDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/addmagic_subtitle_margin_topbottom"
+        android:layout_marginBottom="@dimen/addmagic_subtitle_margin_topbottom"
+        android:text="Nom Actuel :"/>
+    <EditText
+        android:textSize="@dimen/gen_little_button_text_size"
+        android:textColor="@color/buttons_text_color"
+        android:id="@+id/linkEdit"
+        android:background="@drawable/background_textbox_soundlike"
+        android:paddingLeft="@dimen/editText_height_padding"
+        android:paddingRight="@dimen/editText_height_padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginBottom="@dimen/addMagic_editText_margin_bottom"
+        android:cursorVisible="true"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:textCursorDrawable="@null"/>
+    <TextView
+        android:textSize="@dimen/addMagix_explication_text_size"
+        android:textColor="@color/addmagic_text_color"
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

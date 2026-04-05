@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/titre"
+        android:layout_width="@dimen/logoWidth"
+        android:layout_height="@dimen/logoHeight"
+        android:layout_marginTop="@dimen/marginTopLogo"
+        android:src="@drawable/more_fun_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/accessoriesButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre"/>
+    <com.digidust.elokence.akinator.graphic.AkinatorSmallButton
+        android:textSize="@dimen/gen_little_button_text_size"
+        android:textColor="@color/black_color"
+        android:gravity="center"
+        android:id="@+id/accessoriesButton"
+        android:background="@drawable/gen_little_button"
+        android:layout_width="@dimen/gen_small_button_width"
+        android:layout_height="@dimen/gen_button_height"
+        android:layout_marginBottom="10dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:textSize="@dimen/post_home_defi_text_size"
+        android:textColor="@color/white"
+        android:id="@+id/textCustomizeTheGenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customize the Genie..."
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

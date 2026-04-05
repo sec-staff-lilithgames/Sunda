@@ -1,0 +1,293 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+
+package ac; // short for AppConsent
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto;proto";
+
+
+message Configuration {
+  // ISO3166 code
+  string fallback_language = 1;
+
+  // [MOB ONLY] Vendors being sold geolocalisation data. As Vendorlist.Vendor.id
+  repeated uint32 xchange_vendors = 2 [packed=false];
+
+  map<string, I18NString> texts = 3;
+
+  // [WEB ONLY]
+  string custom_css = 4;
+
+  // bool noSuccessScreen = 8;
+  bool useBanner = 9;
+  uint32 ctaLayout = 10;
+  bool useSuccessScreen = 11;
+
+  map<string, string> images = 12;
+  map<string, int32> actions = 13;
+  map<string, string> colors = 14;
+  map<string, bool> configs = 15;
+  // string target = 6;
+
+  // [WEB ONLY]
+  string custom_js = 16;
+  bool continue_without_accepting = 19;
+
+  // [WEB ONLY] Indicates if xhcange should be enabled.
+  bool xchange = 17;
+
+  enum EnumBannerMode {
+    BANNER = 0;
+    MODAL = 1;
+  }
+  EnumBannerMode bannerMode = 18;
+
+  bool use_ios_att = 20;
+
+  bool enableLegintOnRefuseAll = 21;
+
+  string custom_css_amp = 22;
+
+  enum CmpDisplayMode {
+    NEW_VISITOR = 0;
+    ALL_VISITOR = 1;
+  }
+  CmpDisplayMode cmp_display_mode = 23;
+
+  ConsentExpirations consent_expirations = 24;
+
+  bool highlight_accept_all_button = 25;
+  // enum EnumBannerType {
+  //   NONE = 0;
+  //   GEOLOCATION_AD = 1;
+  //   GEOLOCATION_MARKET = 2;
+  // }
+  // EnumBannerType banner_type = 7;
+  bool enable_illustrations = 26;
+  bool gcm_url_passthrough = 27;
+  bool gcm_ads_data_redaction = 28;
+  bool not_banner_display_purposes_list = 29;
+}
+message ConsentExpirations {
+    google.protobuf.Duration expiration_accept_all = 1;
+    google.protobuf.Duration expiration_refuse_all = 2;
+    google.protobuf.Duration expiration_mixed = 3;
+    google.protobuf.Duration expiration_continue_without_accepting = 4;
+}
+// Consent represents choices given by a User on a specific Vendorlist
+message Consent {
+  // iAB Consent string MUST be Service Specific in an AppConsent context.
+  // Therefore it only contains those two segments:
+  // [ Core String ].[ Publisher TC ]
+  string iab_cs = 1;
+
+  // Following fields are for AppConsent's Consents representation.
+  // Their values are AppConsent ids
+
+  // special_features IS DEPRECATED, it is a legacy value from when we wanted to stick to iAB's format
+  // TODO remove it
+  repeated uint32 special_features = 2 [packed=false];
+
+  // Don't be fooled by their name. purposes here ARE CONSENTABLES. So they hold
+  // purpose, special purpose, features and special features.
+  repeated uint32 purposes = 3 [packed=false];
+  repeated uint32 purposes_legint = 4 [packed=false];
+  // names of the purposes in default and user language
+  map<uint32, I18NString> purposes_names = 22;
+  // List of denied purposes (that is consentables minus purposes)
+  repeated uint32 purposes_denied = 23 [packed=false];
+  // List of listed purposes (that is consentables)
+  repeated uint32 purposes_listed = 24 [packed=false];
+  // List of mandatory purposes (that is list of special purposes and geatures)
+  repeated uint32 purposes_mandatory = 25 [packed=false];
+  repeated uint32 vendors = 5 [packed=false];
+  repeated uint32 vendors_legint = 6 [packed=false];
+
+  // See Vendorlist for meaning of this field.
+  uint32 cmp_version = 10;
+
+  // The user identifier.
+  string uuid = 11;
+
+  google.protobuf.Timestamp given_at = 12;
+
+  enum EnumConsentType {
+    ACCEPT_ALL = 0;
+    DENY_ALL = 1;
+    MIXED = 2;
+    CONTINUE_WITHOUT_ACCEPTING = 3;
+  }
+  EnumConsentType type = 13;
+
+  // See AP-982, uniq hash for CMP (crafted from configuration + vendorlist)
+  string cmp_hash = 14;
+  uint32 cmp_hash_version = 15;
+  map<string, string> external_ids = 16;
+
+  // Chainsaw optinnal id
+  string transaction_id = 17;
+  string block_id = 18;
+  reserved 19;
+  google.protobuf.Duration consent_expiration = 21;
+  /* Origin :
+     The purpose of this field is to have on consents the exact URL or package id of its origin
+     Value of this field come from : Package-Id header, Referer header or nothing
+     Warning : This field is written by collector only, its value is emptied on /save call
+   */
+  string origin = 20;
+}
+
+message ConsentFloatingExtraPurpose {
+  string extra_id = 1;
+  map<string, string> external_ids = 3;
+  uint32 version = 4;
+  google.protobuf.Timestamp given_at = 6;
+  string uuid = 7;
+  ConsentFloatingExtraPurposeType type = 2;
+}
+enum ConsentFloatingExtraPurposeType {
+  ConsentFloatingExtraPurposeType_UNKNOWN = 0;
+  ConsentFloatingExtraPurposeType_ACCEPT = 1;
+  ConsentFloatingExtraPurposeType_DENY = 2;
+}
+
+// Vendorlist defines the choices to be made on a CMP. It is built out of an
+// iAB GVL and AppConsent custom Vendors, Purposes and Features.
+message Vendorlist {
+  // iAB GVL number. Stacks, Vendors and Consentables with a iab_id, uses
+  // this iAB GVL as reference.
+  // Important: this not means the full GVL is here !
+  uint32 iab_gvl = 1;
+
+  message DataCategory {
+    uint32 id = 1;
+    I18NString name = 2;
+  }
+
+  // Consentable can be a Purpose, Feature, Special_*, and not iAB defined.
+  message Consentable {
+    // AppConsent identifier
+    uint32 id = 1;
+
+    // Set if Consentable is iAB defined
+    uint32 iab_id = 2;
+
+    string extra_id = 7;
+
+    I18NString name = 3;
+    I18NString description = 4;
+    I18NString description_legal = 5;
+
+    enum EnumConsentableType {
+      PURPOSE = 0; // Consentable
+      FEATURE = 1; // Mandatory
+      SPECIAL_FEATURE = 2; // Can be opted-in
+      SPECIAL_PURPOSE = 3; // Not consentable
+    }
+    EnumConsentableType type = 6;
+
+    I18NString illustrations = 8;
+    uint32 vendors_number = 9;
+  }
+  repeated Consentable consentables = 2;
+
+  // Vendor is defined by either iAB or AppConsent.
+  message Vendor {
+    reserved 8;
+
+    // AppConsent identifier
+    uint32 id = 1;
+
+    // Set if Vendor is iAB defined
+    uint32 iab_id = 2;
+
+    string name = 3;
+    string policy_url = 4;
+
+    string extra_id = 7;
+    uint32 google_atp_id = 12;
+
+    // uint32 cookie_max_age_seconds = 8;
+    bool uses_non_cookie_access = 9;
+    int64 cookie_max_age_seconds = 10;
+
+    // Please note the fields below are tied to the AppConsent id and not the
+    // iAB one.
+    repeated uint32 consentables = 5 [packed=false]; // Consentable.id
+    repeated uint32 legintables = 6 [packed=false]; // Consentable.id
+    repeated uint32 flexibles = 11 [packed=false]; // Consentable.id
+
+    message VendorUrl {
+      string privacy = 1;
+      string legint_claim = 2;
+    }
+    map<string, VendorUrl> urls = 13;
+
+    message DataRetention {
+      uint32 std_retention = 1;
+      map<string, uint32> purposes = 2;
+      map<string, uint32> special_purposes = 3;
+    }
+    DataRetention data_retention = 14;
+    repeated DataCategory data_categories = 15;
+    repeated uint32 data_declaration = 16;
+    bool cookie_refresh = 17;
+  }
+  repeated Vendor vendors = 3;
+
+  // Always iAB
+  message Stack {
+    // AppConsent identifier
+    uint32 id = 1;
+
+    // Set if Stack is iAB defined
+    uint32 iab_id = 2;
+
+    I18NString name = 3;
+    I18NString description = 4;
+
+    repeated uint32 consentables = 5 [packed=false]; // Consentable.id, purposes and specialFeatures
+
+    uint32 vendors_number = 6;
+  }
+  repeated Stack stacks = 6;
+
+  /*
+  Following fields are needed for iAB ConsentString generation, and always here */
+  // 6 bits, max=63
+  uint32 tcf_policy_version = 11;
+  // ISO 3166-1 alpha-2
+  string publisher_cc = 12;
+  // see https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#what-are-publisher-restrictions
+  // Buffer representation of the Publisher Restrictions Section.
+  // First byte is the NumPubRestrictions one, mandatory at 0.
+  string publisher_restrictions = 13;
+
+  // Mobile fields
+  // Consentables AppConsent identifier lists
+  repeated uint32 geoloc_ad = 14 [packed=false];
+  repeated uint32 geoloc_market = 15 [packed=false];
+
+  string google_providers = 16;
+  // consent_lifetime is the time before consent expiration
+  uint32 consent_lifetime = 17;
+
+  bool remove_legintables = 18;
+
+  map<uint32, DataCategory> data_categories = 19;
+}
+
+// I18NString is an internationalized string value
+message I18NString {
+  // ISO3166 => translated string values
+  map<string, string> values = 1;
+}
+
+// Country from IP
+message Country {
+    // ISO 3166 country code
+    string code = 1;
+    // tells if the country is applying GDPR
+    bool gdpr = 2;
+}

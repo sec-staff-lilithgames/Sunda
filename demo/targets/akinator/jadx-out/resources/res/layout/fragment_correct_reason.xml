@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/gen_little_button_text_size"
+        android:textColor="@color/addmagic_text_color"
+        android:id="@+id/raisonCorrection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/addmagic_subtitle_margin_topbottom"
+        android:layout_marginBottom="@dimen/addmagic_subtitle_margin_topbottom"
+        android:text="Raison"/>
+    <RadioGroup
+        android:id="@+id/radioGroupCorrect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:textSize="@dimen/addMagic_button_text_size"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            android:id="@+id/radioCorrectionOrthographe"
+            android:background="@drawable/background_textbox_pressable"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/addMagicaddPhotoReasonHeight"
+            android:button="@color/transparent"
+            android:text="CORRECTION ORTHOGRAPHE"/>
+        <RadioButton
+            android:textSize="@dimen/addMagic_button_text_size"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            android:id="@+id/radioElementManquant"
+            android:background="@drawable/background_textbox_pressable"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/addMagicaddPhotoReasonHeight"
+            android:button="@color/transparent"
+            android:text="ELEMENT MANQUANT"/>
+        <RadioButton
+            android:textSize="@dimen/addMagic_button_text_size"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            android:id="@+id/radioPrecisionDescription"
+            android:background="@drawable/background_textbox_pressable"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/addMagicaddPhotoReasonHeight"
+            android:button="@color/transparent"
+            android:text="PRECISION DESCRIPTION"/>
+        <RadioButton
+            android:textSize="@dimen/addMagic_button_text_size"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            android:id="@+id/radioDescriptionErreur"
+            android:background="@drawable/background_textbox_pressable"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/addMagicaddPhotoReasonHeight"
+            android:button="@color/transparent"
+            android:text="ERREUR NOM OU DESCRIPTION"/>
+    </RadioGroup>
+</LinearLayout>

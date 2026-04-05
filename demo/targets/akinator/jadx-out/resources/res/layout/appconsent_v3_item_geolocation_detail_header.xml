@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent"
+    android:paddingTop="@dimen/appconsent_v3_padding_large"
+    android:paddingBottom="@dimen/appconsent_v3_padding_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/consentable_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appconsent_v3_margin_xxs"
+        android:maxWidth="@dimen/appconsent_v3_consentable_image_size_width"
+        android:layout_marginStart="@dimen/appconsent_v3_margin_small"
+        android:layout_marginEnd="@dimen/appconsent_v3_margin_small"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/appconsent_v3_text_size_textview_medium"
+        android:textColor="@color/appconsent_v3_dark_blue"
+        android:id="@+id/consentable_name"
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginEnd="@dimen/appconsent_v3_margin_small"/>
+    <com.sfbx.appconsentv3.ui.view.SwitchView
+        android:id="@+id/consentable_switch"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

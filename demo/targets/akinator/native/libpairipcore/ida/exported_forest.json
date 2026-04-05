@@ -1,0 +1,2660 @@
+{
+  "roots": [
+    {
+      "root_ea": 402700,
+      "root_name": "pairip_export_execute_program",
+      "root_display_name": "pairip_export_execute_program",
+      "tree": {
+        "ea": 402700,
+        "name": "pairip_export_execute_program",
+        "display_name": "pairip_export_execute_program",
+        "label": "pairip_export_execute_program [0x6250c] export root / execute entry",
+        "children": [
+          {
+            "ea": 167388,
+            "name": "sub_28DDC",
+            "display_name": "sub_28DDC",
+            "label": "sub_28DDC [0x28ddc] (unknown)",
+            "children": [
+              {
+                "ea": 167324,
+                "name": "sub_28D9C",
+                "display_name": "sub_28D9C",
+                "label": "sub_28D9C [0x28d9c] (unknown)",
+                "children": [
+                  {
+                    "ea": 118224,
+                    "name": "sub_1CDD0",
+                    "display_name": "sub_1CDD0",
+                    "label": "sub_1CDD0 [0x1cdd0] (unknown)",
+                    "children": [],
+                    "termination": "leaf_no_callees"
+                  },
+                  {
+                    "ea": 167508,
+                    "name": "sub_28E54",
+                    "display_name": "sub_28E54",
+                    "label": "sub_28E54 [0x28e54] (unknown)",
+                    "children": [
+                      {
+                        "ea": 91700,
+                        "name": "sub_16634",
+                        "display_name": "sub_16634",
+                        "label": "sub_16634 [0x16634] (unknown)",
+                        "children": [
+                          {
+                            "ea": 117664,
+                            "name": "sub_1CBA0",
+                            "display_name": "sub_1CBA0",
+                            "label": "sub_1CBA0 [0x1cba0] (unknown)",
+                            "children": [
+                              {
+                                "ea": 91700,
+                                "name": "sub_16634",
+                                "display_name": "sub_16634",
+                                "label": "sub_16634 [0x16634] (unknown)",
+                                "children": [],
+                                "termination": "cycle_to_path"
+                              },
+                              {
+                                "ea": 117744,
+                                "name": "sub_1CBF0",
+                                "display_name": "sub_1CBF0",
+                                "label": "sub_1CBF0 [0x1cbf0] (unknown)",
+                                "children": [
+                                  {
+                                    "ea": 91700,
+                                    "name": "sub_16634",
+                                    "display_name": "sub_16634",
+                                    "label": "sub_16634 [0x16634] (unknown)",
+                                    "children": [],
+                                    "termination": "cycle_to_path"
+                                  },
+                                  {
+                                    "ea": 118720,
+                                    "name": "sub_1CFC0",
+                                    "display_name": "sub_1CFC0",
+                                    "label": "sub_1CFC0 [0x1cfc0] (unknown)",
+                                    "children": [
+                                      {
+                                        "ea": 542080,
+                                        "name": ".fwrite",
+                                        "display_name": ".fwrite",
+                                        "label": ".fwrite [0x84580] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542144,
+                                        "name": ".abort",
+                                        "display_name": ".abort",
+                                        "label": ".abort [0x845c0] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542288,
+                                        "name": ".openlog",
+                                        "display_name": ".openlog",
+                                        "label": ".openlog [0x84650] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542320,
+                                        "name": ".vasprintf",
+                                        "display_name": ".vasprintf",
+                                        "label": ".vasprintf [0x84670] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542384,
+                                        "name": ".vfprintf",
+                                        "display_name": ".vfprintf",
+                                        "label": ".vfprintf [0x846b0] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542464,
+                                        "name": ".closelog",
+                                        "display_name": ".closelog",
+                                        "label": ".closelog [0x84700] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542528,
+                                        "name": ".android_set_abort_message",
+                                        "display_name": ".android_set_abort_message",
+                                        "label": ".android_set_abort_message [0x84740] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542656,
+                                        "name": ".fputc",
+                                        "display_name": ".fputc",
+                                        "label": ".fputc [0x847c0] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542672,
+                                        "name": ".syslog",
+                                        "display_name": ".syslog",
+                                        "label": ".syslog [0x847d0] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      }
+                                    ],
+                                    "termination": "expanded"
+                                  },
+                                  {
+                                    "ea": 167588,
+                                    "name": "sub_28EA4",
+                                    "display_name": "sub_28EA4",
+                                    "label": "sub_28EA4 [0x28ea4] (unknown)",
+                                    "children": [
+                                      {
+                                        "ea": 91700,
+                                        "name": "sub_16634",
+                                        "display_name": "sub_16634",
+                                        "label": "sub_16634 [0x16634] (unknown)",
+                                        "children": [],
+                                        "termination": "cycle_to_path"
+                                      },
+                                      {
+                                        "ea": 117664,
+                                        "name": "sub_1CBA0",
+                                        "display_name": "sub_1CBA0",
+                                        "label": "sub_1CBA0 [0x1cba0] (unknown)",
+                                        "children": [],
+                                        "termination": "cycle_to_path"
+                                      },
+                                      {
+                                        "ea": 118120,
+                                        "name": "sub_1CD68",
+                                        "display_name": "sub_1CD68",
+                                        "label": "sub_1CD68 [0x1cd68] (unknown)",
+                                        "children": [
+                                          {
+                                            "ea": 171208,
+                                            "name": "sub_29CC8",
+                                            "display_name": "sub_29CC8",
+                                            "label": "sub_29CC8 [0x29cc8] (unknown)",
+                                            "children": [
+                                              {
+                                                "ea": 542064,
+                                                "name": ".pthread_mutex_lock",
+                                                "display_name": ".pthread_mutex_lock",
+                                                "label": ".pthread_mutex_lock [0x84570] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542112,
+                                                "name": ".pthread_mutex_unlock",
+                                                "display_name": ".pthread_mutex_unlock",
+                                                "label": ".pthread_mutex_unlock [0x845a0] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542128,
+                                                "name": ".memset",
+                                                "display_name": ".memset",
+                                                "label": ".memset [0x845b0] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542144,
+                                                "name": ".abort",
+                                                "display_name": ".abort",
+                                                "label": ".abort [0x845c0] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542352,
+                                                "name": ".memcpy",
+                                                "display_name": ".memcpy",
+                                                "label": ".memcpy [0x84690] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542400,
+                                                "name": ".pthread_setspecific",
+                                                "display_name": ".pthread_setspecific",
+                                                "label": ".pthread_setspecific [0x846c0] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542576,
+                                                "name": ".pthread_getspecific",
+                                                "display_name": ".pthread_getspecific",
+                                                "label": ".pthread_getspecific [0x84770] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542608,
+                                                "name": ".malloc",
+                                                "display_name": ".malloc",
+                                                "label": ".malloc [0x84790] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542688,
+                                                "name": ".realloc",
+                                                "display_name": ".realloc",
+                                                "label": ".realloc [0x847e0] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542800,
+                                                "name": ".pthread_once",
+                                                "display_name": ".pthread_once",
+                                                "label": ".pthread_once [0x84850] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              }
+                                            ],
+                                            "termination": "expanded"
+                                          }
+                                        ],
+                                        "termination": "expanded"
+                                      }
+                                    ],
+                                    "termination": "expanded"
+                                  }
+                                ],
+                                "termination": "expanded"
+                              },
+                              {
+                                "ea": 118156,
+                                "name": "sub_1CD8C",
+                                "display_name": "sub_1CD8C",
+                                "label": "sub_1CD8C [0x1cd8c] (unknown)",
+                                "children": [
+                                  {
+                                    "ea": 171208,
+                                    "name": "sub_29CC8",
+                                    "display_name": "sub_29CC8",
+                                    "label": "sub_29CC8 [0x29cc8] (unknown)",
+                                    "children": [],
+                                    "termination": "memoized_subtree"
+                                  }
+                                ],
+                                "termination": "expanded"
+                              },
+                              {
+                                "ea": 167472,
+                                "name": "sub_28E30",
+                                "display_name": "sub_28E30",
+                                "label": "sub_28E30 [0x28e30] (unknown)",
+                                "children": [],
+                                "termination": "leaf_no_callees"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 167588,
+                            "name": "sub_28EA4",
+                            "display_name": "sub_28EA4",
+                            "label": "sub_28EA4 [0x28ea4] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          }
+                        ],
+                        "termination": "expanded"
+                      },
+                      {
+                        "ea": 117664,
+                        "name": "sub_1CBA0",
+                        "display_name": "sub_1CBA0",
+                        "label": "sub_1CBA0 [0x1cba0] (unknown)",
+                        "children": [],
+                        "termination": "memoized_subtree"
+                      },
+                      {
+                        "ea": 168352,
+                        "name": "sub_291A0",
+                        "display_name": "sub_291A0",
+                        "label": "sub_291A0 [0x291a0] (unknown)",
+                        "children": [
+                          {
+                            "ea": 118720,
+                            "name": "sub_1CFC0",
+                            "display_name": "sub_1CFC0",
+                            "label": "sub_1CFC0 [0x1cfc0] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          },
+                          {
+                            "ea": 167404,
+                            "name": "sub_28DEC",
+                            "display_name": "sub_28DEC",
+                            "label": "sub_28DEC [0x28dec] (unknown)",
+                            "children": [
+                              {
+                                "ea": 542176,
+                                "name": ".posix_memalign",
+                                "display_name": ".posix_memalign",
+                                "label": ".posix_memalign [0x845e0] import",
+                                "children": [],
+                                "termination": "import_leaf"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 169068,
+                            "name": "sub_2946C",
+                            "display_name": "sub_2946C",
+                            "label": "sub_2946C [0x2946c] (unknown)",
+                            "children": [
+                              {
+                                "ea": 542112,
+                                "name": ".pthread_mutex_unlock",
+                                "display_name": ".pthread_mutex_unlock",
+                                "label": ".pthread_mutex_unlock [0x845a0] import",
+                                "children": [],
+                                "termination": "import_leaf"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 169104,
+                            "name": "sub_29490",
+                            "display_name": "sub_29490",
+                            "label": "sub_29490 [0x29490] (unknown)",
+                            "children": [],
+                            "termination": "leaf_no_callees"
+                          },
+                          {
+                            "ea": 542064,
+                            "name": ".pthread_mutex_lock",
+                            "display_name": ".pthread_mutex_lock",
+                            "label": ".pthread_mutex_lock [0x84570] import",
+                            "children": [],
+                            "termination": "import_leaf"
+                          }
+                        ],
+                        "termination": "expanded"
+                      },
+                      {
+                        "ea": 542128,
+                        "name": ".memset",
+                        "display_name": ".memset",
+                        "label": ".memset [0x845b0] import",
+                        "children": [],
+                        "termination": "import_leaf"
+                      }
+                    ],
+                    "termination": "expanded"
+                  },
+                  {
+                    "ea": 167932,
+                    "name": "sub_28FFC",
+                    "display_name": "sub_28FFC",
+                    "label": "sub_28FFC [0x28ffc] (unknown)",
+                    "children": [
+                      {
+                        "ea": 93356,
+                        "name": "sub_16CAC",
+                        "display_name": "sub_16CAC",
+                        "label": "sub_16CAC [0x16cac] (unknown)",
+                        "children": [
+                          {
+                            "ea": 93604,
+                            "name": "sub_16DA4",
+                            "display_name": "sub_16DA4",
+                            "label": "sub_16DA4 [0x16da4] (unknown)",
+                            "children": [
+                              {
+                                "ea": 95036,
+                                "name": "sub_1733C",
+                                "display_name": "sub_1733C",
+                                "label": "sub_1733C [0x1733c] (unknown)",
+                                "children": [],
+                                "termination": "leaf_no_callees"
+                              },
+                              {
+                                "ea": 95052,
+                                "name": "sub_1734C",
+                                "display_name": "sub_1734C",
+                                "label": "sub_1734C [0x1734c] (unknown)",
+                                "children": [],
+                                "termination": "leaf_no_callees"
+                              },
+                              {
+                                "ea": 95068,
+                                "name": "sub_1735C",
+                                "display_name": "sub_1735C",
+                                "label": "sub_1735C [0x1735c] (unknown)",
+                                "children": [
+                                  {
+                                    "ea": 97820,
+                                    "name": "sub_17E1C",
+                                    "display_name": "(module_walk_or_integrity_path)",
+                                    "label": "(module_walk_or_integrity_path) [0x17e1c] (high-value non-constructor)",
+                                    "children": [
+                                      {
+                                        "ea": 95700,
+                                        "name": "sub_175D4",
+                                        "display_name": "sub_175D4",
+                                        "label": "sub_175D4 [0x175d4] (unknown)",
+                                        "children": [
+                                          {
+                                            "ea": 96108,
+                                            "name": "sub_1776C",
+                                            "display_name": "sub_1776C",
+                                            "label": "sub_1776C [0x1776c] (unknown)",
+                                            "children": [
+                                              {
+                                                "ea": 103236,
+                                                "name": "sub_19344",
+                                                "display_name": "sub_19344",
+                                                "label": "sub_19344 [0x19344] (unknown)",
+                                                "children": [
+                                                  {
+                                                    "ea": 104144,
+                                                    "name": "sub_196D0",
+                                                    "display_name": "sub_196D0",
+                                                    "label": "sub_196D0 [0x196d0] (unknown)",
+                                                    "children": [
+                                                      {
+                                                        "ea": 541968,
+                                                        "name": ".fflush",
+                                                        "display_name": ".fflush",
+                                                        "label": ".fflush [0x84510] import",
+                                                        "children": [],
+                                                        "termination": "import_leaf"
+                                                      },
+                                                      {
+                                                        "ea": 542144,
+                                                        "name": ".abort",
+                                                        "display_name": ".abort",
+                                                        "label": ".abort [0x845c0] import",
+                                                        "children": [],
+                                                        "termination": "import_leaf"
+                                                      },
+                                                      {
+                                                        "ea": 542416,
+                                                        "name": ".fprintf",
+                                                        "display_name": ".fprintf",
+                                                        "label": ".fprintf [0x846d0] import",
+                                                        "children": [],
+                                                        "termination": "import_leaf"
+                                                      }
+                                                    ],
+                                                    "termination": "expanded"
+                                                  },
+                                                  {
+                                                    "ea": 541968,
+                                                    "name": ".fflush",
+                                                    "display_name": ".fflush",
+                                                    "label": ".fflush [0x84510] import",
+                                                    "children": [],
+                                                    "termination": "import_leaf"
+                                                  },
+                                                  {
+                                                    "ea": 542144,
+                                                    "name": ".abort",
+                                                    "display_name": ".abort",
+                                                    "label": ".abort [0x845c0] import",
+                                                    "children": [],
+                                                    "termination": "import_leaf"
+                                                  },
+                                                  {
+                                                    "ea": 542416,
+                                                    "name": ".fprintf",
+                                                    "display_name": ".fprintf",
+                                                    "label": ".fprintf [0x846d0] import",
+                                                    "children": [],
+                                                    "termination": "import_leaf"
+                                                  }
+                                                ],
+                                                "termination": "expanded"
+                                              },
+                                              {
+                                                "ea": 104144,
+                                                "name": "sub_196D0",
+                                                "display_name": "sub_196D0",
+                                                "label": "sub_196D0 [0x196d0] (unknown)",
+                                                "children": [],
+                                                "termination": "memoized_subtree"
+                                              },
+                                              {
+                                                "ea": 541968,
+                                                "name": ".fflush",
+                                                "display_name": ".fflush",
+                                                "label": ".fflush [0x84510] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542144,
+                                                "name": ".abort",
+                                                "display_name": ".abort",
+                                                "label": ".abort [0x845c0] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              },
+                                              {
+                                                "ea": 542416,
+                                                "name": ".fprintf",
+                                                "display_name": ".fprintf",
+                                                "label": ".fprintf [0x846d0] import",
+                                                "children": [],
+                                                "termination": "import_leaf"
+                                              }
+                                            ],
+                                            "termination": "expanded"
+                                          },
+                                          {
+                                            "ea": 103236,
+                                            "name": "sub_19344",
+                                            "display_name": "sub_19344",
+                                            "label": "sub_19344 [0x19344] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 104144,
+                                            "name": "sub_196D0",
+                                            "display_name": "sub_196D0",
+                                            "label": "sub_196D0 [0x196d0] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          }
+                                        ],
+                                        "termination": "expanded"
+                                      },
+                                      {
+                                        "ea": 99624,
+                                        "name": "sub_18528",
+                                        "display_name": "sub_18528",
+                                        "label": "sub_18528 [0x18528] (unknown)",
+                                        "children": [
+                                          {
+                                            "ea": 103236,
+                                            "name": "sub_19344",
+                                            "display_name": "sub_19344",
+                                            "label": "sub_19344 [0x19344] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 104144,
+                                            "name": "sub_196D0",
+                                            "display_name": "sub_196D0",
+                                            "label": "sub_196D0 [0x196d0] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 541968,
+                                            "name": ".fflush",
+                                            "display_name": ".fflush",
+                                            "label": ".fflush [0x84510] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542080,
+                                            "name": ".fwrite",
+                                            "display_name": ".fwrite",
+                                            "label": ".fwrite [0x84580] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542144,
+                                            "name": ".abort",
+                                            "display_name": ".abort",
+                                            "label": ".abort [0x845c0] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542352,
+                                            "name": ".memcpy",
+                                            "display_name": ".memcpy",
+                                            "label": ".memcpy [0x84690] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542416,
+                                            "name": ".fprintf",
+                                            "display_name": ".fprintf",
+                                            "label": ".fprintf [0x846d0] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          }
+                                        ],
+                                        "termination": "expanded"
+                                      },
+                                      {
+                                        "ea": 107100,
+                                        "name": "sub_1A25C",
+                                        "display_name": "sub_1A25C",
+                                        "label": "sub_1A25C [0x1a25c] (unknown)",
+                                        "children": [
+                                          {
+                                            "ea": 99624,
+                                            "name": "sub_18528",
+                                            "display_name": "sub_18528",
+                                            "label": "sub_18528 [0x18528] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 108428,
+                                            "name": "sub_1A78C",
+                                            "display_name": "sub_1A78C",
+                                            "label": "sub_1A78C [0x1a78c] (unknown)",
+                                            "children": [
+                                              {
+                                                "ea": 96108,
+                                                "name": "sub_1776C",
+                                                "display_name": "sub_1776C",
+                                                "label": "sub_1776C [0x1776c] (unknown)",
+                                                "children": [],
+                                                "termination": "memoized_subtree"
+                                              },
+                                              {
+                                                "ea": 103236,
+                                                "name": "sub_19344",
+                                                "display_name": "sub_19344",
+                                                "label": "sub_19344 [0x19344] (unknown)",
+                                                "children": [],
+                                                "termination": "memoized_subtree"
+                                              },
+                                              {
+                                                "ea": 104144,
+                                                "name": "sub_196D0",
+                                                "display_name": "sub_196D0",
+                                                "label": "sub_196D0 [0x196d0] (unknown)",
+                                                "children": [],
+                                                "termination": "memoized_subtree"
+                                              }
+                                            ],
+                                            "termination": "expanded"
+                                          },
+                                          {
+                                            "ea": 108884,
+                                            "name": "sub_1A954",
+                                            "display_name": "sub_1A954",
+                                            "label": "sub_1A954 [0x1a954] (unknown)",
+                                            "children": [
+                                              {
+                                                "ea": 95700,
+                                                "name": "sub_175D4",
+                                                "display_name": "sub_175D4",
+                                                "label": "sub_175D4 [0x175d4] (unknown)",
+                                                "children": [],
+                                                "termination": "memoized_subtree"
+                                              },
+                                              {
+                                                "ea": 103236,
+                                                "name": "sub_19344",
+                                                "display_name": "sub_19344",
+                                                "label": "sub_19344 [0x19344] (unknown)",
+                                                "children": [],
+                                                "termination": "memoized_subtree"
+                                              },
+                                              {
+                                                "ea": 108140,
+                                                "name": "sub_1A66C",
+                                                "display_name": "sub_1A66C",
+                                                "label": "sub_1A66C [0x1a66c] (unknown)",
+                                                "children": [
+                                                  {
+                                                    "ea": 103236,
+                                                    "name": "sub_19344",
+                                                    "display_name": "sub_19344",
+                                                    "label": "sub_19344 [0x19344] (unknown)",
+                                                    "children": [],
+                                                    "termination": "memoized_subtree"
+                                                  },
+                                                  {
+                                                    "ea": 541968,
+                                                    "name": ".fflush",
+                                                    "display_name": ".fflush",
+                                                    "label": ".fflush [0x84510] import",
+                                                    "children": [],
+                                                    "termination": "import_leaf"
+                                                  },
+                                                  {
+                                                    "ea": 542416,
+                                                    "name": ".fprintf",
+                                                    "display_name": ".fprintf",
+                                                    "label": ".fprintf [0x846d0] import",
+                                                    "children": [],
+                                                    "termination": "import_leaf"
+                                                  }
+                                                ],
+                                                "termination": "expanded"
+                                              },
+                                              {
+                                                "ea": 109244,
+                                                "name": "sub_1AABC",
+                                                "display_name": "sub_1AABC",
+                                                "label": "sub_1AABC [0x1aabc] (unknown)",
+                                                "children": [
+                                                  {
+                                                    "ea": 541968,
+                                                    "name": ".fflush",
+                                                    "display_name": ".fflush",
+                                                    "label": ".fflush [0x84510] import",
+                                                    "children": [],
+                                                    "termination": "import_leaf"
+                                                  },
+                                                  {
+                                                    "ea": 542144,
+                                                    "name": ".abort",
+                                                    "display_name": ".abort",
+                                                    "label": ".abort [0x845c0] import",
+                                                    "children": [],
+                                                    "termination": "import_leaf"
+                                                  },
+                                                  {
+                                                    "ea": 542416,
+                                                    "name": ".fprintf",
+                                                    "display_name": ".fprintf",
+                                                    "label": ".fprintf [0x846d0] import",
+                                                    "children": [],
+                                                    "termination": "import_leaf"
+                                                  }
+                                                ],
+                                                "termination": "expanded"
+                                              }
+                                            ],
+                                            "termination": "expanded"
+                                          },
+                                          {
+                                            "ea": 542128,
+                                            "name": ".memset",
+                                            "display_name": ".memset",
+                                            "label": ".memset [0x845b0] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542208,
+                                            "name": ".pthread_rwlock_rdlock",
+                                            "display_name": ".pthread_rwlock_rdlock",
+                                            "label": ".pthread_rwlock_rdlock [0x84600] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542304,
+                                            "name": ".pthread_rwlock_unlock",
+                                            "display_name": ".pthread_rwlock_unlock",
+                                            "label": ".pthread_rwlock_unlock [0x84660] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542352,
+                                            "name": ".memcpy",
+                                            "display_name": ".memcpy",
+                                            "label": ".memcpy [0x84690] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542432,
+                                            "name": ".pthread_rwlock_wrlock",
+                                            "display_name": ".pthread_rwlock_wrlock",
+                                            "label": ".pthread_rwlock_wrlock [0x846e0] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542592,
+                                            "name": ".free",
+                                            "display_name": ".free",
+                                            "label": ".free [0x84780] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          },
+                                          {
+                                            "ea": 542608,
+                                            "name": ".malloc",
+                                            "display_name": ".malloc",
+                                            "label": ".malloc [0x84790] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          }
+                                        ],
+                                        "termination": "expanded"
+                                      },
+                                      {
+                                        "ea": 541888,
+                                        "name": ".dl_iterate_phdr",
+                                        "display_name": ".dl_iterate_phdr",
+                                        "label": ".dl_iterate_phdr [0x844c0] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542128,
+                                        "name": ".memset",
+                                        "display_name": ".memset",
+                                        "label": ".memset [0x845b0] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542208,
+                                        "name": ".pthread_rwlock_rdlock",
+                                        "display_name": ".pthread_rwlock_rdlock",
+                                        "label": ".pthread_rwlock_rdlock [0x84600] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542272,
+                                        "name": ".__errno",
+                                        "display_name": ".__errno",
+                                        "label": ".__errno [0x84640] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542304,
+                                        "name": ".pthread_rwlock_unlock",
+                                        "display_name": ".pthread_rwlock_unlock",
+                                        "label": ".pthread_rwlock_unlock [0x84660] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      },
+                                      {
+                                        "ea": 542816,
+                                        "name": ".syscall",
+                                        "display_name": ".syscall",
+                                        "label": ".syscall [0x84860] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      }
+                                    ],
+                                    "termination": "expanded"
+                                  },
+                                  {
+                                    "ea": 542352,
+                                    "name": ".memcpy",
+                                    "display_name": ".memcpy",
+                                    "label": ".memcpy [0x84690] import",
+                                    "children": [],
+                                    "termination": "import_leaf"
+                                  }
+                                ],
+                                "termination": "expanded"
+                              },
+                              {
+                                "ea": 95236,
+                                "name": "sub_17404",
+                                "display_name": "sub_17404",
+                                "label": "sub_17404 [0x17404] (unknown)",
+                                "children": [],
+                                "termination": "leaf_no_callees"
+                              },
+                              {
+                                "ea": 95616,
+                                "name": "sub_17580",
+                                "display_name": "sub_17580",
+                                "label": "sub_17580 [0x17580] (unknown)",
+                                "children": [],
+                                "termination": "leaf_no_callees"
+                              },
+                              {
+                                "ea": 95636,
+                                "name": "sub_17594",
+                                "display_name": "sub_17594",
+                                "label": "sub_17594 [0x17594] (unknown)",
+                                "children": [],
+                                "termination": "leaf_no_callees"
+                              },
+                              {
+                                "ea": 541968,
+                                "name": ".fflush",
+                                "display_name": ".fflush",
+                                "label": ".fflush [0x84510] import",
+                                "children": [],
+                                "termination": "import_leaf"
+                              },
+                              {
+                                "ea": 542144,
+                                "name": ".abort",
+                                "display_name": ".abort",
+                                "label": ".abort [0x845c0] import",
+                                "children": [],
+                                "termination": "import_leaf"
+                              },
+                              {
+                                "ea": 542416,
+                                "name": ".fprintf",
+                                "display_name": ".fprintf",
+                                "label": ".fprintf [0x846d0] import",
+                                "children": [],
+                                "termination": "import_leaf"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 94880,
+                            "name": "sub_172A0",
+                            "display_name": "sub_172A0",
+                            "label": "sub_172A0 [0x172a0] (unknown)",
+                            "children": [],
+                            "termination": "leaf_no_callees"
+                          },
+                          {
+                            "ea": 95068,
+                            "name": "sub_1735C",
+                            "display_name": "sub_1735C",
+                            "label": "sub_1735C [0x1735c] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          },
+                          {
+                            "ea": 95236,
+                            "name": "sub_17404",
+                            "display_name": "sub_17404",
+                            "label": "sub_17404 [0x17404] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          },
+                          {
+                            "ea": 95596,
+                            "name": "sub_1756C",
+                            "display_name": "sub_1756C",
+                            "label": "sub_1756C [0x1756c] (unknown)",
+                            "children": [],
+                            "termination": "leaf_no_callees"
+                          },
+                          {
+                            "ea": 95636,
+                            "name": "sub_17594",
+                            "display_name": "sub_17594",
+                            "label": "sub_17594 [0x17594] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          }
+                        ],
+                        "termination": "expanded"
+                      },
+                      {
+                        "ea": 118120,
+                        "name": "sub_1CD68",
+                        "display_name": "sub_1CD68",
+                        "label": "sub_1CD68 [0x1cd68] (unknown)",
+                        "children": [],
+                        "termination": "memoized_subtree"
+                      },
+                      {
+                        "ea": 167780,
+                        "name": "sub_28F64",
+                        "display_name": "sub_28F64",
+                        "label": "sub_28F64 [0x28f64] (unknown)",
+                        "children": [
+                          {
+                            "ea": 117648,
+                            "name": "sub_1CB90",
+                            "display_name": "sub_1CB90",
+                            "label": "sub_1CB90 [0x1cb90] (unknown)",
+                            "children": [
+                              {
+                                "ea": 117792,
+                                "name": "sub_1CC20",
+                                "display_name": "sub_1CC20",
+                                "label": "sub_1CC20 [0x1cc20] (unknown)",
+                                "children": [],
+                                "termination": "leaf_no_callees"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 117728,
+                            "name": "sub_1CBE0",
+                            "display_name": "sub_1CBE0",
+                            "label": "sub_1CBE0 [0x1cbe0] (unknown)",
+                            "children": [
+                              {
+                                "ea": 117792,
+                                "name": "sub_1CC20",
+                                "display_name": "sub_1CC20",
+                                "label": "sub_1CC20 [0x1cc20] (unknown)",
+                                "children": [],
+                                "termination": "memoized_subtree"
+                              }
+                            ],
+                            "termination": "expanded"
+                          }
+                        ],
+                        "termination": "expanded"
+                      },
+                      {
+                        "ea": 168024,
+                        "name": "sub_29058",
+                        "display_name": "sub_29058",
+                        "label": "sub_29058 [0x29058] (unknown)",
+                        "children": [
+                          {
+                            "ea": 94780,
+                            "name": "sub_1723C",
+                            "display_name": "sub_1723C",
+                            "label": "sub_1723C [0x1723c] (unknown)",
+                            "children": [],
+                            "termination": "leaf_no_callees"
+                          },
+                          {
+                            "ea": 117744,
+                            "name": "sub_1CBF0",
+                            "display_name": "sub_1CBF0",
+                            "label": "sub_1CBF0 [0x1cbf0] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          },
+                          {
+                            "ea": 118156,
+                            "name": "sub_1CD8C",
+                            "display_name": "sub_1CD8C",
+                            "label": "sub_1CD8C [0x1cd8c] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          },
+                          {
+                            "ea": 167588,
+                            "name": "sub_28EA4",
+                            "display_name": "sub_28EA4",
+                            "label": "sub_28EA4 [0x28ea4] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          },
+                          {
+                            "ea": 167744,
+                            "name": "sub_28F40",
+                            "display_name": "sub_28F40",
+                            "label": "sub_28F40 [0x28f40] (unknown)",
+                            "children": [
+                              {
+                                "ea": 168768,
+                                "name": "sub_29340",
+                                "display_name": "sub_29340",
+                                "label": "sub_29340 [0x29340] (unknown)",
+                                "children": [
+                                  {
+                                    "ea": 169068,
+                                    "name": "sub_2946C",
+                                    "display_name": "sub_2946C",
+                                    "label": "sub_2946C [0x2946c] (unknown)",
+                                    "children": [],
+                                    "termination": "memoized_subtree"
+                                  },
+                                  {
+                                    "ea": 542064,
+                                    "name": ".pthread_mutex_lock",
+                                    "display_name": ".pthread_mutex_lock",
+                                    "label": ".pthread_mutex_lock [0x84570] import",
+                                    "children": [],
+                                    "termination": "import_leaf"
+                                  },
+                                  {
+                                    "ea": 542592,
+                                    "name": ".free",
+                                    "display_name": ".free",
+                                    "label": ".free [0x84780] import",
+                                    "children": [],
+                                    "termination": "import_leaf"
+                                  }
+                                ],
+                                "termination": "expanded"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 168768,
+                            "name": "sub_29340",
+                            "display_name": "sub_29340",
+                            "label": "sub_29340 [0x29340] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          },
+                          {
+                            "ea": 172848,
+                            "name": "sub_2A330",
+                            "display_name": "sub_2A330",
+                            "label": "sub_2A330 [0x2a330] (unknown)",
+                            "children": [],
+                            "termination": "leaf_no_callees"
+                          }
+                        ],
+                        "termination": "expanded"
+                      }
+                    ],
+                    "termination": "expanded"
+                  },
+                  {
+                    "ea": 542592,
+                    "name": ".free",
+                    "display_name": ".free",
+                    "label": ".free [0x84780] import",
+                    "children": [],
+                    "termination": "import_leaf"
+                  }
+                ],
+                "termination": "expanded"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 167396,
+            "name": "sub_28DE4",
+            "display_name": "sub_28DE4",
+            "label": "sub_28DE4 [0x28de4] (unknown)",
+            "children": [
+              {
+                "ea": 167324,
+                "name": "sub_28D9C",
+                "display_name": "sub_28D9C",
+                "label": "sub_28D9C [0x28d9c] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 171208,
+            "name": "sub_29CC8",
+            "display_name": "sub_29CC8",
+            "label": "sub_29CC8 [0x29cc8] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 172964,
+            "name": "sub_2A3A4",
+            "display_name": "sub_2A3A4",
+            "label": "sub_2A3A4 [0x2a3a4] (unknown)",
+            "children": [
+              {
+                "ea": 115356,
+                "name": "sub_1C29C",
+                "display_name": "sub_1C29C",
+                "label": "sub_1C29C [0x1c29c] (unknown)",
+                "children": [
+                  {
+                    "ea": 542144,
+                    "name": ".abort",
+                    "display_name": ".abort",
+                    "label": ".abort [0x845c0] import",
+                    "children": [],
+                    "termination": "import_leaf"
+                  },
+                  {
+                    "ea": 542288,
+                    "name": ".openlog",
+                    "display_name": ".openlog",
+                    "label": ".openlog [0x84650] import",
+                    "children": [],
+                    "termination": "import_leaf"
+                  },
+                  {
+                    "ea": 542320,
+                    "name": ".vasprintf",
+                    "display_name": ".vasprintf",
+                    "label": ".vasprintf [0x84670] import",
+                    "children": [],
+                    "termination": "import_leaf"
+                  },
+                  {
+                    "ea": 542384,
+                    "name": ".vfprintf",
+                    "display_name": ".vfprintf",
+                    "label": ".vfprintf [0x846b0] import",
+                    "children": [],
+                    "termination": "import_leaf"
+                  },
+                  {
+                    "ea": 542464,
+                    "name": ".closelog",
+                    "display_name": ".closelog",
+                    "label": ".closelog [0x84700] import",
+                    "children": [],
+                    "termination": "import_leaf"
+                  },
+                  {
+                    "ea": 542528,
+                    "name": ".android_set_abort_message",
+                    "display_name": ".android_set_abort_message",
+                    "label": ".android_set_abort_message [0x84740] import",
+                    "children": [],
+                    "termination": "import_leaf"
+                  },
+                  {
+                    "ea": 542672,
+                    "name": ".syslog",
+                    "display_name": ".syslog",
+                    "label": ".syslog [0x847d0] import",
+                    "children": [],
+                    "termination": "import_leaf"
+                  }
+                ],
+                "termination": "expanded"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 173284,
+            "name": "sub_2A4E4",
+            "display_name": "sub_2A4E4",
+            "label": "sub_2A4E4 [0x2a4e4] (unknown)",
+            "children": [
+              {
+                "ea": 172908,
+                "name": "sub_2A36C",
+                "display_name": "sub_2A36C",
+                "label": "sub_2A36C [0x2a36c] (unknown)",
+                "children": [
+                  {
+                    "ea": 115356,
+                    "name": "sub_1C29C",
+                    "display_name": "sub_1C29C",
+                    "label": "sub_1C29C [0x1c29c] (unknown)",
+                    "children": [],
+                    "termination": "memoized_subtree"
+                  }
+                ],
+                "termination": "expanded"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 390468,
+            "name": "sub_5F544",
+            "display_name": "sub_5F544",
+            "label": "sub_5F544 [0x5f544] (unknown)",
+            "children": [
+              {
+                "ea": 542224,
+                "name": ".__stack_chk_fail",
+                "display_name": ".__stack_chk_fail",
+                "label": ".__stack_chk_fail [0x84610] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 404804,
+            "name": "sub_62D44",
+            "display_name": "sub_62D44",
+            "label": "sub_62D44 [0x62d44] (unknown)",
+            "children": [
+              {
+                "ea": 542096,
+                "name": ".getpid",
+                "display_name": ".getpid",
+                "label": ".getpid [0x84590] import",
+                "children": [],
+                "termination": "import_leaf"
+              },
+              {
+                "ea": 542224,
+                "name": ".__stack_chk_fail",
+                "display_name": ".__stack_chk_fail",
+                "label": ".__stack_chk_fail [0x84610] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 506996,
+            "name": "sub_7BC74",
+            "display_name": "sub_7BC74",
+            "label": "sub_7BC74 [0x7bc74] (unknown)",
+            "children": [
+              {
+                "ea": 542224,
+                "name": ".__stack_chk_fail",
+                "display_name": ".__stack_chk_fail",
+                "label": ".__stack_chk_fail [0x84610] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 541604,
+            "name": "sub_843A4",
+            "display_name": "sub_843A4",
+            "label": "sub_843A4 [0x843a4] (unknown)",
+            "children": [
+              {
+                "ea": 117792,
+                "name": "sub_1CC20",
+                "display_name": "sub_1CC20",
+                "label": "sub_1CC20 [0x1cc20] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 167324,
+                "name": "sub_28D9C",
+                "display_name": "sub_28D9C",
+                "label": "sub_28D9C [0x28d9c] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 542608,
+                "name": ".malloc",
+                "display_name": ".malloc",
+                "label": ".malloc [0x84790] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 541684,
+            "name": "sub_843F4",
+            "display_name": "sub_843F4",
+            "label": "sub_843F4 [0x843f4] (unknown)",
+            "children": [
+              {
+                "ea": 541604,
+                "name": "sub_843A4",
+                "display_name": "sub_843A4",
+                "label": "sub_843A4 [0x843a4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 542224,
+            "name": ".__stack_chk_fail",
+            "display_name": ".__stack_chk_fail",
+            "label": ".__stack_chk_fail [0x84610] import",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542352,
+            "name": ".memcpy",
+            "display_name": ".memcpy",
+            "label": ".memcpy [0x84690] import",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542832,
+            "name": ".strlen",
+            "display_name": ".strlen",
+            "label": ".strlen [0x84870] import",
+            "children": [],
+            "termination": "import_leaf"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "pairip_export_execute_program [0x6250c] export root / execute entry",
+        "├── sub_28DDC [0x28ddc] (unknown)",
+        "│   └── sub_28D9C [0x28d9c] (unknown)",
+        "│       ├── sub_1CDD0 [0x1cdd0] (unknown)",
+        "│       ├── sub_28E54 [0x28e54] (unknown)",
+        "│       │   ├── sub_16634 [0x16634] (unknown)",
+        "│       │   │   ├── sub_1CBA0 [0x1cba0] (unknown)",
+        "│       │   │   │   ├── sub_16634 [0x16634] (unknown)",
+        "│       │   │   │   ├── sub_1CBF0 [0x1cbf0] (unknown)",
+        "│       │   │   │   │   ├── sub_16634 [0x16634] (unknown)",
+        "│       │   │   │   │   ├── sub_1CFC0 [0x1cfc0] (unknown)",
+        "│       │   │   │   │   │   ├── .fwrite [0x84580] import",
+        "│       │   │   │   │   │   ├── .abort [0x845c0] import",
+        "│       │   │   │   │   │   ├── .openlog [0x84650] import",
+        "│       │   │   │   │   │   ├── .vasprintf [0x84670] import",
+        "│       │   │   │   │   │   ├── .vfprintf [0x846b0] import",
+        "│       │   │   │   │   │   ├── .closelog [0x84700] import",
+        "│       │   │   │   │   │   ├── .android_set_abort_message [0x84740] import",
+        "│       │   │   │   │   │   ├── .fputc [0x847c0] import",
+        "│       │   │   │   │   │   └── .syslog [0x847d0] import",
+        "│       │   │   │   │   └── sub_28EA4 [0x28ea4] (unknown)",
+        "│       │   │   │   │       ├── sub_16634 [0x16634] (unknown)",
+        "│       │   │   │   │       ├── sub_1CBA0 [0x1cba0] (unknown)",
+        "│       │   │   │   │       └── sub_1CD68 [0x1cd68] (unknown)",
+        "│       │   │   │   │           └── sub_29CC8 [0x29cc8] (unknown)",
+        "│       │   │   │   │               ├── .pthread_mutex_lock [0x84570] import",
+        "│       │   │   │   │               ├── .pthread_mutex_unlock [0x845a0] import",
+        "│       │   │   │   │               ├── .memset [0x845b0] import",
+        "│       │   │   │   │               ├── .abort [0x845c0] import",
+        "│       │   │   │   │               ├── .memcpy [0x84690] import",
+        "│       │   │   │   │               ├── .pthread_setspecific [0x846c0] import",
+        "│       │   │   │   │               ├── .pthread_getspecific [0x84770] import",
+        "│       │   │   │   │               ├── .malloc [0x84790] import",
+        "│       │   │   │   │               ├── .realloc [0x847e0] import",
+        "│       │   │   │   │               └── .pthread_once [0x84850] import",
+        "│       │   │   │   ├── sub_1CD8C [0x1cd8c] (unknown)",
+        "│       │   │   │   │   └── sub_29CC8 [0x29cc8] (unknown)",
+        "│       │   │   │   └── sub_28E30 [0x28e30] (unknown)",
+        "│       │   │   └── sub_28EA4 [0x28ea4] (unknown)",
+        "│       │   ├── sub_1CBA0 [0x1cba0] (unknown)",
+        "│       │   ├── sub_291A0 [0x291a0] (unknown)",
+        "│       │   │   ├── sub_1CFC0 [0x1cfc0] (unknown)",
+        "│       │   │   ├── sub_28DEC [0x28dec] (unknown)",
+        "│       │   │   │   └── .posix_memalign [0x845e0] import",
+        "│       │   │   ├── sub_2946C [0x2946c] (unknown)",
+        "│       │   │   │   └── .pthread_mutex_unlock [0x845a0] import",
+        "│       │   │   ├── sub_29490 [0x29490] (unknown)",
+        "│       │   │   └── .pthread_mutex_lock [0x84570] import",
+        "│       │   └── .memset [0x845b0] import",
+        "│       ├── sub_28FFC [0x28ffc] (unknown)",
+        "│       │   ├── sub_16CAC [0x16cac] (unknown)",
+        "│       │   │   ├── sub_16DA4 [0x16da4] (unknown)",
+        "│       │   │   │   ├── sub_1733C [0x1733c] (unknown)",
+        "│       │   │   │   ├── sub_1734C [0x1734c] (unknown)",
+        "│       │   │   │   ├── sub_1735C [0x1735c] (unknown)",
+        "│       │   │   │   │   ├── (module_walk_or_integrity_path) [0x17e1c] (high-value non-constructor)",
+        "│       │   │   │   │   │   ├── sub_175D4 [0x175d4] (unknown)",
+        "│       │   │   │   │   │   │   ├── sub_1776C [0x1776c] (unknown)",
+        "│       │   │   │   │   │   │   │   ├── sub_19344 [0x19344] (unknown)",
+        "│       │   │   │   │   │   │   │   │   ├── sub_196D0 [0x196d0] (unknown)",
+        "│       │   │   │   │   │   │   │   │   │   ├── .fflush [0x84510] import",
+        "│       │   │   │   │   │   │   │   │   │   ├── .abort [0x845c0] import",
+        "│       │   │   │   │   │   │   │   │   │   └── .fprintf [0x846d0] import",
+        "│       │   │   │   │   │   │   │   │   ├── .fflush [0x84510] import",
+        "│       │   │   │   │   │   │   │   │   ├── .abort [0x845c0] import",
+        "│       │   │   │   │   │   │   │   │   └── .fprintf [0x846d0] import",
+        "│       │   │   │   │   │   │   │   ├── sub_196D0 [0x196d0] (unknown)",
+        "│       │   │   │   │   │   │   │   ├── .fflush [0x84510] import",
+        "│       │   │   │   │   │   │   │   ├── .abort [0x845c0] import",
+        "│       │   │   │   │   │   │   │   └── .fprintf [0x846d0] import",
+        "│       │   │   │   │   │   │   ├── sub_19344 [0x19344] (unknown)",
+        "│       │   │   │   │   │   │   └── sub_196D0 [0x196d0] (unknown)",
+        "│       │   │   │   │   │   ├── sub_18528 [0x18528] (unknown)",
+        "│       │   │   │   │   │   │   ├── sub_19344 [0x19344] (unknown)",
+        "│       │   │   │   │   │   │   ├── sub_196D0 [0x196d0] (unknown)",
+        "│       │   │   │   │   │   │   ├── .fflush [0x84510] import",
+        "│       │   │   │   │   │   │   ├── .fwrite [0x84580] import",
+        "│       │   │   │   │   │   │   ├── .abort [0x845c0] import",
+        "│       │   │   │   │   │   │   ├── .memcpy [0x84690] import",
+        "│       │   │   │   │   │   │   └── .fprintf [0x846d0] import",
+        "│       │   │   │   │   │   ├── sub_1A25C [0x1a25c] (unknown)",
+        "│       │   │   │   │   │   │   ├── sub_18528 [0x18528] (unknown)",
+        "│       │   │   │   │   │   │   ├── sub_1A78C [0x1a78c] (unknown)",
+        "│       │   │   │   │   │   │   │   ├── sub_1776C [0x1776c] (unknown)",
+        "│       │   │   │   │   │   │   │   ├── sub_19344 [0x19344] (unknown)",
+        "│       │   │   │   │   │   │   │   └── sub_196D0 [0x196d0] (unknown)",
+        "│       │   │   │   │   │   │   ├── sub_1A954 [0x1a954] (unknown)",
+        "│       │   │   │   │   │   │   │   ├── sub_175D4 [0x175d4] (unknown)",
+        "│       │   │   │   │   │   │   │   ├── sub_19344 [0x19344] (unknown)",
+        "│       │   │   │   │   │   │   │   ├── sub_1A66C [0x1a66c] (unknown)",
+        "│       │   │   │   │   │   │   │   │   ├── sub_19344 [0x19344] (unknown)",
+        "│       │   │   │   │   │   │   │   │   ├── .fflush [0x84510] import",
+        "│       │   │   │   │   │   │   │   │   └── .fprintf [0x846d0] import",
+        "│       │   │   │   │   │   │   │   └── sub_1AABC [0x1aabc] (unknown)",
+        "│       │   │   │   │   │   │   │       ├── .fflush [0x84510] import",
+        "│       │   │   │   │   │   │   │       ├── .abort [0x845c0] import",
+        "│       │   │   │   │   │   │   │       └── .fprintf [0x846d0] import",
+        "│       │   │   │   │   │   │   ├── .memset [0x845b0] import",
+        "│       │   │   │   │   │   │   ├── .pthread_rwlock_rdlock [0x84600] import",
+        "│       │   │   │   │   │   │   ├── .pthread_rwlock_unlock [0x84660] import",
+        "│       │   │   │   │   │   │   ├── .memcpy [0x84690] import",
+        "│       │   │   │   │   │   │   ├── .pthread_rwlock_wrlock [0x846e0] import",
+        "│       │   │   │   │   │   │   ├── .free [0x84780] import",
+        "│       │   │   │   │   │   │   └── .malloc [0x84790] import",
+        "│       │   │   │   │   │   ├── .dl_iterate_phdr [0x844c0] import",
+        "│       │   │   │   │   │   ├── .memset [0x845b0] import",
+        "│       │   │   │   │   │   ├── .pthread_rwlock_rdlock [0x84600] import",
+        "│       │   │   │   │   │   ├── .__errno [0x84640] import",
+        "│       │   │   │   │   │   ├── .pthread_rwlock_unlock [0x84660] import",
+        "│       │   │   │   │   │   └── .syscall [0x84860] import",
+        "│       │   │   │   │   └── .memcpy [0x84690] import",
+        "│       │   │   │   ├── sub_17404 [0x17404] (unknown)",
+        "│       │   │   │   ├── sub_17580 [0x17580] (unknown)",
+        "│       │   │   │   ├── sub_17594 [0x17594] (unknown)",
+        "│       │   │   │   ├── .fflush [0x84510] import",
+        "│       │   │   │   ├── .abort [0x845c0] import",
+        "│       │   │   │   └── .fprintf [0x846d0] import",
+        "│       │   │   ├── sub_172A0 [0x172a0] (unknown)",
+        "│       │   │   ├── sub_1735C [0x1735c] (unknown)",
+        "│       │   │   ├── sub_17404 [0x17404] (unknown)",
+        "│       │   │   ├── sub_1756C [0x1756c] (unknown)",
+        "│       │   │   └── sub_17594 [0x17594] (unknown)",
+        "│       │   ├── sub_1CD68 [0x1cd68] (unknown)",
+        "│       │   ├── sub_28F64 [0x28f64] (unknown)",
+        "│       │   │   ├── sub_1CB90 [0x1cb90] (unknown)",
+        "│       │   │   │   └── sub_1CC20 [0x1cc20] (unknown)",
+        "│       │   │   └── sub_1CBE0 [0x1cbe0] (unknown)",
+        "│       │   │       └── sub_1CC20 [0x1cc20] (unknown)",
+        "│       │   └── sub_29058 [0x29058] (unknown)",
+        "│       │       ├── sub_1723C [0x1723c] (unknown)",
+        "│       │       ├── sub_1CBF0 [0x1cbf0] (unknown)",
+        "│       │       ├── sub_1CD8C [0x1cd8c] (unknown)",
+        "│       │       ├── sub_28EA4 [0x28ea4] (unknown)",
+        "│       │       ├── sub_28F40 [0x28f40] (unknown)",
+        "│       │       │   └── sub_29340 [0x29340] (unknown)",
+        "│       │       │       ├── sub_2946C [0x2946c] (unknown)",
+        "│       │       │       ├── .pthread_mutex_lock [0x84570] import",
+        "│       │       │       └── .free [0x84780] import",
+        "│       │       ├── sub_29340 [0x29340] (unknown)",
+        "│       │       └── sub_2A330 [0x2a330] (unknown)",
+        "│       └── .free [0x84780] import",
+        "├── sub_28DE4 [0x28de4] (unknown)",
+        "│   └── sub_28D9C [0x28d9c] (unknown)",
+        "├── sub_29CC8 [0x29cc8] (unknown)",
+        "├── sub_2A3A4 [0x2a3a4] (unknown)",
+        "│   └── sub_1C29C [0x1c29c] (unknown)",
+        "│       ├── .abort [0x845c0] import",
+        "│       ├── .openlog [0x84650] import",
+        "│       ├── .vasprintf [0x84670] import",
+        "│       ├── .vfprintf [0x846b0] import",
+        "│       ├── .closelog [0x84700] import",
+        "│       ├── .android_set_abort_message [0x84740] import",
+        "│       └── .syslog [0x847d0] import",
+        "├── sub_2A4E4 [0x2a4e4] (unknown)",
+        "│   └── sub_2A36C [0x2a36c] (unknown)",
+        "│       └── sub_1C29C [0x1c29c] (unknown)",
+        "├── sub_5F544 [0x5f544] (unknown)",
+        "│   └── .__stack_chk_fail [0x84610] import",
+        "├── sub_62D44 [0x62d44] (unknown)",
+        "│   ├── .getpid [0x84590] import",
+        "│   └── .__stack_chk_fail [0x84610] import",
+        "├── sub_7BC74 [0x7bc74] (unknown)",
+        "│   └── .__stack_chk_fail [0x84610] import",
+        "├── sub_843A4 [0x843a4] (unknown)",
+        "│   ├── sub_1CC20 [0x1cc20] (unknown)",
+        "│   ├── sub_28D9C [0x28d9c] (unknown)",
+        "│   └── .malloc [0x84790] import",
+        "├── sub_843F4 [0x843f4] (unknown)",
+        "│   └── sub_843A4 [0x843a4] (unknown)",
+        "├── .__stack_chk_fail [0x84610] import",
+        "├── .memcpy [0x84690] import",
+        "└── .strlen [0x84870] import"
+      ],
+      "node_count": 172,
+      "direct_callee_count": 13
+    },
+    {
+      "root_ea": 525428,
+      "root_name": "pairip_jni_on_load",
+      "root_display_name": "pairip_jni_on_load",
+      "tree": {
+        "ea": 525428,
+        "name": "pairip_jni_on_load",
+        "display_name": "pairip_jni_on_load",
+        "label": "pairip_jni_on_load [0x80474] export root / JNI_OnLoad",
+        "children": [
+          {
+            "ea": 115792,
+            "name": "sub_1C450",
+            "display_name": "sub_1C450",
+            "label": "sub_1C450 [0x1c450] (unknown)",
+            "children": [
+              {
+                "ea": 114956,
+                "name": "sub_1C10C",
+                "display_name": "sub_1C10C",
+                "label": "sub_1C10C [0x1c10c] (unknown)",
+                "children": [
+                  {
+                    "ea": 114988,
+                    "name": "sub_1C12C",
+                    "display_name": "sub_1C12C",
+                    "label": "sub_1C12C [0x1c12c] (unknown)",
+                    "children": [
+                      {
+                        "ea": 94204,
+                        "name": "sub_16FFC",
+                        "display_name": "sub_16FFC",
+                        "label": "sub_16FFC [0x16ffc] (unknown)",
+                        "children": [
+                          {
+                            "ea": 93604,
+                            "name": "sub_16DA4",
+                            "display_name": "sub_16DA4",
+                            "label": "sub_16DA4 [0x16da4] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          },
+                          {
+                            "ea": 94336,
+                            "name": "sub_17080",
+                            "display_name": "sub_17080",
+                            "label": "sub_17080 [0x17080] (unknown)",
+                            "children": [
+                              {
+                                "ea": 95036,
+                                "name": "sub_1733C",
+                                "display_name": "sub_1733C",
+                                "label": "sub_1733C [0x1733c] (unknown)",
+                                "children": [],
+                                "termination": "memoized_subtree"
+                              },
+                              {
+                                "ea": 95052,
+                                "name": "sub_1734C",
+                                "display_name": "sub_1734C",
+                                "label": "sub_1734C [0x1734c] (unknown)",
+                                "children": [],
+                                "termination": "memoized_subtree"
+                              },
+                              {
+                                "ea": 95068,
+                                "name": "sub_1735C",
+                                "display_name": "sub_1735C",
+                                "label": "sub_1735C [0x1735c] (unknown)",
+                                "children": [],
+                                "termination": "memoized_subtree"
+                              },
+                              {
+                                "ea": 95616,
+                                "name": "sub_17580",
+                                "display_name": "sub_17580",
+                                "label": "sub_17580 [0x17580] (unknown)",
+                                "children": [],
+                                "termination": "memoized_subtree"
+                              },
+                              {
+                                "ea": 95636,
+                                "name": "sub_17594",
+                                "display_name": "sub_17594",
+                                "label": "sub_17594 [0x17594] (unknown)",
+                                "children": [],
+                                "termination": "memoized_subtree"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 94880,
+                            "name": "sub_172A0",
+                            "display_name": "sub_172A0",
+                            "label": "sub_172A0 [0x172a0] (unknown)",
+                            "children": [],
+                            "termination": "memoized_subtree"
+                          },
+                          {
+                            "ea": 541968,
+                            "name": ".fflush",
+                            "display_name": ".fflush",
+                            "label": ".fflush [0x84510] import",
+                            "children": [],
+                            "termination": "import_leaf"
+                          },
+                          {
+                            "ea": 542144,
+                            "name": ".abort",
+                            "display_name": ".abort",
+                            "label": ".abort [0x845c0] import",
+                            "children": [],
+                            "termination": "import_leaf"
+                          },
+                          {
+                            "ea": 542416,
+                            "name": ".fprintf",
+                            "display_name": ".fprintf",
+                            "label": ".fprintf [0x846d0] import",
+                            "children": [],
+                            "termination": "import_leaf"
+                          }
+                        ],
+                        "termination": "expanded"
+                      },
+                      {
+                        "ea": 114740,
+                        "name": "sub_1C034",
+                        "display_name": "sub_1C034",
+                        "label": "sub_1C034 [0x1c034] (unknown)",
+                        "children": [
+                          {
+                            "ea": 109988,
+                            "name": "sub_1ADA4",
+                            "display_name": "sub_1ADA4",
+                            "label": "sub_1ADA4 [0x1ada4] (unknown)",
+                            "children": [
+                              {
+                                "ea": 109812,
+                                "name": "sub_1ACF4",
+                                "display_name": "sub_1ACF4",
+                                "label": "sub_1ACF4 [0x1acf4] (unknown)",
+                                "children": [
+                                  {
+                                    "ea": 541604,
+                                    "name": "sub_843A4",
+                                    "display_name": "sub_843A4",
+                                    "label": "sub_843A4 [0x843a4] (unknown)",
+                                    "children": [],
+                                    "termination": "memoized_subtree"
+                                  },
+                                  {
+                                    "ea": 542352,
+                                    "name": ".memcpy",
+                                    "display_name": ".memcpy",
+                                    "label": ".memcpy [0x84690] import",
+                                    "children": [],
+                                    "termination": "import_leaf"
+                                  },
+                                  {
+                                    "ea": 542832,
+                                    "name": ".strlen",
+                                    "display_name": ".strlen",
+                                    "label": ".strlen [0x84870] import",
+                                    "children": [],
+                                    "termination": "import_leaf"
+                                  }
+                                ],
+                                "termination": "expanded"
+                              },
+                              {
+                                "ea": 110136,
+                                "name": "sub_1AE38",
+                                "display_name": "sub_1AE38",
+                                "label": "sub_1AE38 [0x1ae38] (unknown)",
+                                "children": [],
+                                "termination": "leaf_no_callees"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 110516,
+                            "name": "sub_1AFB4",
+                            "display_name": "sub_1AFB4",
+                            "label": "sub_1AFB4 [0x1afb4] (unknown)",
+                            "children": [
+                              {
+                                "ea": 167388,
+                                "name": "sub_28DDC",
+                                "display_name": "sub_28DDC",
+                                "label": "sub_28DDC [0x28ddc] (unknown)",
+                                "children": [],
+                                "termination": "memoized_subtree"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 112676,
+                            "name": "sub_1B824",
+                            "display_name": "sub_1B824",
+                            "label": "sub_1B824 [0x1b824] (unknown)",
+                            "children": [
+                              {
+                                "ea": 110624,
+                                "name": "sub_1B020",
+                                "display_name": "sub_1B020",
+                                "label": "sub_1B020 [0x1b020] (unknown)",
+                                "children": [
+                                  {
+                                    "ea": 110492,
+                                    "name": "sub_1AF9C",
+                                    "display_name": "sub_1AF9C",
+                                    "label": "sub_1AF9C [0x1af9c] (unknown)",
+                                    "children": [
+                                      {
+                                        "ea": 112592,
+                                        "name": "sub_1B7D0",
+                                        "display_name": "sub_1B7D0",
+                                        "label": "sub_1B7D0 [0x1b7d0] (unknown)",
+                                        "children": [
+                                          {
+                                            "ea": 94204,
+                                            "name": "sub_16FFC",
+                                            "display_name": "sub_16FFC",
+                                            "label": "sub_16FFC [0x16ffc] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 112960,
+                                            "name": "sub_1B940",
+                                            "display_name": "sub_1B940",
+                                            "label": "sub_1B940 [0x1b940] (unknown)",
+                                            "children": [
+                                              {
+                                                "ea": 109912,
+                                                "name": "sub_1AD58",
+                                                "display_name": "sub_1AD58",
+                                                "label": "sub_1AD58 [0x1ad58] (unknown)",
+                                                "children": [
+                                                  {
+                                                    "ea": 109812,
+                                                    "name": "sub_1ACF4",
+                                                    "display_name": "sub_1ACF4",
+                                                    "label": "sub_1ACF4 [0x1acf4] (unknown)",
+                                                    "children": [],
+                                                    "termination": "memoized_subtree"
+                                                  }
+                                                ],
+                                                "termination": "expanded"
+                                              }
+                                            ],
+                                            "termination": "expanded"
+                                          },
+                                          {
+                                            "ea": 167508,
+                                            "name": "sub_28E54",
+                                            "display_name": "sub_28E54",
+                                            "label": "sub_28E54 [0x28e54] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 167744,
+                                            "name": "sub_28F40",
+                                            "display_name": "sub_28F40",
+                                            "label": "sub_28F40 [0x28f40] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 167932,
+                                            "name": "sub_28FFC",
+                                            "display_name": "sub_28FFC",
+                                            "label": "sub_28FFC [0x28ffc] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          }
+                                        ],
+                                        "termination": "expanded"
+                                      }
+                                    ],
+                                    "termination": "expanded"
+                                  },
+                                  {
+                                    "ea": 112792,
+                                    "name": "sub_1B898",
+                                    "display_name": "sub_1B898",
+                                    "label": "sub_1B898 [0x1b898] (unknown)",
+                                    "children": [
+                                      {
+                                        "ea": 541604,
+                                        "name": "sub_843A4",
+                                        "display_name": "sub_843A4",
+                                        "label": "sub_843A4 [0x843a4] (unknown)",
+                                        "children": [],
+                                        "termination": "memoized_subtree"
+                                      }
+                                    ],
+                                    "termination": "expanded"
+                                  },
+                                  {
+                                    "ea": 113940,
+                                    "name": "sub_1BD14",
+                                    "display_name": "sub_1BD14",
+                                    "label": "sub_1BD14 [0x1bd14] (unknown)",
+                                    "children": [],
+                                    "termination": "leaf_no_callees"
+                                  },
+                                  {
+                                    "ea": 114048,
+                                    "name": "sub_1BD80",
+                                    "display_name": "sub_1BD80",
+                                    "label": "sub_1BD80 [0x1bd80] (unknown)",
+                                    "children": [],
+                                    "termination": "leaf_no_callees"
+                                  },
+                                  {
+                                    "ea": 114192,
+                                    "name": "sub_1BE10",
+                                    "display_name": "sub_1BE10",
+                                    "label": "sub_1BE10 [0x1be10] (unknown)",
+                                    "children": [],
+                                    "termination": "leaf_no_callees"
+                                  },
+                                  {
+                                    "ea": 542448,
+                                    "name": ".memmove",
+                                    "display_name": ".memmove",
+                                    "label": ".memmove [0x846f0] import",
+                                    "children": [],
+                                    "termination": "import_leaf"
+                                  }
+                                ],
+                                "termination": "expanded"
+                              },
+                              {
+                                "ea": 542832,
+                                "name": ".strlen",
+                                "display_name": ".strlen",
+                                "label": ".strlen [0x84870] import",
+                                "children": [],
+                                "termination": "import_leaf"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 114544,
+                            "name": "sub_1BF70",
+                            "display_name": "sub_1BF70",
+                            "label": "sub_1BF70 [0x1bf70] (unknown)",
+                            "children": [
+                              {
+                                "ea": 110516,
+                                "name": "sub_1AFB4",
+                                "display_name": "sub_1AFB4",
+                                "label": "sub_1AFB4 [0x1afb4] (unknown)",
+                                "children": [],
+                                "termination": "memoized_subtree"
+                              },
+                              {
+                                "ea": 112200,
+                                "name": "sub_1B648",
+                                "display_name": "sub_1B648",
+                                "label": "sub_1B648 [0x1b648] (unknown)",
+                                "children": [
+                                  {
+                                    "ea": 111236,
+                                    "name": "sub_1B284",
+                                    "display_name": "sub_1B284",
+                                    "label": "sub_1B284 [0x1b284] (unknown)",
+                                    "children": [
+                                      {
+                                        "ea": 110164,
+                                        "name": "sub_1AE54",
+                                        "display_name": "sub_1AE54",
+                                        "label": "sub_1AE54 [0x1ae54] (unknown)",
+                                        "children": [
+                                          {
+                                            "ea": 110492,
+                                            "name": "sub_1AF9C",
+                                            "display_name": "sub_1AF9C",
+                                            "label": "sub_1AF9C [0x1af9c] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 112792,
+                                            "name": "sub_1B898",
+                                            "display_name": "sub_1B898",
+                                            "label": "sub_1B898 [0x1b898] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 113908,
+                                            "name": "sub_1BCF4",
+                                            "display_name": "sub_1BCF4",
+                                            "label": "sub_1BCF4 [0x1bcf4] (unknown)",
+                                            "children": [],
+                                            "termination": "leaf_no_callees"
+                                          },
+                                          {
+                                            "ea": 167388,
+                                            "name": "sub_28DDC",
+                                            "display_name": "sub_28DDC",
+                                            "label": "sub_28DDC [0x28ddc] (unknown)",
+                                            "children": [],
+                                            "termination": "memoized_subtree"
+                                          },
+                                          {
+                                            "ea": 542448,
+                                            "name": ".memmove",
+                                            "display_name": ".memmove",
+                                            "label": ".memmove [0x846f0] import",
+                                            "children": [],
+                                            "termination": "import_leaf"
+                                          }
+                                        ],
+                                        "termination": "expanded"
+                                      },
+                                      {
+                                        "ea": 113960,
+                                        "name": "sub_1BD28",
+                                        "display_name": "sub_1BD28",
+                                        "label": "sub_1BD28 [0x1bd28] (unknown)",
+                                        "children": [],
+                                        "termination": "leaf_no_callees"
+                                      },
+                                      {
+                                        "ea": 113996,
+                                        "name": "sub_1BD4C",
+                                        "display_name": "sub_1BD4C",
+                                        "label": "sub_1BD4C [0x1bd4c] (unknown)",
+                                        "children": [],
+                                        "termination": "leaf_no_callees"
+                                      },
+                                      {
+                                        "ea": 114064,
+                                        "name": "sub_1BD90",
+                                        "display_name": "sub_1BD90",
+                                        "label": "sub_1BD90 [0x1bd90] (unknown)",
+                                        "children": [],
+                                        "termination": "leaf_no_callees"
+                                      },
+                                      {
+                                        "ea": 114096,
+                                        "name": "sub_1BDB0",
+                                        "display_name": "sub_1BDB0",
+                                        "label": "sub_1BDB0 [0x1bdb0] (unknown)",
+                                        "children": [],
+                                        "termination": "leaf_no_callees"
+                                      },
+                                      {
+                                        "ea": 542448,
+                                        "name": ".memmove",
+                                        "display_name": ".memmove",
+                                        "label": ".memmove [0x846f0] import",
+                                        "children": [],
+                                        "termination": "import_leaf"
+                                      }
+                                    ],
+                                    "termination": "expanded"
+                                  },
+                                  {
+                                    "ea": 114032,
+                                    "name": "sub_1BD70",
+                                    "display_name": "sub_1BD70",
+                                    "label": "sub_1BD70 [0x1bd70] (unknown)",
+                                    "children": [],
+                                    "termination": "leaf_no_callees"
+                                  },
+                                  {
+                                    "ea": 542832,
+                                    "name": ".strlen",
+                                    "display_name": ".strlen",
+                                    "label": ".strlen [0x84870] import",
+                                    "children": [],
+                                    "termination": "import_leaf"
+                                  }
+                                ],
+                                "termination": "expanded"
+                              },
+                              {
+                                "ea": 115188,
+                                "name": "sub_1C1F4",
+                                "display_name": "sub_1C1F4",
+                                "label": "sub_1C1F4 [0x1c1f4] (unknown)",
+                                "children": [
+                                  {
+                                    "ea": 111236,
+                                    "name": "sub_1B284",
+                                    "display_name": "sub_1B284",
+                                    "label": "sub_1B284 [0x1b284] (unknown)",
+                                    "children": [],
+                                    "termination": "memoized_subtree"
+                                  }
+                                ],
+                                "termination": "expanded"
+                              }
+                            ],
+                            "termination": "expanded"
+                          },
+                          {
+                            "ea": 115220,
+                            "name": "sub_1C214",
+                            "display_name": "sub_1C214",
+                            "label": "sub_1C214 [0x1c214] (unknown)",
+                            "children": [],
+                            "termination": "leaf_no_callees"
+                          }
+                        ],
+                        "termination": "expanded"
+                      },
+                      {
+                        "ea": 167508,
+                        "name": "sub_28E54",
+                        "display_name": "sub_28E54",
+                        "label": "sub_28E54 [0x28e54] (unknown)",
+                        "children": [],
+                        "termination": "memoized_subtree"
+                      },
+                      {
+                        "ea": 167744,
+                        "name": "sub_28F40",
+                        "display_name": "sub_28F40",
+                        "label": "sub_28F40 [0x28f40] (unknown)",
+                        "children": [],
+                        "termination": "memoized_subtree"
+                      },
+                      {
+                        "ea": 167932,
+                        "name": "sub_28FFC",
+                        "display_name": "sub_28FFC",
+                        "label": "sub_28FFC [0x28ffc] (unknown)",
+                        "children": [],
+                        "termination": "memoized_subtree"
+                      }
+                    ],
+                    "termination": "expanded"
+                  }
+                ],
+                "termination": "expanded"
+              },
+              {
+                "ea": 542064,
+                "name": ".pthread_mutex_lock",
+                "display_name": ".pthread_mutex_lock",
+                "label": ".pthread_mutex_lock [0x84570] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 115836,
+            "name": "sub_1C47C",
+            "display_name": "sub_1C47C",
+            "label": "sub_1C47C [0x1c47c] (unknown)",
+            "children": [
+              {
+                "ea": 542112,
+                "name": ".pthread_mutex_unlock",
+                "display_name": ".pthread_mutex_unlock",
+                "label": ".pthread_mutex_unlock [0x845a0] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 167388,
+            "name": "sub_28DDC",
+            "display_name": "sub_28DDC",
+            "label": "sub_28DDC [0x28ddc] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 167396,
+            "name": "sub_28DE4",
+            "display_name": "sub_28DE4",
+            "label": "sub_28DE4 [0x28de4] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 171208,
+            "name": "sub_29CC8",
+            "display_name": "sub_29CC8",
+            "label": "sub_29CC8 [0x29cc8] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 172964,
+            "name": "sub_2A3A4",
+            "display_name": "sub_2A3A4",
+            "label": "sub_2A3A4 [0x2a3a4] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 173284,
+            "name": "sub_2A4E4",
+            "display_name": "sub_2A4E4",
+            "label": "sub_2A4E4 [0x2a4e4] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 391816,
+            "name": "sub_5FA88",
+            "display_name": "sub_5FA88",
+            "label": "sub_5FA88 [0x5fa88] (unknown)",
+            "children": [
+              {
+                "ea": 167388,
+                "name": "sub_28DDC",
+                "display_name": "sub_28DDC",
+                "label": "sub_28DDC [0x28ddc] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 167396,
+                "name": "sub_28DE4",
+                "display_name": "sub_28DE4",
+                "label": "sub_28DE4 [0x28de4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 171208,
+                "name": "sub_29CC8",
+                "display_name": "sub_29CC8",
+                "label": "sub_29CC8 [0x29cc8] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 172964,
+                "name": "sub_2A3A4",
+                "display_name": "sub_2A3A4",
+                "label": "sub_2A3A4 [0x2a3a4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 404804,
+                "name": "sub_62D44",
+                "display_name": "sub_62D44",
+                "label": "sub_62D44 [0x62d44] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 541684,
+                "name": "sub_843F4",
+                "display_name": "sub_843F4",
+                "label": "sub_843F4 [0x843f4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 542224,
+                "name": ".__stack_chk_fail",
+                "display_name": ".__stack_chk_fail",
+                "label": ".__stack_chk_fail [0x84610] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 404804,
+            "name": "sub_62D44",
+            "display_name": "sub_62D44",
+            "label": "sub_62D44 [0x62d44] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 507936,
+            "name": "sub_7C020",
+            "display_name": "sub_7C020",
+            "label": "sub_7C020 [0x7c020] (unknown)",
+            "children": [
+              {
+                "ea": 167388,
+                "name": "sub_28DDC",
+                "display_name": "sub_28DDC",
+                "label": "sub_28DDC [0x28ddc] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 167396,
+                "name": "sub_28DE4",
+                "display_name": "sub_28DE4",
+                "label": "sub_28DE4 [0x28de4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 171208,
+                "name": "sub_29CC8",
+                "display_name": "sub_29CC8",
+                "label": "sub_29CC8 [0x29cc8] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 172964,
+                "name": "sub_2A3A4",
+                "display_name": "sub_2A3A4",
+                "label": "sub_2A3A4 [0x2a3a4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 404804,
+                "name": "sub_62D44",
+                "display_name": "sub_62D44",
+                "label": "sub_62D44 [0x62d44] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 541604,
+                "name": "sub_843A4",
+                "display_name": "sub_843A4",
+                "label": "sub_843A4 [0x843a4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 541684,
+                "name": "sub_843F4",
+                "display_name": "sub_843F4",
+                "label": "sub_843F4 [0x843f4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 542224,
+                "name": ".__stack_chk_fail",
+                "display_name": ".__stack_chk_fail",
+                "label": ".__stack_chk_fail [0x84610] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 537420,
+            "name": "sub_8334C",
+            "display_name": "sub_8334C",
+            "label": "sub_8334C [0x8334c] (unknown)",
+            "children": [
+              {
+                "ea": 167388,
+                "name": "sub_28DDC",
+                "display_name": "sub_28DDC",
+                "label": "sub_28DDC [0x28ddc] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 167396,
+                "name": "sub_28DE4",
+                "display_name": "sub_28DE4",
+                "label": "sub_28DE4 [0x28de4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 171208,
+                "name": "sub_29CC8",
+                "display_name": "sub_29CC8",
+                "label": "sub_29CC8 [0x29cc8] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 172964,
+                "name": "sub_2A3A4",
+                "display_name": "sub_2A3A4",
+                "label": "sub_2A3A4 [0x2a3a4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 404804,
+                "name": "sub_62D44",
+                "display_name": "sub_62D44",
+                "label": "sub_62D44 [0x62d44] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 541684,
+                "name": "sub_843F4",
+                "display_name": "sub_843F4",
+                "label": "sub_843F4 [0x843f4] (unknown)",
+                "children": [],
+                "termination": "memoized_subtree"
+              },
+              {
+                "ea": 542224,
+                "name": ".__stack_chk_fail",
+                "display_name": ".__stack_chk_fail",
+                "label": ".__stack_chk_fail [0x84610] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 541604,
+            "name": "sub_843A4",
+            "display_name": "sub_843A4",
+            "label": "sub_843A4 [0x843a4] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 541684,
+            "name": "sub_843F4",
+            "display_name": "sub_843F4",
+            "label": "sub_843F4 [0x843f4] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 542096,
+            "name": ".getpid",
+            "display_name": ".getpid",
+            "label": ".getpid [0x84590] import",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542224,
+            "name": ".__stack_chk_fail",
+            "display_name": ".__stack_chk_fail",
+            "label": ".__stack_chk_fail [0x84610] import",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542352,
+            "name": ".memcpy",
+            "display_name": ".memcpy",
+            "label": ".memcpy [0x84690] import",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542448,
+            "name": ".memmove",
+            "display_name": ".memmove",
+            "label": ".memmove [0x846f0] import",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542832,
+            "name": ".strlen",
+            "display_name": ".strlen",
+            "label": ".strlen [0x84870] import",
+            "children": [],
+            "termination": "import_leaf"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "pairip_jni_on_load [0x80474] export root / JNI_OnLoad",
+        "├── sub_1C450 [0x1c450] (unknown)",
+        "│   ├── sub_1C10C [0x1c10c] (unknown)",
+        "│   │   └── sub_1C12C [0x1c12c] (unknown)",
+        "│   │       ├── sub_16FFC [0x16ffc] (unknown)",
+        "│   │       │   ├── sub_16DA4 [0x16da4] (unknown)",
+        "│   │       │   ├── sub_17080 [0x17080] (unknown)",
+        "│   │       │   │   ├── sub_1733C [0x1733c] (unknown)",
+        "│   │       │   │   ├── sub_1734C [0x1734c] (unknown)",
+        "│   │       │   │   ├── sub_1735C [0x1735c] (unknown)",
+        "│   │       │   │   ├── sub_17580 [0x17580] (unknown)",
+        "│   │       │   │   └── sub_17594 [0x17594] (unknown)",
+        "│   │       │   ├── sub_172A0 [0x172a0] (unknown)",
+        "│   │       │   ├── .fflush [0x84510] import",
+        "│   │       │   ├── .abort [0x845c0] import",
+        "│   │       │   └── .fprintf [0x846d0] import",
+        "│   │       ├── sub_1C034 [0x1c034] (unknown)",
+        "│   │       │   ├── sub_1ADA4 [0x1ada4] (unknown)",
+        "│   │       │   │   ├── sub_1ACF4 [0x1acf4] (unknown)",
+        "│   │       │   │   │   ├── sub_843A4 [0x843a4] (unknown)",
+        "│   │       │   │   │   ├── .memcpy [0x84690] import",
+        "│   │       │   │   │   └── .strlen [0x84870] import",
+        "│   │       │   │   └── sub_1AE38 [0x1ae38] (unknown)",
+        "│   │       │   ├── sub_1AFB4 [0x1afb4] (unknown)",
+        "│   │       │   │   └── sub_28DDC [0x28ddc] (unknown)",
+        "│   │       │   ├── sub_1B824 [0x1b824] (unknown)",
+        "│   │       │   │   ├── sub_1B020 [0x1b020] (unknown)",
+        "│   │       │   │   │   ├── sub_1AF9C [0x1af9c] (unknown)",
+        "│   │       │   │   │   │   └── sub_1B7D0 [0x1b7d0] (unknown)",
+        "│   │       │   │   │   │       ├── sub_16FFC [0x16ffc] (unknown)",
+        "│   │       │   │   │   │       ├── sub_1B940 [0x1b940] (unknown)",
+        "│   │       │   │   │   │       │   └── sub_1AD58 [0x1ad58] (unknown)",
+        "│   │       │   │   │   │       │       └── sub_1ACF4 [0x1acf4] (unknown)",
+        "│   │       │   │   │   │       ├── sub_28E54 [0x28e54] (unknown)",
+        "│   │       │   │   │   │       ├── sub_28F40 [0x28f40] (unknown)",
+        "│   │       │   │   │   │       └── sub_28FFC [0x28ffc] (unknown)",
+        "│   │       │   │   │   ├── sub_1B898 [0x1b898] (unknown)",
+        "│   │       │   │   │   │   └── sub_843A4 [0x843a4] (unknown)",
+        "│   │       │   │   │   ├── sub_1BD14 [0x1bd14] (unknown)",
+        "│   │       │   │   │   ├── sub_1BD80 [0x1bd80] (unknown)",
+        "│   │       │   │   │   ├── sub_1BE10 [0x1be10] (unknown)",
+        "│   │       │   │   │   └── .memmove [0x846f0] import",
+        "│   │       │   │   └── .strlen [0x84870] import",
+        "│   │       │   ├── sub_1BF70 [0x1bf70] (unknown)",
+        "│   │       │   │   ├── sub_1AFB4 [0x1afb4] (unknown)",
+        "│   │       │   │   ├── sub_1B648 [0x1b648] (unknown)",
+        "│   │       │   │   │   ├── sub_1B284 [0x1b284] (unknown)",
+        "│   │       │   │   │   │   ├── sub_1AE54 [0x1ae54] (unknown)",
+        "│   │       │   │   │   │   │   ├── sub_1AF9C [0x1af9c] (unknown)",
+        "│   │       │   │   │   │   │   ├── sub_1B898 [0x1b898] (unknown)",
+        "│   │       │   │   │   │   │   ├── sub_1BCF4 [0x1bcf4] (unknown)",
+        "│   │       │   │   │   │   │   ├── sub_28DDC [0x28ddc] (unknown)",
+        "│   │       │   │   │   │   │   └── .memmove [0x846f0] import",
+        "│   │       │   │   │   │   ├── sub_1BD28 [0x1bd28] (unknown)",
+        "│   │       │   │   │   │   ├── sub_1BD4C [0x1bd4c] (unknown)",
+        "│   │       │   │   │   │   ├── sub_1BD90 [0x1bd90] (unknown)",
+        "│   │       │   │   │   │   ├── sub_1BDB0 [0x1bdb0] (unknown)",
+        "│   │       │   │   │   │   └── .memmove [0x846f0] import",
+        "│   │       │   │   │   ├── sub_1BD70 [0x1bd70] (unknown)",
+        "│   │       │   │   │   └── .strlen [0x84870] import",
+        "│   │       │   │   └── sub_1C1F4 [0x1c1f4] (unknown)",
+        "│   │       │   │       └── sub_1B284 [0x1b284] (unknown)",
+        "│   │       │   └── sub_1C214 [0x1c214] (unknown)",
+        "│   │       ├── sub_28E54 [0x28e54] (unknown)",
+        "│   │       ├── sub_28F40 [0x28f40] (unknown)",
+        "│   │       └── sub_28FFC [0x28ffc] (unknown)",
+        "│   └── .pthread_mutex_lock [0x84570] import",
+        "├── sub_1C47C [0x1c47c] (unknown)",
+        "│   └── .pthread_mutex_unlock [0x845a0] import",
+        "├── sub_28DDC [0x28ddc] (unknown)",
+        "├── sub_28DE4 [0x28de4] (unknown)",
+        "├── sub_29CC8 [0x29cc8] (unknown)",
+        "├── sub_2A3A4 [0x2a3a4] (unknown)",
+        "├── sub_2A4E4 [0x2a4e4] (unknown)",
+        "├── sub_5FA88 [0x5fa88] (unknown)",
+        "│   ├── sub_28DDC [0x28ddc] (unknown)",
+        "│   ├── sub_28DE4 [0x28de4] (unknown)",
+        "│   ├── sub_29CC8 [0x29cc8] (unknown)",
+        "│   ├── sub_2A3A4 [0x2a3a4] (unknown)",
+        "│   ├── sub_62D44 [0x62d44] (unknown)",
+        "│   ├── sub_843F4 [0x843f4] (unknown)",
+        "│   └── .__stack_chk_fail [0x84610] import",
+        "├── sub_62D44 [0x62d44] (unknown)",
+        "├── sub_7C020 [0x7c020] (unknown)",
+        "│   ├── sub_28DDC [0x28ddc] (unknown)",
+        "│   ├── sub_28DE4 [0x28de4] (unknown)",
+        "│   ├── sub_29CC8 [0x29cc8] (unknown)",
+        "│   ├── sub_2A3A4 [0x2a3a4] (unknown)",
+        "│   ├── sub_62D44 [0x62d44] (unknown)",
+        "│   ├── sub_843A4 [0x843a4] (unknown)",
+        "│   ├── sub_843F4 [0x843f4] (unknown)",
+        "│   └── .__stack_chk_fail [0x84610] import",
+        "├── sub_8334C [0x8334c] (unknown)",
+        "│   ├── sub_28DDC [0x28ddc] (unknown)",
+        "│   ├── sub_28DE4 [0x28de4] (unknown)",
+        "│   ├── sub_29CC8 [0x29cc8] (unknown)",
+        "│   ├── sub_2A3A4 [0x2a3a4] (unknown)",
+        "│   ├── sub_62D44 [0x62d44] (unknown)",
+        "│   ├── sub_843F4 [0x843f4] (unknown)",
+        "│   └── .__stack_chk_fail [0x84610] import",
+        "├── sub_843A4 [0x843a4] (unknown)",
+        "├── sub_843F4 [0x843f4] (unknown)",
+        "├── .getpid [0x84590] import",
+        "├── .__stack_chk_fail [0x84610] import",
+        "├── .memcpy [0x84690] import",
+        "├── .memmove [0x846f0] import",
+        "└── .strlen [0x84870] import"
+      ],
+      "node_count": 107,
+      "direct_callee_count": 18
+    },
+    {
+      "root_ea": 531656,
+      "root_name": "pairip_jni_on_unload",
+      "root_display_name": "pairip_jni_on_unload",
+      "tree": {
+        "ea": 531656,
+        "name": "pairip_jni_on_unload",
+        "display_name": "pairip_jni_on_unload",
+        "label": "pairip_jni_on_unload [0x81cc8] export root / JNI_OnUnload",
+        "children": [
+          {
+            "ea": 115792,
+            "name": "sub_1C450",
+            "display_name": "sub_1C450",
+            "label": "sub_1C450 [0x1c450] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 115836,
+            "name": "sub_1C47C",
+            "display_name": "sub_1C47C",
+            "label": "sub_1C47C [0x1c47c] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 171208,
+            "name": "sub_29CC8",
+            "display_name": "sub_29CC8",
+            "label": "sub_29CC8 [0x29cc8] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          },
+          {
+            "ea": 404804,
+            "name": "sub_62D44",
+            "display_name": "sub_62D44",
+            "label": "sub_62D44 [0x62d44] (unknown)",
+            "children": [],
+            "termination": "memoized_subtree"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "pairip_jni_on_unload [0x81cc8] export root / JNI_OnUnload",
+        "├── sub_1C450 [0x1c450] (unknown)",
+        "├── sub_1C47C [0x1c47c] (unknown)",
+        "├── sub_29CC8 [0x29cc8] (unknown)",
+        "└── sub_62D44 [0x62d44] (unknown)"
+      ],
+      "node_count": 5,
+      "direct_callee_count": 4
+    }
+  ]
+}

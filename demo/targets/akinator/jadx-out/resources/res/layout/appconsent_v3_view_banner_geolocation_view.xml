@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/geo_banner"
+    android:paddingTop="@dimen/appconsent_v3_padding_large"
+    android:paddingBottom="@dimen/appconsent_v3_padding_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatButton
+        android:enabled="false"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/geo_save"
+        android:paddingLeft="@dimen/appconsent_v3_padding_large"
+        android:paddingRight="@dimen/appconsent_v3_padding_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appconsent_save_button"
+        android:layout_marginStart="@dimen/appconsent_v3_margin_small"
+        android:layout_marginEnd="@dimen/appconsent_v3_margin_small"
+        android:paddingHorizontal="@dimen/appconsent_v3_padding_large"
+        style="@style/AppConsentV3Theme.Button"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

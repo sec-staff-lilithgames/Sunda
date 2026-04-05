@@ -1,0 +1,98 @@
+package com.google.android.exoplayer2.util;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes5.dex */
+public final class i implements Iterable {
+
+    /* renamed from: b, reason: collision with root package name */
+    public final Object f28464b = new Object();
+
+    /* renamed from: c, reason: collision with root package name */
+    public final HashMap f28465c = new HashMap();
+
+    /* renamed from: e, reason: collision with root package name */
+    public Set f28466e = Collections.EMPTY_SET;
+
+    /* renamed from: f, reason: collision with root package name */
+    public List f28467f = Collections.EMPTY_LIST;
+
+    public void add(Object obj) {
+        synchronized (this.f28464b) {
+            try {
+                ArrayList arrayList = new ArrayList(this.f28467f);
+                arrayList.add(obj);
+                this.f28467f = Collections.unmodifiableList(arrayList);
+                Integer num = (Integer) this.f28465c.get(obj);
+                if (num == null) {
+                    HashSet hashSet = new HashSet(this.f28466e);
+                    hashSet.add(obj);
+                    this.f28466e = Collections.unmodifiableSet(hashSet);
+                }
+                this.f28465c.put(obj, Integer.valueOf(num != null ? 1 + num.intValue() : 1));
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+    }
+
+    public int count(Object obj) {
+        int iIntValue;
+        synchronized (this.f28464b) {
+            try {
+                iIntValue = this.f28465c.containsKey(obj) ? ((Integer) this.f28465c.get(obj)).intValue() : 0;
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        return iIntValue;
+    }
+
+    public Set<Object> elementSet() {
+        Set<Object> set;
+        synchronized (this.f28464b) {
+            set = this.f28466e;
+        }
+        return set;
+    }
+
+    @Override // java.lang.Iterable
+    public Iterator<Object> iterator() {
+        Iterator<Object> it;
+        synchronized (this.f28464b) {
+            it = this.f28467f.iterator();
+        }
+        return it;
+    }
+
+    public void remove(Object obj) {
+        synchronized (this.f28464b) {
+            try {
+                Integer num = (Integer) this.f28465c.get(obj);
+                if (num == null) {
+                    return;
+                }
+                ArrayList arrayList = new ArrayList(this.f28467f);
+                arrayList.remove(obj);
+                this.f28467f = Collections.unmodifiableList(arrayList);
+                if (num.intValue() == 1) {
+                    this.f28465c.remove(obj);
+                    HashSet hashSet = new HashSet(this.f28466e);
+                    hashSet.remove(obj);
+                    this.f28466e = Collections.unmodifiableSet(hashSet);
+                } else {
+                    this.f28465c.put(obj, Integer.valueOf(num.intValue() - 1));
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+    }
+}

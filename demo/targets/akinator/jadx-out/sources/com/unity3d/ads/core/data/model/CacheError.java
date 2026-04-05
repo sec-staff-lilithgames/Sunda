@@ -1,0 +1,24 @@
+package com.unity3d.ads.core.data.model;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes8.dex */
+public enum CacheError {
+    FILE_IO_CREATE,
+    FILE_IO_ERROR,
+    FILE_NOT_FOUND,
+    FILE_ALREADY_CACHING,
+    NOT_CACHING,
+    JSON_ERROR,
+    NO_INTERNET,
+    MALFORMED_URL,
+    NETWORK_ERROR,
+    ILLEGAL_STATE,
+    INVALID_ARGUMENT,
+    UNSUPPORTED_ENCODING,
+    FILE_STATE_WRONG,
+    CACHE_DIRECTORY_NULL,
+    CACHE_DIRECTORY_TYPE_NULL,
+    CACHE_DIRECTORY_EXISTS,
+    CACHE_DIRECTORY_DOESNT_EXIST,
+    UNKNOWN_ERROR
+}

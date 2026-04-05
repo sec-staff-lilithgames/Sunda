@@ -1,0 +1,13 @@
+package g0;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes.dex */
+public interface v3 {
+    int getBottom(s2.e eVar);
+
+    int getLeft(s2.e eVar, s2.x xVar);
+
+    int getRight(s2.e eVar, s2.x xVar);
+
+    int getTop(s2.e eVar);
+}

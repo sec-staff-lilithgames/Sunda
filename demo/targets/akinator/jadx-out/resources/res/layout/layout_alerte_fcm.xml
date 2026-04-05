@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/custom_alert_rect"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Titre"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/titleFcmToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ALERT OK"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ALERT OK"/>
+    <Button
+        android:textColor="#ed6849"
+        android:id="@+id/okButton"
+        android:background="@drawable/button_soundlike"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="OK"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/titleJetonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ALERT OK"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ALERT OK"/>
+    <Button
+        android:textColor="#ed6849"
+        android:id="@+id/okButton2"
+        android:background="@drawable/button_soundlike"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="OK"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"/>
+</LinearLayout>

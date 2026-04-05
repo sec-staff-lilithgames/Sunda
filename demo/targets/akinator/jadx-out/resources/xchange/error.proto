@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto/xchange;proto_xchange";
+package xchange;
+
+enum ErrorCode {
+	UNKNOWN = 0;
+}
+
+message ErrorResponse {
+	ErrorCode code = 1;
+	string description = 2;
+}

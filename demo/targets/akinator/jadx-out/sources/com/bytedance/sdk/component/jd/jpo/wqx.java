@@ -1,0 +1,11 @@
+package com.bytedance.sdk.component.jd.jpo;
+
+import java.io.IOException;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes4.dex */
+public interface wqx {
+    void jpo(jd jdVar, oya oyaVar) throws IOException;
+
+    void jpo(jd jdVar, IOException iOException);
+}

@@ -1,0 +1,10 @@
+package yw;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes10.dex */
+public final class p0 extends i {
+    @Override // yw.i, yw.g
+    public boolean isEnd() {
+        return true;
+    }
+}

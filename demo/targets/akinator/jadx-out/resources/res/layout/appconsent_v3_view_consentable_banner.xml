@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout_consent_action_banner"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/separator"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        style="@style/AppConsentV3Theme.Separator"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:enabled="false"
+        android:id="@+id/button_save"
+        android:paddingLeft="@dimen/appconsent_v3_padding_large"
+        android:paddingRight="@dimen/appconsent_v3_padding_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/appconsent_v3_margin_xl"
+        android:layout_marginTop="@dimen/appconsent_v3_margin_small"
+        android:layout_marginRight="@dimen/appconsent_v3_margin_xl"
+        android:layout_marginBottom="@dimen/appconsent_v3_margin_small"
+        android:text="@string/appconsent_save_button"
+        android:layout_marginHorizontal="@dimen/appconsent_v3_margin_xl"
+        android:layout_marginVertical="@dimen/appconsent_v3_margin_small"
+        android:paddingHorizontal="@dimen/appconsent_v3_padding_large"
+        style="@style/AppConsentV3Theme.Button.Medium"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

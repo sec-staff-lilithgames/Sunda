@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/font_small"
+    android:textColor="#ffffff"
+    android:gravity="center"
+    android:layout_gravity="end"
+    android:background="@drawable/skip_reward_ripple_banner"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/skip_reward"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"/>

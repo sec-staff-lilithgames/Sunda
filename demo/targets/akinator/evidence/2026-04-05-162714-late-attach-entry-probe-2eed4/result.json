@@ -1,0 +1,145 @@
+{
+  "mode": "late_attach_entry_probe",
+  "package": "com.digidust.elokence.akinator.freemium",
+  "pre_attach_idle_seconds": 10,
+  "hold_seconds": 22,
+  "state_changes": [
+    {
+      "kind": "process_gone",
+      "t": 20.204
+    },
+    {
+      "kind": "session_detached",
+      "reason": "process-terminated",
+      "ts": 1775377666.740648,
+      "crash": {
+        "summary": "Crash(pid=27991, process_name=\"Thread-2\", summary=\"Bad access due to protection failure\", report=<1793 bytes>, parameters={})",
+        "report": "*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***\nBuild fingerprint: 'google/akita/akita:16/BP4A.260105.004.E1/14587043:user/release-keys'\nKernel Release: '6.1.145-android14-11-gc1de4747ac59-ab14219743'\nRevision: 'MP1.0'\nABI: 'arm64'\nTimestamp: 2026-04-05 16:27:45.842816375+0800\nProcess uptime: 32s\nExecutable: /system/bin/app_process64\nCmdline: com.digidust.elokence.akinator.freemium\npid: 27991, tid: 28009, name: Thread-2  >>> com.digidust.elokence.akinator.freemium <<<\nuid: 10437\ntagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)\npac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)\nesr: 0000000092000007 (Data Abort Exception 0x24)\nsignal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x0000007b0bf9a000 (read)\n    x0  b400007893519a20  x1  0000000000000000  x2  ffffffffffffffc1  x3  b40000789351e7c0\n    x4  b40000789351e801  x5  0000000000000004  x6  000000002d33762c  x7  00000000ffffff58\n    x8  b400007b0bf7f960  x9  01d8c9dbee85d14a  x10 b400007b0bf94bab  x11 0000000000005455\n    x12 0000000000005456  x13 0000000000000000  x14 0000000000000064  x15 b400007b0bf8a37f\n    x16 00000100000001b3  x17 0000007b22d2bb40  x18 00000077cd610000  x19 b400007893519a20\n    x20 000000000001a694  x21 0000000000004de1  x22 00000077cdaa7cf8  x23 000000000001a694\n    x24 00000000ecfc7ef6  x25 00000000000016ca  x26 000000005707dba7  x27 0000000012480015\n    x28 000000004a0ffd66  x29 0000000014116766\n    lr  0000007821192320  sp  00000077cdaa7180  pc  00000078211a046c  pst 0000000020001000\n    esr 0000000092000007\n1 total frames\nbacktrace:\n      #00 pc 000000000001746c  /data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/split_config.arm64_v8a.apk (offset 0x19c000)\n",
+        "parameters": {}
+      }
+    }
+  ],
+  "initial_pid": 27991,
+  "pre_attach_pid_samples": [
+    {
+      "t": 0.092,
+      "pid": "27991"
+    },
+    {
+      "t": 1.214,
+      "pid": "27991"
+    },
+    {
+      "t": 2.327,
+      "pid": "27991"
+    },
+    {
+      "t": 3.451,
+      "pid": "27991"
+    },
+    {
+      "t": 4.571,
+      "pid": "27991"
+    },
+    {
+      "t": 5.7,
+      "pid": "27991"
+    },
+    {
+      "t": 6.838,
+      "pid": "27991"
+    },
+    {
+      "t": 7.966,
+      "pid": "27991"
+    },
+    {
+      "t": 9.046,
+      "pid": "27991"
+    }
+  ],
+  "attach_pid": "27991",
+  "pid_samples": [
+    {
+      "t": 0.07,
+      "pid": "27991"
+    },
+    {
+      "t": 1.14,
+      "pid": "27991"
+    },
+    {
+      "t": 2.266,
+      "pid": "27991"
+    },
+    {
+      "t": 3.376,
+      "pid": "27991"
+    },
+    {
+      "t": 4.497,
+      "pid": "27991"
+    },
+    {
+      "t": 5.615,
+      "pid": "27991"
+    },
+    {
+      "t": 6.724,
+      "pid": "27991"
+    },
+    {
+      "t": 7.852,
+      "pid": "27991"
+    },
+    {
+      "t": 8.99,
+      "pid": "27991"
+    },
+    {
+      "t": 10.094,
+      "pid": "27991"
+    },
+    {
+      "t": 11.203,
+      "pid": "27991"
+    },
+    {
+      "t": 12.326,
+      "pid": "27991"
+    },
+    {
+      "t": 13.445,
+      "pid": "27991"
+    },
+    {
+      "t": 14.557,
+      "pid": "27991"
+    },
+    {
+      "t": 15.693,
+      "pid": "27991"
+    },
+    {
+      "t": 16.821,
+      "pid": "27991"
+    },
+    {
+      "t": 17.964,
+      "pid": "27991"
+    },
+    {
+      "t": 19.093,
+      "pid": "27991"
+    },
+    {
+      "t": 20.204,
+      "pid": ""
+    },
+    {
+      "t": 21.283,
+      "pid": "28790"
+    }
+  ],
+  "final_pid": "28790"
+}

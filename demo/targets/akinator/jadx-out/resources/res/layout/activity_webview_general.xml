@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/webviewCGV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/backButtonImage"
+        android:layout_width="@dimen/cancel_button_size"
+        android:layout_height="@dimen/cancel_button_size"
+        android:layout_marginLeft="@dimen/cancel_button_margin_left"
+        android:layout_marginTop="@dimen/classement_margin_top"
+        android:src="@drawable/cancel_button"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+</RelativeLayout>

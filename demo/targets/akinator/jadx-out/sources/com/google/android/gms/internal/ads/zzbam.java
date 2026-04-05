@@ -1,0 +1,34 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes6.dex */
+public class zzbam extends Binder implements IInterface {
+    public zzbam(String str) {
+        attachInterface(this, str);
+    }
+
+    @Override // android.os.Binder
+    public boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) throws RemoteException {
+        if (i10 <= 16777215) {
+            parcel.enforceInterface(getInterfaceDescriptor());
+        } else if (super.onTransact(i10, parcel, parcel2, i11)) {
+            return true;
+        }
+        return zzdi(i10, parcel, parcel2, i11);
+    }
+
+    public boolean zzdi(int i10, Parcel parcel, Parcel parcel2, int i11) throws RemoteException {
+        throw null;
+    }
+
+    @Override // android.os.IInterface
+    public IBinder asBinder() {
+        return this;
+    }
+}

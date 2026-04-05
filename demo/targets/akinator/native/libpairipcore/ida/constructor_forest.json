@@ -1,0 +1,366 @@
+{
+  "roots": [
+    {
+      "root_ea": 171956,
+      "root_name": "pairip_init_arch_gate",
+      "root_display_name": "pairip_init_arch_gate",
+      "tree": {
+        "ea": 171956,
+        "name": "pairip_init_arch_gate",
+        "display_name": "pairip_init_arch_gate",
+        "label": "pairip_init_arch_gate [0x29fb4] constructor / arch gate",
+        "children": [
+          {
+            "ea": 542336,
+            "name": "__system_property_get_plt",
+            "display_name": "__system_property_get_plt",
+            "label": "__system_property_get_plt [0x84680] import / system property read",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542720,
+            "name": "getauxval_plt",
+            "display_name": "getauxval_plt",
+            "label": "getauxval_plt [0x84800] import / auxv read",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542848,
+            "name": "strncmp_plt",
+            "display_name": "strncmp_plt",
+            "label": "strncmp_plt [0x84880] import / string compare",
+            "children": [],
+            "termination": "import_leaf"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "pairip_init_arch_gate [0x29fb4] constructor / arch gate",
+        "├── __system_property_get_plt [0x84680] import / system property read",
+        "├── getauxval_plt [0x84800] import / auxv read",
+        "└── strncmp_plt [0x84880] import / string compare"
+      ],
+      "node_count": 4
+    },
+    {
+      "root_ea": 172600,
+      "root_name": "pairip_init_hwcap_profile",
+      "root_display_name": "pairip_init_hwcap_profile",
+      "tree": {
+        "ea": 172600,
+        "name": "pairip_init_hwcap_profile",
+        "display_name": "pairip_init_hwcap_profile",
+        "label": "pairip_init_hwcap_profile [0x2a238] constructor / hwcap-profile init",
+        "children": [
+          {
+            "ea": 172108,
+            "name": "pairip_build_hwcap_feature_mask",
+            "display_name": "pairip_build_hwcap_feature_mask",
+            "label": "pairip_build_hwcap_feature_mask [0x2a04c] hwcap feature-mask builder",
+            "children": [],
+            "termination": "leaf_no_callees"
+          },
+          {
+            "ea": 542336,
+            "name": "__system_property_get_plt",
+            "display_name": "__system_property_get_plt",
+            "label": "__system_property_get_plt [0x84680] import / system property read",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542720,
+            "name": "getauxval_plt",
+            "display_name": "getauxval_plt",
+            "label": "getauxval_plt [0x84800] import / auxv read",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542848,
+            "name": "strncmp_plt",
+            "display_name": "strncmp_plt",
+            "label": "strncmp_plt [0x84880] import / string compare",
+            "children": [],
+            "termination": "import_leaf"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "pairip_init_hwcap_profile [0x2a238] constructor / hwcap-profile init",
+        "├── pairip_build_hwcap_feature_mask [0x2a04c] hwcap feature-mask builder",
+        "├── __system_property_get_plt [0x84680] import / system property read",
+        "├── getauxval_plt [0x84800] import / auxv read",
+        "└── strncmp_plt [0x84880] import / string compare"
+      ],
+      "node_count": 5
+    },
+    {
+      "root_ea": 173676,
+      "root_name": "sub_2A66C",
+      "root_display_name": "(init_table_blob_A)",
+      "tree": {
+        "ea": 173676,
+        "name": "sub_2A66C",
+        "display_name": "(init_table_blob_A)",
+        "label": "(init_table_blob_A) [0x2a66c] (constructor / init table blob A)",
+        "children": [
+          {
+            "ea": 173960,
+            "name": "sub_2A788",
+            "display_name": "(decode_or_expand_table_blob_A)",
+            "label": "(decode_or_expand_table_blob_A) [0x2a788] (table/blob transform A)",
+            "children": [
+              {
+                "ea": 174136,
+                "name": "sub_2A838",
+                "display_name": "(ptr_add_src_byte)",
+                "label": "(ptr_add_src_byte) [0x2a838] (pointer helper)",
+                "children": [],
+                "termination": "leaf_no_callees"
+              },
+              {
+                "ea": 174144,
+                "name": "sub_2A840",
+                "display_name": "(ptr_add_masked_index)",
+                "label": "(ptr_add_masked_index) [0x2a840] (pointer helper)",
+                "children": [],
+                "termination": "leaf_no_callees"
+              },
+              {
+                "ea": 174152,
+                "name": "sub_2A848",
+                "display_name": "(ptr_add_dst_byte)",
+                "label": "(ptr_add_dst_byte) [0x2a848] (pointer helper)",
+                "children": [],
+                "termination": "leaf_no_callees"
+              },
+              {
+                "ea": 174160,
+                "name": "sub_2A850",
+                "display_name": "(commit_table_blob_A)",
+                "label": "(commit_table_blob_A) [0x2a850] (table blob A commit)",
+                "children": [],
+                "termination": "leaf_no_callees"
+              },
+              {
+                "ea": 542224,
+                "name": ".__stack_chk_fail",
+                "display_name": ".__stack_chk_fail",
+                "label": ".__stack_chk_fail [0x84610] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 542224,
+            "name": ".__stack_chk_fail",
+            "display_name": ".__stack_chk_fail",
+            "label": ".__stack_chk_fail [0x84610] import",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542352,
+            "name": ".memcpy",
+            "display_name": ".memcpy",
+            "label": ".memcpy [0x84690] import",
+            "children": [],
+            "termination": "import_leaf"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "(init_table_blob_A) [0x2a66c] (constructor / init table blob A)",
+        "├── (decode_or_expand_table_blob_A) [0x2a788] (table/blob transform A)",
+        "│   ├── (ptr_add_src_byte) [0x2a838] (pointer helper)",
+        "│   ├── (ptr_add_masked_index) [0x2a840] (pointer helper)",
+        "│   ├── (ptr_add_dst_byte) [0x2a848] (pointer helper)",
+        "│   ├── (commit_table_blob_A) [0x2a850] (table blob A commit)",
+        "│   └── .__stack_chk_fail [0x84610] import",
+        "├── .__stack_chk_fail [0x84610] import",
+        "└── .memcpy [0x84690] import"
+      ],
+      "node_count": 9
+    },
+    {
+      "root_ea": 173776,
+      "root_name": "sub_2A6D0",
+      "root_display_name": "(init_table_blob_B)",
+      "tree": {
+        "ea": 173776,
+        "name": "sub_2A6D0",
+        "display_name": "(init_table_blob_B)",
+        "label": "(init_table_blob_B) [0x2a6d0] (constructor / init table blob B)",
+        "children": [
+          {
+            "ea": 179216,
+            "name": "sub_2BC10",
+            "display_name": "(decode_or_expand_table_blob_B)",
+            "label": "(decode_or_expand_table_blob_B) [0x2bc10] (table/blob transform B)",
+            "children": [
+              {
+                "ea": 174136,
+                "name": "sub_2A838",
+                "display_name": "(ptr_add_src_byte)",
+                "label": "(ptr_add_src_byte) [0x2a838] (pointer helper)",
+                "children": [],
+                "termination": "leaf_no_callees"
+              },
+              {
+                "ea": 174144,
+                "name": "sub_2A840",
+                "display_name": "(ptr_add_masked_index)",
+                "label": "(ptr_add_masked_index) [0x2a840] (pointer helper)",
+                "children": [],
+                "termination": "leaf_no_callees"
+              },
+              {
+                "ea": 174152,
+                "name": "sub_2A848",
+                "display_name": "(ptr_add_dst_byte)",
+                "label": "(ptr_add_dst_byte) [0x2a848] (pointer helper)",
+                "children": [],
+                "termination": "leaf_no_callees"
+              },
+              {
+                "ea": 179392,
+                "name": "sub_2BCC0",
+                "display_name": "(commit_table_blob_B)",
+                "label": "(commit_table_blob_B) [0x2bcc0] (table blob B commit)",
+                "children": [],
+                "termination": "leaf_no_callees"
+              },
+              {
+                "ea": 542224,
+                "name": ".__stack_chk_fail",
+                "display_name": ".__stack_chk_fail",
+                "label": ".__stack_chk_fail [0x84610] import",
+                "children": [],
+                "termination": "import_leaf"
+              }
+            ],
+            "termination": "expanded"
+          },
+          {
+            "ea": 542224,
+            "name": ".__stack_chk_fail",
+            "display_name": ".__stack_chk_fail",
+            "label": ".__stack_chk_fail [0x84610] import",
+            "children": [],
+            "termination": "import_leaf"
+          },
+          {
+            "ea": 542352,
+            "name": ".memcpy",
+            "display_name": ".memcpy",
+            "label": ".memcpy [0x84690] import",
+            "children": [],
+            "termination": "import_leaf"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "(init_table_blob_B) [0x2a6d0] (constructor / init table blob B)",
+        "├── (decode_or_expand_table_blob_B) [0x2bc10] (table/blob transform B)",
+        "│   ├── (ptr_add_src_byte) [0x2a838] (pointer helper)",
+        "│   ├── (ptr_add_masked_index) [0x2a840] (pointer helper)",
+        "│   ├── (ptr_add_dst_byte) [0x2a848] (pointer helper)",
+        "│   ├── (commit_table_blob_B) [0x2bcc0] (table blob B commit)",
+        "│   └── .__stack_chk_fail [0x84610] import",
+        "├── .__stack_chk_fail [0x84610] import",
+        "└── .memcpy [0x84690] import"
+      ],
+      "node_count": 9
+    },
+    {
+      "root_ea": 173876,
+      "root_name": "pairip_register_atexit_slot_0",
+      "root_display_name": "pairip_register_atexit_slot_0",
+      "tree": {
+        "ea": 173876,
+        "name": "pairip_register_atexit_slot_0",
+        "display_name": "pairip_register_atexit_slot_0",
+        "label": "pairip_register_atexit_slot_0 [0x2a734] constructor / atexit registration",
+        "children": [
+          {
+            "ea": 541856,
+            "name": ".__cxa_atexit",
+            "display_name": ".__cxa_atexit",
+            "label": ".__cxa_atexit [0x844a0] import",
+            "children": [],
+            "termination": "import_leaf"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "pairip_register_atexit_slot_0 [0x2a734] constructor / atexit registration",
+        "└── .__cxa_atexit [0x844a0] import"
+      ],
+      "node_count": 2
+    },
+    {
+      "root_ea": 173904,
+      "root_name": "pairip_register_atexit_slot_1",
+      "root_display_name": "pairip_register_atexit_slot_1",
+      "tree": {
+        "ea": 173904,
+        "name": "pairip_register_atexit_slot_1",
+        "display_name": "pairip_register_atexit_slot_1",
+        "label": "pairip_register_atexit_slot_1 [0x2a750] constructor / atexit registration",
+        "children": [
+          {
+            "ea": 541856,
+            "name": ".__cxa_atexit",
+            "display_name": ".__cxa_atexit",
+            "label": ".__cxa_atexit [0x844a0] import",
+            "children": [],
+            "termination": "import_leaf"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "pairip_register_atexit_slot_1 [0x2a750] constructor / atexit registration",
+        "└── .__cxa_atexit [0x844a0] import"
+      ],
+      "node_count": 2
+    },
+    {
+      "root_ea": 173932,
+      "root_name": "pairip_register_atexit_slot_2",
+      "root_display_name": "pairip_register_atexit_slot_2",
+      "tree": {
+        "ea": 173932,
+        "name": "pairip_register_atexit_slot_2",
+        "display_name": "pairip_register_atexit_slot_2",
+        "label": "pairip_register_atexit_slot_2 [0x2a76c] constructor / atexit registration",
+        "children": [
+          {
+            "ea": 541856,
+            "name": ".__cxa_atexit",
+            "display_name": ".__cxa_atexit",
+            "label": ".__cxa_atexit [0x844a0] import",
+            "children": [],
+            "termination": "import_leaf"
+          }
+        ],
+        "termination": "expanded"
+      },
+      "tree_lines": [
+        "pairip_register_atexit_slot_2 [0x2a76c] constructor / atexit registration",
+        "└── .__cxa_atexit [0x844a0] import"
+      ],
+      "node_count": 2
+    }
+  ]
+}

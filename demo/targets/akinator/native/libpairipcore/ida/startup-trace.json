@@ -1,0 +1,62 @@
+{
+  "baseline_no_debug": {
+    "pairip_load_ok": true,
+    "crash_signal": "SIGSEGV/SEGV_ACCERR",
+    "crash_pc": "0x000000000005d75c",
+    "tombstone_name": "tombstone_09",
+    "process_pid": 27217
+  },
+  "early_uprobe_events": [
+    {
+      "task": "inator.freemium",
+      "pid": 28156,
+      "cpu": 8,
+      "timestamp": 1318413.791135,
+      "event": "pairip_jni_on_load",
+      "ip": "0x7b66ea8474"
+    },
+    {
+      "task": "inator.freemium",
+      "pid": 28156,
+      "cpu": 8,
+      "timestamp": 1318413.795566,
+      "event": "pairip_vm_bridge",
+      "ip": "0x7b66e8ac78"
+    },
+    {
+      "task": "inator.freemium",
+      "pid": 28156,
+      "cpu": 8,
+      "timestamp": 1318413.795704,
+      "event": "pairip_dispatcher",
+      "ip": "0x7b66e7af20"
+    }
+  ],
+  "early_uprobe_order": [
+    "pairip_jni_on_load",
+    "pairip_vm_bridge",
+    "pairip_dispatcher"
+  ],
+  "early_uprobe_deltas_us": [
+    {
+      "from": "pairip_jni_on_load",
+      "to": "pairip_vm_bridge",
+      "delta_us": 4431.0
+    },
+    {
+      "from": "pairip_vm_bridge",
+      "to": "pairip_dispatcher",
+      "delta_us": 138.0
+    }
+  ],
+  "crash_pc_trace": {
+    "event_name": "pairip_crash_pc",
+    "hit_count": 311,
+    "first_timestamp": 1318392.155094,
+    "last_timestamp": 1318392.15534
+  },
+  "notes": [
+    "early uprobes were run without debugger attach and preserved the expected JNI_OnLoad -> VM bridge -> dispatcher sequence",
+    "crash-pc uprobes flood rapidly, consistent with repeated execution or looping at the crash address just before fatal termination"
+  ]
+}

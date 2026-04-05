@@ -1,0 +1,25 @@
+Database /Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so.i64 already exists.
+Do you want to overwrite it? -> ~L~oad existing
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  1507328   184 8192 allocating memory for b-tree...
+  2252800   275 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4022272            total memory allocated
+
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for ARM...Initializing processor module ARM...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'libpairipcore.so' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...

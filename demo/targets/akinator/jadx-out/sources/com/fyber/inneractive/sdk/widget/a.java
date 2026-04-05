@@ -1,0 +1,17 @@
+package com.fyber.inneractive.sdk.widget;
+
+import android.content.res.ColorStateList;
+import android.graphics.PorterDuff;
+import android.widget.ImageView;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes5.dex */
+public abstract class a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final PorterDuff.Mode f26999a = PorterDuff.Mode.SRC_IN;
+
+    public static void a(ImageView imageView, ColorStateList colorStateList) {
+        imageView.setImageTintList(colorStateList);
+    }
+}

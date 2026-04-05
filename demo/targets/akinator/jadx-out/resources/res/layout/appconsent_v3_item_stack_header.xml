@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_header_description"
+        android:padding="@dimen/appconsent_v3_padding_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppConsentV3Theme.TextView.Description"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingTop="@dimen/appconsent_v3_padding_xxl"
+        android:paddingBottom="@dimen/appconsent_v3_padding_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_vendor_global"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appconsent_notice_global_switch"
+            android:alpha="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/switch_stack_header"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/AppConsentV3Theme.TextView.Label.Switch"/>
+        <com.sfbx.appconsentv3.ui.view.SwitchView
+            android:id="@+id/switch_stack_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

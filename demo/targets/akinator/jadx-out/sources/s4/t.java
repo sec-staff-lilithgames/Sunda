@@ -1,0 +1,50 @@
+package s4;
+
+import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
+import androidx.emoji2.text.EmojiCompatInitializer;
+import androidx.lifecycle.b1;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes.dex */
+public final class t implements androidx.lifecycle.r {
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ androidx.lifecycle.k0 f85463b;
+
+    public t(EmojiCompatInitializer emojiCompatInitializer, androidx.lifecycle.k0 k0Var) {
+        this.f85463b = k0Var;
+    }
+
+    @Override // androidx.lifecycle.r
+    public /* bridge */ /* synthetic */ void onCreate(b1 b1Var) {
+        super.onCreate(b1Var);
+    }
+
+    @Override // androidx.lifecycle.r
+    public /* bridge */ /* synthetic */ void onDestroy(b1 b1Var) {
+        super.onDestroy(b1Var);
+    }
+
+    @Override // androidx.lifecycle.r
+    public /* bridge */ /* synthetic */ void onPause(b1 b1Var) {
+        super.onPause(b1Var);
+    }
+
+    @Override // androidx.lifecycle.r
+    public void onResume(b1 b1Var) {
+        (Build.VERSION.SDK_INT >= 28 ? a.createAsync(Looper.getMainLooper()) : new Handler(Looper.getMainLooper())).postDelayed(new x(), 500L);
+        this.f85463b.removeObserver(this);
+    }
+
+    @Override // androidx.lifecycle.r
+    public /* bridge */ /* synthetic */ void onStart(b1 b1Var) {
+        super.onStart(b1Var);
+    }
+
+    @Override // androidx.lifecycle.r
+    public /* bridge */ /* synthetic */ void onStop(b1 b1Var) {
+        super.onStop(b1Var);
+    }
+}

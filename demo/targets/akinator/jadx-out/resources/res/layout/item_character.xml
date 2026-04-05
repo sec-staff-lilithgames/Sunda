@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_character"
+    android:background="@drawable/background_textarea_normal"
+    android:paddingLeft="@dimen/soundlike2_item_padding_leftright"
+    android:paddingTop="@dimen/soundlike2_item_padding_topbottom"
+    android:paddingRight="@dimen/soundlike2_item_padding_leftright"
+    android:paddingBottom="@dimen/soundlike2_item_padding_topbottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="@dimen/soundlike2_item_image_height"
+        android:layout_height="@dimen/soundlike2_item_image_height"
+        android:scaleType="centerInside"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/soundlike2_item_text_margin_left"
+        android:layout_toRightOf="@+id/imageResult"
+        android:layout_centerVertical="true">
+        <TextView
+            android:textSize="@dimen/soundlike_item_name"
+            android:textColor="@color/soundlike_item_name"
+            android:ellipsize="end"
+            android:id="@+id/character_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:text="Name super super long long long long long long"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/soundlike_item_description"
+            android:textColor="@color/soundlike_item_description"
+            android:ellipsize="end"
+            android:id="@+id/character_description"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Description longue longue longue longue longue longue longue"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/gen_little_button_text_size"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/merci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom Actuel :"/>
+</RelativeLayout>

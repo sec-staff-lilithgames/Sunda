@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/popup_background"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/popup_no_internet"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textview_popup_no_internet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No internet"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_background"
+        app:layout_constraintEnd_toEndOf="@+id/popup_background"
+        app:layout_constraintStart_toStartOf="@+id/popup_background"
+        app:layout_constraintTop_toTopOf="@+id/popup_background"
+        app:layout_constraintVertical_bias="0.6"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textview_popup_no_internet_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Check connectivity"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_background"
+        app:layout_constraintEnd_toEndOf="@+id/popup_background"
+        app:layout_constraintStart_toStartOf="@+id/popup_background"
+        app:layout_constraintTop_toTopOf="@+id/popup_background"
+        app:layout_constraintVertical_bias="0.7"/>
+    <Button
+        android:textColor="@color/black"
+        android:id="@+id/button_no_internet_retry"
+        android:background="@drawable/btn_no_internet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:text="Retry"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_background"
+        app:layout_constraintEnd_toEndOf="@+id/popup_background"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="@+id/popup_background"
+        app:layout_constraintTop_toTopOf="@+id/popup_background"
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintWidth_percent="0.4"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

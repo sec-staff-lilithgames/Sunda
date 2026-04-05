@@ -1,0 +1,786 @@
+Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.0.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  2301952   281 8192 allocating memory for b-tree...
+  2301952   281 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4866048            total memory allocated
+
+Loading file '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __cdecl calling convention by default
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for arm...Initializing processor module arm...OK
+Autoanalysis subsystem has been initialized.
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-00000000000848E0) ... ... OK
+  1. Creating a new segment  (0000000000088000-000000000008C000) ... ... OK
+  2. Creating a new segment  (000000000008FF18-0000000000090FE8) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  3. Creating a new segment  (000000000000B230-000000000000BD78) ... ... OK
+  4. Creating a new segment  (000000000000BD78-00000000000848E0) ... ... OK
+  5. Creating a new segment  (000000000000BD80-000000000000FF50) ... ... OK
+  6. Creating a new segment  (000000000000FF50-00000000000848E0) ... ... OK
+  7. Creating a new segment  (000000000000FF50-00000000000115FC) ... ... OK
+     Deleting segment        (00000000000115FC-00000000000848E0) ...
+  7. Creating a new segment  (00000000000115FC-00000000000848E0) ... ... OK
+  8. Creating a new segment  (0000000000011600-00000000000165A4) ... ... OK
+  9. Creating a new segment  (00000000000165A4-00000000000848E0) ... ... OK
+ 10. Creating a new segment  (00000000000165B0-00000000000843A4) ... ... OK
+ 11. Creating a new segment  (00000000000843A4-00000000000848E0) ... ... OK
+ 12. Creating a new segment  (00000000000843A4-000000000008446C) ... ... OK
+     Deleting segment        (000000000008446C-00000000000848E0) ...
+ 12. Creating a new segment  (000000000008446C-00000000000848E0) ... ... OK
+ 13. Creating a new segment  (0000000000084470-00000000000848E0) ... ... OK
+ 14. Creating a new segment  (0000000000088000-000000000008BA18) ... ... OK
+     Deleting segment        (000000000008BA18-000000000008C000) ...
+ 14. Creating a new segment  (000000000008BA18-000000000008C000) ... ... OK
+ 15. Creating a new segment  (000000000008BA18-000000000008BA28) ... ... OK
+     Deleting segment        (000000000008BA28-000000000008C000) ...
+ 15. Creating a new segment  (000000000008BA28-000000000008C000) ... ... OK
+ 16. Creating a new segment  (000000000008BA28-000000000008BA60) ... ... OK
+     Deleting segment        (000000000008BA60-000000000008C000) ...
+ 16. Creating a new segment  (000000000008BA60-000000000008C000) ... ... OK
+ 17. Creating a new segment  (000000000008BC20-000000000008BCD8) ... ... OK
+ 18. Creating a new segment  (000000000008BCD8-000000000008C000) ... ... OK
+ 19. Creating a new segment  (000000000008BCD8-000000000008BF18) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+ 20. Creating a new segment  (000000000008FF18-0000000000090028) ... ... OK
+     Deleting segment        (0000000000090028-0000000000090FE8) ...
+ 20. Creating a new segment  (0000000000090028-0000000000090FE8) ... ... OK
+ 21. Creating a new segment  (0000000000090030-0000000000090FE8) ... ... OK
+ 22. Creating a new segment  (0000000000090FE8-0000000000091218) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 0 names.
+Processing relocations...
+Patching PLT...
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+[IDA_EXPORT] wrote /Users/siberia/Desktop/akinator/so-info/libpairipcore/ida/init_suspicious.json
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.0.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  2301952   281 8192 allocating memory for b-tree...
+  2301952   281 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4866048            total memory allocated
+
+Loading file '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __cdecl calling convention by default
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for arm...Initializing processor module arm...OK
+Autoanalysis subsystem has been initialized.
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-00000000000848E0) ... ... OK
+  1. Creating a new segment  (0000000000088000-000000000008C000) ... ... OK
+  2. Creating a new segment  (000000000008FF18-0000000000090FE8) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  3. Creating a new segment  (000000000000B230-000000000000BD78) ... ... OK
+  4. Creating a new segment  (000000000000BD78-00000000000848E0) ... ... OK
+  5. Creating a new segment  (000000000000BD80-000000000000FF50) ... ... OK
+  6. Creating a new segment  (000000000000FF50-00000000000848E0) ... ... OK
+  7. Creating a new segment  (000000000000FF50-00000000000115FC) ... ... OK
+     Deleting segment        (00000000000115FC-00000000000848E0) ...
+  7. Creating a new segment  (00000000000115FC-00000000000848E0) ... ... OK
+  8. Creating a new segment  (0000000000011600-00000000000165A4) ... ... OK
+  9. Creating a new segment  (00000000000165A4-00000000000848E0) ... ... OK
+ 10. Creating a new segment  (00000000000165B0-00000000000843A4) ... ... OK
+ 11. Creating a new segment  (00000000000843A4-00000000000848E0) ... ... OK
+ 12. Creating a new segment  (00000000000843A4-000000000008446C) ... ... OK
+     Deleting segment        (000000000008446C-00000000000848E0) ...
+ 12. Creating a new segment  (000000000008446C-00000000000848E0) ... ... OK
+ 13. Creating a new segment  (0000000000084470-00000000000848E0) ... ... OK
+ 14. Creating a new segment  (0000000000088000-000000000008BA18) ... ... OK
+     Deleting segment        (000000000008BA18-000000000008C000) ...
+ 14. Creating a new segment  (000000000008BA18-000000000008C000) ... ... OK
+ 15. Creating a new segment  (000000000008BA18-000000000008BA28) ... ... OK
+     Deleting segment        (000000000008BA28-000000000008C000) ...
+ 15. Creating a new segment  (000000000008BA28-000000000008C000) ... ... OK
+ 16. Creating a new segment  (000000000008BA28-000000000008BA60) ... ... OK
+     Deleting segment        (000000000008BA60-000000000008C000) ...
+ 16. Creating a new segment  (000000000008BA60-000000000008C000) ... ... OK
+ 17. Creating a new segment  (000000000008BC20-000000000008BCD8) ... ... OK
+ 18. Creating a new segment  (000000000008BCD8-000000000008C000) ... ... OK
+ 19. Creating a new segment  (000000000008BCD8-000000000008BF18) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+ 20. Creating a new segment  (000000000008FF18-0000000000090028) ... ... OK
+     Deleting segment        (0000000000090028-0000000000090FE8) ...
+ 20. Creating a new segment  (0000000000090028-0000000000090FE8) ... ... OK
+ 21. Creating a new segment  (0000000000090030-0000000000090FE8) ... ... OK
+ 22. Creating a new segment  (0000000000090FE8-0000000000091218) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 0 names.
+Processing relocations...
+Patching PLT...
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+[IDA_EXPORT] wrote /Users/siberia/Desktop/akinator/so-info/libpairipcore/ida/init_suspicious.json
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.0.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  2301952   281 8192 allocating memory for b-tree...
+  2301952   281 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4866048            total memory allocated
+
+Loading file '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __cdecl calling convention by default
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for arm...Initializing processor module arm...OK
+Autoanalysis subsystem has been initialized.
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-00000000000848E0) ... ... OK
+  1. Creating a new segment  (0000000000088000-000000000008C000) ... ... OK
+  2. Creating a new segment  (000000000008FF18-0000000000090FE8) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  3. Creating a new segment  (000000000000B230-000000000000BD78) ... ... OK
+  4. Creating a new segment  (000000000000BD78-00000000000848E0) ... ... OK
+  5. Creating a new segment  (000000000000BD80-000000000000FF50) ... ... OK
+  6. Creating a new segment  (000000000000FF50-00000000000848E0) ... ... OK
+  7. Creating a new segment  (000000000000FF50-00000000000115FC) ... ... OK
+     Deleting segment        (00000000000115FC-00000000000848E0) ...
+  7. Creating a new segment  (00000000000115FC-00000000000848E0) ... ... OK
+  8. Creating a new segment  (0000000000011600-00000000000165A4) ... ... OK
+  9. Creating a new segment  (00000000000165A4-00000000000848E0) ... ... OK
+ 10. Creating a new segment  (00000000000165B0-00000000000843A4) ... ... OK
+ 11. Creating a new segment  (00000000000843A4-00000000000848E0) ... ... OK
+ 12. Creating a new segment  (00000000000843A4-000000000008446C) ... ... OK
+     Deleting segment        (000000000008446C-00000000000848E0) ...
+ 12. Creating a new segment  (000000000008446C-00000000000848E0) ... ... OK
+ 13. Creating a new segment  (0000000000084470-00000000000848E0) ... ... OK
+ 14. Creating a new segment  (0000000000088000-000000000008BA18) ... ... OK
+     Deleting segment        (000000000008BA18-000000000008C000) ...
+ 14. Creating a new segment  (000000000008BA18-000000000008C000) ... ... OK
+ 15. Creating a new segment  (000000000008BA18-000000000008BA28) ... ... OK
+     Deleting segment        (000000000008BA28-000000000008C000) ...
+ 15. Creating a new segment  (000000000008BA28-000000000008C000) ... ... OK
+ 16. Creating a new segment  (000000000008BA28-000000000008BA60) ... ... OK
+     Deleting segment        (000000000008BA60-000000000008C000) ...
+ 16. Creating a new segment  (000000000008BA60-000000000008C000) ... ... OK
+ 17. Creating a new segment  (000000000008BC20-000000000008BCD8) ... ... OK
+ 18. Creating a new segment  (000000000008BCD8-000000000008C000) ... ... OK
+ 19. Creating a new segment  (000000000008BCD8-000000000008BF18) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+ 20. Creating a new segment  (000000000008FF18-0000000000090028) ... ... OK
+     Deleting segment        (0000000000090028-0000000000090FE8) ...
+ 20. Creating a new segment  (0000000000090028-0000000000090FE8) ... ... OK
+ 21. Creating a new segment  (0000000000090030-0000000000090FE8) ... ... OK
+ 22. Creating a new segment  (0000000000090FE8-0000000000091218) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 0 names.
+Processing relocations...
+Patching PLT...
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.0.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  2301952   281 8192 allocating memory for b-tree...
+  2301952   281 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4866048            total memory allocated
+
+Loading file '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __cdecl calling convention by default
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for arm...Initializing processor module arm...OK
+Autoanalysis subsystem has been initialized.
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-00000000000848E0) ... ... OK
+  1. Creating a new segment  (0000000000088000-000000000008C000) ... ... OK
+  2. Creating a new segment  (000000000008FF18-0000000000090FE8) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  3. Creating a new segment  (000000000000B230-000000000000BD78) ... ... OK
+  4. Creating a new segment  (000000000000BD78-00000000000848E0) ... ... OK
+  5. Creating a new segment  (000000000000BD80-000000000000FF50) ... ... OK
+  6. Creating a new segment  (000000000000FF50-00000000000848E0) ... ... OK
+  7. Creating a new segment  (000000000000FF50-00000000000115FC) ... ... OK
+     Deleting segment        (00000000000115FC-00000000000848E0) ...
+  7. Creating a new segment  (00000000000115FC-00000000000848E0) ... ... OK
+  8. Creating a new segment  (0000000000011600-00000000000165A4) ... ... OK
+  9. Creating a new segment  (00000000000165A4-00000000000848E0) ... ... OK
+ 10. Creating a new segment  (00000000000165B0-00000000000843A4) ... ... OK
+ 11. Creating a new segment  (00000000000843A4-00000000000848E0) ... ... OK
+ 12. Creating a new segment  (00000000000843A4-000000000008446C) ... ... OK
+     Deleting segment        (000000000008446C-00000000000848E0) ...
+ 12. Creating a new segment  (000000000008446C-00000000000848E0) ... ... OK
+ 13. Creating a new segment  (0000000000084470-00000000000848E0) ... ... OK
+ 14. Creating a new segment  (0000000000088000-000000000008BA18) ... ... OK
+     Deleting segment        (000000000008BA18-000000000008C000) ...
+ 14. Creating a new segment  (000000000008BA18-000000000008C000) ... ... OK
+ 15. Creating a new segment  (000000000008BA18-000000000008BA28) ... ... OK
+     Deleting segment        (000000000008BA28-000000000008C000) ...
+ 15. Creating a new segment  (000000000008BA28-000000000008C000) ... ... OK
+ 16. Creating a new segment  (000000000008BA28-000000000008BA60) ... ... OK
+     Deleting segment        (000000000008BA60-000000000008C000) ...
+ 16. Creating a new segment  (000000000008BA60-000000000008C000) ... ... OK
+ 17. Creating a new segment  (000000000008BC20-000000000008BCD8) ... ... OK
+ 18. Creating a new segment  (000000000008BCD8-000000000008C000) ... ... OK
+ 19. Creating a new segment  (000000000008BCD8-000000000008BF18) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+ 20. Creating a new segment  (000000000008FF18-0000000000090028) ... ... OK
+     Deleting segment        (0000000000090028-0000000000090FE8) ...
+ 20. Creating a new segment  (0000000000090028-0000000000090FE8) ... ... OK
+ 21. Creating a new segment  (0000000000090030-0000000000090FE8) ... ... OK
+ 22. Creating a new segment  (0000000000090FE8-0000000000091218) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 0 names.
+Processing relocations...
+Patching PLT...
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.0.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  2301952   281 8192 allocating memory for b-tree...
+  2301952   281 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4866048            total memory allocated
+
+Loading file '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __cdecl calling convention by default
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for arm...Initializing processor module arm...OK
+Autoanalysis subsystem has been initialized.
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-00000000000848E0) ... ... OK
+  1. Creating a new segment  (0000000000088000-000000000008C000) ... ... OK
+  2. Creating a new segment  (000000000008FF18-0000000000090FE8) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  3. Creating a new segment  (000000000000B230-000000000000BD78) ... ... OK
+  4. Creating a new segment  (000000000000BD78-00000000000848E0) ... ... OK
+  5. Creating a new segment  (000000000000BD80-000000000000FF50) ... ... OK
+  6. Creating a new segment  (000000000000FF50-00000000000848E0) ... ... OK
+  7. Creating a new segment  (000000000000FF50-00000000000115FC) ... ... OK
+     Deleting segment        (00000000000115FC-00000000000848E0) ...
+  7. Creating a new segment  (00000000000115FC-00000000000848E0) ... ... OK
+  8. Creating a new segment  (0000000000011600-00000000000165A4) ... ... OK
+  9. Creating a new segment  (00000000000165A4-00000000000848E0) ... ... OK
+ 10. Creating a new segment  (00000000000165B0-00000000000843A4) ... ... OK
+ 11. Creating a new segment  (00000000000843A4-00000000000848E0) ... ... OK
+ 12. Creating a new segment  (00000000000843A4-000000000008446C) ... ... OK
+     Deleting segment        (000000000008446C-00000000000848E0) ...
+ 12. Creating a new segment  (000000000008446C-00000000000848E0) ... ... OK
+ 13. Creating a new segment  (0000000000084470-00000000000848E0) ... ... OK
+ 14. Creating a new segment  (0000000000088000-000000000008BA18) ... ... OK
+     Deleting segment        (000000000008BA18-000000000008C000) ...
+ 14. Creating a new segment  (000000000008BA18-000000000008C000) ... ... OK
+ 15. Creating a new segment  (000000000008BA18-000000000008BA28) ... ... OK
+     Deleting segment        (000000000008BA28-000000000008C000) ...
+ 15. Creating a new segment  (000000000008BA28-000000000008C000) ... ... OK
+ 16. Creating a new segment  (000000000008BA28-000000000008BA60) ... ... OK
+     Deleting segment        (000000000008BA60-000000000008C000) ...
+ 16. Creating a new segment  (000000000008BA60-000000000008C000) ... ... OK
+ 17. Creating a new segment  (000000000008BC20-000000000008BCD8) ... ... OK
+ 18. Creating a new segment  (000000000008BCD8-000000000008C000) ... ... OK
+ 19. Creating a new segment  (000000000008BCD8-000000000008BF18) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+ 20. Creating a new segment  (000000000008FF18-0000000000090028) ... ... OK
+     Deleting segment        (0000000000090028-0000000000090FE8) ...
+ 20. Creating a new segment  (0000000000090028-0000000000090FE8) ... ... OK
+ 21. Creating a new segment  (0000000000090030-0000000000090FE8) ... ... OK
+ 22. Creating a new segment  (0000000000090FE8-0000000000091218) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 0 names.
+Processing relocations...
+Patching PLT...
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.0.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  2301952   281 8192 allocating memory for b-tree...
+  2301952   281 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4866048            total memory allocated
+
+Loading file '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __cdecl calling convention by default
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for arm...Initializing processor module arm...OK
+Autoanalysis subsystem has been initialized.
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-00000000000848E0) ... ... OK
+  1. Creating a new segment  (0000000000088000-000000000008C000) ... ... OK
+  2. Creating a new segment  (000000000008FF18-0000000000090FE8) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  3. Creating a new segment  (000000000000B230-000000000000BD78) ... ... OK
+  4. Creating a new segment  (000000000000BD78-00000000000848E0) ... ... OK
+  5. Creating a new segment  (000000000000BD80-000000000000FF50) ... ... OK
+  6. Creating a new segment  (000000000000FF50-00000000000848E0) ... ... OK
+  7. Creating a new segment  (000000000000FF50-00000000000115FC) ... ... OK
+     Deleting segment        (00000000000115FC-00000000000848E0) ...
+  7. Creating a new segment  (00000000000115FC-00000000000848E0) ... ... OK
+  8. Creating a new segment  (0000000000011600-00000000000165A4) ... ... OK
+  9. Creating a new segment  (00000000000165A4-00000000000848E0) ... ... OK
+ 10. Creating a new segment  (00000000000165B0-00000000000843A4) ... ... OK
+ 11. Creating a new segment  (00000000000843A4-00000000000848E0) ... ... OK
+ 12. Creating a new segment  (00000000000843A4-000000000008446C) ... ... OK
+     Deleting segment        (000000000008446C-00000000000848E0) ...
+ 12. Creating a new segment  (000000000008446C-00000000000848E0) ... ... OK
+ 13. Creating a new segment  (0000000000084470-00000000000848E0) ... ... OK
+ 14. Creating a new segment  (0000000000088000-000000000008BA18) ... ... OK
+     Deleting segment        (000000000008BA18-000000000008C000) ...
+ 14. Creating a new segment  (000000000008BA18-000000000008C000) ... ... OK
+ 15. Creating a new segment  (000000000008BA18-000000000008BA28) ... ... OK
+     Deleting segment        (000000000008BA28-000000000008C000) ...
+ 15. Creating a new segment  (000000000008BA28-000000000008C000) ... ... OK
+ 16. Creating a new segment  (000000000008BA28-000000000008BA60) ... ... OK
+     Deleting segment        (000000000008BA60-000000000008C000) ...
+ 16. Creating a new segment  (000000000008BA60-000000000008C000) ... ... OK
+ 17. Creating a new segment  (000000000008BC20-000000000008BCD8) ... ... OK
+ 18. Creating a new segment  (000000000008BCD8-000000000008C000) ... ... OK
+ 19. Creating a new segment  (000000000008BCD8-000000000008BF18) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+ 20. Creating a new segment  (000000000008FF18-0000000000090028) ... ... OK
+     Deleting segment        (0000000000090028-0000000000090FE8) ...
+ 20. Creating a new segment  (0000000000090028-0000000000090FE8) ... ... OK
+ 21. Creating a new segment  (0000000000090030-0000000000090FE8) ... ... OK
+ 22. Creating a new segment  (0000000000090FE8-0000000000091218) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 0 names.
+Processing relocations...
+Patching PLT...
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.0.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  2301952   281 8192 allocating memory for b-tree...
+  2301952   281 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4866048            total memory allocated
+
+Loading file '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __cdecl calling convention by default
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for arm...Initializing processor module arm...OK
+Autoanalysis subsystem has been initialized.
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-00000000000848E0) ... ... OK
+  1. Creating a new segment  (0000000000088000-000000000008C000) ... ... OK
+  2. Creating a new segment  (000000000008FF18-0000000000090FE8) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  3. Creating a new segment  (000000000000B230-000000000000BD78) ... ... OK
+  4. Creating a new segment  (000000000000BD78-00000000000848E0) ... ... OK
+  5. Creating a new segment  (000000000000BD80-000000000000FF50) ... ... OK
+  6. Creating a new segment  (000000000000FF50-00000000000848E0) ... ... OK
+  7. Creating a new segment  (000000000000FF50-00000000000115FC) ... ... OK
+     Deleting segment        (00000000000115FC-00000000000848E0) ...
+  7. Creating a new segment  (00000000000115FC-00000000000848E0) ... ... OK
+  8. Creating a new segment  (0000000000011600-00000000000165A4) ... ... OK
+  9. Creating a new segment  (00000000000165A4-00000000000848E0) ... ... OK
+ 10. Creating a new segment  (00000000000165B0-00000000000843A4) ... ... OK
+ 11. Creating a new segment  (00000000000843A4-00000000000848E0) ... ... OK
+ 12. Creating a new segment  (00000000000843A4-000000000008446C) ... ... OK
+     Deleting segment        (000000000008446C-00000000000848E0) ...
+ 12. Creating a new segment  (000000000008446C-00000000000848E0) ... ... OK
+ 13. Creating a new segment  (0000000000084470-00000000000848E0) ... ... OK
+ 14. Creating a new segment  (0000000000088000-000000000008BA18) ... ... OK
+     Deleting segment        (000000000008BA18-000000000008C000) ...
+ 14. Creating a new segment  (000000000008BA18-000000000008C000) ... ... OK
+ 15. Creating a new segment  (000000000008BA18-000000000008BA28) ... ... OK
+     Deleting segment        (000000000008BA28-000000000008C000) ...
+ 15. Creating a new segment  (000000000008BA28-000000000008C000) ... ... OK
+ 16. Creating a new segment  (000000000008BA28-000000000008BA60) ... ... OK
+     Deleting segment        (000000000008BA60-000000000008C000) ...
+ 16. Creating a new segment  (000000000008BA60-000000000008C000) ... ... OK
+ 17. Creating a new segment  (000000000008BC20-000000000008BCD8) ... ... OK
+ 18. Creating a new segment  (000000000008BCD8-000000000008C000) ... ... OK
+ 19. Creating a new segment  (000000000008BCD8-000000000008BF18) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+ 20. Creating a new segment  (000000000008FF18-0000000000090028) ... ... OK
+     Deleting segment        (0000000000090028-0000000000090FE8) ...
+ 20. Creating a new segment  (0000000000090028-0000000000090FE8) ... ... OK
+ 21. Creating a new segment  (0000000000090030-0000000000090FE8) ... ... OK
+ 22. Creating a new segment  (0000000000090FE8-0000000000091218) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 0 names.
+Processing relocations...
+Patching PLT...
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.0.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  2301952   281 8192 allocating memory for b-tree...
+  2301952   281 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4866048            total memory allocated
+
+Loading file '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __cdecl calling convention by default
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for arm...Initializing processor module arm...OK
+Autoanalysis subsystem has been initialized.
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-00000000000848E0) ... ... OK
+  1. Creating a new segment  (0000000000088000-000000000008C000) ... ... OK
+  2. Creating a new segment  (000000000008FF18-0000000000090FE8) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  3. Creating a new segment  (000000000000B230-000000000000BD78) ... ... OK
+  4. Creating a new segment  (000000000000BD78-00000000000848E0) ... ... OK
+  5. Creating a new segment  (000000000000BD80-000000000000FF50) ... ... OK
+  6. Creating a new segment  (000000000000FF50-00000000000848E0) ... ... OK
+  7. Creating a new segment  (000000000000FF50-00000000000115FC) ... ... OK
+     Deleting segment        (00000000000115FC-00000000000848E0) ...
+  7. Creating a new segment  (00000000000115FC-00000000000848E0) ... ... OK
+  8. Creating a new segment  (0000000000011600-00000000000165A4) ... ... OK
+  9. Creating a new segment  (00000000000165A4-00000000000848E0) ... ... OK
+ 10. Creating a new segment  (00000000000165B0-00000000000843A4) ... ... OK
+ 11. Creating a new segment  (00000000000843A4-00000000000848E0) ... ... OK
+ 12. Creating a new segment  (00000000000843A4-000000000008446C) ... ... OK
+     Deleting segment        (000000000008446C-00000000000848E0) ...
+ 12. Creating a new segment  (000000000008446C-00000000000848E0) ... ... OK
+ 13. Creating a new segment  (0000000000084470-00000000000848E0) ... ... OK
+ 14. Creating a new segment  (0000000000088000-000000000008BA18) ... ... OK
+     Deleting segment        (000000000008BA18-000000000008C000) ...
+ 14. Creating a new segment  (000000000008BA18-000000000008C000) ... ... OK
+ 15. Creating a new segment  (000000000008BA18-000000000008BA28) ... ... OK
+     Deleting segment        (000000000008BA28-000000000008C000) ...
+ 15. Creating a new segment  (000000000008BA28-000000000008C000) ... ... OK
+ 16. Creating a new segment  (000000000008BA28-000000000008BA60) ... ... OK
+     Deleting segment        (000000000008BA60-000000000008C000) ...
+ 16. Creating a new segment  (000000000008BA60-000000000008C000) ... ... OK
+ 17. Creating a new segment  (000000000008BC20-000000000008BCD8) ... ... OK
+ 18. Creating a new segment  (000000000008BCD8-000000000008C000) ... ... OK
+ 19. Creating a new segment  (000000000008BCD8-000000000008BF18) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+ 20. Creating a new segment  (000000000008FF18-0000000000090028) ... ... OK
+     Deleting segment        (0000000000090028-0000000000090FE8) ...
+ 20. Creating a new segment  (0000000000090028-0000000000090FE8) ... ... OK
+ 21. Creating a new segment  (0000000000090030-0000000000090FE8) ... ... OK
+ 22. Creating a new segment  (0000000000090FE8-0000000000091218) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 0 names.
+Processing relocations...
+Patching PLT...
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.0.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  2301952   281 8192 allocating memory for b-tree...
+  2301952   281 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4866048            total memory allocated
+
+Loading file '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __cdecl calling convention by default
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for arm...Initializing processor module arm...OK
+Autoanalysis subsystem has been initialized.
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-00000000000848E0) ... ... OK
+  1. Creating a new segment  (0000000000088000-000000000008C000) ... ... OK
+  2. Creating a new segment  (000000000008FF18-0000000000090FE8) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  3. Creating a new segment  (000000000000B230-000000000000BD78) ... ... OK
+  4. Creating a new segment  (000000000000BD78-00000000000848E0) ... ... OK
+  5. Creating a new segment  (000000000000BD80-000000000000FF50) ... ... OK
+  6. Creating a new segment  (000000000000FF50-00000000000848E0) ... ... OK
+  7. Creating a new segment  (000000000000FF50-00000000000115FC) ... ... OK
+     Deleting segment        (00000000000115FC-00000000000848E0) ...
+  7. Creating a new segment  (00000000000115FC-00000000000848E0) ... ... OK
+  8. Creating a new segment  (0000000000011600-00000000000165A4) ... ... OK
+  9. Creating a new segment  (00000000000165A4-00000000000848E0) ... ... OK
+ 10. Creating a new segment  (00000000000165B0-00000000000843A4) ... ... OK
+ 11. Creating a new segment  (00000000000843A4-00000000000848E0) ... ... OK
+ 12. Creating a new segment  (00000000000843A4-000000000008446C) ... ... OK
+     Deleting segment        (000000000008446C-00000000000848E0) ...
+ 12. Creating a new segment  (000000000008446C-00000000000848E0) ... ... OK
+ 13. Creating a new segment  (0000000000084470-00000000000848E0) ... ... OK
+ 14. Creating a new segment  (0000000000088000-000000000008BA18) ... ... OK
+     Deleting segment        (000000000008BA18-000000000008C000) ...
+ 14. Creating a new segment  (000000000008BA18-000000000008C000) ... ... OK
+ 15. Creating a new segment  (000000000008BA18-000000000008BA28) ... ... OK
+     Deleting segment        (000000000008BA28-000000000008C000) ...
+ 15. Creating a new segment  (000000000008BA28-000000000008C000) ... ... OK
+ 16. Creating a new segment  (000000000008BA28-000000000008BA60) ... ... OK
+     Deleting segment        (000000000008BA60-000000000008C000) ...
+ 16. Creating a new segment  (000000000008BA60-000000000008C000) ... ... OK
+ 17. Creating a new segment  (000000000008BC20-000000000008BCD8) ... ... OK
+ 18. Creating a new segment  (000000000008BCD8-000000000008C000) ... ... OK
+ 19. Creating a new segment  (000000000008BCD8-000000000008BF18) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+     Deleting segment        (000000000008BF18-000000000008C000) ...
+ 19. Creating a new segment  (000000000008BF18-000000000008C000) ... ... OK
+ 20. Creating a new segment  (000000000008FF18-0000000000090028) ... ... OK
+     Deleting segment        (0000000000090028-0000000000090FE8) ...
+ 20. Creating a new segment  (0000000000090028-0000000000090FE8) ... ... OK
+ 21. Creating a new segment  (0000000000090030-0000000000090FE8) ... ... OK
+ 22. Creating a new segment  (0000000000090FE8-0000000000091218) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 0 names.
+Processing relocations...
+Patching PLT...
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File '/Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Database /Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so.i64 already exists.
+Do you want to overwrite it? -> ~L~oad existing
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  1507328   184 8192 allocating memory for b-tree...
+  2252800   275 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4022272            total memory allocated
+
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for ARM...Initializing processor module ARM...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'libpairipcore.so' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Database /Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so.i64 already exists.
+Do you want to overwrite it? -> ~L~oad existing
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  1507328   184 8192 allocating memory for b-tree...
+  2252800   275 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4022272            total memory allocated
+
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for ARM...Initializing processor module ARM...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'libpairipcore.so' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...Database /Users/siberia/Desktop/akinator/so-info/libpairipcore/libpairipcore.so.i64 already exists.
+Do you want to overwrite it? -> ~L~oad existing
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  1507328   184 8192 allocating memory for b-tree...
+  2252800   275 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4022272            total memory allocated
+
+Loading processor module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib for ARM...Initializing processor module ARM...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'libpairipcore.so' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.0.0.240925)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+D-810 initialized (version 0.1)
+Terminating D-810...
+Hex-rays version 9.0.0.240925 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, use Edit -> Plugins -> MCP (Ctrl+Option+M) to start the server
+Flushing buffers, please wait...ok
+Unloading IDP module /Applications/IDA Professional 9.0.app/Contents/MacOS/procs/arm.dylib...

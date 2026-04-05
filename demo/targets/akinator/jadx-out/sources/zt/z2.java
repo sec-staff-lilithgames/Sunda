@@ -1,0 +1,19 @@
+package zt;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes10.dex */
+public final class z2 extends a {
+
+    /* renamed from: c, reason: collision with root package name */
+    public final st.q f98848c;
+
+    public z2(mt.y yVar, st.q qVar) {
+        super(yVar);
+        this.f98848c = qVar;
+    }
+
+    @Override // mt.s
+    public final void subscribeActual(mt.v vVar) {
+        this.f98526b.subscribe(new y2(vVar, this.f98848c));
+    }
+}

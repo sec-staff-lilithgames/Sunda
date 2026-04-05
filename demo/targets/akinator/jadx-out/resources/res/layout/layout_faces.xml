@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutFaces"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true">
+    <ImageView
+        android:id="@+id/imageFaces"
+        android:layout_width="@dimen/gz_icon_size"
+        android:layout_height="@dimen/gz_icon_size"
+        android:src="@drawable/ak_decor_faceslvl1"
+        android:layout_toLeftOf="@+id/storeFacesCreditText"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:textSize="@dimen/gen_button_text_size"
+        android:textColor="@color/white_color"
+        android:gravity="top"
+        android:id="@+id/storeFacesCreditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_gz"
+        android:layout_marginRight="@dimen/home_button_margin_right"
+        android:text="9999"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPartage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+    <View
+        android:id="@+id/cancelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:background="@color/dark_grey"
+        android:layout_width="@dimen/addquestionContentWidth"
+        android:layout_height="@dimen/addquestionContentHeight"
+        android:layout_centerInParent="true">
+        <TextView
+            android:textSize="@dimen/customizeLabelTextSize"
+            android:textColor="@color/white_color"
+            android:gravity="center"
+            android:id="@+id/textPartage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/addQuestionTitle_margin_top"
+            android:text="PARTAGE"/>
+        <ListView
+            android:id="@+id/appsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/soundlike2_list_margin_left_right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/soundlike2_list_margin_left_right"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textPartage"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

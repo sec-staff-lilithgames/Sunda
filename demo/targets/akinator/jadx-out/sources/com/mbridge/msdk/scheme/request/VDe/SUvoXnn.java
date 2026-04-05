@@ -1,0 +1,54 @@
+package com.mbridge.msdk.scheme.request.VDe;
+
+/* loaded from: classes2.dex */
+public class SUvoXnn {
+    public static String AIsplhAiOnUrt;
+    public static String AdYoHfEaHbcTLwM;
+    public static String BJWJF;
+    public static String BUwyAuPeSd;
+    public static String CHzbJ;
+    public static String EcYfnJYehZcjl;
+    public static String EylJFAVJWfrbp;
+    public static String HsfN;
+    public static String HtX;
+    public static String IBMWwcF;
+    public static String JEbjOOXo;
+    public static String KmgXHnyWdtIDW;
+    public static String LWmQ;
+    public static String MLhvSGfTRsN;
+    public static String MirAbwPTViQo;
+    public static String MkncsGRTXBuZ;
+    public static String MlVDwduBEEXSSBx;
+    public static String OVuYm;
+    public static String PvMhqDw;
+    public static String QprFlilv;
+    public static String SyonQCCeSoHahac;
+    public static String TEo;
+    public static String TZcyd;
+    public static String TiZTihEny;
+    public static String VNS;
+    public static String XprWKUnzvB;
+    public static String YGfUYdZGvdXz;
+    public static String YKjVNltt;
+    public static String YKvYuLaSzdcgG;
+    public static String ZxLeZPWvHkjl;
+    public static String gNRE;
+    public static String heYyKmqrrRx;
+    public static String iIEfM;
+    public static String iawEQIOaLe;
+    public static String jlFYwweoemPizSp;
+    public static String lgyIMkoYhAMkv;
+    public static String lkIQHZ;
+    public static String nBCdNqBYsjhLUQ;
+    public static String neFJegFwtNm;
+    public static String nuBibDv;
+    public static String pZgGZAMcLsy;
+    public static String qHIBxoZnVktk;
+    public static String sUTimlt;
+    public static String sqMUpBdPG;
+    public static String tYyvOR;
+    public static String vBvsW;
+    public static String xfbR;
+    public static String xiijY;
+    public static String xpGsyDKifAx;
+}

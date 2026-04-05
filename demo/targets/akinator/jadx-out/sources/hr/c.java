@@ -1,0 +1,21 @@
+package hr;
+
+import java.util.Map;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes9.dex */
+public interface c {
+    void onAdClicked();
+
+    void onAdExpired();
+
+    void onAdLoadFailed(pr.a aVar);
+
+    void onAdShowFailed(pr.a aVar);
+
+    void onAdShown();
+
+    void onBrokenCreativeEvent(Map<String, Object> map);
+
+    void setVisibilitySource(nm.m mVar);
+}

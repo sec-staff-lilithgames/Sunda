@@ -1,0 +1,148 @@
+[
+  {
+    "type": "send",
+    "payload": {
+      "event": "module",
+      "base": "0x7821159000",
+      "size": 593920
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "event": "hooks_installed"
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "event": "sub_2EED4_entry",
+      "hit": 1,
+      "tid": 28009,
+      "pc": "0x7821187ed4",
+      "x0": "0x77cdaa7b48",
+      "x1": "0x24",
+      "x2": "0x77cdaa7b44",
+      "x22": "0x1a694",
+      "x23": "0x24",
+      "x24": "0xe3ba6b44",
+      "x25": "0x0",
+      "x26": "0x77cdaa7cf8",
+      "x27": "0x200",
+      "x28": "0x11a0",
+      "x30": "undefined",
+      "x0_mem": "77cdaa7b48  70 43 1e 21 78 00 00 00 f8 7c aa cd 77 00 00 00  pC.!x....|..w...\n77cdaa7b58  af 00 00 00 ff ff ff ff 10 00 00 00 00 00 00 00  ................",
+      "x2_mem": "77cdaa7b44  ba 16 00 00 70 43 1e 21 78 00 00 00 f8 7c aa cd  ....pC.!x....|..\n77cdaa7b54  77 00 00 00 af 00 00 00 ff ff ff ff 10 00 00 00  w..............."
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "event": "sub_2EED4_entry",
+      "hit": 2,
+      "tid": 28009,
+      "pc": "0x7821187ed4",
+      "x0": "0x77cdaa7b48",
+      "x1": "0x9f",
+      "x2": "0x77cdaa7b44",
+      "x22": "0x1a694",
+      "x23": "0x9f",
+      "x24": "0xe3ba6b44",
+      "x25": "0x0",
+      "x26": "0x77cdaa7cf8",
+      "x27": "0x200",
+      "x28": "0x11a0",
+      "x30": "undefined",
+      "x0_mem": "77cdaa7b48  70 43 1e 21 78 00 00 00 f8 7c aa cd 77 00 00 00  pC.!x....|..w...\n77cdaa7b58  af 00 00 00 ff ff ff ff 10 00 00 00 00 00 00 00  ................",
+      "x2_mem": "77cdaa7b44  df c6 00 00 70 43 1e 21 78 00 00 00 f8 7c aa cd  ....pC.!x....|..\n77cdaa7b54  77 00 00 00 af 00 00 00 ff ff ff ff 10 00 00 00  w..............."
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "event": "sub_2EED4_entry",
+      "hit": 3,
+      "tid": 28009,
+      "pc": "0x7821187ed4",
+      "x0": "0x77cdaa7b48",
+      "x1": "0x19",
+      "x2": "0x77cdaa7b44",
+      "x22": "0x1a694",
+      "x23": "0x19",
+      "x24": "0xe3ba6b44",
+      "x25": "0x0",
+      "x26": "0x77cdaa7cf8",
+      "x27": "0x200",
+      "x28": "0x11a0",
+      "x30": "undefined",
+      "x0_mem": "77cdaa7b48  70 43 1e 21 78 00 00 00 f8 7c aa cd 77 00 00 00  pC.!x....|..w...\n77cdaa7b58  af 00 00 00 ff ff ff ff 10 00 00 00 00 00 00 00  ................",
+      "x2_mem": "77cdaa7b44  d4 70 01 00 70 43 1e 21 78 00 00 00 f8 7c aa cd  .p..pC.!x....|..\n77cdaa7b54  77 00 00 00 af 00 00 00 ff ff ff ff 10 00 00 00  w..............."
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "event": "sub_2EED4_entry",
+      "hit": 4,
+      "tid": 28009,
+      "pc": "0x7821187ed4",
+      "x0": "0x77cdaa7b48",
+      "x1": "0xe",
+      "x2": "0x77cdaa7b44",
+      "x22": "0x1a694",
+      "x23": "0xe",
+      "x24": "0xe3ba6b44",
+      "x25": "0x0",
+      "x26": "0x77cdaa7cf8",
+      "x27": "0x200",
+      "x28": "0x11a0",
+      "x30": "undefined",
+      "x0_mem": "77cdaa7b48  70 43 1e 21 78 00 00 00 f8 7c aa cd 77 00 00 00  pC.!x....|..w...\n77cdaa7b58  af 00 00 00 ff ff ff ff 10 00 00 00 00 00 00 00  ................",
+      "x2_mem": "77cdaa7b44  93 7b 01 00 70 43 1e 21 78 00 00 00 f8 7c aa cd  .{..pC.!x....|..\n77cdaa7b54  77 00 00 00 af 00 00 00 ff ff ff ff 10 00 00 00  w..............."
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "event": "sub_2EED4_entry",
+      "hit": 5,
+      "tid": 28009,
+      "pc": "0x7821187ed4",
+      "x0": "0x77cdaa7b48",
+      "x1": "0x24",
+      "x2": "0x77cdaa7b44",
+      "x22": "0x6ca5d7f5",
+      "x23": "0x24",
+      "x24": "0xe3ba6b44",
+      "x25": "0x0",
+      "x26": "0x77cdaa7cf8",
+      "x27": "0xd2cd2f47",
+      "x28": "0x3930",
+      "x30": "undefined",
+      "x0_mem": "77cdaa7b48  70 43 1e 21 78 00 00 00 f8 7c aa cd 77 00 00 00  pC.!x....|..w...\n77cdaa7b58  af 00 00 00 ff ff ff ff 10 00 00 00 00 00 00 00  ................",
+      "x2_mem": "77cdaa7b44  de 8a 00 00 70 43 1e 21 78 00 00 00 f8 7c aa cd  ....pC.!x....|..\n77cdaa7b54  77 00 00 00 af 00 00 00 ff ff ff ff 10 00 00 00  w..............."
+    }
+  },
+  {
+    "type": "send",
+    "payload": {
+      "event": "sub_2EED4_entry",
+      "hit": 6,
+      "tid": 28009,
+      "pc": "0x7821187ed4",
+      "x0": "0x77cdaa7b48",
+      "x1": "0x24",
+      "x2": "0x77cdaa7b44",
+      "x22": "0x6ca5d7f5",
+      "x23": "0x24",
+      "x24": "0xe3ba6b44",
+      "x25": "0x0",
+      "x26": "0x77cdaa7cf8",
+      "x27": "0xd2cd2f47",
+      "x28": "0x3930",
+      "x30": "undefined",
+      "x0_mem": "77cdaa7b48  70 43 1e 21 78 00 00 00 f8 7c aa cd 77 00 00 00  pC.!x....|..w...\n77cdaa7b58  af 00 00 00 ff ff ff ff 10 00 00 00 00 00 00 00  ................",
+      "x2_mem": "77cdaa7b44  33 a8 00 00 70 43 1e 21 78 00 00 00 f8 7c aa cd  3...pC.!x....|..\n77cdaa7b54  77 00 00 00 af 00 00 00 ff ff ff ff 10 00 00 00  w..............."
+    }
+  }
+]

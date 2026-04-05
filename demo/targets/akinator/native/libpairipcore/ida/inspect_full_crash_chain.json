@@ -1,0 +1,4705 @@
+[
+  {
+    "start_ea": 525428,
+    "name": "pairip_jni_on_load",
+    "end_ea": 531656,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 2448,
+        "caller_func_name": "0x990",
+        "callsite_ea": 2448
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 115792,
+        "callee_name": "pairip_mutex_lock_or_abort",
+        "callsite_ea": 525484
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 525496
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 525508
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 525520
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 525532
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 525540
+      },
+      {
+        "callee_ea": 542096,
+        "callee_name": ".getpid",
+        "callsite_ea": 525556
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 525572
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 525584
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 525596
+      },
+      {
+        "callee_ea": 391816,
+        "callee_name": "sub_5FA88",
+        "callsite_ea": 525604
+      },
+      {
+        "callee_ea": 507936,
+        "callee_name": "sub_7C020",
+        "callsite_ea": 525612
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 525624
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 525632
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 525796
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 525996
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 526032
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 526044
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 526056
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 526128
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 526140
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 526172
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 526176
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 526184
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 526220
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 526244
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 526464
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 526480
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 526648
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 526908
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 526976
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 526992
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527000
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 527016
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 527052
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 527272
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 527288
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 527472
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 527724
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527780
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 527796
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527812
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 527828
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527868
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527876
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527896
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527908
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527920
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527960
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 527972
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 527984
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 527996
+      },
+      {
+        "callee_ea": 537420,
+        "callee_name": "sub_8334C",
+        "callsite_ea": 528012
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 528020
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 528056
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 528188
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 528204
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 528272
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 528280
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 528772
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 528832
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 528844
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 528852
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 528876
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 529052
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 529072
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 529248
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 529508
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529564
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529576
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529596
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529608
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 529624
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529636
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 529652
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529660
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529688
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529716
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529728
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529760
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529764
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529772
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 529800
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 529812
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 529824
+      },
+      {
+        "callee_ea": 537420,
+        "callee_name": "sub_8334C",
+        "callsite_ea": 529836
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 529844
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 530108
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 530452
+      },
+      {
+        "callee_ea": 542832,
+        "callee_name": ".strlen",
+        "callsite_ea": 530460
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530468
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530480
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530500
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530504
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 530528
+      },
+      {
+        "callee_ea": 542352,
+        "callee_name": ".memcpy",
+        "callsite_ea": 530560
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 530576
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 530584
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 530748
+      },
+      {
+        "callee_ea": 542832,
+        "callee_name": ".strlen",
+        "callsite_ea": 530776
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530784
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530796
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530816
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530828
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 530844
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530936
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530944
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530956
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530976
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530980
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 530988
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 531012
+      },
+      {
+        "callee_ea": 542448,
+        "callee_name": ".memmove",
+        "callsite_ea": 531044
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531056
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531060
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 531076
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531084
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 531100
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531112
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531124
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531160
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531220
+      },
+      {
+        "callee_ea": 115836,
+        "callee_name": "pairip_mutex_unlock",
+        "callsite_ea": 531236
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 531288
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531300
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 531316
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531336
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531356
+      },
+      {
+        "callee_ea": 404804,
+        "callee_name": "sub_62D44",
+        "callsite_ea": 531360
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531376
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531392
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531404
+      },
+      {
+        "callee_ea": 404804,
+        "callee_name": "sub_62D44",
+        "callsite_ea": 531408
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531424
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531440
+      },
+      {
+        "callee_ea": 391816,
+        "callee_name": "sub_5FA88",
+        "callsite_ea": 531452
+      },
+      {
+        "callee_ea": 507936,
+        "callee_name": "sub_7C020",
+        "callsite_ea": 531460
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531472
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531476
+      },
+      {
+        "callee_ea": 404804,
+        "callee_name": "sub_62D44",
+        "callsite_ea": 531480
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531496
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531512
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531524
+      },
+      {
+        "callee_ea": 404804,
+        "callee_name": "sub_62D44",
+        "callsite_ea": 531528
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531544
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531560
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531572
+      },
+      {
+        "callee_ea": 404804,
+        "callee_name": "sub_62D44",
+        "callsite_ea": 531576
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531592
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 531608
+      },
+      {
+        "callee_ea": 537420,
+        "callee_name": "sub_8334C",
+        "callsite_ea": 531628
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531636
+      },
+      {
+        "callee_ea": 525428,
+        "callee_name": "pairip_jni_on_load",
+        "callsite_ea": 531640
+      },
+      {
+        "callee_ea": 173284,
+        "callee_name": "sub_2A4E4",
+        "callsite_ea": 531644
+      },
+      {
+        "callee_ea": 542224,
+        "callee_name": ".__stack_chk_fail",
+        "callsite_ea": 531648
+      },
+      {
+        "callee_ea": 172964,
+        "callee_name": "sub_2A3A4",
+        "callsite_ea": 531652
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 525428,
+        "mnem": "SUB",
+        "disasm": "SUB             SP, SP, #0x130"
+      },
+      {
+        "ea": 525432,
+        "mnem": "STP",
+        "disasm": "STP             X29, X30, [SP,#0x130+var_60]"
+      },
+      {
+        "ea": 525436,
+        "mnem": "STP",
+        "disasm": "STP             X28, X27, [SP,#0x130+var_50]"
+      },
+      {
+        "ea": 525440,
+        "mnem": "STP",
+        "disasm": "STP             X26, X25, [SP,#0x130+var_40]"
+      },
+      {
+        "ea": 525444,
+        "mnem": "STP",
+        "disasm": "STP             X24, X23, [SP,#0x130+var_30]"
+      },
+      {
+        "ea": 525448,
+        "mnem": "STP",
+        "disasm": "STP             X22, X21, [SP,#0x130+var_20]"
+      },
+      {
+        "ea": 525452,
+        "mnem": "STP",
+        "disasm": "STP             X20, X19, [SP,#0x130+var_10]"
+      },
+      {
+        "ea": 525456,
+        "mnem": "MRS",
+        "disasm": "MRS             X25, TPIDR_EL0"
+      },
+      {
+        "ea": 525460,
+        "mnem": "ADRL",
+        "disasm": "ADRL            X20, byte_90C79"
+      },
+      {
+        "ea": 525468,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X25,#0x28]"
+      },
+      {
+        "ea": 525472,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X0"
+      },
+      {
+        "ea": 525476,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, X20, #0x247"
+      },
+      {
+        "ea": 525480,
+        "mnem": "STR",
+        "disasm": "STR             X8, [SP,#0x130+var_68]"
+      },
+      {
+        "ea": 525484,
+        "mnem": "BL",
+        "disasm": "BL              pairip_mutex_lock_or_abort"
+      },
+      {
+        "ea": 525488,
+        "mnem": "LDRB",
+        "disasm": "LDRB            W8, [X20]"
+      },
+      {
+        "ea": 525492,
+        "mnem": "CMP",
+        "disasm": "CMP             W8, #1"
+      },
+      {
+        "ea": 525496,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_804E8"
+      },
+      {
+        "ea": 525500,
+        "mnem": "NOP",
+        "disasm": "NOP"
+      },
+      {
+        "ea": 525504,
+        "mnem": "ADR",
+        "disasm": "ADR             X0, unk_8FFC8"
+      },
+      {
+        "ea": 525508,
+        "mnem": "BL",
+        "disasm": "BL              sub_29CC8"
+      },
+      {
+        "ea": 525512,
+        "mnem": "LDRB",
+        "disasm": "LDRB            W8, [X0]"
+      },
+      {
+        "ea": 525516,
+        "mnem": "CMP",
+        "disasm": "CMP             W8, #1"
+      },
+      {
+        "ea": 525520,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_81BA0"
+      },
+      {
+        "ea": 525524,
+        "mnem": "NOP",
+        "disasm": "NOP"
+      },
+      {
+        "ea": 525528,
+        "mnem": "ADR",
+        "disasm": "ADR             X0, unk_8FFE8"
+      },
+      {
+        "ea": 525532,
+        "mnem": "BL",
+        "disasm": "BL              sub_29CC8"
+      },
+      {
+        "ea": 525536,
+        "mnem": "LDR",
+        "disasm": "LDR             X26, [X0]"
+      },
+      {
+        "ea": 525540,
+        "mnem": "B",
+        "disasm": "B               loc_81AF8"
+      },
+      {
+        "ea": 525544,
+        "mnem": "ADRL",
+        "disasm": "ADRL            X20, dword_90C80"
+      },
+      {
+        "ea": 525552,
+        "mnem": "STR",
+        "disasm": "STR             X19, [X20,#(qword_90D90 - 0x90C80)]"
+      },
+      {
+        "ea": 525556,
+        "mnem": "BL",
+        "disasm": "BL              .getpid"
+      },
+      {
+        "ea": 525560,
+        "mnem": "STR",
+        "disasm": "STR             W0, [X20]"
+      },
+      {
+        "ea": 525564,
+        "mnem": "NOP",
+        "disasm": "NOP"
+      },
+      {
+        "ea": 525568,
+        "mnem": "ADR",
+        "disasm": "ADR             X0, unk_8FFC8"
+      },
+      {
+        "ea": 525572,
+        "mnem": "BL",
+        "disasm": "BL              sub_29CC8"
+      },
+      {
+        "ea": 525576,
+        "mnem": "LDRB",
+        "disasm": "LDRB            W8, [X0]"
+      },
+      {
+        "ea": 525580,
+        "mnem": "CMP",
+        "disasm": "CMP             W8, #1"
+      },
+      {
+        "ea": 525584,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_81BD0"
+      },
+      {
+        "ea": 525588,
+        "mnem": "NOP",
+        "disasm": "NOP"
+      },
+      {
+        "ea": 525592,
+        "mnem": "ADR",
+        "disasm": "ADR             X0, unk_8FFE8"
+      },
+      {
+        "ea": 525596,
+        "mnem": "BL",
+        "disasm": "BL              sub_29CC8"
+      },
+      {
+        "ea": 525600,
+        "mnem": "LDR",
+        "disasm": "LDR             X26, [X0]"
+      },
+      {
+        "ea": 525604,
+        "mnem": "BL",
+        "disasm": "BL              sub_5FA88"
+      },
+      {
+        "ea": 525608,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X26"
+      },
+      {
+        "ea": 525612,
+        "mnem": "BL",
+        "disasm": "BL              sub_7C020"
+      },
+      {
+        "ea": 525616,
+        "mnem": "ADRP",
+        "disasm": "ADRP            X8, #byte_90C78@PAGE"
+      },
+      {
+        "ea": 525620,
+        "mnem": "LDRB",
+        "disasm": "LDRB            W8, [X8,#byte_90C78@PAGEOFF]"
+      },
+      {
+        "ea": 525624,
+        "mnem": "TBNZ",
+        "disasm": "TBNZ            W8, #0, loc_80E50"
+      },
+      {
+        "ea": 525628,
+        "mnem": "MOV",
+        "disasm": "MOV             W0, #0x18"
+      },
+      {
+        "ea": 525632,
+        "mnem": "BL",
+        "disasm": "BL              sub_843F4"
+      },
+      {
+        "ea": 525636,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0x61 ; 'a'"
+      },
+      {
+        "ea": 525640,
+        "mnem": "STP",
+        "disasm": "STP             XZR, XZR, [X0]"
+      },
+      {
+        "ea": 525644,
+        "mnem": "MOV",
+        "disasm": "MOV             W9, #0x64 ; 'd'"
+      },
+      {
+        "ea": 525648,
+        "mnem": "STR",
+        "disasm": "STR             XZR, [X0,#0x10]"
+      },
+      {
+        "ea": 525652,
+        "mnem": "MOV",
+        "disasm": "MOV             W10, #0x72 ; 'r'"
+      },
+      {
+        "ea": 525656,
+        "mnem": "MOV",
+        "disasm": "MOV             W11, #0x69 ; 'i'"
+      },
+      {
+        "ea": 525660,
+        "mnem": "STRB",
+        "disasm": "STRB            W8, [X0]"
+      },
+      {
+        "ea": 525664,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0x6E ; 'n'"
+      },
+      {
+        "ea": 525668,
+        "mnem": "MOV",
+        "disasm": "MOV             W12, #0x65 ; 'e'"
+      },
+      {
+        "ea": 525672,
+        "mnem": "STRB",
+        "disasm": "STRB            W8, [X0,#1]"
+      },
+      {
+        "ea": 525676,
+        "mnem": "MOV",
+        "disasm": "MOV             X21, X0"
+      },
+      {
+        "ea": 525680,
+        "mnem": "STRB",
+        "disasm": "STRB            W9, [X0,#2]"
+      },
+      {
+        "ea": 525684,
+        "mnem": "STRB",
+        "disasm": "STRB            W10, [X0,#3]"
+      },
+      {
+        "ea": 525688,
+        "mnem": "MOV",
+        "disasm": "MOV             W10, #0x6F ; 'o'"
+      },
+      {
+        "ea": 525692,
+        "mnem": "STRB",
+        "disasm": "STRB            W10, [X0,#4]"
+      },
+      {
+        "ea": 525696,
+        "mnem": "STRB",
+        "disasm": "STRB            W11, [X0,#5]"
+      },
+      {
+        "ea": 525700,
+        "mnem": "MOV",
+        "disasm": "MOV             W11, #0x63 ; 'c'"
+      },
+      {
+        "ea": 525704,
+        "mnem": "STRB",
+        "disasm": "STRB            W9, [X0,#6]"
+      },
+      {
+        "ea": 525708,
+        "mnem": "MOV",
+        "disasm": "MOV             W9, #0x2F ; '/'"
+      },
+      {
+        "ea": 525712,
+        "mnem": "STRB",
+        "disasm": "STRB            W9, [X0,#7]"
+      },
+      {
+        "ea": 525716,
+        "mnem": "STRB",
+        "disasm": "STRB            W11, [X0,#8]"
+      },
+      {
+        "ea": 525720,
+        "mnem": "MOV",
+        "disasm": "MOV             W11, #0x74 ; 't'"
+      },
+      {
+        "ea": 525724,
+        "mnem": "STRB",
+        "disasm": "STRB            W10, [X0,#9]"
+      },
+      {
+        "ea": 525728,
+        "mnem": "STRB",
+        "disasm": "STRB            W8, [X0,#0xA]"
+      },
+      {
+        "ea": 525732,
+        "mnem": "STRB",
+        "disasm": "STRB            W11, [X0,#0xB]"
+      },
+      {
+        "ea": 525736,
+        "mnem": "STRB",
+        "disasm": "STRB            W12, [X0,#0xC]"
+      },
+      {
+        "ea": 525740,
+        "mnem": "STRB",
+        "disasm": "STRB            W8, [X0,#0xD]"
+      },
+      {
+        "ea": 525744,
+        "mnem": "STRB",
+        "disasm": "STRB            W11, [X0,#0xE]"
+      },
+      {
+        "ea": 525748,
+        "mnem": "STRB",
+        "disasm": "STRB            W9, [X0,#0xF]"
+      },
+      {
+        "ea": 525752,
+        "mnem": "MOV",
+        "disasm": "MOV             W9, #0x43 ; 'C'"
+      }
+    ]
+  },
+  {
+    "start_ea": 404600,
+    "name": "sub_62C78",
+    "end_ea": 404804,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 525428,
+        "caller_func_name": "pairip_jni_on_load",
+        "callsite_ea": 530912
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 404672
+      },
+      {
+        "callee_ea": 542128,
+        "callee_name": ".memset",
+        "callsite_ea": 404688
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 404740
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 404752
+      },
+      {
+        "callee_ea": 404600,
+        "callee_name": "sub_62C78",
+        "callsite_ea": 404768
+      },
+      {
+        "callee_ea": 542224,
+        "callee_name": ".__stack_chk_fail",
+        "callsite_ea": 404800
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 404600,
+        "mnem": "SUB",
+        "disasm": "SUB             SP, SP, #0x60"
+      },
+      {
+        "ea": 404604,
+        "mnem": "STP",
+        "disasm": "STP             X30, X25, [SP,#0x60+var_40]"
+      },
+      {
+        "ea": 404608,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X2"
+      },
+      {
+        "ea": 404612,
+        "mnem": "STP",
+        "disasm": "STP             X24, X23, [SP,#0x60+var_30]"
+      },
+      {
+        "ea": 404616,
+        "mnem": "STP",
+        "disasm": "STP             X22, X21, [SP,#0x60+var_20]"
+      },
+      {
+        "ea": 404620,
+        "mnem": "MOV",
+        "disasm": "MOV             X21, X2"
+      },
+      {
+        "ea": 404624,
+        "mnem": "STP",
+        "disasm": "STP             X20, X19, [SP,#0x60+var_10]"
+      },
+      {
+        "ea": 404628,
+        "mnem": "MRS",
+        "disasm": "MRS             X25, TPIDR_EL0"
+      },
+      {
+        "ea": 404632,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X3"
+      },
+      {
+        "ea": 404636,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X25,#0x28]"
+      },
+      {
+        "ea": 404640,
+        "mnem": "MOV",
+        "disasm": "MOV             X20, X0"
+      },
+      {
+        "ea": 404644,
+        "mnem": "STR",
+        "disasm": "STR             X8, [SP,#0x60+var_48]"
+      },
+      {
+        "ea": 404648,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X0]"
+      },
+      {
+        "ea": 404652,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X8,#0x558]"
+      },
+      {
+        "ea": 404656,
+        "mnem": "BLR",
+        "disasm": "BLR             X8"
+      },
+      {
+        "ea": 404660,
+        "mnem": "MOV",
+        "disasm": "MOV             W22, W0"
+      },
+      {
+        "ea": 404664,
+        "mnem": "SXTW",
+        "disasm": "SXTW            X23, W22"
+      },
+      {
+        "ea": 404668,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X23"
+      },
+      {
+        "ea": 404672,
+        "mnem": "BL",
+        "disasm": "BL              sub_843F4"
+      },
+      {
+        "ea": 404676,
+        "mnem": "MOV",
+        "disasm": "MOV             W1, WZR; c"
+      },
+      {
+        "ea": 404680,
+        "mnem": "MOV",
+        "disasm": "MOV             X2, X23; n"
+      },
+      {
+        "ea": 404684,
+        "mnem": "MOV",
+        "disasm": "MOV             X24, X0"
+      },
+      {
+        "ea": 404688,
+        "mnem": "BL",
+        "disasm": "BL              .memset"
+      },
+      {
+        "ea": 404692,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X20]"
+      },
+      {
+        "ea": 404696,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X20"
+      },
+      {
+        "ea": 404700,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X21"
+      },
+      {
+        "ea": 404704,
+        "mnem": "MOV",
+        "disasm": "MOV             W2, WZR"
+      },
+      {
+        "ea": 404708,
+        "mnem": "MOV",
+        "disasm": "MOV             W3, W22"
+      },
+      {
+        "ea": 404712,
+        "mnem": "MOV",
+        "disasm": "MOV             X4, X24"
+      },
+      {
+        "ea": 404716,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X8,#0x640]"
+      },
+      {
+        "ea": 404720,
+        "mnem": "BLR",
+        "disasm": "BLR             X8"
+      },
+      {
+        "ea": 404724,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, SP, #0x60+var_58"
+      },
+      {
+        "ea": 404728,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X19"
+      },
+      {
+        "ea": 404732,
+        "mnem": "STR",
+        "disasm": "STR             X24, [SP,#0x60+var_58]"
+      },
+      {
+        "ea": 404736,
+        "mnem": "STP",
+        "disasm": "STP             W22, WZR, [SP,#0x60+var_50]"
+      },
+      {
+        "ea": 404740,
+        "mnem": "BL",
+        "disasm": "BL              sub_52F20"
+      },
+      {
+        "ea": 404744,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X0"
+      },
+      {
+        "ea": 404748,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X24"
+      },
+      {
+        "ea": 404752,
+        "mnem": "BL",
+        "disasm": "BL              sub_28DE4"
+      },
+      {
+        "ea": 404756,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X25,#0x28]"
+      },
+      {
+        "ea": 404760,
+        "mnem": "LDR",
+        "disasm": "LDR             X9, [SP,#0x60+var_48]"
+      },
+      {
+        "ea": 404764,
+        "mnem": "CMP",
+        "disasm": "CMP             X8, X9"
+      },
+      {
+        "ea": 404768,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_62D40"
+      },
+      {
+        "ea": 404772,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 404776,
+        "mnem": "LDP",
+        "disasm": "LDP             X20, X19, [SP,#0x60+var_10]"
+      },
+      {
+        "ea": 404780,
+        "mnem": "LDP",
+        "disasm": "LDP             X22, X21, [SP,#0x60+var_20]"
+      },
+      {
+        "ea": 404784,
+        "mnem": "LDP",
+        "disasm": "LDP             X24, X23, [SP,#0x60+var_30]"
+      },
+      {
+        "ea": 404788,
+        "mnem": "LDP",
+        "disasm": "LDP             X30, X25, [SP,#0x60+var_40]"
+      },
+      {
+        "ea": 404792,
+        "mnem": "ADD",
+        "disasm": "ADD             SP, SP, #0x60 ; '`'"
+      },
+      {
+        "ea": 404796,
+        "mnem": "RET",
+        "disasm": "RET"
+      },
+      {
+        "ea": 404800,
+        "mnem": "BL",
+        "disasm": "BL              .__stack_chk_fail"
+      }
+    ]
+  },
+  {
+    "start_ea": 339744,
+    "name": "sub_52F20",
+    "end_ea": 389840,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 404600,
+        "caller_func_name": "sub_62C78",
+        "callsite_ea": 404740
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 339812
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 339880
+      },
+      {
+        "callee_ea": 416476,
+        "callee_name": "sub_65ADC",
+        "callsite_ea": 339896
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 339932
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 339940
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 339948
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 339964
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 339980
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340008
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340016
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340032
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340060
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340076
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340100
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340132
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340352
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340404
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340440
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340456
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340472
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340488
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340776
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340784
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340800
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340868
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340940
+      },
+      {
+        "callee_ea": 192212,
+        "callee_name": "sub_2EED4",
+        "callsite_ea": 340960
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 340984
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341008
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341032
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341036
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341056
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341060
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341096
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341104
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341108
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341124
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 341348
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341360
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341460
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 341472
+      },
+      {
+        "callee_ea": 542128,
+        "callee_name": ".memset",
+        "callsite_ea": 341496
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341524
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341552
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341568
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341600
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 341640
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341652
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341692
+      },
+      {
+        "callee_ea": 541604,
+        "callee_name": "sub_843A4",
+        "callsite_ea": 341700
+      },
+      {
+        "callee_ea": 532556,
+        "callee_name": "sub_8204C",
+        "callsite_ea": 341720
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341748
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341756
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341764
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341772
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341780
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341812
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341816
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341824
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341860
+      },
+      {
+        "callee_ea": 172848,
+        "callee_name": "sub_2A330",
+        "callsite_ea": 341872
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341876
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341896
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341908
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341936
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341940
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341948
+      },
+      {
+        "callee_ea": 109712,
+        "callee_name": "sub_1AC90",
+        "callsite_ea": 341972
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341992
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 341996
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342012
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342024
+      },
+      {
+        "callee_ea": 542096,
+        "callee_name": ".getpid",
+        "callsite_ea": 342028
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342036
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342076
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342080
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342088
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 342112
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342124
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342196
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342268
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342320
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342356
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342368
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 342416
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 343092
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 343100
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 343116
+      },
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 344320
+      },
+      {
+        "callee_ea": 542128,
+        "callee_name": ".memset",
+        "callsite_ea": 344336
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 344340
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 344372
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 344384
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 344392
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 344400
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 344596
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 344644
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 344680
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 345036
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 345104
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 345160
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 345976
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 346044
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 346100
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 346124
+      },
+      {
+        "callee_ea": 542912,
+        "callee_name": ".fmodf",
+        "callsite_ea": 346488
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 346524
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 346596
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 346672
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 346696
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 347140
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 347192
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 347272
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 347300
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 347688
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 347756
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 347820
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 347828
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 348484
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 348536
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 348572
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 348864
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 348916
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 348952
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 349416
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 349484
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 349564
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 349572
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 350176
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 350228
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 350264
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 351528
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 351536
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 351576
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 351584
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 351592
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 351604
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 352472
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 352516
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 352580
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 352604
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 352648
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 352652
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 353164
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 353216
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 353248
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 353544
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 353596
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 353632
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 353956
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 353964
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 354056
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 354124
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 354180
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 354200
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 354252
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 354308
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 354852
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 354904
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 354940
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 355528
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 355568
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 355620
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 355644
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 355688
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 355692
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 356364
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 356432
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 356496
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 356740
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 356792
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 356828
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 358280
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 358324
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 358392
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 358416
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 358460
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 358464
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 358700
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 358752
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 358788
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 359056
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 359108
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 359144
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 359316
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 359368
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 359404
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360128
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360136
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360156
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360172
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360184
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360792
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360800
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360808
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360824
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360832
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 360844
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 361168
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 361196
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 361224
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 361240
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 361256
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 361264
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 362080
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 362148
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 362216
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 362236
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 362304
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 362360
+      },
+      {
+        "callee_ea": 389840,
+        "callee_name": "sub_5F2D0",
+        "callsite_ea": 363544
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 363580
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 363624
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 363688
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 363708
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 363712
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 364120
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 364172
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 364240
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 364248
+      },
+      {
+        "callee_ea": 542928,
+        "callee_name": ".fmod",
+        "callsite_ea": 364720
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 364756
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 364828
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 364896
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 364944
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 365900
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 365944
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 366012
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 366036
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 366080
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 366084
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 366812
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 366880
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 366940
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 366964
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 367280
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 367304
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 367324
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368088
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368140
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368196
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368212
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368524
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368588
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368652
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368672
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368736
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 368804
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 369084
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 369136
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 369172
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 369432
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 369484
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 369520
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 370816
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 370860
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 370928
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 370952
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 370996
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 371000
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 371252
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 371304
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 371340
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 371948
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 372000
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 372036
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 372464
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 372532
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 372600
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 372620
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 372688
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 372744
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 373520
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 373564
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 373600
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 373624
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 373668
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 373708
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 374080
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 374124
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 374136
+      },
+      {
+        "callee_ea": 542048,
+        "callee_name": ".strtoull",
+        "callsite_ea": 374200
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 374260
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 374808
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 374860
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 374896
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 376136
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 376180
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 376248
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 376276
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 376320
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 376324
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 376904
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 376956
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 377012
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 377640
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 377648
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 377700
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 377752
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 377804
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 378760
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 378804
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 378876
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 378900
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 378944
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 378948
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 379160
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 379180
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 379196
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 379212
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 380228
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 380272
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 380340
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 380352
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 381724
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 381768
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 381836
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 381860
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 381904
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 381908
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382372
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382380
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382416
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382432
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382444
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382456
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382476
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382488
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382780
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382832
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 382868
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383220
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383288
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383344
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383368
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383420
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383488
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383544
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383572
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383592
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383660
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383744
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383776
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383848
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383944
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 383968
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384036
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384108
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384128
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384196
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384260
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384280
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384348
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384432
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384440
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384480
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384488
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384496
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384508
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384516
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384536
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384552
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384564
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384572
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384580
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384596
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384604
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384616
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384640
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384684
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384760
+      },
+      {
+        "callee_ea": 167388,
+        "callee_name": "sub_28DDC",
+        "callsite_ea": 384776
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384784
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384908
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 384976
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385028
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385044
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385064
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385132
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385216
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385256
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385328
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385416
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385436
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385504
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385588
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385616
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385684
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385756
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385776
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385844
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385920
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 385956
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386024
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386120
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386140
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386156
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386172
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386188
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386196
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386224
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386268
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386272
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386280
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386316
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386332
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386344
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386360
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386372
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386392
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386444
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386512
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386568
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386620
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386656
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386708
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386756
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386792
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386832
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386840
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386848
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386860
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386900
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386908
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386916
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386928
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386948
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386964
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386976
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 386996
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387012
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387048
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387052
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387060
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387076
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387084
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387096
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387104
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387120
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387128
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387140
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387176
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387192
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387204
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387216
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387228
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387236
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387272
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387288
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387300
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387316
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387324
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387356
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387404
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387436
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387480
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387488
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387496
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387532
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387540
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387568
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387604
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387616
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387624
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387632
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387676
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387684
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387692
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387728
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387736
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387764
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387800
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387844
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387908
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387916
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387940
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 387984
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 388060
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388072
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388080
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388092
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388104
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388148
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388200
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388236
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388248
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388268
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388284
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388296
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388308
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388332
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388344
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388356
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388376
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388388
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388400
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388412
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388436
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388448
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388460
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388472
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388484
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388496
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388508
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388520
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388532
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388568
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388612
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388656
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388664
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388688
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388732
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388804
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388824
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388832
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388852
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388872
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388884
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388896
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388908
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388940
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 388992
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389028
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389044
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389056
+      },
+      {
+        "callee_ea": 542096,
+        "callee_name": ".getpid",
+        "callsite_ea": 389060
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389068
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389108
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389112
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389120
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389140
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389152
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389172
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389184
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389204
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389216
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389232
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389240
+      },
+      {
+        "callee_ea": 171208,
+        "callee_name": "sub_29CC8",
+        "callsite_ea": 389264
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389276
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389288
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389300
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389312
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389344
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389400
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389464
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389484
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389540
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389644
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389716
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389724
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389732
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389748
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389764
+      },
+      {
+        "callee_ea": 339460,
+        "callee_name": "sub_52E04",
+        "callsite_ea": 389772
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 389792
+      },
+      {
+        "callee_ea": 172964,
+        "callee_name": "sub_2A3A4",
+        "callsite_ea": 389832
+      },
+      {
+        "callee_ea": 542224,
+        "callee_name": ".__stack_chk_fail",
+        "callsite_ea": 389836
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 339744,
+        "mnem": "STP",
+        "disasm": "STP             X29, X30, [SP,#var_60]!"
+      },
+      {
+        "ea": 339748,
+        "mnem": "STP",
+        "disasm": "STP             X28, X27, [SP,#0x60+var_50]"
+      },
+      {
+        "ea": 339752,
+        "mnem": "STP",
+        "disasm": "STP             X26, X25, [SP,#0x60+var_40]"
+      },
+      {
+        "ea": 339756,
+        "mnem": "STP",
+        "disasm": "STP             X24, X23, [SP,#0x60+var_30]"
+      },
+      {
+        "ea": 339760,
+        "mnem": "STP",
+        "disasm": "STP             X22, X21, [SP,#0x60+var_20]"
+      },
+      {
+        "ea": 339764,
+        "mnem": "STP",
+        "disasm": "STP             X20, X19, [SP,#0x60+var_10]"
+      },
+      {
+        "ea": 339768,
+        "mnem": "SUB",
+        "disasm": "SUB             SP, SP, #0x1F0"
+      },
+      {
+        "ea": 339772,
+        "mnem": "STR",
+        "disasm": "STR             X1, [SP,#0x250+var_1D0]"
+      },
+      {
+        "ea": 339776,
+        "mnem": "MRS",
+        "disasm": "MRS             X8, TPIDR_EL0"
+      },
+      {
+        "ea": 339780,
+        "mnem": "MOV",
+        "disasm": "MOV             X26, X0"
+      },
+      {
+        "ea": 339784,
+        "mnem": "STR",
+        "disasm": "STR             X8, [SP,#0x250+var_210]"
+      },
+      {
+        "ea": 339788,
+        "mnem": "MOV",
+        "disasm": "MOV             W24, #0x6B44"
+      },
+      {
+        "ea": 339792,
+        "mnem": "NOP",
+        "disasm": "NOP"
+      },
+      {
+        "ea": 339796,
+        "mnem": "ADR",
+        "disasm": "ADR             X0, unk_8FFE8"
+      },
+      {
+        "ea": 339800,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X8,#0x28]"
+      },
+      {
+        "ea": 339804,
+        "mnem": "MOVK",
+        "disasm": "MOVK            W24, #0xE3BA,LSL#16"
+      },
+      {
+        "ea": 339808,
+        "mnem": "STR",
+        "disasm": "STR             X8, [SP,#0x250+var_68]"
+      },
+      {
+        "ea": 339812,
+        "mnem": "BL",
+        "disasm": "BL              sub_29CC8"
+      },
+      {
+        "ea": 339816,
+        "mnem": "ADD",
+        "disasm": "ADD             X9, SP, #0x250+var_E0"
+      },
+      {
+        "ea": 339820,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0x51F3"
+      },
+      {
+        "ea": 339824,
+        "mnem": "MOV",
+        "disasm": "MOV             W21, #0x8F27"
+      },
+      {
+        "ea": 339828,
+        "mnem": "MOV",
+        "disasm": "MOV             W19, #0xC243"
+      },
+      {
+        "ea": 339832,
+        "mnem": "ADD",
+        "disasm": "ADD             X9, X9, #0x10"
+      },
+      {
+        "ea": 339836,
+        "mnem": "MOV",
+        "disasm": "MOV             W20, #0xC582"
+      },
+      {
+        "ea": 339840,
+        "mnem": "MOV",
+        "disasm": "MOV             W29, #0x78B"
+      },
+      {
+        "ea": 339844,
+        "mnem": "STR",
+        "disasm": "STR             X0, [SP,#0x250+var_1D8]"
+      },
+      {
+        "ea": 339848,
+        "mnem": "MOVK",
+        "disasm": "MOVK            W8, #0xFEA8,LSL#16"
+      },
+      {
+        "ea": 339852,
+        "mnem": "MOVK",
+        "disasm": "MOVK            W21, #0xD20E,LSL#16"
+      },
+      {
+        "ea": 339856,
+        "mnem": "MOVK",
+        "disasm": "MOVK            W19, #0xCF72,LSL#16"
+      },
+      {
+        "ea": 339860,
+        "mnem": "STR",
+        "disasm": "STR             X9, [SP,#0x250+var_1C8]"
+      },
+      {
+        "ea": 339864,
+        "mnem": "MOVK",
+        "disasm": "MOVK            W20, #0x850A,LSL#16"
+      },
+      {
+        "ea": 339868,
+        "mnem": "MOVK",
+        "disasm": "MOVK            W29, #0xFC95,LSL#16"
+      },
+      {
+        "ea": 339872,
+        "mnem": "STR",
+        "disasm": "STR             X10, [SP,#0x250+var_1F8]"
+      },
+      {
+        "ea": 339876,
+        "mnem": "STR",
+        "disasm": "STR             X26, [SP,#0x250+var_1E8]"
+      },
+      {
+        "ea": 339880,
+        "mnem": "B",
+        "disasm": "B               def_530A4; jumptable 00000000000530A4 default case, cases 1-20,22-25,27-29,34,36-41,43-47,49,50,53,58-60,62,64-69,71,72,77,78,82,83,85,88-93,95-97,99,103-105,107,112,114-126,128,129,131-133,135,137,138,141,142,144-149,153,156,157,159,161-164,166,167"
+      },
+      {
+        "ea": 339884,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, SP, #0x250+var_180"
+      },
+      {
+        "ea": 339888,
+        "mnem": "MOV",
+        "disasm": "MOV             W1, W23"
+      },
+      {
+        "ea": 339892,
+        "mnem": "MOV",
+        "disasm": "MOV             W25, W30"
+      },
+      {
+        "ea": 339896,
+        "mnem": "BL",
+        "disasm": "BL              sub_65ADC"
+      },
+      {
+        "ea": 339900,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0xF05C"
+      },
+      {
+        "ea": 339904,
+        "mnem": "TST",
+        "disasm": "TST             W0, #1"
+      },
+      {
+        "ea": 339908,
+        "mnem": "MOV",
+        "disasm": "MOV             W9, W25"
+      },
+      {
+        "ea": 339912,
+        "mnem": "MOVK",
+        "disasm": "MOVK            W8, #0xFD16,LSL#16"
+      },
+      {
+        "ea": 339916,
+        "mnem": "CSEL",
+        "disasm": "CSEL            W8, W24, W8, NE"
+      },
+      {
+        "ea": 339920,
+        "mnem": "MOV",
+        "disasm": "MOV             W25, W8; jumptable 00000000000530A4 default case, cases 1-20,22-25,27-29,34,36-41,43-47,49,50,53,58-60,62,64-69,71,72,77,78,82,83,85,88-93,95-97,99,103-105,107,112,114-126,128,129,131-133,135,137,138,141,142,144-149,153,156,157,159,161-164,166,167"
+      },
+      {
+        "ea": 339924,
+        "mnem": "CMP",
+        "disasm": "CMP             W8, W21"
+      },
+      {
+        "ea": 339928,
+        "mnem": "MOV",
+        "disasm": "MOV             W30, W9"
+      },
+      {
+        "ea": 339932,
+        "mnem": "B.GT",
+        "disasm": "B.GT            loc_5302C"
+      },
+      {
+        "ea": 339936,
+        "mnem": "CMP",
+        "disasm": "CMP             W25, W19"
+      },
+      {
+        "ea": 339940,
+        "mnem": "B.GT",
+        "disasm": "B.GT            loc_531DC"
+      },
+      {
+        "ea": 339944,
+        "mnem": "CMP",
+        "disasm": "CMP             W25, W20"
+      },
+      {
+        "ea": 339948,
+        "mnem": "B.EQ",
+        "disasm": "B.EQ            loc_53388"
+      },
+      {
+        "ea": 339952,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0x87CD02F7"
+      },
+      {
+        "ea": 339960,
+        "mnem": "CMP",
+        "disasm": "CMP             W25, W8"
+      },
+      {
+        "ea": 339964,
+        "mnem": "B.EQ",
+        "disasm": "B.EQ            loc_53414"
+      },
+      {
+        "ea": 339968,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0xA698433A"
+      },
+      {
+        "ea": 339976,
+        "mnem": "CMP",
+        "disasm": "CMP             W25, W8"
+      },
+      {
+        "ea": 339980,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_53488"
+      },
+      {
+        "ea": 339984,
+        "mnem": "LDR",
+        "disasm": "LDR             W8, [X26,#0xC]"
+      },
+      {
+        "ea": 339988,
+        "mnem": "MOV",
+        "disasm": "MOV             W9, W30"
+      },
+      {
+        "ea": 339992,
+        "mnem": "CMP",
+        "disasm": "CMP             W8, #0"
+      },
+      {
+        "ea": 339996,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0x87CD02F7"
+      },
+      {
+        "ea": 340004,
+        "mnem": "CSEL",
+        "disasm": "CSEL            W8, W8, W20, EQ"
+      },
+      {
+        "ea": 340008,
+        "mnem": "B",
+        "disasm": "B               def_530A4; jumptable 00000000000530A4 default case, cases 1-20,22-25,27-29,34,36-41,43-47,49,50,53,58-60,62,64-69,71,72,77,78,82,83,85,88-93,95-97,99,103-105,107,112,114-126,128,129,131-133,135,137,138,141,142,144-149,153,156,157,159,161-164,166,167"
+      },
+      {
+        "ea": 340012,
+        "mnem": "CMP",
+        "disasm": "CMP             W25, W29"
+      },
+      {
+        "ea": 340016,
+        "mnem": "B.LE",
+        "disasm": "B.LE            loc_5332C"
+      },
+      {
+        "ea": 340020,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0xFC95078C"
+      },
+      {
+        "ea": 340028,
+        "mnem": "CMP",
+        "disasm": "CMP             W25, W8"
+      },
+      {
+        "ea": 340032,
+        "mnem": "B.EQ",
+        "disasm": "B.EQ            loc_52FAC"
+      },
+      {
+        "ea": 340036,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0xF05C"
+      },
+      {
+        "ea": 340040,
+        "mnem": "MOV",
+        "disasm": "MOV             W9, #1"
+      },
+      {
+        "ea": 340044,
+        "mnem": "MOVK",
+        "disasm": "MOVK            W8, #0xFD16,LSL#16"
+      },
+      {
+        "ea": 340048,
+        "mnem": "CMP",
+        "disasm": "CMP             W25, W8"
+      },
+      {
+        "ea": 340052,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0xCF7B319F"
+      },
+      {
+        "ea": 340060,
+        "mnem": "B.EQ",
+        "disasm": "B.EQ            def_530A4; jumptable 00000000000530A4 default case, cases 1-20,22-25,27-29,34,36-41,43-47,49,50,53,58-60,62,64-69,71,72,77,78,82,83,85,88-93,95-97,99,103-105,107,112,114-126,128,129,131-133,135,137,138,141,142,144-149,153,156,157,159,161-164,166,167"
+      },
+      {
+        "ea": 340064,
+        "mnem": "MOV",
+        "disasm": "MOV             W8, #0x69699075"
+      },
+      {
+        "ea": 340072,
+        "mnem": "CMP",
+        "disasm": "CMP             W25, W8"
+      },
+      {
+        "ea": 340076,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_53488"
+      },
+      {
+        "ea": 340080,
+        "mnem": "AND",
+        "disasm": "AND             W8, W23, #0xFFFF"
+      },
+      {
+        "ea": 340084,
+        "mnem": "MOV",
+        "disasm": "MOV             W9, W30"
+      }
+    ]
+  }
+]

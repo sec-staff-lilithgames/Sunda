@@ -1,0 +1,15 @@
+package xg;
+
+import android.graphics.drawable.Drawable;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes6.dex */
+public interface b {
+    float getRadius();
+
+    boolean isCompatPaddingEnabled();
+
+    void setBackgroundDrawable(Drawable drawable);
+
+    void setShadowPadding(int i10, int i11, int i12, int i13);
+}

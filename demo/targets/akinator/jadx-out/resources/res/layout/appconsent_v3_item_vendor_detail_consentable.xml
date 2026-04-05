@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/consentable_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appconsent_v3_margin_medium"
+        android:layout_marginStart="@dimen/appconsent_v3_margin_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_consentable_name"
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appconsent_v3_margin_small"
+        android:layout_marginStart="@dimen/appconsent_v3_margin_small"
+        android:layout_marginEnd="@dimen/appconsent_v3_margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/consentable_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/AppConsentV3Theme.TextView.SemiBold"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/appconsent_v3_text_size_textview_small"
+        android:id="@+id/text_consentable_type"
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appconsent_v3_margin_xs"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="@+id/text_consentable_name"
+        app:layout_constraintStart_toStartOf="@+id/text_consentable_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_consentable_name"
+        style="@style/AppConsentV3Theme.TextView.SmallDescription"/>
+    <View
+        android:id="@+id/vendor_consentable_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/appconsent_v3_margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_consentable_type"
+        style="@style/AppConsentV3Theme.Separator"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/custom_alert_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher_foreground"/>
+            <TextView
+                android:textSize="@dimen/bulle_text_size"
+                android:textColor="@color/white_color"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/textTitre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Cout de l&apos;indice"/>
+        </LinearLayout>
+        <com.digidust.elokence.akinator.graphic.AkinatorSmallButton
+            android:id="@+id/okButton"
+            android:layout_width="@dimen/gen_small_button_width"
+            android:layout_height="@dimen/gen_button_height"
+            android:layout_margin="10dp"
+            android:text="OK"/>
+    </LinearLayout>
+</RelativeLayout>

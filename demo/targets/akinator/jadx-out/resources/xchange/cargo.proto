@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto/xchange;proto_xchange";
+package xchange;
+
+import "google/protobuf/timestamp.proto";
+
+
+message ReportDeliveryRequest {
+    string sale_order = 1;
+    string account_name = 2;
+    string delivery_id = 3;
+    string delivery_handler = 4;
+    google.protobuf.Timestamp delivered_at = 5;
+    repeated CargoPOCounter content = 6;
+}
+
+message ReportDeliveryResponse {
+}
+
+message CargoPOCounter {
+    string purcharse_order = 1;
+    repeated CargoFieldCounter fields = 2;
+}
+
+message CargoFieldCounter {
+    string name = 1;
+    uint64 total = 2;
+    uint64 empty = 3;
+    uint64 filled = 4;
+    uint64 cardinality = 5;
+}

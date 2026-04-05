@@ -1,0 +1,15 @@
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 3/3   #P:9
+#
+#                                _-----=> irqs-off/BH-disabled
+#                               / _----=> need-resched
+#                              | / _---=> hardirq/softirq
+#                              || / _--=> preempt-depth
+#                              ||| / _-=> migrate-disable
+#                              |||| /     delay
+#           TASK-PID     CPU#  |||||  TIMESTAMP  FUNCTION
+#              | |         |   |||||     |         |
+ inator.freemium-28156   [008] DNZff 1318413.791135: pairip_jni_on_load: (0x7b66ea8474)
+ inator.freemium-28156   [008] DNZff 1318413.795566: pairip_vm_bridge: (0x7b66e8ac78)
+ inator.freemium-28156   [008] DNZff 1318413.795704: pairip_dispatcher: (0x7b66e7af20)

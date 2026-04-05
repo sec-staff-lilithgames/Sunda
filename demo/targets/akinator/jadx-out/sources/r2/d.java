@@ -1,0 +1,67 @@
+package r2;
+
+import j1.b0;
+import j1.b2;
+import j1.m0;
+import kotlin.jvm.internal.e0;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes.dex */
+public final class d implements t {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final b2 f83682a;
+
+    public d(b2 value) {
+        e0.checkNotNullParameter(value, "value");
+        this.f83682a = value;
+    }
+
+    public static /* synthetic */ d copy$default(d dVar, b2 b2Var, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            b2Var = dVar.f83682a;
+        }
+        return dVar.copy(b2Var);
+    }
+
+    public final d copy(b2 value) {
+        e0.checkNotNullParameter(value, "value");
+        return new d(value);
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof d) && e0.areEqual(this.f83682a, ((d) obj).f83682a);
+    }
+
+    @Override // r2.t
+    public b0 getBrush() {
+        return this.f83682a;
+    }
+
+    @Override // r2.t
+    /* renamed from: getColor-0d7_KjU, reason: not valid java name */
+    public long mo6039getColor0d7_KjU() {
+        return m0.f68918b.m4835getUnspecified0d7_KjU();
+    }
+
+    public int hashCode() {
+        return this.f83682a.hashCode();
+    }
+
+    @Override // r2.t
+    public /* bridge */ /* synthetic */ t merge(t tVar) {
+        return super.merge(tVar);
+    }
+
+    @Override // r2.t
+    public /* bridge */ /* synthetic */ t takeOrElse(kv.a aVar) {
+        return super.takeOrElse(aVar);
+    }
+
+    public String toString() {
+        return "BrushStyle(value=" + this.f83682a + ')';
+    }
+}

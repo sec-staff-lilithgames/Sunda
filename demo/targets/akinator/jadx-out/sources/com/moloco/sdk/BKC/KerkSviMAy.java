@@ -1,0 +1,55 @@
+package com.moloco.sdk.BKC;
+
+/* loaded from: classes2.dex */
+public class KerkSviMAy {
+    public static String AeEGyfZueBn;
+    public static String BvPsjOBE;
+    public static String DqqqkFwvWi;
+    public static String EDuUGUAQx;
+    public static String EMmzjuKPyVac;
+    public static String IxEtAkchDNQL;
+    public static String Jesidp;
+    public static String KgImHPqwTrfAzi;
+    public static String LFWIOYU;
+    public static String LmOnoqguJbCgmm;
+    public static String MNLu;
+    public static String PYixRwPPL;
+    public static String QMNAcVw;
+    public static String Qwm;
+    public static String SHFlCLMMBFxNmJ;
+    public static String TxZxB;
+    public static String UCutvVpDB;
+    public static String UOAppScEUxcVuc;
+    public static String WhMNZIQgh;
+    public static String WyrjCiFFYcxqKaa;
+    public static String YaxwYfmlGzRf;
+    public static String ZiFKM;
+    public static String atnHee;
+    public static String cKc;
+    public static String drxUy;
+    public static String ftyvaRbVlkT;
+    public static String gBOd;
+    public static String gaUxsrFGGpkH;
+    public static String hDgZXApzrZnSmw;
+    public static String hFjILNvA;
+    public static String jLhJBnca;
+    public static String jWMuvPZKYnhusVR;
+    public static String kDLYrKsWMhftRJC;
+    public static String lBBNGHLOAjggP;
+    public static String lPQC;
+    public static String mwduh;
+    public static String qXHAq;
+    public static String qZfxmEODaXwfuIU;
+    public static String qgQUvcrZyF;
+    public static String qpKdLAuwzw;
+    public static String rQg;
+    public static String sWlgIRcYJfIotlW;
+    public static String seoneBDOVYOYurG;
+    public static String uCWYSfLaYLTO;
+    public static String ufeX;
+    public static String xKTlwC;
+    public static String xfe;
+    public static String yEHcRm;
+    public static String yWCZZ;
+    public static String zzUbuCP;
+}

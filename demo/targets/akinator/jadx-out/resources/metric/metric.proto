@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto/metric;proto_metric";
+package metric;
+
+import "google/protobuf/timestamp.proto";
+
+message MetricMessage {
+    // Metadata
+    string emitter = 1;
+    google.protobuf.Timestamp created_at = 2;
+
+    oneof content {
+        UserMetric user_metric = 3;
+    }
+
+}
+message UserMetric {
+    string truncated_ip = 1;
+    string user_agent = 2;
+    google.protobuf.Timestamp saved_at = 3;
+    repeated Event events = 4;
+    string uuid_hash = 5;
+    string app_key = 6;
+    string cmp_hash = 7;
+    string uuid = 8;
+    string ip = 9;
+    string origin = 10;
+}
+message Event {
+    string name = 1;
+    google.protobuf.Timestamp timestamp = 2;
+}

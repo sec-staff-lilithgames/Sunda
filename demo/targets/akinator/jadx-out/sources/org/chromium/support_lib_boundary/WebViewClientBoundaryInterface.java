@@ -1,0 +1,20 @@
+package org.chromium.support_lib_boundary;
+
+import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceResponse;
+import android.webkit.WebView;
+import java.lang.reflect.InvocationHandler;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes10.dex */
+public interface WebViewClientBoundaryInterface extends FeatureFlagHolderBoundaryInterface {
+    void onPageCommitVisible(WebView webView, String str);
+
+    void onReceivedError(WebView webView, WebResourceRequest webResourceRequest, InvocationHandler invocationHandler);
+
+    void onReceivedHttpError(WebView webView, WebResourceRequest webResourceRequest, WebResourceResponse webResourceResponse);
+
+    void onSafeBrowsingHit(WebView webView, WebResourceRequest webResourceRequest, int i10, InvocationHandler invocationHandler);
+
+    boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest webResourceRequest);
+}

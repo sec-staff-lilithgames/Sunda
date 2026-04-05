@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package ac;
+import "google/protobuf/timestamp.proto";
+import "ac_error.proto";
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto;proto";
+
+
+message ShipRequest {
+    string uuid = 1;
+    string app_key = 2;
+    map<string, string> data = 3;
+    repeated Geoloc geoloc = 4;
+    google.protobuf.Timestamp collected_at = 5;
+  }
+  
+message ShipReply {
+    ErrorResponse error = 1;
+}
+
+message XchangeFeederRequest {
+    string uuid = 1;
+    string app_key = 2;
+    map<string, string> data = 3;
+    google.protobuf.Timestamp collected_at = 4;
+    
+    // optionnal, if set consent check is done from consent_string, not from chainsaw 
+    string consent_string = 5;
+    // if set xchange send data to SaleOrder only
+    string to_so_id = 6;
+}
+
+message XchangeMsgV2 {
+    Metadata Metadata = 1;
+    oneof content {
+        ShipRequest shipRequest = 2;
+        XchangeFeederRequest xchangeFeederRequest = 3; // TODO : No camel case on field name !
+        ExternalIds external_ids = 4;
+    }
+}
+message ExternalIds {
+    string uuid = 1;
+
+    string app_key = 2;
+
+    map<string, string> external_ids = 3;
+
+    google.protobuf.Timestamp given_at = 4;
+}
+
+message Geoloc {
+    map<string, string> geoloc = 1;
+}
+
+message Metadata {
+    string action = 1;
+    string emitter = 2;
+    string topic = 3;
+    google.protobuf.Timestamp created_at = 4;
+    string error = 5;
+}

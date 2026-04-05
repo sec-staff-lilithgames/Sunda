@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/appconsent_v3_padding_large"
+    android:paddingBottom="@dimen/appconsent_v3_padding_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/appconsent_v3_padding_large"
+    android:paddingEnd="@dimen/appconsent_v3_padding_large">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_vendor_lit_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/appconsent_consentable_details_label_2"
+        android:layout_marginEnd="@dimen/appconsent_v3_margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reject_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/AppConsentV3Theme.TextView.Label"/>
+    <com.sfbx.appconsentv3.ui.view.RejectButtonView
+        android:id="@+id/reject_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

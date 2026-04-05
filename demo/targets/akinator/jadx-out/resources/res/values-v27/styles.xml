@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FullscreenAdActivity" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowLayoutInDisplayCutoutMode">1</item>
+    </style>
+    <style name="mbridge_transparent_common_activity_style" parent="@style/mbridge_common_activity_style">
+    </style>
+</resources>

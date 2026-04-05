@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include
+        domain="sharedpref"
+        path="bank"/>
+    <include
+        domain="sharedpref"
+        path="MinibaseSettings"/>
+    <include
+        domain="database"
+        path="akinator.db"/>
+    <include
+        domain="database"
+        path="defis.db"/>
+    <include
+        domain="sharedpref"
+        path="ddjSettings"/>
+    <include
+        domain="database"
+        path="metrics.db"/>
+    <include
+        domain="database"
+        path="crossselling.db"/>
+</full-backup-content>

@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto/xchange;proto_xchange";
+package xchange;
+
+import "server.proto";
+import "xchange/domain.proto";
+import "xchange/cargo.proto";
+import "xchange/error.proto";
+
+service XChange {
+    // Sometimes, Console pushes a new/updated CMP
+    rpc UpdateCMP (UpdateCMPRequest) returns (UpdateCMPResponse) {}
+
+    // Temporary call, this action should be handle in appconsent backend
+    rpc NewWebContract (WebContractRequest) returns (WebContractResponse) {}
+
+    // Ask for an entire domain refreshment
+    rpc RefreshDomain(RefreshDomainRequest) returns (RefreshDomainResponse) {}
+
+    // ReportDelivery to BO after any Cargo delivery
+    rpc ReportDelivery(ReportDeliveryRequest) returns (ReportDeliveryResponse) {}
+}
+
+message UpdateCMPRequest {
+  ac.CMP cmp = 1;
+}
+
+message UpdateCMPResponse {}
+
+message WebContractRequest {
+  Account account = 1;
+  repeated PurchaseOrder purchase_orders = 2;
+  repeated SaleOrder  sale_orders = 3;
+}
+
+message WebContractResponse {
+    ErrorResponse error = 1;
+}
+
+message RefreshDomainRequest {}
+
+message RefreshDomainResponse {}

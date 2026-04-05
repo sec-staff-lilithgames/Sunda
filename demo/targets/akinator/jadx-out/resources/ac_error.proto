@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package ac; // short for AppConsent
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto;proto";
+
+enum ErrorCode {
+	UNKNOWN = 0;
+}
+
+message ErrorResponse {
+	ErrorCode code = 1;
+	string description = 2;
+}

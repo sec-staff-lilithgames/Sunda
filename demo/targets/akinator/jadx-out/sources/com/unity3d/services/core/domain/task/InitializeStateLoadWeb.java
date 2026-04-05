@@ -1,0 +1,205 @@
+package com.unity3d.services.core.domain.task;
+
+import com.unity3d.services.core.configuration.Configuration;
+import com.unity3d.services.core.domain.ISDKDispatchers;
+import com.unity3d.services.core.network.core.HttpClient;
+import kotlin.jvm.internal.e0;
+import p0.o2;
+import tu.z;
+import zu.d;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes8.dex */
+public final class InitializeStateLoadWeb extends MetricTask<Params, LoadWebResult> {
+    private final ISDKDispatchers dispatchers;
+    private final HttpClient httpClient;
+    private final InitializeStateNetworkError initializeStateNetworkError;
+
+    /* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+    public static final class LoadWebResult {
+        private final Configuration config;
+        private final String webViewDataString;
+
+        public LoadWebResult(Configuration config, String webViewDataString) {
+            e0.checkNotNullParameter(config, "config");
+            e0.checkNotNullParameter(webViewDataString, "webViewDataString");
+            this.config = config;
+            this.webViewDataString = webViewDataString;
+        }
+
+        public static /* synthetic */ LoadWebResult copy$default(LoadWebResult loadWebResult, Configuration configuration, String str, int i10, Object obj) {
+            if ((i10 & 1) != 0) {
+                configuration = loadWebResult.config;
+            }
+            if ((i10 & 2) != 0) {
+                str = loadWebResult.webViewDataString;
+            }
+            return loadWebResult.copy(configuration, str);
+        }
+
+        public final Configuration component1() {
+            return this.config;
+        }
+
+        public final String component2() {
+            return this.webViewDataString;
+        }
+
+        public final LoadWebResult copy(Configuration config, String webViewDataString) {
+            e0.checkNotNullParameter(config, "config");
+            e0.checkNotNullParameter(webViewDataString, "webViewDataString");
+            return new LoadWebResult(config, webViewDataString);
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (!(obj instanceof LoadWebResult)) {
+                return false;
+            }
+            LoadWebResult loadWebResult = (LoadWebResult) obj;
+            return e0.areEqual(this.config, loadWebResult.config) && e0.areEqual(this.webViewDataString, loadWebResult.webViewDataString);
+        }
+
+        public final Configuration getConfig() {
+            return this.config;
+        }
+
+        public final String getWebViewDataString() {
+            return this.webViewDataString;
+        }
+
+        public int hashCode() {
+            return this.webViewDataString.hashCode() + (this.config.hashCode() * 31);
+        }
+
+        public String toString() {
+            StringBuilder sb2 = new StringBuilder("LoadWebResult(config=");
+            sb2.append(this.config);
+            sb2.append(", webViewDataString=");
+            return o2.q(sb2, this.webViewDataString, ')');
+        }
+    }
+
+    /* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+    public static final class Params implements BaseParams {
+        private final Configuration config;
+
+        public Params(Configuration config) {
+            e0.checkNotNullParameter(config, "config");
+            this.config = config;
+        }
+
+        public static /* synthetic */ Params copy$default(Params params, Configuration configuration, int i10, Object obj) {
+            if ((i10 & 1) != 0) {
+                configuration = params.config;
+            }
+            return params.copy(configuration);
+        }
+
+        public final Configuration component1() {
+            return this.config;
+        }
+
+        public final Params copy(Configuration config) {
+            e0.checkNotNullParameter(config, "config");
+            return new Params(config);
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            return (obj instanceof Params) && e0.areEqual(this.config, ((Params) obj).config);
+        }
+
+        public final Configuration getConfig() {
+            return this.config;
+        }
+
+        public int hashCode() {
+            return this.config.hashCode();
+        }
+
+        public String toString() {
+            return "Params(config=" + this.config + ')';
+        }
+    }
+
+    public InitializeStateLoadWeb(ISDKDispatchers dispatchers, InitializeStateNetworkError initializeStateNetworkError, HttpClient httpClient) {
+        e0.checkNotNullParameter(dispatchers, "dispatchers");
+        e0.checkNotNullParameter(initializeStateNetworkError, "initializeStateNetworkError");
+        e0.checkNotNullParameter(httpClient, "httpClient");
+        this.dispatchers = dispatchers;
+        this.initializeStateNetworkError = initializeStateNetworkError;
+        this.httpClient = httpClient;
+    }
+
+    @Override // com.unity3d.services.core.domain.task.BaseTask
+    /* renamed from: doWork-gIAlu-s */
+    public /* bridge */ /* synthetic */ Object mo3512doWorkgIAlus(BaseParams baseParams, d dVar) {
+        return m3526doWorkgIAlus((Params) baseParams, (d<? super z>) dVar);
+    }
+
+    @Override // com.unity3d.services.core.domain.task.MetricTask
+    public String getMetricName() {
+        return getMetricNameForInitializeTask("download_web_view");
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:7:0x0013  */
+    /* renamed from: doWork-gIAlu-s, reason: not valid java name */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public java.lang.Object m3526doWorkgIAlus(com.unity3d.services.core.domain.task.InitializeStateLoadWeb.Params r6, zu.d<? super tu.z> r7) {
+        /*
+            r5 = this;
+            boolean r0 = r7 instanceof com.unity3d.services.core.domain.task.InitializeStateLoadWeb$doWork$1
+            if (r0 == 0) goto L13
+            r0 = r7
+            com.unity3d.services.core.domain.task.InitializeStateLoadWeb$doWork$1 r0 = (com.unity3d.services.core.domain.task.InitializeStateLoadWeb$doWork$1) r0
+            int r1 = r0.label
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.label = r1
+            goto L18
+        L13:
+            com.unity3d.services.core.domain.task.InitializeStateLoadWeb$doWork$1 r0 = new com.unity3d.services.core.domain.task.InitializeStateLoadWeb$doWork$1
+            r0.<init>(r5, r7)
+        L18:
+            java.lang.Object r7 = r0.result
+            java.lang.Object r1 = av.e.getCOROUTINE_SUSPENDED()
+            int r2 = r0.label
+            r3 = 1
+            if (r2 == 0) goto L31
+            if (r2 != r3) goto L29
+            tu.a0.throwOnFailure(r7)
+            goto L49
+        L29:
+            java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
+            java.lang.String r7 = "call to 'resume' before 'invoke' with coroutine"
+            r6.<init>(r7)
+            throw r6
+        L31:
+            tu.a0.throwOnFailure(r7)
+            com.unity3d.services.core.domain.ISDKDispatchers r7 = r5.dispatchers
+            kotlinx.coroutines.CoroutineDispatcher r7 = r7.getDefault()
+            com.unity3d.services.core.domain.task.InitializeStateLoadWeb$doWork$2 r2 = new com.unity3d.services.core.domain.task.InitializeStateLoadWeb$doWork$2
+            r4 = 0
+            r2.<init>(r6, r5, r4)
+            r0.label = r3
+            java.lang.Object r7 = kotlinx.coroutines.BuildersKt.withContext(r7, r2, r0)
+            if (r7 != r1) goto L49
+            return r1
+        L49:
+            tu.z r7 = (tu.z) r7
+            java.lang.Object r6 = r7.m7139unboximpl()
+            return r6
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.unity3d.services.core.domain.task.InitializeStateLoadWeb.m3526doWorkgIAlus(com.unity3d.services.core.domain.task.InitializeStateLoadWeb$Params, zu.d):java.lang.Object");
+    }
+}

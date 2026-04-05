@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:baselineAligned="true">
+    <TextView
+        android:textSize="@dimen/yes_no_buttons_text_size"
+        android:textColor="@color/black_color"
+        android:gravity="start"
+        android:id="@+id/testShowVideo"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIDEO"
+        android:layout_toLeftOf="@+id/buttonShowVideo"
+        android:layout_centerVertical="true"/>
+    <com.digidust.elokence.akinator.views.DarkAutoButton
+        android:id="@+id/buttonShowVideo"
+        android:background="@drawable/popu_video"
+        android:layout_width="@dimen/storePotionsize"
+        android:layout_height="@dimen/storePotionsize"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+{
+  "asset_focus": "ReqL9SxJHgWgm3cn",
+  "chain": [
+    {
+      "ea": 525428,
+      "name": "pairip_jni_on_load",
+      "role": "JNI_OnLoad root",
+      "comment": "JNI_OnLoad root. Early native initialization path that installs runtime state, builds native registration metadata, and reaches pairip_jni_execute_vm_bridge through the registration chain before Java-side business entrypoints run."
+    },
+    {
+      "ea": 404600,
+      "name": "pairip_jni_execute_vm_bridge",
+      "role": "JNI execute bridge",
+      "comment": "High-confidence JNI bridge for VMRunner.executeVM(byte[] vmCode, Object[] args). Observed shape: reads jbyteArray length through JNIEnv, allocates a native byte buffer, copies the bytecode into that buffer, packs a small local descriptor ({ptr,len,0}), then forwards descriptor + Java args object into pairip_vm_interpreter_core_tentative."
+    },
+    {
+      "ea": 339744,
+      "name": "pairip_vm_interpreter_core_tentative",
+      "role": "dispatcher / VM interpreter core",
+      "comment": "Tentative name. Large VM-like execution core reached from the JNI execute bridge. Receives a bytecode-buffer descriptor plus Java args object, then enters a large dispatch loop / jumptable-driven state machine. Crash PC 0x5d75c lands inside this function on an indexed signed-byte read (ldrsb x2, [x16, x11]). Treat this as VM interpreter/dispatcher territory until disproved."
+    }
+  ],
+  "edges": [
+    {
+      "from_ea": 525428,
+      "to_ea": 404600,
+      "callsite_ea": 530912,
+      "evidence": "pairip_jni_on_load xrefs_to sub_62C78 and dynamic uprobe ordering"
+    },
+    {
+      "from_ea": 404600,
+      "to_ea": 339744,
+      "callsite_ea": 404740,
+      "evidence": "direct BL in bridge function and dynamic uprobe ordering"
+    }
+  ],
+  "notes": [
+    "the startup crash path is treated as JNI_OnLoad-driven VM entry, not post-start business code",
+    "the VM bridge copies bytecode and forwards a compact descriptor into the dispatcher"
+  ]
+}

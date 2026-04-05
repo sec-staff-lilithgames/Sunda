@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/menu_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/menu_cell_text_color"
+        android:id="@+id/explicationPostInscriptionText"
+        android:layout_width="@dimen/width_text_explication_post_inscription"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="FELICITATIONS"
+        android:layout_centerHorizontal="true"/>
+    <com.digidust.elokence.akinator.graphic.AkinatorAddMagicButton
+        android:id="@+id/connectButton"
+        android:layout_width="@dimen/button_soundlike_width"
+        android:layout_height="@dimen/gen_button_height"
+        android:layout_marginTop="@dimen/sendForm_button_envoyer_margin_top_bottom"
+        android:layout_marginBottom="@dimen/sendForm_button_envoyer_margin_top_bottom"
+        android:text="S&apos;INSCRIRE"
+        android:layout_below="@+id/explicationPostInscriptionText"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_banner_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appconsent_v3_image_size_xxxl"
+        android:scaleType="centerCrop"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

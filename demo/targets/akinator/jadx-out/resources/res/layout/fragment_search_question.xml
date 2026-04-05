@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/searchQuestionContentText_size"
+        android:textColor="@color/buttons_text_color"
+        android:gravity="center"
+        android:id="@+id/searchQuestionContentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/addQuestionTitle_margin_top"
+        android:text="VERIFIONS_SI_LA_QUESTION_EXISTE"
+        android:minLines="4"/>
+    <EditText
+        android:textSize="@dimen/gen_little_button_text_size"
+        android:textColor="@color/buttons_text_color"
+        android:id="@+id/searchQuestionFieldValue"
+        android:background="@drawable/background_textbox_soundlike"
+        android:paddingLeft="@dimen/editText_height_padding"
+        android:paddingRight="@dimen/editText_height_padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:cursorVisible="true"
+        android:inputType="text"
+        android:textCursorDrawable="@null"/>
+</LinearLayout>

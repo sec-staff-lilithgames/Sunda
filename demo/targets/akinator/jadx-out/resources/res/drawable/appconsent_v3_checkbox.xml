@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/appconsent_ic_v3_checkbox_checked"/>
+    <item
+        android:state_checked="false"
+        android:drawable="@drawable/appconsent_ic_v3_checkbox_unchecked"/>
+    <item android:drawable="@drawable/appconsent_ic_v3_checkbox_unchecked"/>
+</selector>

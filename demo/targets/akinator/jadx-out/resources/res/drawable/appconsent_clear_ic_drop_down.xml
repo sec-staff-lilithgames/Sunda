@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="180"
+    android:pivotX="50%"
+    android:pivotY="50%">
+    <vector
+        android:height="9dp"
+        android:width="14dp"
+        android:viewportWidth="14"
+        android:viewportHeight="9">
+        <path
+            android:fillColor="#0252b6"
+            android:pathData="M1.252,8.26L0.678,7.635L7,0.74L13.322,7.635L12.748,8.26L7.369,2.392L7,1.99L6.631,2.392L1.252,8.26Z"
+            android:strokeColor="#0252b6"
+            android:strokeWidth="1"/>
+    </vector>
+</rotate>

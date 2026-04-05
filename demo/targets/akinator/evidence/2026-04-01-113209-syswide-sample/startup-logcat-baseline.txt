@@ -1,0 +1,675 @@
+--------- beginning of system
+04-01 11:32:33.210  2078  4409 I ActivityManager: Force stopping com.digidust.elokence.akinator.freemium appid=10437 user=0: from pid 27203
+04-01 11:32:33.213  2078  4409 W ProcessStats: Tracking association SourceState{2a5741f system/1000 ImpBg #2164883} whose proc state 6 is better than process ProcessState{113a4cc com.b_lam.resplash/10347 pkg=com.b_lam.resplash} proc state 14 (3 skipped)
+04-01 11:32:33.216  2078  4409 I AppsFilter: interaction: PackageSetting{cdf4ae5 com.kinandcarta.create.proxytoggle/10330} -> PackageSetting{602d9ba com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.217  2078  4409 I AppsFilter: interaction: PackageSetting{d69906b com.google.android.microdroid.empty_payload/10270} -> PackageSetting{602d9ba com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.217  2078  4409 I AppsFilter: interaction: PackageSetting{db547c8 bin.mt.termex/10007} -> PackageSetting{602d9ba com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.217  2078  4409 I AppsFilter: interaction: PackageSetting{ebeb061 com.beabox.bihe/10352} -> PackageSetting{602d9ba com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.217  2078  4409 I AppsFilter: interaction: PackageSetting{cf4d786 com.free.vpn.proxy.master.app/10423} -> PackageSetting{602d9ba com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.217  2078  4409 I AppsFilter: interaction: PackageSetting{58ec847 com.demo.pinprobe.test/10266} -> PackageSetting{602d9ba com.digidust.elokence.akinator.freemium/10437} BLOCKED
+--------- beginning of main
+04-01 11:32:33.226  2943  2943 D CarrierSvcBindHelper: onHandleForceStop: [com.digidust.elokence.akinator.freemium]
+04-01 11:32:33.226  2943  3199 D EuiccConnector: handleMessage: E msg.what=1
+04-01 11:32:33.226  2943  3199 D EuiccConnector: processMsg: AvailableState
+04-01 11:32:33.226  2943  3199 D EuiccConnector: processMsg: UnavailableState
+04-01 11:32:33.227  2943  3199 D EuiccConnector: transitionTo: destState=AvailableState
+04-01 11:32:33.228  2943  2943 D CarrierSvcBindHelper: No carrier app for: 0
+04-01 11:32:33.228  2943  2943 D CarrierSvcBindHelper: No carrier app for: 1
+04-01 11:32:33.228  2943  3199 D EuiccConnector: handleMessage: new destination call exit/enter
+04-01 11:32:33.229  2943  3199 D EuiccConnector: setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: state=UnavailableState,active=true,parent=null
+04-01 11:32:33.229  2943  3199 D EuiccConnector: invokeExitMethods: AvailableState
+04-01 11:32:33.229  2943  3199 D EuiccConnector: moveTempStackToStateStack: i=0,j=1
+04-01 11:32:33.229  2943  3199 D EuiccConnector: moveTempStackToStateStack: X mStateStackTop=1,startingIndex=1,Top=AvailableState
+04-01 11:32:33.229  2943  3199 D EuiccConnector: invokeEnterMethods: AvailableState
+04-01 11:32:33.229  2943  3199 D EuiccConnector: handleMessage: X
+04-01 11:32:33.230  2943  3199 D EuiccConnector: handleMessage: E msg.what=103
+04-01 11:32:33.230  2943  3199 D EuiccConnector: processMsg: AvailableState
+04-01 11:32:33.230  2943  3199 D EuiccConnector: deferMessage: msg=103
+04-01 11:32:33.230  2943  3199 D EuiccConnector: transitionTo: destState=BindingState
+04-01 11:32:33.230  2943  3199 D EuiccConnector: handleMessage: new destination call exit/enter
+04-01 11:32:33.230  2943  3199 D EuiccConnector: setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: null
+04-01 11:32:33.230  2943  3199 D EuiccConnector: invokeExitMethods: AvailableState
+04-01 11:32:33.230  2943  3199 D EuiccConnector: invokeExitMethods: UnavailableState
+04-01 11:32:33.230  2943  3199 D EuiccConnector: moveTempStackToStateStack: i=0,j=0
+04-01 11:32:33.230  2943  3199 D EuiccConnector: moveTempStackToStateStack: X mStateStackTop=0,startingIndex=0,Top=BindingState
+04-01 11:32:33.230  2943  3199 D EuiccConnector: invokeEnterMethods: BindingState
+04-01 11:32:33.234  2078  4409 D ActivityManager: sync unfroze 23326 com.google.android.euicc for 6
+04-01 11:32:33.234  2943  3199 D EuiccConnector: transitionTo: destState=DisconnectedState
+04-01 11:32:33.234  2943  3199 D EuiccConnector: moveDeferredMessageAtFrontOfQueue; what=103
+04-01 11:32:33.235  2943  3199 D EuiccConnector: handleMessage: new destination call exit/enter
+04-01 11:32:33.235  2943  3199 D EuiccConnector: setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: null
+04-01 11:32:33.235  2943  3199 D EuiccConnector: invokeExitMethods: BindingState
+04-01 11:32:33.235  2943  3199 D EuiccConnector: moveTempStackToStateStack: i=0,j=0
+04-01 11:32:33.235  2943  3199 D EuiccConnector: moveTempStackToStateStack: X mStateStackTop=0,startingIndex=0,Top=DisconnectedState
+04-01 11:32:33.235  2943  3199 D EuiccConnector: invokeEnterMethods: DisconnectedState
+04-01 11:32:33.235  2943  3199 D EuiccConnector: handleMessage: X
+04-01 11:32:33.235  2943  3199 D EuiccConnector: handleMessage: E msg.what=103
+04-01 11:32:33.235  2943  3199 D EuiccConnector: processMsg: DisconnectedState
+04-01 11:32:33.235  2943  3199 D EuiccConnector: deferMessage: msg=103
+04-01 11:32:33.235  2943  3199 D EuiccConnector: handleMessage: X
+04-01 11:32:33.235  2078  2569 D BackgroundInstallControlService: Package event received: 0
+04-01 11:32:33.235  2078  2569 D BackgroundInstallControlService: Package event received: 0
+04-01 11:32:33.245 23326 23326 I EuiccGoogle: [2] NetworkFetcher.getFirstActiveEuiccSlotId: isRemovableEsimDefault: false
+04-01 11:32:33.246 23326 23326 I EuiccGoogle: [2] EuiccServiceImpl.onCreate: onCreate DSDS mode: simCardState is 11
+04-01 11:32:33.254 23326 23326 I EuiccGoogle: [2] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=esim_supported_countries, type=string, partnerResId = 0
+04-01 11:32:33.256 23326 23326 I EuiccGoogle: [2] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=esim_unsupported_countries, type=string, partnerResId = 2131689525
+04-01 11:32:33.261 23326 23326 I EuiccGoogle: [2] ViewCompat$Api28Impl.getOverrideCarrierInfoListForConversion: enableNewConversionApi: true, enableConversionXosCarrierIdFromTransferConfig: false
+04-01 11:32:33.261 23326 23326 I EuiccGoogle: [2] ViewCompat$Api28Impl.getCarrierInfos: All carrier info overrides: []
+04-01 11:32:33.262 23326 23326 I EuiccGoogle: [2] PhenotypeUpdatedReceiver.setPsimConversionSupportedCarriers: setPsimConversionSupportedCarriers:[1, 3, 16, 576, 1404, 2020, 2021, 2122, 850, 27, 32, 959, 1187, 1480, 1670, 2119, 2018, 2536, 1895]
+04-01 11:32:33.264  2943  3199 D EuiccConnector: handleMessage: E msg.what=4
+04-01 11:32:33.264  2943  3199 D EuiccConnector: processMsg: DisconnectedState
+04-01 11:32:33.264  2943  3199 D EuiccConnector: transitionTo: destState=ConnectedState
+04-01 11:32:33.264  2943  3199 D EuiccConnector: handleMessage: new destination call exit/enter
+04-01 11:32:33.264  2943  3199 D EuiccConnector: setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: state=DisconnectedState,active=true,parent=null
+04-01 11:32:33.264  2943  3199 D EuiccConnector: moveTempStackToStateStack: i=0,j=1
+04-01 11:32:33.264  2943  3199 D EuiccConnector: moveTempStackToStateStack: X mStateStackTop=1,startingIndex=1,Top=ConnectedState
+04-01 11:32:33.264  2943  3199 D EuiccConnector: invokeEnterMethods: ConnectedState
+04-01 11:32:33.264  2943  3199 D EuiccConnector: moveDeferredMessageAtFrontOfQueue; what=103
+04-01 11:32:33.264  2943  3199 D EuiccConnector: handleMessage: X
+04-01 11:32:33.264  2943  3199 D EuiccConnector: handleMessage: E msg.what=103
+04-01 11:32:33.264  2943  3199 D EuiccConnector: processMsg: ConnectedState
+04-01 11:32:33.267  2943  3199 D EuiccConnector: handleMessage: X
+04-01 11:32:33.267 23326 27213 I EuiccGoogle: [3176] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: slotId = 0
+04-01 11:32:33.268 23326 27213 I EuiccGoogle: [3176] EuiccServiceImpl.onGetEuiccProfileInfoList: slotId = 0, isRemovable = false
+04-01 11:32:33.268 23326 27213 I EuiccGoogle: [3176] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: isRemovable = false.
+04-01 11:32:33.268 23326 27213 I EuiccGoogle: [3176] EuiccServiceImpl.onGetEuiccProfileInfoList: getSimCardState for slotId: 0
+04-01 11:32:33.269 23326 27213 I EuiccGoogle: [3176] EuiccServiceImpl.onGetEuiccProfileInfoList: GetEuiccProfileInfoListResult: simCardState :11and simCardStateAtTelephony:11 for slot:0
+04-01 11:32:33.269 23326 27213 I EuiccGoogle: [3176] EuiccServiceImpl.getProfileInfoList: getProfileInfoList: slotId = 0, includeTestProfiles = false
+04-01 11:32:33.269 23326 27213 I EuiccGoogle: [3176] EuiccServiceImpl.getProfileInfoList: getProfileInfoList: slotId = 0, includeTestProfiles = false.
+04-01 11:32:33.269 23326 27213 I EuiccGoogle: [3176] EuiccServiceImpl.getEidFromSlotId: getEidFromSlotId: slotId = 0.
+04-01 11:32:33.269 23326 27213 I EuiccGoogle: [3176] NetworkFetcher.getEidForSlot: getEidForSlot: 0
+04-01 11:32:33.270 23326 27213 I EuiccGoogle: [3176] BlockingEuiccCardManager.requestAllProfiles: requestAllProfiles: cardId = [AKHaGwWl7CpPzm-T6WNgDPEB8WQ]
+04-01 11:32:33.293  2078  6733 W ActivityTaskManager: callingPackage for (uid=2000, pid=27214) has no WPC
+04-01 11:32:33.294  2078  6733 V WindowManager: DesktopModeLaunchParamsModifier: phase= 0 task=null activity=null display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257720920 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257720920 task null, skipping
+04-01 11:32:33.294  2078  6733 V WindowManager: TaskLaunchParamsModifier:phase=0 task=null activity=null display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257720920 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257720920
+04-01 11:32:33.299  2078  6733 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@a9ee6773 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+04-01 11:32:33.300  2078  6733 V WindowManager: DesktopModeLaunchParamsModifier: phase= 0 task=null activity=ActivityRecord{93291133 u0 com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257720920 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257720920 task null, skipping
+04-01 11:32:33.300  2078  6733 V WindowManager: TaskLaunchParamsModifier:phase=0 task=null activity=ActivityRecord{93291133 u0 com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity t-1} display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257720920 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257720920
+04-01 11:32:33.300  2078  6733 V WindowManager: DesktopModeLaunchParamsModifier: phase= 3 task=null activity=ActivityRecord{93291133 u0 com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity t-1} display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257720920 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257720920 task null, skipping
+04-01 11:32:33.300  2078  6733 V WindowManager: TaskLaunchParamsModifier:phase=3 task=null activity=ActivityRecord{93291133 u0 com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity t-1} display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257720920 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257720920 non-freeform-task-display-area display-area=DefaultTaskDisplayArea@257720920 skip-bounds-fullscreen
+04-01 11:32:33.301   594   711 D SurfaceFlinger: setDesiredMode 4619827677550801152 {mode={fps=120.00 Hz, modePtr={id=1, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=false, force=false}
+04-01 11:32:33.303  2078  6733 V WindowManager: DesktopModeLaunchParamsModifier: phase= 3 task=Task{18ad572 #1247 type=standard A=10437:com.digidust.elokence.akinator.freemium nonResizable} activity=ActivityRecord{93291133 u0 com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257720920 not entering desktop mode, skipping
+04-01 11:32:33.303  2078  6733 V WindowManager: TaskLaunchParamsModifier:phase=3 task=Task{18ad572 #1247 type=standard A=10437:com.digidust.elokence.akinator.freemium nonResizable} activity=ActivityRecord{93291133 u0 com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257720920 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@257720920 skip-bounds-fullscreen
+04-01 11:32:33.306   594   643 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+04-01 11:32:33.306   594   594 D SurfaceFlinger: initiateModeChange 4619827677550801152 {mode={fps=120.00 Hz, modePtr={id=1, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=false, force=false}
+04-01 11:32:33.307   596 15680 D hwc-display: setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+04-01 11:32:33.307   596 15680 D hwc-display: [PrimaryDisplay] OperationRateManager::onConfig:rate=120
+04-01 11:32:33.307   596 15680 I hwc-display: [PrimaryDisplay] OperationRateManager::updateOperationRateLocked:Target@120(desired:120) | Refresh@120(peak:2147483647), Battery:OK, DBV:1339(NsMin:0)
+04-01 11:32:33.307   596 15680 I hwc-display: [PrimaryDisplay] setActiveConfigWithConstraints: config(37)
+04-01 11:32:33.309  2078  6733 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_PERMISSION) result code=0
+04-01 11:32:33.309  2621  2645 V WindowManagerShell: Transition requested (#17882): android.os.BinderProxy@460053f TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=1247 effectiveUid=10437 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity } baseActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} topActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} origActivity=null realActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} numActivities=1 lastActiveTime=1725378102 supportsMultiWindow=false resizeMode=0 isResizeable=false minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@c359e0c} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 121 - 0, 0) topActivityInfo=ActivityInfo{2442355 com.digidust.elokence.akinator.activities.SplashscreenActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2268) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 17882 }
+04-01 11:32:33.309  2621  2645 D ShellSplitScreen: logExit: no-op, mLoggerSessionId is null
+04-01 11:32:33.309  2621  2645 V ShellDesktopMode: DesktopTasksController: handleRequest request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=1247 effectiveUid=10437 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity } baseActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} topActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} origActivity=null realActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} numActivities=1 lastActiveTime=1725378102 supportsMultiWindow=false resizeMode=0 isResizeable=false minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@c359e0c} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 121 - 0, 0) topActivityInfo=ActivityInfo{2442355 com.digidust.elokence.akinator.activities.SplashscreenActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2268) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 17882 }
+04-01 11:32:33.309  2621  2645 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=triggerTask's display doesn't support desktop mode
+04-01 11:32:33.311  2976  2976 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused] -[state_user_active]
+04-01 11:32:33.311  2976  2976 D BaseActivity: Launcher flags updated: [state_started|state_window_focused] -[state_resumed|state_deferred_resumed]
+04-01 11:32:33.311  2976  2976 W SplitSelectStateCtor: Missing session instanceIds
+04-01 11:32:33.311  2976  2976 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+04-01 11:32:33.311  2078  2117 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@a9ee6773 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+04-01 11:32:33.312  2621  2645 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=false, height=495
+04-01 11:32:33.312  2078  4409 I AppsFilter: interaction: PackageSetting{cdf4ae5 com.kinandcarta.create.proxytoggle/10330} -> PackageSetting{15ba0ca com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.312  2078  4409 I AppsFilter: interaction: PackageSetting{d69906b com.google.android.microdroid.empty_payload/10270} -> PackageSetting{15ba0ca com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.312  2078  4409 I AppsFilter: interaction: PackageSetting{db547c8 bin.mt.termex/10007} -> PackageSetting{15ba0ca com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.312  2078  4409 I AppsFilter: interaction: PackageSetting{ebeb061 com.beabox.bihe/10352} -> PackageSetting{15ba0ca com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.312  2078  4409 I AppsFilter: interaction: PackageSetting{cf4d786 com.free.vpn.proxy.master.app/10423} -> PackageSetting{15ba0ca com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.312  2078  4409 I AppsFilter: interaction: PackageSetting{58ec847 com.demo.pinprobe.test/10266} -> PackageSetting{15ba0ca com.digidust.elokence.akinator.freemium/10437} BLOCKED
+04-01 11:32:33.312  2078  2569 D BackgroundInstallControlService: Package event received: 0
+04-01 11:32:33.313  2078  4409 V WindowManager: Defer transition id=17882 for TaskFragmentTransaction=android.os.Binder@9832eb1
+04-01 11:32:33.314  2078  4409 V WindowManager: deferTransitionReady deferReadyDepth=1 stack=com.android.server.wm.TransitionController.deferTransitionReady:1061 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.dispatchTransaction:517 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1259 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1228 com.android.server.wm.RootWindowContainer.performSurfacePlacement:777 
+04-01 11:32:33.314  2976  2976 D RecentsView: onTaskDisplayChanged: 1247, new displayId = 0
+04-01 11:32:33.314  2976  2976 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+04-01 11:32:33.315  2078  6733 V WindowManager: Continue transition id=17882 for TaskFragmentTransaction=android.os.Binder@9832eb1
+04-01 11:32:33.315  2078  6733 V WindowManager: continueTransitionReady deferReadyDepth=0 stack=com.android.server.wm.TransitionController.continueTransitionReady:1071 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.onTransactionFinished:546 com.android.server.wm.TaskFragmentOrganizerController.onTransactionHandled:740 android.window.ITaskFragmentOrganizerController$Stub.onTransact:225 android.os.Binder.execTransactInternal:1478 
+04-01 11:32:33.323  2204  2204 I pixel-thermal: VIRTUAL-SKIN:28.5312 raw data: VIRTUAL-SKIN:28531.2 VIRTUAL-SKIN-SUB-1:28531.2 VIRTUAL-SKIN-SUB-2:27965.2 VIRTUAL-SKIN-SUB-3:28462 charger_therm:35267 gnss_tcxo_therm:28789 modem_therm:32996 quiet_therm:28033 rffe_therm:28634 soc_therm:28789 usb_conn_therm:28122 
+04-01 11:32:33.324  1332  1332 D Zygote  : Forked child process 27217
+04-01 11:32:33.324  2078  2134 I ActivityManager: Start proc 27217:com.digidust.elokence.akinator.freemium/u0a437 for next-top-activity {com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity}
+04-01 11:32:33.333 27217 27217 W zygote64: Activation of cgroup controller +memory failed in path /sys/fs/cgroup/apps/uid_10437: Invalid argument
+04-01 11:32:33.334  2078  4409 D CompatChangeReporter: Compat change id reported: 377864165; UID 10437; state: ENABLED
+04-01 11:32:33.337 27217 27217 I Zygote  : Process 27217 created for com.digidust.elokence.akinator.freemium
+04-01 11:32:33.337 27217 27217 I inator.freemium: Using CollectorTypeCMC GC.
+04-01 11:32:33.341  2976  2976 D BaseActivity: Launcher flags updated: [state_started] -[state_window_focused]
+04-01 11:32:33.348 27217 27217 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+04-01 11:32:33.350 21857 22194 I com.tencent.mm: Explicit concurrent mark compact GC freed 3329KB AllocSpace bytes, 7(204KB) LOS objects, 46% free, 109MB/205MB, paused 1.143ms,4.762ms total 484.833ms
+04-01 11:32:33.351  2943  3199 D EuiccConnector: handleMessage: E msg.what=6
+04-01 11:32:33.351  2943  3199 D EuiccConnector: processMsg: ConnectedState
+04-01 11:32:33.351  2943  3199 D EuiccConnector: handleMessage: X
+04-01 11:32:33.354  2078  2569 D BackgroundInstallControlService: Package event received: 0
+04-01 11:32:33.355 23791 26560 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+04-01 11:32:33.356 23791 26560 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+04-01 11:32:33.359  2078  2113 V WindowManager: Sent Transition (#17882) createdAt=04-01 11:32:33.300 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=1247 effectiveUid=10437 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity } baseActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} topActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} origActivity=null realActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} numActivities=1 lastActiveTime=1725378102 supportsMultiWindow=false resizeMode=0 isResizeable=false minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{ab99acc Task{18ad572 #1247 type=standard A=10437:com.digidust.elokence.akinator.freemium nonResizable}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 121 - 0, 0) topActivityInfo=ActivityInfo{3f94115 com.digidust.elokence.akinator.activities.SplashscreenActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2268) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 17882 }
+04-01 11:32:33.359  2078  2113 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+04-01 11:32:33.359  2078  2113 V WindowManager:     info={id=17882 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+04-01 11:32:33.359  2078  2113 V WindowManager:         {WCT{RemoteToken{ab99acc Task{18ad572 #1247 type=standard A=10437:com.digidust.elokence.akinator.freemium nonResizable}}} m=OPEN f=NONE leash=Surface(name=Task=1247#213831)/@0x88169a3 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+04-01 11:32:33.359  2078  2113 V WindowManager:         {WCT{RemoteToken{aee5c93 Task{d0092b #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1#44)/@0x28a32ba sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+04-01 11:32:33.359  2078  2113 V WindowManager:         {m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d321681}#213788)/@0x41ca24e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+04-01 11:32:33.359  2078  2113 V WindowManager:     ]}
+04-01 11:32:33.359  2621 26118 V WindowManagerShell: onTransitionReady(transaction=8924945227104)
+04-01 11:32:33.360  2621  2645 V WindowManagerShell: onTransitionReady (#17882) android.os.BinderProxy@460053f: {id=17882 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+04-01 11:32:33.360  2621  2645 V WindowManagerShell:         {m=OPEN f=NONE leash=Surface(name=Task=1247#213831)/@0xc007579 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+04-01 11:32:33.360  2621  2645 V WindowManagerShell:         {m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1#44)/@0x49312be sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+04-01 11:32:33.360  2621  2645 V WindowManagerShell:         {m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d321681}#213788)/@0xf490f1f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+04-01 11:32:33.360  2621  2645 V WindowManagerShell:     ]}
+04-01 11:32:33.360  2621  2645 V ShellDesktopMode: DesktopModeLogger: taskInfo map after processing changes 0
+04-01 11:32:33.360  2621  2645 D ShellDesktopMode: DesktopTaskChangeListener: onTaskMovingToBack for taskId=1, displayId=0 - desktop not supported
+04-01 11:32:33.360  2621  2645 D ShellDesktopMode: DesktopTaskChangeListener: onTaskOpening for taskId=1247, displayId=0 userId=0 currentUserId=0 parentTaskId=-1 isFreeform=false isActive=false
+04-01 11:32:33.360  2621  2645 D ShellDesktopMode: DesktopTaskChangeListener: onTaskOpening for taskId=1247, displayId=0 - desktop not supported
+04-01 11:32:33.363  2621  2645 V WindowManagerShell: Playing animation for (#17882) android.os.BinderProxy@460053f@0
+04-01 11:32:33.363  2621  2645 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+04-01 11:32:33.363  2621  2645 V ShellDesktopMode: DesktopMixedTransitionHandler: No pending desktop transition
+04-01 11:32:33.363  2621  2645 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=17882 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=1247#213831)/@0xc007579 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1#44)/@0x49312be sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d321681}#213788)/@0xf490f1f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}]}
+04-01 11:32:33.363  2621  2645 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@16cbb96 windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@877c317, appThread = android.app.IApplicationThread$Stub$Proxy@3394304, debugName = overlayBackTransition }}
+04-01 11:32:33.363  2621  2645 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@ae4f0ed, appThread = android.app.IApplicationThread$Stub$Proxy@930fb22, debugName = LauncherToDream }}
+04-01 11:32:33.363  2621  2645 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4ab79b3, appThread = android.app.IApplicationThread$Stub$Proxy@f898b70, debugName = QuickstepLaunchHome }}
+04-01 11:32:33.363  2621  2645 V WindowManagerShell:  Checking filter Pair{{types=[OPEN,TO_FRONT] flags=0x0] notFlags=0x0 checks=[{atype=standard independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=freeform isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@b2860ae, appThread = null, debugName = DesktopWindowLimitUnminimize }}
+04-01 11:32:33.363  2621  2645 V WindowManagerShell:  Delegate animation for (#17882) to null
+04-01 11:32:33.363  2621  2645 V WindowManagerShell: start default transition animation, info = {id=17882 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=1247#213831)/@0xc007579 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1#44)/@0x49312be sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d321681}#213788)/@0xf490f1f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}]}
+04-01 11:32:33.364  2621  2645 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@e07a76e animAttr=0x13 type=OPEN isEntrance=false
+04-01 11:32:33.364 27217 27217 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+04-01 11:32:33.364 27217 27217 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+04-01 11:32:33.364 27217 27217 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+04-01 11:32:33.364  2621  2645 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@18acc7a animAttr=0x12 type=OPEN isEntrance=true
+04-01 11:32:33.364  2621  2645 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@6590182
+04-01 11:32:33.364  2621  2645 V ShellTaskOrganizer: Task appeared taskId=1247 listener=FullscreenTaskListener
+04-01 11:32:33.364  2621  2645 V ShellTaskOrganizer: Fullscreen Task Appeared: #1247
+04-01 11:32:33.365  2976  2976 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+04-01 11:32:33.382 27217 27217 W inator.freemium: Failed to find entry 'classes.dex': Entry not found
+04-01 11:32:33.383 27217 27217 W inator.freemium: Failed to find entry 'classes.dex': Entry not found
+04-01 11:32:33.383 27217 27217 W inator.freemium: Failed to find entry 'classes.dex': Entry not found
+04-01 11:32:33.384 27217 27217 D nativeloader: Configuring clns-9 for other apk /data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/base.apk:/data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/split_config.arm64_v8a.apk:/data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/split_config.en.apk:/data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/split_config.xxhdpi.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/lib/arm64:/data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/base.apk!/lib/arm64-v8a:/data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinato
+04-01 11:32:33.399 27217 27217 D nativeloader: Load /data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/split_config.arm64_v8a.apk!/lib/arm64-v8a/libpairipcore.so using class loader ns clns-9 (caller=/data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/base.apk!classes2.dex): ok
+04-01 11:32:33.414  2976  2976 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+--------- beginning of crash
+04-01 11:32:33.433 27217 27217 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0xb400007e50454000 in tid 27217 (inator.freemium), pid 27217 (inator.freemium)
+04-01 11:32:33.468 27240 27240 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+04-01 11:32:33.471   765   765 I tombstoned: received crash request for pid 27217
+04-01 11:32:33.472 27240 27240 I crash_dump64: performing dump of process 27217 (target tid = 27217)
+04-01 11:32:33.655  2621  2645 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#17882) android.os.BinderProxy@460053f@0
+04-01 11:32:33.657  2078  2113 V WindowManager: Finish Transition (#17882): created at 04-01 11:32:33.300 collect-started=0.08ms request-sent=8.709ms started=10.228ms ready=56.075ms sent=57.174ms commit=14.889ms finished=356.935ms
+04-01 11:32:33.657  2976  2976 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+04-01 11:32:33.657  2621  3004 D WallpaperService: onVisibilityChanged(false): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@b7a1595
+04-01 11:32:33.657  2621  2645 V WindowManagerShell: Track 0 became idle
+04-01 11:32:33.657  2621  2645 V WindowManagerShell: All active transition animations finished
+04-01 11:32:33.663  2976  2976 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+04-01 11:32:33.664  2621  2645 D Bubbles : onLocusVisibilityChanged=Overview|ENABLED visible=false taskId=1
+04-01 11:32:33.664 15427 15441 I AiAiEcho: (REDACTED) %s No tracked ambient data found for ID: %s; for event type: %d, skipping event processing.
+04-01 11:32:33.829 27240 27240 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+04-01 11:32:33.829 27240 27240 F DEBUG   : Build fingerprint: 'google/akita/akita:16/BP4A.260105.004.E1/14587043:user/release-keys'
+04-01 11:32:33.829 27240 27240 F DEBUG   : Kernel Release: '6.1.145-android14-11-gc1de4747ac59-ab14219743'
+04-01 11:32:33.829 27240 27240 F DEBUG   : Revision: 'MP1.0'
+04-01 11:32:33.829 27240 27240 F DEBUG   : ABI: 'arm64'
+04-01 11:32:33.829 27240 27240 F DEBUG   : Timestamp: 2026-04-01 11:32:33.476722873+0800
+04-01 11:32:33.829 27240 27240 F DEBUG   : Process uptime: 1s
+04-01 11:32:33.829 27240 27240 F DEBUG   : Executable: /system/bin/app_process64
+04-01 11:32:33.829 27240 27240 F DEBUG   : Cmdline: com.digidust.elokence.akinator.freemium
+04-01 11:32:33.829 27240 27240 F DEBUG   : pid: 27217, tid: 27217, name: inator.freemium  >>> com.digidust.elokence.akinator.freemium <<<
+04-01 11:32:33.829 27240 27240 F DEBUG   : uid: 10437
+04-01 11:32:33.829 27240 27240 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+04-01 11:32:33.829 27240 27240 F DEBUG   : pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+04-01 11:32:33.829 27240 27240 F DEBUG   : esr: 0000000092000007 (Data Abort Exception 0x24)
+04-01 11:32:33.829 27240 27240 F DEBUG   : signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0xb400007e50454000 (read)
+04-01 11:32:33.829 27240 27240 F DEBUG   :     x0  0000000000033860  x1  70c11dc9b10e2485  x2  0000000000000000  x3  00000100000001b3
+04-01 11:32:33.829 27240 27240 F DEBUG   :     x4  00000000b92fc79d  x5  0000000000002557  x6  00000000000003d8  x7  0000000076c76be9
+04-01 11:32:33.829 27240 27240 F DEBUG   :     x8  000000000004f595  x9  00000000c10c3c39  x10 b400007e50404a60  x11 000000000003385f
+04-01 11:32:33.829 27240 27240 F DEBUG   :     x12 0000000016c6c8eb  x13 5f4eedaea5c5eef3  x14 0000000005000f4e  x15 0000000044fe888d
+04-01 11:32:33.829 27240 27240 F DEBUG   :     x16 b400007e504207a1  x17 00000000fffc954b  x18 0000007e63f4c000  x19 00000000cf72c243
+04-01 11:32:33.829 27240 27240 F DEBUG   :     x20 00000000850ac582  x21 00000000d20e8f27  x22 0000000000000020  x23 000000000000008f
+04-01 11:32:33.829 27240 27240 F DEBUG   :     x24 00000000e3ba6b44  x25 0000000069699075  x26 0000007ff3c10558  x27 00000000000017f3
+04-01 11:32:33.830 27240 27240 F DEBUG   :     x28 0000000000001c7d  x29 00000000fc95078b
+04-01 11:32:33.830 27240 27240 F DEBUG   :     lr  0000000000000000  sp  0000007ff3c10300  pc  0000007b66f4675c  pst 00000000a0001000
+04-01 11:32:33.830 27240 27240 F DEBUG   :     esr 0000000092000007
+04-01 11:32:33.830 27240 27240 F DEBUG   : 1 total frames
+04-01 11:32:33.830 27240 27240 F DEBUG   : backtrace:
+04-01 11:32:33.830 27240 27240 F DEBUG   :       #00 pc 000000000005d75c  /data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/split_config.arm64_v8a.apk!libpairipcore.so (offset 0x16c000)
+04-01 11:32:33.843  2078 27243 E ActivityManager: App crashed on incremental package com.digidust.elokence.akinator.freemium which is 100% loaded.
+04-01 11:32:33.845   765   765 E tombstoned: Tombstone written to: tombstone_09
+04-01 11:32:33.849  2078 27244 I DropBoxManagerService: add tag=data_app_native_crash isTagEnabled=true flags=0x2
+04-01 11:32:33.850  2078  2410 I BootReceiver: Filtering tombstone file: tombstone_09.pb
+04-01 11:32:33.852  2078  2410 I BootReceiver: Generated tombstone file: tombstone_09.pb5983237840281910278.pb.tmp
+04-01 11:32:33.852  2078  2410 I BootReceiver: Adding tombstone tombstone_09.pb5983237840281910278.pb.tmp to dropbox
+04-01 11:32:33.853  2078  2410 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE_PROTO_WITH_HEADERS isTagEnabled=true flags=0x4
+04-01 11:32:33.854  2078  4365 I ActivityManager: Process com.digidust.elokence.akinator.freemium (pid 27217) has died: fg  TOP 
+04-01 11:32:33.854  2078  4365 W ActivityTaskManager: ProcessRecord{a79831f 27217:com.digidust.elokence.akinator.freemium/u0a437} is removed with pending start ActivityRecord{93291133 u0 com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity t1247}
+04-01 11:32:33.854  2078  2135 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10437/pid_27217
+04-01 11:32:33.854  1332  1332 I Zygote  : Process 27217 exited due to signal 11 (Segmentation fault)
+04-01 11:32:33.855  2621  2645 V WindowManagerShell: Transition requested (#17883): android.os.BinderProxy@bf9a007 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=1247 effectiveUid=10437 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} numActivities=0 lastActiveTime=1725378102 supportsMultiWindow=false resizeMode=0 isResizeable=false minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@c359e0c} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 132) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 17883 }
+04-01 11:32:33.855  2621  2645 V ShellDesktopMode: DesktopTasksController: handleRequest request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=1247 effectiveUid=10437 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} numActivities=0 lastActiveTime=1725378102 supportsMultiWindow=false resizeMode=0 isResizeable=false minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@c359e0c} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 132) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 17883 }
+04-01 11:32:33.855  2621  2645 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=triggerTask's display doesn't support desktop mode
+04-01 11:32:33.855   594  2595 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+04-01 11:32:33.855  2976  2976 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=false newVisibility=true
+04-01 11:32:33.856  2078  4365 V WindowManager: Defer transition id=17883 for TaskFragmentTransaction=android.os.Binder@36f1739
+04-01 11:32:33.856  2078  4365 V WindowManager: deferTransitionReady deferReadyDepth=1 stack=com.android.server.wm.TransitionController.deferTransitionReady:1061 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.dispatchTransaction:517 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1259 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1228 com.android.server.wm.RootWindowContainer.performSurfacePlacement:777 
+04-01 11:32:33.856  2078  2410 I BootReceiver: Adding text tombstone version of tombstone_09.pb5983237840281910278.pb.tmp to dropbox
+04-01 11:32:33.857  2976  2976 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=6}
+04-01 11:32:33.859  2078  2521 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+04-01 11:32:33.860  2078  2569 D BackgroundInstallControlService: Package event received: 0
+04-01 11:32:33.860  2078  2569 D BackgroundInstallControlService: Package event received: 0
+04-01 11:32:33.860  2078  2521 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+04-01 11:32:33.860  2078  2521 D InetDiagMessage: Destroyed live tcp sockets for uids={10437} in 2ms
+04-01 11:32:33.861 15427 15441 I AiAiEcho: (REDACTED) %s No tracked ambient data found for ID: %s; for event type: %d, skipping event processing.
+04-01 11:32:33.861  2621  3004 D WallpaperService: onVisibilityChanged(true): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@b7a1595
+04-01 11:32:33.861  2078  2521 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+04-01 11:32:33.862  2078  2521 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+04-01 11:32:33.862  2078  2521 D InetDiagMessage: Destroyed live tcp sockets for uids={20437} in 2ms
+04-01 11:32:33.863  2078  2404 W UsageStatsService: Unexpected activity event reported! (com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity event : 23 instanceId : 223464899)
+04-01 11:32:33.864  2976  2976 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[state_resumed|state_user_active]
+04-01 11:32:33.865  2976  2976 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+04-01 11:32:33.865  2976  2976 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_user_active] +[state_deferred_resumed]
+04-01 11:32:33.865  2976  2976 D StatsLog: LAUNCHER_ONRESUME
+04-01 11:32:33.865  2621  2645 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=true, height=495
+04-01 11:32:33.867  2976  3070 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+04-01 11:32:33.867  2078  6733 V WindowManager: Continue transition id=17883 for TaskFragmentTransaction=android.os.Binder@36f1739
+04-01 11:32:33.867  2078  6733 V WindowManager: continueTransitionReady deferReadyDepth=0 stack=com.android.server.wm.TransitionController.continueTransitionReady:1071 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.onTransactionFinished:546 com.android.server.wm.TaskFragmentOrganizerController.onTransactionHandled:740 android.window.ITaskFragmentOrganizerController$Stub.onTransact:225 android.os.Binder.execTransactInternal:1478 
+04-01 11:32:33.868 15427 15441 I AiAiEcho: (REDACTED) Predicting[%d]: %s
+04-01 11:32:33.868 15427 15441 I AiAiEcho: (REDACTED) EchoTargets: %s
+04-01 11:32:33.868 15427 15441 I AiAiEcho: Filtered by AiAi flag check: %s
+04-01 11:32:33.869 15427 15441 I AiAiEcho: (REDACTED) #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: %s
+04-01 11:32:33.869 15427 15441 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+04-01 11:32:33.870  2621  2702 V WindowManagerShell: onTransitionReady(transaction=8924945227153)
+04-01 11:32:33.870  2621  2645 V WindowManagerShell: onTransitionReady (#17883) android.os.BinderProxy@bf9a007: {id=17883 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+04-01 11:32:33.870  2621  2645 V WindowManagerShell:         {m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1#44)/@0x4757534 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+04-01 11:32:33.870  2621  2645 V WindowManagerShell:         {m=CLOSE f=NONE leash=Surface(name=Task=1247#213831)/@0x9f0ef5d sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+04-01 11:32:33.870  2621  2645 V WindowManagerShell:         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d321681}#213788)/@0x37270d2 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+04-01 11:32:33.870  2621  2645 V WindowManagerShell:     ]}
+04-01 11:32:33.870  2621  2645 V ShellDesktopMode: DesktopModeLogger: taskInfo map after processing changes 0
+04-01 11:32:33.870  2621  2645 D ShellDesktopMode: DesktopTaskChangeListener: onTaskClosing for taskId=1247, displayId=0 - desktop not supported
+04-01 11:32:33.870  2621  2645 D ShellDesktopMode: DesktopTaskChangeListener: onTaskMovingToFront for taskId=1, displayId=0 - desktop not supported
+04-01 11:32:33.870  2621  2645 V WindowManagerShell: Playing animation for (#17883) android.os.BinderProxy@bf9a007@0
+04-01 11:32:33.870  2621  2645 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+04-01 11:32:33.870  2621  2645 V ShellDesktopMode: DesktopMixedTransitionHandler: No pending desktop transition
+04-01 11:32:33.870  2621  2645 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=17883 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1#44)/@0x4757534 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=CLOSE f=NONE leash=Surface(name=Task=1247#213831)/@0x9f0ef5d sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d321681}#213788)/@0x37270d2 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}]}
+04-01 11:32:33.870  2621  2645 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@16cbb96 windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@877c317, appThread = android.app.IApplicationThread$Stub$Proxy@3394304, debugName = overlayBackTransition }}
+04-01 11:32:33.871  2621  2645 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@ae4f0ed, appThread = android.app.IApplicationThread$Stub$Proxy@930fb22, debugName = LauncherToDream }}
+04-01 11:32:33.871  2621  2645 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4ab79b3, appThread = android.app.IApplicationThread$Stub$Proxy@f898b70, debugName = QuickstepLaunchHome }}
+04-01 11:32:33.871  2621  2645 D RemoteTransitionHandler: Found filterPair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4ab79b3, appThread = android.app.IApplicationThread$Stub$Proxy@f898b70, debugName = QuickstepLaunchHome }}
+04-01 11:32:33.871  2621  2645 V WindowManagerShell:  Delegate animation for (#17883) to RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4ab79b3, appThread = android.app.IApplicationThread$Stub$Proxy@f898b70, debugName = QuickstepLaunchHome }
+04-01 11:32:33.873  2976  2976 D LauncherStateManager: StateManager.cancelAnimation: animation ongoing: false, partial trace:
+04-01 11:32:33.873  2976  2976 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.setCurrentAnimation(go/retraceme 9a6b77a940ad698555d5d5a48afbac6e139691515c032a6c2cfa474a36c02985:18)
+04-01 11:32:33.873  2976  2976 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme 9a6b77a940ad698555d5d5a48afbac6e139691515c032a6c2cfa474a36c02985:646)
+04-01 11:32:33.873  2976  2976 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager$WallpaperOpenLauncherAnimationRunner.onAnimationStart(go/retraceme 9a6b77a940ad698555d5d5a48afbac6e139691515c032a6c2cfa474a36c02985:96)
+04-01 11:32:33.873  2976  2976 D LauncherStateManager: StateManager.createAtomicAnimation: fromState: Normal, toState: Normal, partial trace:
+04-01 11:32:33.873  2976  2976 D LauncherStateManager: 	at com.android.quickstep.util.WorkspaceRevealAnim.prepareToAnimate(go/retraceme 9a6b77a940ad698555d5d5a48afbac6e139691515c032a6c2cfa474a36c02985:20)
+04-01 11:32:33.873  2976  2976 D LauncherStateManager: 	at com.android.quickstep.util.WorkspaceRevealAnim.<init>(go/retraceme 9a6b77a940ad698555d5d5a48afbac6e139691515c032a6c2cfa474a36c02985:11)
+04-01 11:32:33.873  2976  2976 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme 9a6b77a940ad698555d5d5a48afbac6e139691515c032a6c2cfa474a36c02985:683)
+04-01 11:32:33.873  2976  2976 D AllAppsTransitionController: shouldProtectHeader: false skipScrim: true state: Normal stateManager.getState(): Normal
+04-01 11:32:33.873  2976  2976 D KeyboardInsetsHandler: removePendingImeController: pendingImeController=null
+04-01 11:32:33.874  2976  2976 D b/311077782: LauncherAnimationRunner.setAnimation
+04-01 11:32:33.874 15427 15441 I AiAiEcho: (REDACTED) #postPredictionTargets: Sending updates to UISurface %s with targets# %s (types=[%s])
+04-01 11:32:33.875  2621  2645 V WindowManagerShell:  animated by com.android.wm.shell.transition.RemoteTransitionHandler@f884955
+04-01 11:32:33.875  2078  2113 V WindowManager: Sent Transition (#17883) createdAt=04-01 11:32:33.854 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=1247 effectiveUid=10437 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.digidust.elokence.akinator.freemium/com.digidust.elokence.akinator.activities.SplashscreenActivity} numActivities=0 lastActiveTime=1725378102 supportsMultiWindow=false resizeMode=0 isResizeable=false minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{ab99acc Task{18ad572 #1247 type=standard A=10437:com.digidust.elokence.akinator.freemium nonResizable}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 132) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 17883 }
+04-01 11:32:33.875  2078  2113 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+04-01 11:32:33.875  2078  2113 V WindowManager:     info={id=17883 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+04-01 11:32:33.875  2078  2113 V WindowManager:         {WCT{RemoteToken{aee5c93 Task{d0092b #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1#44)/@0x28a32ba sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+04-01 11:32:33.875  2078  2113 V WindowManager:         {WCT{RemoteToken{ab99acc Task{18ad572 #1247 type=standard A=10437:com.digidust.elokence.akinator.freemium nonResizable}}} m=CLOSE f=NONE leash=Surface(name=Task=1247#213831)/@0x88169a3 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+04-01 11:32:33.875  2078  2113 V WindowManager:         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d321681}#213788)/@0x41ca24e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+04-01 11:32:33.875  2078  2113 V WindowManager:     ]}
+04-01 11:32:33.876  2621  2645 D Bubbles : onLocusVisibilityChanged=Overview|DISABLED visible=true taskId=1
+04-01 11:32:33.881  2976  3019 E FrameEvents: addRelease: Did not find frame.
+04-01 11:32:33.888  2976  2976 D SsBaseTemplateCard: Passed-in item info is null
+04-01 11:32:33.889  2976  2976 I SsBaseTemplateCard: setFormattedContentDescription: text=14°C, iconDescription=Sunny, contentDescription=Sunny, 14°C
+04-01 11:32:33.889  2976  2976 D SsBaseTemplateCard: Passed-in item info is null
+04-01 11:32:33.889  2976  2976 D SsBaseTemplateCard: Passed-in item info is null
+04-01 11:32:33.889  2976  2976 I SsBaseTemplateCard: Secondary card pane is null
+04-01 11:32:33.889  2976  2976 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+04-01 11:32:33.889  2976  2976 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+04-01 11:32:33.892  2976  2976 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused|state_user_active] +[state_window_focused]
+04-01 11:32:33.893  2078  2442 I ImeTracker: com.google.android.apps.nexuslauncher:255058f2: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false
+04-01 11:32:33.893  2976  2976 D InsetsController: hide(ime())
+04-01 11:32:33.893  2976  2976 I ImeTracker: com.google.android.apps.nexuslauncher:255058f2: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+04-01 11:32:33.894  4156  4156 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2113 
+04-01 11:32:33.895  4156  4156 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+04-01 11:32:33.895  4156  4156 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1384 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.apps.nexuslauncher, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+04-01 11:32:33.895  4156  4156 W AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():319 Null input view, cannot update padding!
+04-01 11:32:33.895  4156  4156 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+04-01 11:32:33.895  2078  4796 W PackageConfigPersister: App-specific configuration not found for packageName: com.google.android.apps.nexuslauncher and userId: 0
+04-01 11:32:33.984  2078  2410 I BootReceiver: Copying /data/tombstones/tombstone_09.pb5983237840281910278.pb.tmp816875272145169158.pb.txt.tmp to DropBox (SYSTEM_TOMBSTONE)
+04-01 11:32:33.985  2078  2410 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+04-01 11:32:34.215  2976  2976 D WorkspaceRevealAnim: onAnimationEnd: workspace alpha = 1.0
+04-01 11:32:34.216  2621  4938 V WindowManagerShell: Received remote transition finished callback for (#17883)
+04-01 11:32:34.217  2621  2645 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#17883) android.os.BinderProxy@bf9a007@0
+04-01 11:32:34.226  2078  2113 V WindowManager: Finish Transition (#17883): created at 04-01 11:32:33.854 collect-started=0.035ms request-sent=0.091ms started=2.556ms ready=12.857ms sent=13.838ms commit=13.349ms finished=370.862ms
+04-01 11:32:34.232  2621  2645 V WindowManagerShell: Track 0 became idle
+04-01 11:32:34.232  2621  2645 V WindowManagerShell: All active transition animations finished
+04-01 11:32:34.235  2976  2976 D RecentsView: onTaskRemoved: 1247, not handling task stack changes
+04-01 11:32:34.236  2976  2976 D RecentsView: onTaskRemoved: 1247, not handling task stack changes
+04-01 11:32:34.237  2621  2645 V ShellTaskOrganizer: Task vanished taskId=1247
+04-01 11:32:34.237  2621  2645 V ShellTaskOrganizer: Fullscreen Task Vanished: #1247
+04-01 11:32:34.237  2621  2645 V ShellDesktopMode: Task Vanished: #1247 closed=true
+04-01 11:32:34.238  2976  2976 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+04-01 11:32:34.239  2621  2645 D ShellDesktopMode: AppToWebRepository: Task 1247 is vanishing. Removing task data from repository
+04-01 11:32:34.240  2621  2645 V AppCompat: SingleSurfaceLetterboxController: []
+04-01 11:32:34.240  2621  2645 V AppCompat: MultiSurfaceLetterboxController: []
+04-01 11:32:34.240  2621  2645 V AppCompat: LetterboxInputController: []
+04-01 11:32:34.240  2621  2645 V AppCompat: RoundedCornersLetterboxController: {}
+04-01 11:32:34.240  2078  2130 W WindowManager: Failed looking up window session=Session{e26f31 2621:u0a10243} callers=com.android.server.wm.WindowManagerService.removeClientToken:2221 com.android.server.wm.Session.remove:283 android.view.IWindowSession$Stub.onTransact:639 
+04-01 11:32:34.242  2078  2585 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+04-01 11:32:34.443  1561  1653 I RFSD    : [RfsService::Nv] ProcessMessage : RFS_IO_REQUEST
+04-01 11:32:34.443  1561  1653 D RFSD    : [RfsService::File] Seek temp file
+04-01 11:32:34.446  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.450  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.453  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.457  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.460  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.464  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.467  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.468 23806 23806 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsApiService }
+04-01 11:32:34.468 23806 23806 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsApiService }
+04-01 11:32:34.470  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.473  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.476  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.481  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.487  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.494  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.497  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.500  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.504  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.507  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.510  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.512  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.514  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.518  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.522  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.525  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.528  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.530  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.533  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.537  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.539  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.542  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.544  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.547  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.550  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.553  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.556  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.558  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.561  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.565  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.568  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.572  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.575  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.578  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.581  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.585  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.587  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.589  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.592  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.594  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.596  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.599  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.601  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.605  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.606  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.612  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.615  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.617  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.620  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.623  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.626  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.629  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.631  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.633  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.635  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.637  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.639  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.641  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.644  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.646  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.648  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.651  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.653  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.655  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.657  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.659  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.661  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.663  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.665  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.667  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.669  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.671  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.673  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.675  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.678  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.680  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.682  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.684  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.686  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.689  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.691  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.694  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.697  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.699  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.701  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.704  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.707  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.709  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.711  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.714  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.716  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.720  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.723  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.725  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.727  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.730  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.733  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.738  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.741  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.744  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.746  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.748  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.751  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.753  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.755  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.758  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.760  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.762  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.765  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.770  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.773  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.776  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.779  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.782  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.785  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.788  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.791  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.794  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.797  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.800  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.802  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.804  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.808  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.810  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.813  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.816  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.819  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.822  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.825  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.828  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.830  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.833  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.836  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.839  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.842  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.845  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.848  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.851  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.855  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.858  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.862  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.865  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.868  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.871  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.874  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.877  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.880  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.883  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.886  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.889  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.892  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.896  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.899  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.902  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.905  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.908  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.911  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.914  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.917  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.920  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.923  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.926  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.929  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.932  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.934  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.937  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.940  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.943  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.947  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.950  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.953  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.955  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.959  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.962  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.970  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.972  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.976  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.981  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.984  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.987  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.990  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.993  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:34.996  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.000  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.002  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.006  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.010  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.013  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.016  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.019  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.023  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.025  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.029  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.033  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.036  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.039  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.042  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.044  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.048  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.051  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.054  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.057  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.060  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.063  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.066  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.069  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.072  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.075  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.079  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.082  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.085  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.089  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.092  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.095  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.098  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.101  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.104  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.107  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.110  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.117  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.121  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.124  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.127  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.130  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.133  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.136  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.139  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.142  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.145  1561  1653 D RFSD    : [RfsService::File] Write temp file
+04-01 11:32:35.146  1561  1653 D RFSD    : [RfsService::File] Sync temp file
+04-01 11:32:35.148  1561  1653 I RFSD    : CNvFile::OnWriteDone
+04-01 11:32:35.148  1561  1653 D RFSD    : CNvFile::OnWriteDone : Write from temp file to nv file
+04-01 11:32:35.180  1561  1653 W RFSD    : [CsumCheckForFileAndForceCrash] /mnt/vendor/efs/nv_normal.bin checksum : verified
+04-01 11:32:35.180  1561  1653 I RFSD    : [RfsService::Nv] CsumUpdate
+04-01 11:32:35.180  1561  1653 I RFSD    : [RfsService::Nv] CsumCalc
+04-01 11:32:35.199  1561  1653 I RFSD    : [RfsService::Nv] ProcessMessage : RFS_OP_STATUS
+04-01 11:32:35.199  1561  1653 I RFSD    : [RfsService::Nv] ProcessMessage : RFS_STATUS_SUCCESS
+04-01 11:32:35.742   594   711 D SurfaceFlinger: setDesiredMode 4619827677550801152 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+04-01 11:32:35.747   594   594 D SurfaceFlinger: initiateModeChange 4619827677550801152 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+04-01 11:32:35.749   596   708 D hwc-display: setActiveConfigWithConstraints:: PrimaryDisplay config(36) test(0)
+04-01 11:32:35.749   596   708 D hwc-display: [PrimaryDisplay] OperationRateManager::onConfig:rate=60
+04-01 11:32:35.749   596   708 I hwc-display: [PrimaryDisplay] OperationRateManager::updateOperationRateLocked:Target@120(desired:120) | Refresh@60(peak:2147483647), Battery:OK, DBV:1339(NsMin:0)
+04-01 11:32:35.749   596   708 I hwc-display: [PrimaryDisplay] setActiveConfigWithConstraints: config(36)
+04-01 11:32:35.802 23791 26560 W Auth    : [TokenResponseCallback] TokenResponse failed with exception [CONTEXT service_id=343 ]
+04-01 11:32:35.802 23791 26560 W Auth    : cwpp: Failed to process request
+04-01 11:32:35.802 23791 26560 W Auth    : 	at cwpw.a(:com.google.android.gms@261133035@26.11.33 (260400-887465546):23)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at cwtt.b(:com.google.android.gms@261133035@26.11.33 (260400-887465546):15)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at cwuk.onFailed(:com.google.android.gms@261133035@26.11.33 (260400-887465546):15)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at m1.nj.onFailed(:com.google.android.gms.dynamite_cronetdynamite@261133035@26.11.33 (260400-0):3)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at m1.mf.run(:com.google.android.gms.dynamite_cronetdynamite@261133035@26.11.33 (260400-0):16)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at bikd.c(:com.google.android.gms@261133035@26.11.33 (260400-887465546):50)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at bikd.run(:com.google.android.gms@261133035@26.11.33 (260400-887465546):73)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at bipu.run(:com.google.android.gms@261133035@26.11.33 (260400-887465546):8)
+04-01 11:32:35.802 23791 26560 W Auth    : 	at java.lang.Thread.run(Thread.java:1563)
+04-01 11:32:35.802 23791 26560 W Auth    : Caused by: m1.ms: Exception in CronetUrlRequest: net::ERR_TIMED_OUT, ErrorCode=4, InternalErrorCode=-7, Retryable=true
+04-01 11:32:35.802 23791 26560 W Auth    : 	at org.chromium.net.impl.CronetUrlRequest.onError(:com.google.android.gms.dynamite_cronetdynamite@261133035@26.11.33 (260400-0):3)
+04-01 11:32:36.099 23791 24401 E AuthPII : [RequestTokenManager] getToken() -> NETWORK_ERROR. App: com.google.android.apps.tachyon, Service: oauth2:https://www.googleapis.com/auth/notifications
+04-01 11:32:36.099 23791 24401 E AuthPII : bhdt: Error when calling server using GmsNetworkStack.
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at ahfw.b(:com.google.android.gms@261133035@26.11.33 (260400-887465546):1606)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at ahfu.a(:com.google.android.gms@261133035@26.11.33 (260400-887465546):738)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at ahft.b(:com.google.android.gms@261133035@26.11.33 (260400-887465546):145)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at aalp.d(:com.google.android.gms@261133035@26.11.33 (260400-887465546):107)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at aalp.dispatchTransaction(:com.google.android.gms@261133035@26.11.33 (260400-887465546):153)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at bziy.a(:com.google.android.gms@261133035@26.11.33 (260400-887465546):72)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at zqy.onTransact(:com.google.android.gms@261133035@26.11.33 (260400-887465546):23)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at android.os.Binder.transact(Binder.java:1325)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at cmkf.onTransact(:com.google.android.gms@261133035@26.11.33 (260400-887465546):10)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at android.os.Binder.transact(Binder.java:1325)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at bzjm.onTransact(:com.google.android.gms@261133035@26.11.33 (260400-887465546):161)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1418)
+04-01 11:32:36.099 23791 24401 E AuthPII : Caused by: bhdt: Error requesting token.
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at ahfw.d(:com.google.android.gms@261133035@26.11.33 (260400-887465546):212)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at ahfw.b(:com.google.android.gms@261133035@26.11.33 (260400-887465546):48)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	... 12 more
+04-01 11:32:36.099 23791 24401 E AuthPII : Caused by: java.util.concurrent.TimeoutException: Waited 30 seconds (plus 347915 nanoseconds delay) for hggt@b31596[status=PENDING, info=[inputFuture=[hggt@4d81517[status=PENDING, info=[inputFuture=[las@d382d04[status=PENDING, info=[tag=[GmsUrlRequestImpl.startWithFuture()]]]], function=[agkc@3ba92ed]]]], function=[ahfv@f82f522]]]
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at hggq.v(:com.google.android.gms@261133035@26.11.33 (260400-887465546):371)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	at ahfw.d(:com.google.android.gms@261133035@26.11.33 (260400-887465546):197)
+04-01 11:32:36.099 23791 24401 E AuthPII : 	... 13 more
+04-01 11:32:36.101 23791 24401 E AuthPII : Message is Error when calling server using GmsNetworkStack.
+04-01 11:32:36.101 23791 24401 E AuthPII : bhdt: Error when calling server using GmsNetworkStack.
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at ahfw.b(:com.google.android.gms@261133035@26.11.33 (260400-887465546):1606)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at ahfu.a(:com.google.android.gms@261133035@26.11.33 (260400-887465546):738)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at ahft.b(:com.google.android.gms@261133035@26.11.33 (260400-887465546):145)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at aalp.d(:com.google.android.gms@261133035@26.11.33 (260400-887465546):107)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at aalp.dispatchTransaction(:com.google.android.gms@261133035@26.11.33 (260400-887465546):153)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at bziy.a(:com.google.android.gms@261133035@26.11.33 (260400-887465546):72)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at zqy.onTransact(:com.google.android.gms@261133035@26.11.33 (260400-887465546):23)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at android.os.Binder.transact(Binder.java:1325)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at cmkf.onTransact(:com.google.android.gms@261133035@26.11.33 (260400-887465546):10)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at android.os.Binder.transact(Binder.java:1325)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at bzjm.onTransact(:com.google.android.gms@261133035@26.11.33 (260400-887465546):161)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1418)
+04-01 11:32:36.101 23791 24401 E AuthPII : Caused by: bhdt: Error requesting token.
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at ahfw.d(:com.google.android.gms@261133035@26.11.33 (260400-887465546):212)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at ahfw.b(:com.google.android.gms@261133035@26.11.33 (260400-887465546):48)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	... 12 more
+04-01 11:32:36.101 23791 24401 E AuthPII : Caused by: java.util.concurrent.TimeoutException: Waited 30 seconds (plus 347915 nanoseconds delay) for hggt@b31596[status=PENDING, info=[inputFuture=[hggt@4d81517[status=PENDING, info=[inputFuture=[las@d382d04[status=PENDING, info=[tag=[GmsUrlRequestImpl.startWithFuture()]]]], function=[agkc@3ba92ed]]]], function=[ahfv@f82f522]]]
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at hggq.v(:com.google.android.gms@261133035@26.11.33 (260400-887465546):371)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	at ahfw.d(:com.google.android.gms@261133035@26.11.33 (260400-887465546):197)
+04-01 11:32:36.101 23791 24401 E AuthPII : 	... 13 more
+04-01 11:32:36.102 23791 24401 I Auth    : (REDACTED) [GetToken] GetToken failed for app=%s with non recoverable status code: %s 
+04-01 11:32:36.104 23791 24401 W Auth    : [ChimeraGetToken] exception while trying to fetch auth tokens for app=com.google.android.apps.tachyon, scope=oauth2:https://www.googleapis.com/auth/notifications [CONTEXT service_id=153 ]
+04-01 11:32:36.104 23791 24401 W Auth    : ahfo: GetToken failed with status code: NetworkError
+04-01 11:32:36.104 23791 24401 W Auth    : 	at ahft.b(:com.google.android.gms@261133035@26.11.33 (260400-887465546):349)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at aalp.d(:com.google.android.gms@261133035@26.11.33 (260400-887465546):107)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at aalp.dispatchTransaction(:com.google.android.gms@261133035@26.11.33 (260400-887465546):153)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at bziy.a(:com.google.android.gms@261133035@26.11.33 (260400-887465546):72)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at zqy.onTransact(:com.google.android.gms@261133035@26.11.33 (260400-887465546):23)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at android.os.Binder.transact(Binder.java:1325)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at cmkf.onTransact(:com.google.android.gms@261133035@26.11.33 (260400-887465546):10)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at android.os.Binder.transact(Binder.java:1325)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at bzjm.onTransact(:com.google.android.gms@261133035@26.11.33 (260400-887465546):161)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+04-01 11:32:36.104 23791 24401 W Auth    : 	at android.os.Binder.execTransact(Binder.java:1418)
+04-01 11:32:36.105 23791 24401 W libbinder.Binder: Binder transaction to com.google.android.auth.IAuthManagerService code 5 took 30122ms. Data bytes: 644 Reply bytes: 76 Flags: 18
+04-01 11:32:36.108 26897 26969 W Auth    : [GoogleAuthUtil] [GoogleAuthUtil] error status:NETWORK_ERROR with method:getTokenWithDetails

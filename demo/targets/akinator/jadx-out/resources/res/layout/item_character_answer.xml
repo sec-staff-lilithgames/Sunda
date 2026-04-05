@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/character_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_textbox_unpressed"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignTop="@+id/character_name"
+        android:layout_alignBottom="@+id/responseLayout"/>
+    <TextView
+        android:textSize="@dimen/character_item_name"
+        android:textColor="@color/buttons_text_color"
+        android:ellipsize="end"
+        android:id="@+id/character_name"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="Name"
+        android:scrollHorizontally="true"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:id="@+id/responseLayout"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/character_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:textColor="@color/buttons_text_color"
+            android:gravity="center"
+            android:id="@+id/responseLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="REPONSE :"/>
+        <TextView
+            android:textColor="@color/buttons_text_color"
+            android:gravity="center"
+            android:id="@+id/responseValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECTIONNER ..."
+            android:layout_toRightOf="@+id/responseLabel"/>
+    </RelativeLayout>
+</RelativeLayout>

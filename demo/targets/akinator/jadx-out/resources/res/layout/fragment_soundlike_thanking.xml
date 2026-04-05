@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/soundLike3ContentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/soundlikeContentPaddingTopBottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="@dimen/soundlikeContentPaddingTopBottom">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:textSize="@dimen/soundlike3ContentText_text_size"
+                android:textColor="@color/addmagic_text_color"
+                android:gravity="center"
+                android:id="@+id/remerciementText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="REMERCIEMENT"
+                android:layout_alignParentTop="true"/>
+            <com.digidust.elokence.akinator.graphic.AkinatorAddMagicButton
+                android:id="@+id/buttonOk"
+                android:layout_width="@dimen/button_soundlike_width"
+                android:layout_height="@dimen/gen_button_height"
+                android:text="OK"
+                android:layout_below="@+id/remerciementText"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

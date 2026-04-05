@@ -1,0 +1,1442 @@
+[
+  {
+    "start_ea": 115792,
+    "name": "pairip_mutex_lock_or_abort",
+    "end_ea": 115836,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 115788,
+        "caller_func_name": "sub_1C44C",
+        "callsite_ea": 115788
+      },
+      {
+        "caller_func_ea": 116768,
+        "caller_func_name": "sub_1C820",
+        "callsite_ea": 116800
+      },
+      {
+        "caller_func_ea": 192212,
+        "caller_func_name": "sub_2EED4",
+        "callsite_ea": 278364
+      },
+      {
+        "caller_func_ea": 192212,
+        "caller_func_name": "sub_2EED4",
+        "callsite_ea": 298100
+      },
+      {
+        "caller_func_ea": 192212,
+        "caller_func_name": "sub_2EED4",
+        "callsite_ea": 298300
+      },
+      {
+        "caller_func_ea": 192212,
+        "caller_func_name": "sub_2EED4",
+        "callsite_ea": 308888
+      },
+      {
+        "caller_func_ea": 192212,
+        "caller_func_name": "sub_2EED4",
+        "callsite_ea": 308976
+      },
+      {
+        "caller_func_ea": 192212,
+        "caller_func_name": "sub_2EED4",
+        "callsite_ea": 309580
+      },
+      {
+        "caller_func_ea": 192212,
+        "caller_func_name": "sub_2EED4",
+        "callsite_ea": 309612
+      },
+      {
+        "caller_func_ea": 192212,
+        "caller_func_name": "sub_2EED4",
+        "callsite_ea": 316096
+      },
+      {
+        "caller_func_ea": 333072,
+        "caller_func_name": "sub_51510",
+        "callsite_ea": 333124
+      },
+      {
+        "caller_func_ea": 334816,
+        "caller_func_name": "sub_51BE0",
+        "callsite_ea": 334956
+      },
+      {
+        "caller_func_ea": 334816,
+        "caller_func_name": "sub_51BE0",
+        "callsite_ea": 335588
+      },
+      {
+        "caller_func_ea": 334816,
+        "caller_func_name": "sub_51BE0",
+        "callsite_ea": 335640
+      },
+      {
+        "caller_func_ea": 334816,
+        "caller_func_name": "sub_51BE0",
+        "callsite_ea": 336548
+      },
+      {
+        "caller_func_ea": 334816,
+        "caller_func_name": "sub_51BE0",
+        "callsite_ea": 336596
+      },
+      {
+        "caller_func_ea": 338212,
+        "caller_func_name": "sub_52924",
+        "callsite_ea": 338264
+      },
+      {
+        "caller_func_ea": 338212,
+        "caller_func_name": "sub_52924",
+        "callsite_ea": 338552
+      },
+      {
+        "caller_func_ea": 338212,
+        "caller_func_name": "sub_52924",
+        "callsite_ea": 338632
+      },
+      {
+        "caller_func_ea": 525428,
+        "caller_func_name": "pairip_jni_on_load",
+        "callsite_ea": 525484
+      },
+      {
+        "caller_func_ea": 531656,
+        "caller_func_name": "pairip_jni_on_unload",
+        "callsite_ea": 531680
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 542064,
+        "callee_name": ".pthread_mutex_lock",
+        "callsite_ea": 115804
+      },
+      {
+        "callee_ea": 115792,
+        "callee_name": "pairip_mutex_lock_or_abort",
+        "callsite_ea": 115808
+      },
+      {
+        "callee_ea": 114956,
+        "callee_name": "pairip_raise_fatal_with_message",
+        "callsite_ea": 115832
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 115792,
+        "mnem": "PACIASP",
+        "disasm": "PACIASP"
+      },
+      {
+        "ea": 115796,
+        "mnem": "STP",
+        "disasm": "STP             X29, X30, [SP,#-0x10+var_s0]!"
+      },
+      {
+        "ea": 115800,
+        "mnem": "MOV",
+        "disasm": "MOV             X29, SP"
+      },
+      {
+        "ea": 115804,
+        "mnem": "BL",
+        "disasm": "BL              .pthread_mutex_lock"
+      },
+      {
+        "ea": 115808,
+        "mnem": "CBNZ",
+        "disasm": "CBNZ            W0, loc_1C470"
+      },
+      {
+        "ea": 115812,
+        "mnem": "LDP",
+        "disasm": "LDP             X29, X30, [SP+var_s0],#0x10"
+      },
+      {
+        "ea": 115816,
+        "mnem": "AUTIASP",
+        "disasm": "AUTIASP"
+      },
+      {
+        "ea": 115820,
+        "mnem": "RET",
+        "disasm": "RET"
+      },
+      {
+        "ea": 115824,
+        "mnem": "NOP",
+        "disasm": "NOP"
+      },
+      {
+        "ea": 115828,
+        "mnem": "ADR",
+        "disasm": "ADR             X1, aMutexLockFaile; \"mutex lock failed\""
+      },
+      {
+        "ea": 115832,
+        "mnem": "BL",
+        "disasm": "BL              pairip_raise_fatal_with_message"
+      }
+    ]
+  },
+  {
+    "start_ea": 114956,
+    "name": "pairip_raise_fatal_with_message",
+    "end_ea": 114988,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 115680,
+        "caller_func_name": "sub_1C3E0",
+        "callsite_ea": 115752
+      },
+      {
+        "caller_func_ea": 115792,
+        "caller_func_name": "pairip_mutex_lock_or_abort",
+        "callsite_ea": 115832
+      },
+      {
+        "caller_func_ea": 115928,
+        "caller_func_name": "sub_1C4D8",
+        "callsite_ea": 115996
+      },
+      {
+        "caller_func_ea": 116016,
+        "caller_func_name": "sub_1C530",
+        "callsite_ea": 116084
+      },
+      {
+        "caller_func_ea": 116228,
+        "caller_func_name": "sub_1C604",
+        "callsite_ea": 116276
+      },
+      {
+        "caller_func_ea": 338212,
+        "caller_func_name": "sub_52924",
+        "callsite_ea": 339348
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 114988,
+        "callee_name": "pairip_build_fatal_context_and_abort",
+        "callsite_ea": 114984
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 114956,
+        "mnem": "PACIASP",
+        "disasm": "PACIASP"
+      },
+      {
+        "ea": 114960,
+        "mnem": "STP",
+        "disasm": "STP             X29, X30, [SP,#-0x10+var_s0]!"
+      },
+      {
+        "ea": 114964,
+        "mnem": "MOV",
+        "disasm": "MOV             X29, SP"
+      },
+      {
+        "ea": 114968,
+        "mnem": "MOV",
+        "disasm": "MOV             X2, X1"
+      },
+      {
+        "ea": 114972,
+        "mnem": "MOV",
+        "disasm": "MOV             W0, W0"
+      },
+      {
+        "ea": 114976,
+        "mnem": "NOP",
+        "disasm": "NOP"
+      },
+      {
+        "ea": 114980,
+        "mnem": "ADR",
+        "disasm": "ADR             X1, off_8FF38"
+      },
+      {
+        "ea": 114984,
+        "mnem": "BL",
+        "disasm": "BL              pairip_build_fatal_context_and_abort"
+      }
+    ]
+  },
+  {
+    "start_ea": 114988,
+    "name": "pairip_build_fatal_context_and_abort",
+    "end_ea": 115092,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 114956,
+        "caller_func_name": "pairip_raise_fatal_with_message",
+        "callsite_ea": 114984
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 167508,
+        "callee_name": "sub_28E54",
+        "callsite_ea": 115024
+      },
+      {
+        "callee_ea": 114740,
+        "callee_name": "sub_1C034",
+        "callsite_ea": 115044
+      },
+      {
+        "callee_ea": 167932,
+        "callee_name": "sub_28FFC",
+        "callsite_ea": 115068
+      },
+      {
+        "callee_ea": 167744,
+        "callee_name": "sub_28F40",
+        "callsite_ea": 115080
+      },
+      {
+        "callee_ea": 94204,
+        "callee_name": "pairip_libunwind_resume_or_abort",
+        "callsite_ea": 115088
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 114988,
+        "mnem": "PACIASP",
+        "disasm": "PACIASP"
+      },
+      {
+        "ea": 114992,
+        "mnem": "STP",
+        "disasm": "STP             X29, X30, [SP,#-0x30+var_s0]!"
+      },
+      {
+        "ea": 114996,
+        "mnem": "STP",
+        "disasm": "STP             X22, X21, [SP,#var_s10]"
+      },
+      {
+        "ea": 115000,
+        "mnem": "STP",
+        "disasm": "STP             X20, X19, [SP,#var_s20]"
+      },
+      {
+        "ea": 115004,
+        "mnem": "MOV",
+        "disasm": "MOV             X29, SP"
+      },
+      {
+        "ea": 115008,
+        "mnem": "MOV",
+        "disasm": "MOV             X22, X0"
+      },
+      {
+        "ea": 115012,
+        "mnem": "MOV",
+        "disasm": "MOV             W0, #0x20 ; ' '"
+      },
+      {
+        "ea": 115016,
+        "mnem": "MOV",
+        "disasm": "MOV             X20, X2"
+      },
+      {
+        "ea": 115020,
+        "mnem": "MOV",
+        "disasm": "MOV             X21, X1"
+      },
+      {
+        "ea": 115024,
+        "mnem": "BL",
+        "disasm": "BL              sub_28E54"
+      },
+      {
+        "ea": 115028,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X0"
+      },
+      {
+        "ea": 115032,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X22; int"
+      },
+      {
+        "ea": 115036,
+        "mnem": "MOV",
+        "disasm": "MOV             X2, X21; int"
+      },
+      {
+        "ea": 115040,
+        "mnem": "MOV",
+        "disasm": "MOV             X3, X20; s"
+      },
+      {
+        "ea": 115044,
+        "mnem": "BL",
+        "disasm": "BL              sub_1C034"
+      },
+      {
+        "ea": 115048,
+        "mnem": "ADRP",
+        "disasm": "ADRP            X1, #off_8BC88@PAGE"
+      },
+      {
+        "ea": 115052,
+        "mnem": "ADRP",
+        "disasm": "ADRP            X2, #off_8BC80@PAGE"
+      },
+      {
+        "ea": 115056,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 115060,
+        "mnem": "LDR",
+        "disasm": "LDR             X1, [X1,#off_8BC88@PAGEOFF]"
+      },
+      {
+        "ea": 115064,
+        "mnem": "LDR",
+        "disasm": "LDR             X2, [X2,#off_8BC80@PAGEOFF]"
+      },
+      {
+        "ea": 115068,
+        "mnem": "BL",
+        "disasm": "BL              sub_28FFC"
+      },
+      {
+        "ea": 115072,
+        "mnem": "MOV",
+        "disasm": "MOV             X20, X0"
+      },
+      {
+        "ea": 115076,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 115080,
+        "mnem": "BL",
+        "disasm": "BL              sub_28F40"
+      },
+      {
+        "ea": 115084,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X20"
+      },
+      {
+        "ea": 115088,
+        "mnem": "BL",
+        "disasm": "BL              pairip_libunwind_resume_or_abort"
+      }
+    ]
+  },
+  {
+    "start_ea": 94204,
+    "name": "pairip_libunwind_resume_or_abort",
+    "end_ea": 94336,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 93156,
+        "caller_func_name": "sub_16BE4",
+        "callsite_ea": 93236
+      },
+      {
+        "caller_func_ea": 109968,
+        "caller_func_name": "sub_1AD90",
+        "callsite_ea": 109984
+      },
+      {
+        "caller_func_ea": 110040,
+        "caller_func_name": "sub_1ADD8",
+        "callsite_ea": 110056
+      },
+      {
+        "caller_func_ea": 110116,
+        "caller_func_name": "sub_1AE24",
+        "callsite_ea": 110132
+      },
+      {
+        "caller_func_ea": 112592,
+        "caller_func_name": "sub_1B7D0",
+        "callsite_ea": 112672
+      },
+      {
+        "caller_func_ea": 114720,
+        "caller_func_name": "sub_1C020",
+        "callsite_ea": 114736
+      },
+      {
+        "caller_func_ea": 114864,
+        "caller_func_name": "sub_1C0B0",
+        "callsite_ea": 114896
+      },
+      {
+        "caller_func_ea": 114988,
+        "caller_func_name": "pairip_build_fatal_context_and_abort",
+        "callsite_ea": 115088
+      },
+      {
+        "caller_func_ea": 116204,
+        "caller_func_name": "sub_1C5EC",
+        "callsite_ea": 116224
+      },
+      {
+        "caller_func_ea": 116868,
+        "caller_func_name": "sub_1C884",
+        "callsite_ea": 117160
+      },
+      {
+        "caller_func_ea": 122068,
+        "caller_func_name": "sub_1DCD4",
+        "callsite_ea": 122092
+      },
+      {
+        "caller_func_ea": 124732,
+        "caller_func_name": "sub_1E73C",
+        "callsite_ea": 124780
+      },
+      {
+        "caller_func_ea": 130328,
+        "caller_func_name": "sub_1FD18",
+        "callsite_ea": 130348
+      },
+      {
+        "caller_func_ea": 131268,
+        "caller_func_name": "sub_200C4",
+        "callsite_ea": 131272
+      },
+      {
+        "caller_func_ea": 137272,
+        "caller_func_name": "sub_21838",
+        "callsite_ea": 137276
+      },
+      {
+        "caller_func_ea": 137344,
+        "caller_func_name": "sub_21880",
+        "callsite_ea": 137348
+      },
+      {
+        "caller_func_ea": 137416,
+        "caller_func_name": "sub_218C8",
+        "callsite_ea": 137420
+      },
+      {
+        "caller_func_ea": 137500,
+        "caller_func_name": "sub_2191C",
+        "callsite_ea": 137504
+      },
+      {
+        "caller_func_ea": 137568,
+        "caller_func_name": "sub_21960",
+        "callsite_ea": 137572
+      },
+      {
+        "caller_func_ea": 137636,
+        "caller_func_name": "sub_219A4",
+        "callsite_ea": 137640
+      },
+      {
+        "caller_func_ea": 137772,
+        "caller_func_name": "sub_21A2C",
+        "callsite_ea": 142480
+      },
+      {
+        "caller_func_ea": 147260,
+        "caller_func_name": "sub_23F3C",
+        "callsite_ea": 147264
+      },
+      {
+        "caller_func_ea": 148588,
+        "caller_func_name": "sub_2446C",
+        "callsite_ea": 148628
+      },
+      {
+        "caller_func_ea": 150516,
+        "caller_func_name": "sub_24BF4",
+        "callsite_ea": 150552
+      },
+      {
+        "caller_func_ea": 151680,
+        "caller_func_name": "sub_25080",
+        "callsite_ea": 151684
+      },
+      {
+        "caller_func_ea": 152220,
+        "caller_func_name": "sub_2529C",
+        "callsite_ea": 152224
+      },
+      {
+        "caller_func_ea": 153240,
+        "caller_func_name": "sub_25698",
+        "callsite_ea": 153248
+      },
+      {
+        "caller_func_ea": 156020,
+        "caller_func_name": "sub_26174",
+        "callsite_ea": 156028
+      },
+      {
+        "caller_func_ea": 158696,
+        "caller_func_name": "sub_26BE8",
+        "callsite_ea": 158700
+      },
+      {
+        "caller_func_ea": 165204,
+        "caller_func_name": "sub_28554",
+        "callsite_ea": 165208
+      },
+      {
+        "caller_func_ea": 165360,
+        "caller_func_name": "sub_285F0",
+        "callsite_ea": 165364
+      },
+      {
+        "caller_func_ea": 165764,
+        "caller_func_name": "sub_28784",
+        "callsite_ea": 165784
+      },
+      {
+        "caller_func_ea": 168744,
+        "caller_func_name": "sub_29328",
+        "callsite_ea": 168764
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 94880,
+        "callee_name": "sub_172A0",
+        "callsite_ea": 94232
+      },
+      {
+        "callee_ea": 94204,
+        "callee_name": "pairip_libunwind_resume_or_abort",
+        "callsite_ea": 94240
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 94256
+      },
+      {
+        "callee_ea": 94204,
+        "callee_name": "pairip_libunwind_resume_or_abort",
+        "callsite_ea": 94260
+      },
+      {
+        "callee_ea": 94336,
+        "callee_name": "sub_17080",
+        "callsite_ea": 94280
+      },
+      {
+        "callee_ea": 542416,
+        "callee_name": ".fprintf",
+        "callsite_ea": 94320
+      },
+      {
+        "callee_ea": 541968,
+        "callee_name": ".fflush",
+        "callsite_ea": 94328
+      },
+      {
+        "callee_ea": 542144,
+        "callee_name": ".abort",
+        "callsite_ea": 94332
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 94204,
+        "mnem": "PACIASP",
+        "disasm": "PACIASP"
+      },
+      {
+        "ea": 94208,
+        "mnem": "STP",
+        "disasm": "STP             X29, X30, [SP,#-0x20+var_s0]!"
+      },
+      {
+        "ea": 94212,
+        "mnem": "STP",
+        "disasm": "STP             X28, X19, [SP,#var_s10]"
+      },
+      {
+        "ea": 94216,
+        "mnem": "MOV",
+        "disasm": "MOV             X29, SP"
+      },
+      {
+        "ea": 94220,
+        "mnem": "SUB",
+        "disasm": "SUB             SP, SP, #0x480"
+      },
+      {
+        "ea": 94224,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X0"
+      },
+      {
+        "ea": 94228,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, SP, #0x480+var_210"
+      },
+      {
+        "ea": 94232,
+        "mnem": "BL",
+        "disasm": "BL              sub_172A0"
+      },
+      {
+        "ea": 94236,
+        "mnem": "LDR",
+        "disasm": "LDR             X3, [X19,#0x10]"
+      },
+      {
+        "ea": 94240,
+        "mnem": "CBNZ",
+        "disasm": "CBNZ            X3, loc_17038"
+      },
+      {
+        "ea": 94244,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, SP, #0x480+var_210"
+      },
+      {
+        "ea": 94248,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, SP"
+      },
+      {
+        "ea": 94252,
+        "mnem": "MOV",
+        "disasm": "MOV             X2, X19"
+      },
+      {
+        "ea": 94256,
+        "mnem": "BL",
+        "disasm": "BL              sub_16DA4"
+      },
+      {
+        "ea": 94260,
+        "mnem": "B",
+        "disasm": "B               loc_1704C"
+      },
+      {
+        "ea": 94264,
+        "mnem": "LDR",
+        "disasm": "LDR             X4, [X19,#0x18]"
+      },
+      {
+        "ea": 94268,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, SP, #0x480+var_210"
+      },
+      {
+        "ea": 94272,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, SP"
+      },
+      {
+        "ea": 94276,
+        "mnem": "MOV",
+        "disasm": "MOV             X2, X19"
+      },
+      {
+        "ea": 94280,
+        "mnem": "BL",
+        "disasm": "BL              sub_17080"
+      },
+      {
+        "ea": 94284,
+        "mnem": "ADRP",
+        "disasm": "ADRP            X19, #__sF_ptr@PAGE"
+      },
+      {
+        "ea": 94288,
+        "mnem": "NOP",
+        "disasm": "NOP"
+      },
+      {
+        "ea": 94292,
+        "mnem": "ADR",
+        "disasm": "ADR             X1, aLibunwindSS; \"libunwind: %s - %s\\n\""
+      },
+      {
+        "ea": 94296,
+        "mnem": "LDR",
+        "disasm": "LDR             X19, [X19,#__sF_ptr@PAGEOFF]"
+      },
+      {
+        "ea": 94300,
+        "mnem": "ADRL",
+        "disasm": "ADRL            X2, aUnwindResume; \"_Unwind_Resume\""
+      },
+      {
+        "ea": 94308,
+        "mnem": "ADRL",
+        "disasm": "ADRL            X3, aUnwindResumeCa; \"_Unwind_Resume() can't return\""
+      },
+      {
+        "ea": 94316,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, X19, #0x130; stream"
+      },
+      {
+        "ea": 94320,
+        "mnem": "BL",
+        "disasm": "BL              .fprintf"
+      },
+      {
+        "ea": 94324,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, X19, #0x130; stream"
+      },
+      {
+        "ea": 94328,
+        "mnem": "BL",
+        "disasm": "BL              .fflush"
+      },
+      {
+        "ea": 94332,
+        "mnem": "BL",
+        "disasm": "BL              .abort"
+      }
+    ]
+  },
+  {
+    "start_ea": 93604,
+    "name": "sub_16DA4",
+    "end_ea": 94204,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 93356,
+        "caller_func_name": "sub_16CAC",
+        "callsite_ea": 93556
+      },
+      {
+        "caller_func_ea": 94204,
+        "caller_func_name": "pairip_libunwind_resume_or_abort",
+        "callsite_ea": 94256
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 95068,
+        "callee_name": "sub_1735C",
+        "callsite_ea": 93656
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93676
+      },
+      {
+        "callee_ea": 95616,
+        "callee_name": "sub_17580",
+        "callsite_ea": 93684
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93688
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93696
+      },
+      {
+        "callee_ea": 95616,
+        "callee_name": "sub_17580",
+        "callsite_ea": 93708
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93712
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93720
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93740
+      },
+      {
+        "callee_ea": 95616,
+        "callee_name": "sub_17580",
+        "callsite_ea": 93748
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93760
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93764
+      },
+      {
+        "callee_ea": 95236,
+        "callee_name": "sub_17404",
+        "callsite_ea": 93780
+      },
+      {
+        "callee_ea": 95636,
+        "callee_name": "sub_17594",
+        "callsite_ea": 93792
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93796
+      },
+      {
+        "callee_ea": 95236,
+        "callee_name": "sub_17404",
+        "callsite_ea": 93812
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93828
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93836
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93880
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93896
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93900
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93916
+      },
+      {
+        "callee_ea": 95616,
+        "callee_name": "sub_17580",
+        "callsite_ea": 93924
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93932
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93936
+      },
+      {
+        "callee_ea": 95236,
+        "callee_name": "sub_17404",
+        "callsite_ea": 93952
+      },
+      {
+        "callee_ea": 95636,
+        "callee_name": "sub_17594",
+        "callsite_ea": 93964
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93968
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 93976
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 94020
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 94036
+      },
+      {
+        "callee_ea": 542416,
+        "callee_name": ".fprintf",
+        "callsite_ea": 94076
+      },
+      {
+        "callee_ea": 541968,
+        "callee_name": ".fflush",
+        "callsite_ea": 94084
+      },
+      {
+        "callee_ea": 542144,
+        "callee_name": ".abort",
+        "callsite_ea": 94088
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 94096
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 94104
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 94112
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 94116
+      },
+      {
+        "callee_ea": 93604,
+        "callee_name": "sub_16DA4",
+        "callsite_ea": 94132
+      },
+      {
+        "callee_ea": 95052,
+        "callee_name": "sub_1734C",
+        "callsite_ea": 94140
+      },
+      {
+        "callee_ea": 95036,
+        "callee_name": "sub_1733C",
+        "callsite_ea": 94148
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 93604,
+        "mnem": "PACIASP",
+        "disasm": "PACIASP"
+      },
+      {
+        "ea": 93608,
+        "mnem": "SUB",
+        "disasm": "SUB             SP, SP, #0xB0"
+      },
+      {
+        "ea": 93612,
+        "mnem": "STP",
+        "disasm": "STP             X29, X30, [SP,#0x70+var_20]"
+      },
+      {
+        "ea": 93616,
+        "mnem": "STR",
+        "disasm": "STR             X27, [SP,#0x70+var_10]"
+      },
+      {
+        "ea": 93620,
+        "mnem": "STP",
+        "disasm": "STP             X26, X25, [SP,#0x70+var_s0]"
+      },
+      {
+        "ea": 93624,
+        "mnem": "STP",
+        "disasm": "STP             X24, X23, [SP,#0x70+var_s10]"
+      },
+      {
+        "ea": 93628,
+        "mnem": "STP",
+        "disasm": "STP             X22, X21, [SP,#0x70+var_s20]"
+      },
+      {
+        "ea": 93632,
+        "mnem": "STP",
+        "disasm": "STP             X20, X19, [SP,#0x70+var_s30]"
+      },
+      {
+        "ea": 93636,
+        "mnem": "ADD",
+        "disasm": "ADD             X29, SP, #0x50"
+      },
+      {
+        "ea": 93640,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X1"
+      },
+      {
+        "ea": 93644,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X0"
+      },
+      {
+        "ea": 93648,
+        "mnem": "MOV",
+        "disasm": "MOV             X21, X2"
+      },
+      {
+        "ea": 93652,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 93656,
+        "mnem": "BL",
+        "disasm": "BL              sub_1735C"
+      },
+      {
+        "ea": 93660,
+        "mnem": "MOV",
+        "disasm": "MOV             W16, #1"
+      },
+      {
+        "ea": 93664,
+        "mnem": "HINT",
+        "disasm": "HINT            #0x28 ; '('"
+      },
+      {
+        "ea": 93668,
+        "mnem": "MOV",
+        "disasm": "MOV             X20, X16"
+      },
+      {
+        "ea": 93672,
+        "mnem": "CMP",
+        "disasm": "CMP             X16, #1"
+      },
+      {
+        "ea": 93676,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_16E04"
+      },
+      {
+        "ea": 93680,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 93684,
+        "mnem": "BL",
+        "disasm": "BL              sub_17580"
+      },
+      {
+        "ea": 93688,
+        "mnem": "CBZ",
+        "disasm": "CBZ             W0, loc_16F8C"
+      },
+      {
+        "ea": 93692,
+        "mnem": "ADD",
+        "disasm": "ADD             X23, X21, #0x18"
+      },
+      {
+        "ea": 93696,
+        "mnem": "B",
+        "disasm": "B               loc_16ED0"
+      },
+      {
+        "ea": 93700,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 93704,
+        "mnem": "MRS",
+        "disasm": "MRS             X24, GCSPR_EL0"
+      },
+      {
+        "ea": 93708,
+        "mnem": "BL",
+        "disasm": "BL              sub_17580"
+      },
+      {
+        "ea": 93712,
+        "mnem": "CBZ",
+        "disasm": "CBZ             W0, loc_16F8C"
+      },
+      {
+        "ea": 93716,
+        "mnem": "ADD",
+        "disasm": "ADD             X23, X21, #0x18"
+      },
+      {
+        "ea": 93720,
+        "mnem": "CBZ",
+        "disasm": "CBZ             X24, loc_16ED0"
+      },
+      {
+        "ea": 93724,
+        "mnem": "MOV",
+        "disasm": "MOV             W25, #2"
+      },
+      {
+        "ea": 93728,
+        "mnem": "MOV",
+        "disasm": "MOV             W26, #8"
+      },
+      {
+        "ea": 93732,
+        "mnem": "MOV",
+        "disasm": "MOV             W27, #6"
+      },
+      {
+        "ea": 93736,
+        "mnem": "MOV",
+        "disasm": "MOV             W22, #2"
+      },
+      {
+        "ea": 93740,
+        "mnem": "B",
+        "disasm": "B               loc_16E44"
+      },
+      {
+        "ea": 93744,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 93748,
+        "mnem": "BL",
+        "disasm": "BL              sub_17580"
+      },
+      {
+        "ea": 93752,
+        "mnem": "ADD",
+        "disasm": "ADD             W22, W22, #1"
+      },
+      {
+        "ea": 93756,
+        "mnem": "ADD",
+        "disasm": "ADD             W26, W26, #8"
+      },
+      {
+        "ea": 93760,
+        "mnem": "CBZ",
+        "disasm": "CBZ             W0, loc_16F8C"
+      },
+      {
+        "ea": 93764,
+        "mnem": "TBNZ",
+        "disasm": "TBNZ            W0, #0x1F, loc_16FD4"
+      },
+      {
+        "ea": 93768,
+        "mnem": "ADD",
+        "disasm": "ADD             X2, X29, #0x18"
+      },
+      {
+        "ea": 93772,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 93776,
+        "mnem": "MOV",
+        "disasm": "MOV             W1, #0xFFFFFFFE"
+      },
+      {
+        "ea": 93780,
+        "mnem": "BL",
+        "disasm": "BL              sub_17404"
+      },
+      {
+        "ea": 93784,
+        "mnem": "ADD",
+        "disasm": "ADD             X1, SP, #0x70+var_68"
+      },
+      {
+        "ea": 93788,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 93792,
+        "mnem": "BL",
+        "disasm": "BL              sub_17594"
+      },
+      {
+        "ea": 93796,
+        "mnem": "CBNZ",
+        "disasm": "CBNZ            W0, loc_16FD4"
+      },
+      {
+        "ea": 93800,
+        "mnem": "MOV",
+        "disasm": "MOV             X2, SP"
+      },
+      {
+        "ea": 93804,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 93808,
+        "mnem": "MOV",
+        "disasm": "MOV             W1, #0xFFFFFFFF"
+      },
+      {
+        "ea": 93812,
+        "mnem": "BL",
+        "disasm": "BL              sub_17404"
+      },
+      {
+        "ea": 93816,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X24,W26,UXTW]"
+      },
+      {
+        "ea": 93820,
+        "mnem": "LDR",
+        "disasm": "LDR             X9, [SP,#0x70+var_70]"
+      },
+      {
+        "ea": 93824,
+        "mnem": "CMP",
+        "disasm": "CMP             X9, X8"
+      },
+      {
+        "ea": 93828,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_16FD4"
+      },
+      {
+        "ea": 93832,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [SP,#0x70+var_50]"
+      },
+      {
+        "ea": 93836,
+        "mnem": "CBZ",
+        "disasm": "CBZ             X8, loc_16E30"
+      },
+      {
+        "ea": 93840,
+        "mnem": "LDR",
+        "disasm": "LDR             X9, [X29,#0x20+var_8]"
+      },
+      {
+        "ea": 93844,
+        "mnem": "LDR",
+        "disasm": "LDR             X10, [X21,#0x18]"
+      },
+      {
+        "ea": 93848,
+        "mnem": "MOV",
+        "disasm": "MOV             W0, #1"
+      },
+      {
+        "ea": 93852,
+        "mnem": "LDR",
+        "disasm": "LDR             X2, [X21]"
+      },
+      {
+        "ea": 93856,
+        "mnem": "MOV",
+        "disasm": "MOV             X3, X21"
+      },
+      {
+        "ea": 93860,
+        "mnem": "MOV",
+        "disasm": "MOV             X4, X19"
+      },
+      {
+        "ea": 93864,
+        "mnem": "CMP",
+        "disasm": "CMP             X9, X10"
+      },
+      {
+        "ea": 93868,
+        "mnem": "CSEL",
+        "disasm": "CSEL            W1, W27, W25, EQ"
+      },
+      {
+        "ea": 93872,
+        "mnem": "BLR",
+        "disasm": "BLR             X8"
+      },
+      {
+        "ea": 93876,
+        "mnem": "CMP",
+        "disasm": "CMP             W0, #8"
+      },
+      {
+        "ea": 93880,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_16F94"
+      },
+      {
+        "ea": 93884,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X29,#0x20+var_8]"
+      },
+      {
+        "ea": 93888,
+        "mnem": "LDR",
+        "disasm": "LDR             X9, [X23]"
+      },
+      {
+        "ea": 93892,
+        "mnem": "CMP",
+        "disasm": "CMP             X8, X9"
+      },
+      {
+        "ea": 93896,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_16E30"
+      },
+      {
+        "ea": 93900,
+        "mnem": "B",
+        "disasm": "B               loc_16F58"
+      },
+      {
+        "ea": 93904,
+        "mnem": "MOV",
+        "disasm": "MOV             W24, #2"
+      },
+      {
+        "ea": 93908,
+        "mnem": "MOV",
+        "disasm": "MOV             W25, #6"
+      },
+      {
+        "ea": 93912,
+        "mnem": "MOV",
+        "disasm": "MOV             W22, #2"
+      },
+      {
+        "ea": 93916,
+        "mnem": "B",
+        "disasm": "B               loc_16EF0"
+      },
+      {
+        "ea": 93920,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      }
+    ]
+  }
+]

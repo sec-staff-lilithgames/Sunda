@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fond"
+        android:scaleType="fitXY"/>
+    <include
+        android:id="@+id/layoutIconTop"
+        layout="@layout/layout_subject_icon_top"/>
+    <FrameLayout
+        android:id="@+id/layoutFragmentContainer"
+        android:background="@color/fragment_soundlike_background"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutBanner"/>
+    <ImageView
+        android:id="@+id/layoutBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/soundlike_title_height"
+        android:src="@drawable/identify_banner"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/layoutIconTop"/>
+    <TextView
+        android:textSize="@dimen/soundlike_title_text_size"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/soundlike_title_textview_height"
+        android:layout_marginTop="@dimen/soundlike_title_textview_margin_top"
+        android:text="A qui penses tu ?"
+        android:layout_below="@+id/layoutIconTop"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+    <include
+        android:id="@+id/homeButton"
+        layout="@layout/layout_home_button"/>
+</RelativeLayout>

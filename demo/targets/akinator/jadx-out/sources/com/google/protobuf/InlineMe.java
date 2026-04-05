@@ -1,0 +1,17 @@
+package com.google.protobuf;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+@Target({ElementType.METHOD, ElementType.CONSTRUCTOR})
+@Documented
+/* loaded from: classes7.dex */
+@interface InlineMe {
+    String[] imports() default {};
+
+    String replacement();
+
+    String[] staticImports() default {};
+}

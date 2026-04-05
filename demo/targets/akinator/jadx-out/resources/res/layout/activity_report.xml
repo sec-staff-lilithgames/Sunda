@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/backgroundFond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hof_fond"
+        android:scaleType="fitXY"/>
+    <ListView
+        android:id="@+id/reportAnswerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-5dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"
+        android:layout_below="@+id/textReport"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:textSize="@dimen/customizeLabelTextSize"
+        android:textColor="@color/buttons_text_color"
+        android:gravity="center"
+        android:id="@+id/textReport"
+        android:background="@drawable/ak_rapport_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bandeau_question_height"
+        android:text="REPORT"/>
+    <include layout="@layout/layout_return"/>
+</RelativeLayout>

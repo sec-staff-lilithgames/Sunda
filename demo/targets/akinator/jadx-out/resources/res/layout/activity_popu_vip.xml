@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@+id/guideLineTextGauche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@+id/guideLineTextDroit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.8"/>
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/postProposeMarginTop"
+        app:layout_constraintDimensionRatio="V,1500:920"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/textCongratulation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineTextDroit"
+        app:layout_constraintStart_toStartOf="@+id/guideLineTextGauche"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage">
+        <TextView
+            android:textSize="@dimen/postPropose_text_size"
+            android:textColor="@color/yellow_color"
+            android:id="@+id/textAwardPart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Felicitations ! Tu viens de remporter un Aki Award Standart. Tu obtiens XXXX GZ."/>
+        <TextView
+            android:textSize="@dimen/postPropose_text_size"
+            android:textColor="@color/yellow_color"
+            android:id="@+id/textAwardPart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le dernier Aki Award de ce personnage a été remporté par un autre joueur il y a 10 minutes."/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageFlecheDroite"
+        android:layout_width="@dimen/postPropose_arrow_right_size"
+        android:layout_height="@dimen/postPropose_arrow_right_size"
+        android:src="@drawable/button_arrow_right_btq"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideLineTextDroit"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

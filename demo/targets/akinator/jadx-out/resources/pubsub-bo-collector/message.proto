@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package pubsubBOCollector;
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto/pubsub-bo-collector;pubsubBOCollector";
+
+
+message Message {
+  enum EnumTypes {
+    UNKNOWN = 0;
+    UPDATE_APP_KEY_LIST = 1;
+  }
+
+  EnumTypes type = 1;
+  oneof payload {
+    UpdateAppKeyList updateAppKeyList = 2;
+  }
+}
+
+message UpdateAppKeyList {
+  repeated string app_keys = 1;
+}

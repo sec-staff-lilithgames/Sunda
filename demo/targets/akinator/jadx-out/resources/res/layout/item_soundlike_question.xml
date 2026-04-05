@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/background_textbox_unpressed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+    <TextView
+        android:textSize="@dimen/soundlike_item_name"
+        android:textColor="@color/soundlike_item_name"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/soundlike_name"
+        android:paddingTop="@dimen/soundlike2_item_padding_topbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Question super super long long long long long long"
+        android:lines="3"
+        android:scrollHorizontally="true"/>
+</RelativeLayout>

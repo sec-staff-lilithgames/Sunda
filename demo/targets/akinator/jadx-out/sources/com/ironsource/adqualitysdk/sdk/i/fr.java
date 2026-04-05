@@ -1,0 +1,8 @@
+package com.ironsource.adqualitysdk.sdk.i;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes7.dex */
+public abstract class fr {
+    /* renamed from: ﻐ */
+    public abstract du mo2509(ds dsVar, cp cpVar);
+}

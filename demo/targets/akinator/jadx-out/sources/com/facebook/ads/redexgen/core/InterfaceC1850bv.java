@@ -1,0 +1,7 @@
+package com.facebook.ads.redexgen.core;
+
+/* renamed from: com.facebook.ads.redexgen.X.bv, reason: case insensitive filesystem */
+/* loaded from: assets/audience_network.dex */
+public interface InterfaceC1850bv {
+    void A9k(String str);
+}

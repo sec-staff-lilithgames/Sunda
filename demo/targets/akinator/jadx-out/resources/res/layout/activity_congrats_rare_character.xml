@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/layoutChoice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:textSize="@dimen/size_congrat_rare_charactet_title"
+            android:textColor="@color/white_color"
+            android:id="@+id/titleExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="EXCELLENT !"/>
+        <TextView
+            android:textSize="@dimen/size_congrat_rare_character_description"
+            android:textColor="@color/white_color"
+            android:id="@+id/descriptionRareCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:text="VOUS AVEZ DEBLOQUE UN PERSO RARE"/>
+        <ImageView
+            android:id="@+id/imageGenie"
+            android:background="0x7f080192"
+            android:layout_width="342dp"
+            android:layout_height="397dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+    </LinearLayout>
+</RelativeLayout>

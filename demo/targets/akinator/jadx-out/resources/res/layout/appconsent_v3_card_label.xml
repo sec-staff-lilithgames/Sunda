@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/label_container"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/card_label_text"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/appconsent_v3_padding_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appconsent_consentable_list_label_purpose"
+        style="@style/AppConsentV3Theme.TextView.Title"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

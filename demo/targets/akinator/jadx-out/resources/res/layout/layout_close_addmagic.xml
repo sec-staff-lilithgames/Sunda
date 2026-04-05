@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/closeAddMagic"
+        android:layout_width="@dimen/cancel_button_size"
+        android:layout_height="@dimen/cancel_button_size"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ak_button_close_ad"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

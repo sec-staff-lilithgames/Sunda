@@ -1,0 +1,157 @@
+{
+  "mode": "late_attach_probe",
+  "package": "com.digidust.elokence.akinator.freemium",
+  "pre_attach_idle_seconds": 10,
+  "hold_seconds": 25,
+  "state_changes": [
+    {
+      "kind": "process_gone",
+      "t": 20.135
+    },
+    {
+      "kind": "session_detached",
+      "reason": "process-terminated",
+      "ts": 1775377151.011594,
+      "crash": {
+        "summary": "Crash(pid=25946, process_name=\"Thread-2\", summary=\"Trace/BPT trap\", report=<2558 bytes>, parameters={})",
+        "report": "*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***\nBuild fingerprint: 'google/akita/akita:16/BP4A.260105.004.E1/14587043:user/release-keys'\nKernel Release: '6.1.145-android14-11-gc1de4747ac59-ab14219743'\nRevision: 'MP1.0'\nABI: 'arm64'\nTimestamp: 2026-04-05 16:19:10.068387493+0800\nProcess uptime: 32s\nExecutable: /system/bin/app_process64\nCmdline: com.digidust.elokence.akinator.freemium\npid: 25946, tid: 25960, name: Thread-2  >>> com.digidust.elokence.akinator.freemium <<<\nuid: 10437\ntagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)\npac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)\nesr: 0000000092000006 (Data Abort Exception 0x24)\nsignal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------\nAbort message: 'terminating due to uncaught exception of type std::bad_alloc: std::bad_alloc'\n    x0  0000000000000000  x1  0000000000006568  x2  0000000000000006  x3  0000007b28876da0\n    x4  0000000000000000  x5  0000000000000000  x6  0000000000000000  x7  7f7f7f7f7f7f7f7f\n    x8  00000000000000f0  x9  a7c94c6ec64a9f31  x10 0000000000000b50  x11 0000000000006568\n    x12 ffffff80ffffffe0  x13 0000000000000005  x14 0000000000000000  x15 00000048217ac243\n    x16 00000077e6a311d8  x17 0000007b22d60380  x18 00000077cda6c000  x19 0000000000000006\n    x20 0000007b28876da0  x21 000000000000655a  x22 0000007b28876950  x23 0000000000000001\n    x24 0000000000000000  x25 0000007b101f56c0  x26 00000000000094b2  x27 ffffffffffffa994\n    x28 000000000000013e  x29 0000007b28876970\n    lr  00000077e3dd2e68  sp  0000007b28876950  pc  0000007b22d603a4  pst 0000000000001000\n    esr 0000000092000006\n7 total frames\nbacktrace:\n      #00 pc 00000000000a03a4  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: daecd2c4b4835717ac0f98eaf8abd750)\n      #01 pc 0000000006dcfe64  /data/app/~~4sCilzn21x5X1LVqP_-D2g==/com.google.android.webview-fDZ1RZZCm5MMhumigon18w==/base.apk!libwebviewchromium.so (offset 0xdc8000) (BuildId: 840e8c0109c70d95820e17a9d265edb083b06d8f)\n      #02 pc 0000000006dc65f8  /data/app/~~4sCilzn21x5X1LVqP_-D2g==/com.google.android.webview-fDZ1RZZCm5MMhumigon18w==/base.apk!libwebviewchromium.so (offset 0xdc8000) (BuildId: 840e8c0109c70d95820e17a9d265edb083b06d8f)\n      #03 pc 000000000095e070  /memfd:sunda-agent-64.so (deleted)\n      #04 pc 0000000000000860  [vdso]\n      #05 pc 000000000007764c  /apex/com.android.runtime/lib64/bionic/libc.so (abort+156) (BuildId: daecd2c4b4835717ac0f98eaf8abd750)\n      #06 pc 0000000000000208  <anonymous:7b1e7be000>\n",
+        "parameters": {}
+      }
+    }
+  ],
+  "initial_pid": 25946,
+  "pre_attach_pid_samples": [
+    {
+      "t": 0.054,
+      "pid": "25946"
+    },
+    {
+      "t": 1.192,
+      "pid": "25946"
+    },
+    {
+      "t": 2.313,
+      "pid": "25946"
+    },
+    {
+      "t": 3.435,
+      "pid": "25946"
+    },
+    {
+      "t": 4.58,
+      "pid": "25946"
+    },
+    {
+      "t": 5.694,
+      "pid": "25946"
+    },
+    {
+      "t": 6.826,
+      "pid": "25946"
+    },
+    {
+      "t": 7.964,
+      "pid": "25946"
+    },
+    {
+      "t": 9.035,
+      "pid": "25946"
+    }
+  ],
+  "attach_pid": "25946",
+  "pid_samples": [
+    {
+      "t": 0.106,
+      "pid": "25946"
+    },
+    {
+      "t": 1.218,
+      "pid": "25946"
+    },
+    {
+      "t": 2.332,
+      "pid": "25946"
+    },
+    {
+      "t": 3.401,
+      "pid": "25946"
+    },
+    {
+      "t": 4.515,
+      "pid": "25946"
+    },
+    {
+      "t": 5.63,
+      "pid": "25946"
+    },
+    {
+      "t": 6.757,
+      "pid": "25946"
+    },
+    {
+      "t": 7.865,
+      "pid": "25946"
+    },
+    {
+      "t": 8.978,
+      "pid": "25946"
+    },
+    {
+      "t": 10.11,
+      "pid": "25946"
+    },
+    {
+      "t": 11.213,
+      "pid": "25946"
+    },
+    {
+      "t": 12.334,
+      "pid": "25946"
+    },
+    {
+      "t": 13.439,
+      "pid": "25946"
+    },
+    {
+      "t": 14.582,
+      "pid": "25946"
+    },
+    {
+      "t": 15.679,
+      "pid": "25946"
+    },
+    {
+      "t": 16.785,
+      "pid": "25946"
+    },
+    {
+      "t": 17.901,
+      "pid": "25946"
+    },
+    {
+      "t": 19.007,
+      "pid": "25946"
+    },
+    {
+      "t": 20.135,
+      "pid": ""
+    },
+    {
+      "t": 21.24,
+      "pid": "26763"
+    },
+    {
+      "t": 22.385,
+      "pid": "26763"
+    },
+    {
+      "t": 23.527,
+      "pid": "26763"
+    },
+    {
+      "t": 24.669,
+      "pid": "26763"
+    }
+  ],
+  "final_pid": "26763"
+}

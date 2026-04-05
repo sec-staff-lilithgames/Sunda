@@ -1,0 +1,604 @@
+[
+  {
+    "start_ea": 404600,
+    "name": "sub_62C78",
+    "end_ea": 404804,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 525428,
+        "caller_func_name": "pairip_jni_on_load",
+        "callsite_ea": 530912
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 404672
+      },
+      {
+        "callee_ea": 542128,
+        "callee_name": ".memset",
+        "callsite_ea": 404688
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 404740
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 404752
+      },
+      {
+        "callee_ea": 404600,
+        "callee_name": "sub_62C78",
+        "callsite_ea": 404768
+      },
+      {
+        "callee_ea": 542224,
+        "callee_name": ".__stack_chk_fail",
+        "callsite_ea": 404800
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 404600,
+        "mnem": "SUB",
+        "disasm": "SUB             SP, SP, #0x60"
+      },
+      {
+        "ea": 404604,
+        "mnem": "STP",
+        "disasm": "STP             X30, X25, [SP,#0x60+var_40]"
+      },
+      {
+        "ea": 404608,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X2"
+      },
+      {
+        "ea": 404612,
+        "mnem": "STP",
+        "disasm": "STP             X24, X23, [SP,#0x60+var_30]"
+      },
+      {
+        "ea": 404616,
+        "mnem": "STP",
+        "disasm": "STP             X22, X21, [SP,#0x60+var_20]"
+      },
+      {
+        "ea": 404620,
+        "mnem": "MOV",
+        "disasm": "MOV             X21, X2"
+      },
+      {
+        "ea": 404624,
+        "mnem": "STP",
+        "disasm": "STP             X20, X19, [SP,#0x60+var_10]"
+      },
+      {
+        "ea": 404628,
+        "mnem": "MRS",
+        "disasm": "MRS             X25, TPIDR_EL0"
+      },
+      {
+        "ea": 404632,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X3"
+      },
+      {
+        "ea": 404636,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X25,#0x28]"
+      },
+      {
+        "ea": 404640,
+        "mnem": "MOV",
+        "disasm": "MOV             X20, X0"
+      },
+      {
+        "ea": 404644,
+        "mnem": "STR",
+        "disasm": "STR             X8, [SP,#0x60+var_48]"
+      },
+      {
+        "ea": 404648,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X0]"
+      },
+      {
+        "ea": 404652,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X8,#0x558]"
+      },
+      {
+        "ea": 404656,
+        "mnem": "BLR",
+        "disasm": "BLR             X8"
+      },
+      {
+        "ea": 404660,
+        "mnem": "MOV",
+        "disasm": "MOV             W22, W0"
+      },
+      {
+        "ea": 404664,
+        "mnem": "SXTW",
+        "disasm": "SXTW            X23, W22"
+      },
+      {
+        "ea": 404668,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X23"
+      },
+      {
+        "ea": 404672,
+        "mnem": "BL",
+        "disasm": "BL              sub_843F4"
+      },
+      {
+        "ea": 404676,
+        "mnem": "MOV",
+        "disasm": "MOV             W1, WZR; c"
+      },
+      {
+        "ea": 404680,
+        "mnem": "MOV",
+        "disasm": "MOV             X2, X23; n"
+      },
+      {
+        "ea": 404684,
+        "mnem": "MOV",
+        "disasm": "MOV             X24, X0"
+      },
+      {
+        "ea": 404688,
+        "mnem": "BL",
+        "disasm": "BL              .memset"
+      },
+      {
+        "ea": 404692,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X20]"
+      },
+      {
+        "ea": 404696,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X20"
+      },
+      {
+        "ea": 404700,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X21"
+      },
+      {
+        "ea": 404704,
+        "mnem": "MOV",
+        "disasm": "MOV             W2, WZR"
+      },
+      {
+        "ea": 404708,
+        "mnem": "MOV",
+        "disasm": "MOV             W3, W22"
+      },
+      {
+        "ea": 404712,
+        "mnem": "MOV",
+        "disasm": "MOV             X4, X24"
+      },
+      {
+        "ea": 404716,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X8,#0x640]"
+      },
+      {
+        "ea": 404720,
+        "mnem": "BLR",
+        "disasm": "BLR             X8"
+      },
+      {
+        "ea": 404724,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, SP, #0x60+var_58"
+      },
+      {
+        "ea": 404728,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X19"
+      },
+      {
+        "ea": 404732,
+        "mnem": "STR",
+        "disasm": "STR             X24, [SP,#0x60+var_58]"
+      },
+      {
+        "ea": 404736,
+        "mnem": "STP",
+        "disasm": "STP             W22, WZR, [SP,#0x60+var_50]"
+      },
+      {
+        "ea": 404740,
+        "mnem": "BL",
+        "disasm": "BL              sub_52F20"
+      },
+      {
+        "ea": 404744,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X0"
+      },
+      {
+        "ea": 404748,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X24"
+      },
+      {
+        "ea": 404752,
+        "mnem": "BL",
+        "disasm": "BL              sub_28DE4"
+      },
+      {
+        "ea": 404756,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X25,#0x28]"
+      },
+      {
+        "ea": 404760,
+        "mnem": "LDR",
+        "disasm": "LDR             X9, [SP,#0x60+var_48]"
+      },
+      {
+        "ea": 404764,
+        "mnem": "CMP",
+        "disasm": "CMP             X8, X9"
+      },
+      {
+        "ea": 404768,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_62D40"
+      },
+      {
+        "ea": 404772,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 404776,
+        "mnem": "LDP",
+        "disasm": "LDP             X20, X19, [SP,#0x60+var_10]"
+      },
+      {
+        "ea": 404780,
+        "mnem": "LDP",
+        "disasm": "LDP             X22, X21, [SP,#0x60+var_20]"
+      },
+      {
+        "ea": 404784,
+        "mnem": "LDP",
+        "disasm": "LDP             X24, X23, [SP,#0x60+var_30]"
+      },
+      {
+        "ea": 404788,
+        "mnem": "LDP",
+        "disasm": "LDP             X30, X25, [SP,#0x60+var_40]"
+      },
+      {
+        "ea": 404792,
+        "mnem": "ADD",
+        "disasm": "ADD             SP, SP, #0x60 ; '`'"
+      },
+      {
+        "ea": 404796,
+        "mnem": "RET",
+        "disasm": "RET"
+      },
+      {
+        "ea": 404800,
+        "mnem": "BL",
+        "disasm": "BL              .__stack_chk_fail"
+      }
+    ]
+  },
+  {
+    "start_ea": 404600,
+    "name": "sub_62C78",
+    "end_ea": 404804,
+    "xrefs_to": [
+      {
+        "caller_func_ea": 525428,
+        "caller_func_name": "pairip_jni_on_load",
+        "callsite_ea": 530912
+      }
+    ],
+    "direct_callees": [
+      {
+        "callee_ea": 541684,
+        "callee_name": "sub_843F4",
+        "callsite_ea": 404672
+      },
+      {
+        "callee_ea": 542128,
+        "callee_name": ".memset",
+        "callsite_ea": 404688
+      },
+      {
+        "callee_ea": 339744,
+        "callee_name": "sub_52F20",
+        "callsite_ea": 404740
+      },
+      {
+        "callee_ea": 167396,
+        "callee_name": "sub_28DE4",
+        "callsite_ea": 404752
+      },
+      {
+        "callee_ea": 404600,
+        "callee_name": "sub_62C78",
+        "callsite_ea": 404768
+      },
+      {
+        "callee_ea": 542224,
+        "callee_name": ".__stack_chk_fail",
+        "callsite_ea": 404800
+      }
+    ],
+    "head_disasm": [
+      {
+        "ea": 404600,
+        "mnem": "SUB",
+        "disasm": "SUB             SP, SP, #0x60"
+      },
+      {
+        "ea": 404604,
+        "mnem": "STP",
+        "disasm": "STP             X30, X25, [SP,#0x60+var_40]"
+      },
+      {
+        "ea": 404608,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X2"
+      },
+      {
+        "ea": 404612,
+        "mnem": "STP",
+        "disasm": "STP             X24, X23, [SP,#0x60+var_30]"
+      },
+      {
+        "ea": 404616,
+        "mnem": "STP",
+        "disasm": "STP             X22, X21, [SP,#0x60+var_20]"
+      },
+      {
+        "ea": 404620,
+        "mnem": "MOV",
+        "disasm": "MOV             X21, X2"
+      },
+      {
+        "ea": 404624,
+        "mnem": "STP",
+        "disasm": "STP             X20, X19, [SP,#0x60+var_10]"
+      },
+      {
+        "ea": 404628,
+        "mnem": "MRS",
+        "disasm": "MRS             X25, TPIDR_EL0"
+      },
+      {
+        "ea": 404632,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X3"
+      },
+      {
+        "ea": 404636,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X25,#0x28]"
+      },
+      {
+        "ea": 404640,
+        "mnem": "MOV",
+        "disasm": "MOV             X20, X0"
+      },
+      {
+        "ea": 404644,
+        "mnem": "STR",
+        "disasm": "STR             X8, [SP,#0x60+var_48]"
+      },
+      {
+        "ea": 404648,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X0]"
+      },
+      {
+        "ea": 404652,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X8,#0x558]"
+      },
+      {
+        "ea": 404656,
+        "mnem": "BLR",
+        "disasm": "BLR             X8"
+      },
+      {
+        "ea": 404660,
+        "mnem": "MOV",
+        "disasm": "MOV             W22, W0"
+      },
+      {
+        "ea": 404664,
+        "mnem": "SXTW",
+        "disasm": "SXTW            X23, W22"
+      },
+      {
+        "ea": 404668,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X23"
+      },
+      {
+        "ea": 404672,
+        "mnem": "BL",
+        "disasm": "BL              sub_843F4"
+      },
+      {
+        "ea": 404676,
+        "mnem": "MOV",
+        "disasm": "MOV             W1, WZR; c"
+      },
+      {
+        "ea": 404680,
+        "mnem": "MOV",
+        "disasm": "MOV             X2, X23; n"
+      },
+      {
+        "ea": 404684,
+        "mnem": "MOV",
+        "disasm": "MOV             X24, X0"
+      },
+      {
+        "ea": 404688,
+        "mnem": "BL",
+        "disasm": "BL              .memset"
+      },
+      {
+        "ea": 404692,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X20]"
+      },
+      {
+        "ea": 404696,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X20"
+      },
+      {
+        "ea": 404700,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X21"
+      },
+      {
+        "ea": 404704,
+        "mnem": "MOV",
+        "disasm": "MOV             W2, WZR"
+      },
+      {
+        "ea": 404708,
+        "mnem": "MOV",
+        "disasm": "MOV             W3, W22"
+      },
+      {
+        "ea": 404712,
+        "mnem": "MOV",
+        "disasm": "MOV             X4, X24"
+      },
+      {
+        "ea": 404716,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X8,#0x640]"
+      },
+      {
+        "ea": 404720,
+        "mnem": "BLR",
+        "disasm": "BLR             X8"
+      },
+      {
+        "ea": 404724,
+        "mnem": "ADD",
+        "disasm": "ADD             X0, SP, #0x60+var_58"
+      },
+      {
+        "ea": 404728,
+        "mnem": "MOV",
+        "disasm": "MOV             X1, X19"
+      },
+      {
+        "ea": 404732,
+        "mnem": "STR",
+        "disasm": "STR             X24, [SP,#0x60+var_58]"
+      },
+      {
+        "ea": 404736,
+        "mnem": "STP",
+        "disasm": "STP             W22, WZR, [SP,#0x60+var_50]"
+      },
+      {
+        "ea": 404740,
+        "mnem": "BL",
+        "disasm": "BL              sub_52F20"
+      },
+      {
+        "ea": 404744,
+        "mnem": "MOV",
+        "disasm": "MOV             X19, X0"
+      },
+      {
+        "ea": 404748,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X24"
+      },
+      {
+        "ea": 404752,
+        "mnem": "BL",
+        "disasm": "BL              sub_28DE4"
+      },
+      {
+        "ea": 404756,
+        "mnem": "LDR",
+        "disasm": "LDR             X8, [X25,#0x28]"
+      },
+      {
+        "ea": 404760,
+        "mnem": "LDR",
+        "disasm": "LDR             X9, [SP,#0x60+var_48]"
+      },
+      {
+        "ea": 404764,
+        "mnem": "CMP",
+        "disasm": "CMP             X8, X9"
+      },
+      {
+        "ea": 404768,
+        "mnem": "B.NE",
+        "disasm": "B.NE            loc_62D40"
+      },
+      {
+        "ea": 404772,
+        "mnem": "MOV",
+        "disasm": "MOV             X0, X19"
+      },
+      {
+        "ea": 404776,
+        "mnem": "LDP",
+        "disasm": "LDP             X20, X19, [SP,#0x60+var_10]"
+      },
+      {
+        "ea": 404780,
+        "mnem": "LDP",
+        "disasm": "LDP             X22, X21, [SP,#0x60+var_20]"
+      },
+      {
+        "ea": 404784,
+        "mnem": "LDP",
+        "disasm": "LDP             X24, X23, [SP,#0x60+var_30]"
+      },
+      {
+        "ea": 404788,
+        "mnem": "LDP",
+        "disasm": "LDP             X30, X25, [SP,#0x60+var_40]"
+      },
+      {
+        "ea": 404792,
+        "mnem": "ADD",
+        "disasm": "ADD             SP, SP, #0x60 ; '`'"
+      },
+      {
+        "ea": 404796,
+        "mnem": "RET",
+        "disasm": "RET"
+      },
+      {
+        "ea": 404800,
+        "mnem": "BL",
+        "disasm": "BL              .__stack_chk_fail"
+      }
+    ]
+  }
+]

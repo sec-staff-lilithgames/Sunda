@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:icon="@drawable/app_shortcuts_play"
+        android:enabled="true"
+        android:shortcutId="idShortcutPlay"
+        android:shortcutShortLabel="@string/shortcut_jouer_label">
+        <intent
+            android:targetPackage="com.digidust.elokence.akinator.freemium"
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.digidust.elokence.akinator.activities.SplashscreenActivity">
+            <extra
+                android:name="intentShorcutName"
+                android:value="0"/>
+        </intent>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:icon="@drawable/app_shortcuts_award"
+        android:enabled="true"
+        android:shortcutId="idShortcutHof"
+        android:shortcutShortLabel="@string/shortcut_hof_label">
+        <intent
+            android:targetPackage="com.digidust.elokence.akinator.freemium"
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.digidust.elokence.akinator.activities.SplashscreenActivity">
+            <extra
+                android:name="intentShorcutName"
+                android:value="1"/>
+        </intent>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:icon="@drawable/app_shortcuts_board"
+        android:enabled="true"
+        android:shortcutId="idShortcutAward"
+        android:shortcutShortLabel="@string/shortcut_awards_label">
+        <intent
+            android:targetPackage="com.digidust.elokence.akinator.freemium"
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.digidust.elokence.akinator.activities.SplashscreenActivity">
+            <extra
+                android:name="intentShorcutName"
+                android:value="2"/>
+        </intent>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

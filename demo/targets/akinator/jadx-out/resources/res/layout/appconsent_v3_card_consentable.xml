@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.sfbx.appconsentv3.ui.view.ConsentableCardView
+        android:id="@+id/cp_consentable"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/config_custom_consentable_separator"
+        style="@style/AppConsentV3Theme.Separator"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

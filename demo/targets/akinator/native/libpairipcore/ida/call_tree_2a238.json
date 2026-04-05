@@ -1,0 +1,42 @@
+{
+  "root_ea": 172600,
+  "root_name": "pairip_init_hwcap_profile",
+  "tree": {
+    "ea": 172600,
+    "name": "pairip_init_hwcap_profile",
+    "label": "pairip_init_hwcap_profile [0x2a238] constructor / hwcap-profile init",
+    "children": [
+      {
+        "ea": 172108,
+        "name": "pairip_build_hwcap_feature_mask",
+        "label": "pairip_build_hwcap_feature_mask [0x2a04c] hwcap feature-mask builder",
+        "children": []
+      },
+      {
+        "ea": 542336,
+        "name": "__system_property_get_plt",
+        "label": "__system_property_get_plt [0x84680] import / system property read",
+        "children": []
+      },
+      {
+        "ea": 542720,
+        "name": "getauxval_plt",
+        "label": "getauxval_plt [0x84800] import / auxv read",
+        "children": []
+      },
+      {
+        "ea": 542848,
+        "name": "strncmp_plt",
+        "label": "strncmp_plt [0x84880] import / string compare",
+        "children": []
+      }
+    ]
+  },
+  "tree_lines": [
+    "pairip_init_hwcap_profile [0x2a238] constructor / hwcap-profile init",
+    "├── pairip_build_hwcap_feature_mask [0x2a04c] hwcap feature-mask builder",
+    "├── __system_property_get_plt [0x84680] import / system property read",
+    "├── getauxval_plt [0x84800] import / auxv read",
+    "└── strncmp_plt [0x84880] import / string compare"
+  ]
+}

@@ -1,0 +1,13 @@
+package sg;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes6.dex */
+public interface b {
+    void cancelBackProgress();
+
+    void handleBackInvoked();
+
+    void startBackProgress(f.c cVar);
+
+    void updateBackProgress(f.c cVar);
+}

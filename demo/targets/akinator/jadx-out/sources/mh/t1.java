@@ -1,0 +1,10 @@
+package mh;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes5.dex */
+public final class t1 extends u1 {
+    @Override // mh.u1
+    public String toString() {
+        return "Predicates.containsPattern(" + this.f74700b.pattern() + ")";
+    }
+}

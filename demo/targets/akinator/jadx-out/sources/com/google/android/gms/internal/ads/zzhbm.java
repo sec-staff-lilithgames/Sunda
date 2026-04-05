@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: r8-map-id-329fa88356c9e071bedcd87e8cbc16a4cb0c028932e63902b8210957806638ae */
+/* loaded from: classes6.dex */
+final /* synthetic */ class zzhbm implements zzheb {
+    static final /* synthetic */ zzhbm zza = new zzhbm();
+
+    private /* synthetic */ zzhbm() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzheb
+    public final /* synthetic */ zzhgb zza(zzgvt zzgvtVar, zzgwn zzgwnVar) {
+        return zzhbp.zzd((zzgyi) zzgvtVar, zzgwnVar);
+    }
+}

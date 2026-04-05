@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_approved_checking"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/rejectedImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/badge_validity_check_approved"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="25sp"
+        android:gravity="center"
+        android:id="@+id/approvedText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="55dp"
+        android:text="Toto"
+        android:textAlignment="center"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/explicationPiege"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Trap Explanation "
+        android:layout_below="@+id/rejectedImage"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/bravoMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Bravo Message"
+        android:layout_below="@+id/explicationPiege"/>
+</RelativeLayout>

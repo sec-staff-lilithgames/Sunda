@@ -1,0 +1,206 @@
+syntax = "proto3";
+
+package ac; // short for AppConsent
+option go_package = "gitlab.datalf.chat/sfbx/dev/appconsent/api/proto/build/go/proto;proto";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+
+import "ac_error.proto";
+import "models.proto";
+import "xchange.proto";
+import "metric/metric.proto";
+
+// Inspired from https://chandago.atlassian.net/browse/AP-832
+service AppConsent {
+  // Sends a greeting
+  rpc Hello (HelloRequest) returns (HelloReply) {}
+  /* Origin : (AP-1777)
+     The purpose of this field is to have on consents the exact URL or package id of its origin
+     Value of this field come from : Package-Id header first, then Referer header
+   */
+  rpc Save (SaveRequest) returns (SaveReply) {}
+  rpc History (HistoryRequest) returns (HistoryReply) {}
+  rpc ExternalToUuid (ExternalToUuidRequest) returns (ExternalToUuidReply) {}
+  rpc UuidToExternal (UuidToExternalRequest) returns (UuidToExternalReply) {}
+  rpc Ship2 (ShipRequest) returns (ShipReply) {}
+  // TODO Call "Data" for XChange submission
+  rpc SaveExternal (SaveExternalRequest) returns (SaveExternalReply) {}
+  rpc SaveFloatingFloatingExtraPurpose(SaveFloatingExtraPurposeRequest) returns (SaveFloatingExtraPurposeReply) {}
+  rpc TranslateVendorCookieRetention(TranslateVendorCookieRetentionRequest) returns (TranslateVendorCookieRetentionReply) {}
+}
+
+message HelloRequest {
+  // Caller credential
+  string app_key = 1;
+  // TODO signature
+  // TODO nonce
+  // TODO issuance timestamp
+
+  // Unique user identifier
+  // Caller MUST provide it here if already known. If not provided, the server
+  // will attribute a new uuid and cast cookies on the response.
+  string uuid = 2;
+
+  // ISO3166 code
+  string language = 3;
+
+  map<string, string> external_ids = 4;
+
+  bool noConfiguration = 5;
+  bool noVendorList = 6;
+  bool noConsent = 7;
+
+  // Optionnal cmp_hash. If cmp_hash == cmp.cmp_hash && cmp_hash_version == cmp.cmp_hash_version, collector won't send back HelloReply.configuration and HelloReply.vendorlist
+  string cmp_hash = 8;
+  uint32 cmp_hash_version = 9;
+
+  // Fields below are infered from request's headers if not provided
+
+  // User agent, used to identify the platform
+  string agent = 90;
+  // Referer Source
+  string source = 91;
+}
+
+message HelloReply {
+  ErrorResponse error = 1;
+
+  // Unique user identifier
+  string uuid = 2;
+
+  Configuration configuration = 3;
+  Consent consent = 4;
+  ConsentFloatingExtraPurpose consent_floating_extra_purpose = 8;
+  Vendorlist vendorlist = 5;
+
+  // Which version of this app_key it is. Do not mix with the cmp_version field
+  // from the GVL payload. It is an AppConsent field.
+  uint32 cmp_hash_version = 6;
+  string cmp_hash = 7;
+  string floating_extra_id = 9;
+  uint32 floating_version = 10;
+  Country country = 11;
+}
+
+// TODO merge call identification into an object ?
+message SaveRequest {
+  // Caller credential
+  string app_key = 1;
+  // TODO signature
+  // TODO nonce
+  // TODO issuance timestamp
+
+  // Unique user identifier
+  // Caller MUST provide it.
+  string uuid = 2;
+
+  Consent consent = 3;
+
+  repeated metric.Event events = 4;
+
+  // User agent, used to identify the platform
+  string agent = 90;
+  // Referer Source
+  string source = 91;
+}
+
+message SaveReply {
+  ErrorResponse error = 1;
+  google.protobuf.Duration consent_expiration = 2;
+}
+
+message HistoryRequest {
+  // Caller credential
+  string app_key = 1;
+
+  // Unique user identifier
+  // Caller MUST provide it here if already known. If not provided, the server
+  // will respond error.
+  string uuid = 2;
+  bool with_transaction_id = 3;
+  string uuid_hash = 4;
+  string language = 5;
+  map<string,string> external_ids = 6;
+}
+
+message HistoryReply {
+  ErrorResponse error = 1;
+
+  // Unique user identifier
+  string uuid = 2;
+
+  repeated Consent consents = 3;
+}
+
+message ExternalToUuidRequest {
+  // Caller credential
+  string app_key = 1;
+
+  // User external identifier
+  string external_id = 2;
+  string external_id_key = 3;
+
+  // ISO3166 code
+  string language = 4;
+}
+
+message UuidToExternalRequest {
+  // Caller credential
+  string app_key = 1;
+
+  // User uuid
+  string uuid = 2;
+
+  // ISO3166 code
+  string language = 3;
+}
+
+message UuidToExternalReply {
+  ErrorResponse error = 1;
+
+  map<string, string> external_ids = 2;
+}
+
+message ExternalToUuidReply {
+  ErrorResponse error = 1;
+
+  // Unique user identifier
+  repeated string uuids = 2;
+}
+
+message SaveExternalRequest {
+  string uuid = 1;
+
+  string app_key = 2;
+
+  map<string, string> external_ids = 3;
+
+  google.protobuf.Timestamp given_at = 4;
+}
+
+message SaveExternalReply {
+  ErrorResponse error = 1;
+}
+
+message SaveFloatingExtraPurposeRequest {
+  string uuid = 1;
+  string app_key = 2;
+  ConsentFloatingExtraPurpose consent_floating_extra_purpose = 3;
+}
+message SaveFloatingExtraPurposeReply {
+  ErrorResponse error = 1;
+}
+
+message TranslateVendorCookieRetentionRequest {
+  string uuid = 1;
+  string app_key = 2;
+  // ISO3166
+  string lang = 3;
+  bool uses_non_cookie_access = 4;
+  int64 cookie_max_age_seconds = 5;
+}
+
+message TranslateVendorCookieRetentionReply {
+  string translation = 1;
+}

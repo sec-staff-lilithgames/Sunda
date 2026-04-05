@@ -1,0 +1,191 @@
+{
+  "outdir": "/Users/siberia/Desktop/sunda/Sunda/demo/targets/akinator/evidence/2026-04-05-160418-frida-20s-hold",
+  "attach": {
+    "mode": "attach",
+    "package": "com.digidust.elokence.akinator.freemium",
+    "hold_seconds": 20,
+    "state_changes": [
+      {
+        "kind": "process_gone",
+        "t": 19.991
+      }
+    ],
+    "initial_pid": 21515,
+    "pid_samples": [
+      {
+        "t": 0.066,
+        "pid": "21515"
+      },
+      {
+        "t": 1.197,
+        "pid": "21515"
+      },
+      {
+        "t": 2.32,
+        "pid": "21515"
+      },
+      {
+        "t": 3.42,
+        "pid": "21515"
+      },
+      {
+        "t": 4.497,
+        "pid": "21515"
+      },
+      {
+        "t": 5.592,
+        "pid": "21515"
+      },
+      {
+        "t": 6.709,
+        "pid": "21515"
+      },
+      {
+        "t": 7.798,
+        "pid": "21515"
+      },
+      {
+        "t": 8.926,
+        "pid": "21515"
+      },
+      {
+        "t": 10.044,
+        "pid": "21515"
+      },
+      {
+        "t": 11.171,
+        "pid": "21515"
+      },
+      {
+        "t": 12.284,
+        "pid": "21515"
+      },
+      {
+        "t": 13.375,
+        "pid": "21515"
+      },
+      {
+        "t": 14.473,
+        "pid": "21515"
+      },
+      {
+        "t": 15.585,
+        "pid": "21515"
+      },
+      {
+        "t": 16.7,
+        "pid": "21515"
+      },
+      {
+        "t": 17.779,
+        "pid": "21515"
+      },
+      {
+        "t": 18.938,
+        "pid": "21515"
+      },
+      {
+        "t": 19.991,
+        "pid": ""
+      }
+    ],
+    "final_pid": "22497"
+  },
+  "spawn": {
+    "mode": "spawn",
+    "package": "com.digidust.elokence.akinator.freemium",
+    "hold_seconds": 20,
+    "state_changes": [
+      {
+        "kind": "session_detached",
+        "reason": "process-terminated",
+        "ts": 1775376359.449562,
+        "crash": {
+          "summary": "Crash(pid=22938, process_name=\"inator.freemium\", summary=\"Bad access due to protection failure\", report=<1816 bytes>, parameters={})",
+          "report": "*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***\nBuild fingerprint: 'google/akita/akita:16/BP4A.260105.004.E1/14587043:user/release-keys'\nKernel Release: '6.1.145-android14-11-gc1de4747ac59-ab14219743'\nRevision: 'MP1.0'\nABI: 'arm64'\nTimestamp: 2026-04-05 16:05:58.711330588+0800\nProcess uptime: 2s\nExecutable: /system/bin/app_process64\nCmdline: com.digidust.elokence.akinator.freemium\npid: 22938, tid: 22938, name: inator.freemium  >>> com.digidust.elokence.akinator.freemium <<<\nuid: 10437\ntagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)\npac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)\nesr: 0000000092000007 (Data Abort Exception 0x24)\nsignal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x0000007b17bc3000 (read)\n    x0  0000000000033860  x1  543cfc4068bdd433  x2  0000000000000000  x3  00000100000001b3\n    x4  00000000b92fc79d  x5  0000000000002557  x6  00000000000003d8  x7  0000000076c76be9\n    x8  000000000004f595  x9  00000000c10c3c39  x10 b400007b17b73a60  x11 000000000003385f\n    x12 0000000016c6c8eb  x13 5f4eedaea5c5eef3  x14 0000000005000f4e  x15 0000000044fe888d\n    x16 b400007b17b8f7a1  x17 00000000fffc954b  x18 0000007b34c2c000  x19 00000000cf72c243\n    x20 00000000850ac582  x21 00000000d20e8f27  x22 0000000000000020  x23 000000000000008f\n    x24 00000000e3ba6b44  x25 0000000069699075  x26 0000007fdde076e8  x27 00000000000017f3\n    x28 0000000000001c7d  x29 00000000fc95078b\n    lr  0000000000000000  sp  0000007fdde07490  pc  00000078211be75c  pst 00000000a0001000\n    esr 0000000092000007\n1 total frames\nbacktrace:\n      #00 pc 000000000005d75c  /data/app/~~SV712UnxgmRiptlbIAle2w==/com.digidust.elokence.akinator.freemium-UCa5w_dZqhYdk93bwALAlw==/split_config.arm64_v8a.apk!libpairipcore.so (offset 0x16c000)\n",
+          "parameters": {}
+        }
+      },
+      {
+        "kind": "process_gone",
+        "t": 0.107
+      }
+    ],
+    "spawn_pid": 22938,
+    "pid_samples": [
+      {
+        "t": 0.107,
+        "pid": ""
+      },
+      {
+        "t": 1.281,
+        "pid": ""
+      },
+      {
+        "t": 2.423,
+        "pid": ""
+      },
+      {
+        "t": 3.609,
+        "pid": ""
+      },
+      {
+        "t": 4.754,
+        "pid": ""
+      },
+      {
+        "t": 5.901,
+        "pid": ""
+      },
+      {
+        "t": 7.087,
+        "pid": ""
+      },
+      {
+        "t": 8.233,
+        "pid": ""
+      },
+      {
+        "t": 9.357,
+        "pid": ""
+      },
+      {
+        "t": 10.548,
+        "pid": ""
+      },
+      {
+        "t": 11.73,
+        "pid": ""
+      },
+      {
+        "t": 12.85,
+        "pid": ""
+      },
+      {
+        "t": 14.029,
+        "pid": ""
+      },
+      {
+        "t": 15.172,
+        "pid": ""
+      },
+      {
+        "t": 16.319,
+        "pid": ""
+      },
+      {
+        "t": 17.515,
+        "pid": ""
+      },
+      {
+        "t": 18.689,
+        "pid": ""
+      },
+      {
+        "t": 19.862,
+        "pid": ""
+      }
+    ],
+    "final_pid": ""
+  }
+}

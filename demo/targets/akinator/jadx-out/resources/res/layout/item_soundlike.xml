@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_soundlike"
+    android:background="@drawable/background_textarea_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/soundlike_item_name"
+        android:textColor="@color/soundlike_item_name"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:id="@+id/soundlike_name"
+        android:paddingTop="@dimen/soundlike2_item_padding_topbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Name super super long long long long long long"
+        android:lines="1"
+        android:scrollHorizontally="true"/>
+    <TextView
+        android:textSize="@dimen/soundlike_item_description"
+        android:textColor="@color/soundlike_item_description"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:id="@+id/soundlike_description"
+        android:paddingBottom="@dimen/soundlike2_item_padding_topbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Description longue longue longue longue longue longue longue"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:layout_below="@+id/soundlike_name"/>
+</RelativeLayout>
