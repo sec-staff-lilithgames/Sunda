@@ -201,6 +201,9 @@ def prepare_mode(case: dict[str, Any]) -> dict[str, Any]:
     delay_ms = int(launch.get("delay_ms", 0))
 
     if mode == "attach":
+        if strategy == "existing":
+            pid = wait_for_pid(package)
+            return {"pid": pid, "expected_pid": pid}
         force_stop(package)
         launch_package(package)
         pid = wait_for_pid(package)

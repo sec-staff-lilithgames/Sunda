@@ -76,6 +76,14 @@ Run only the CLI path:
 python3 tools/java-bridge-fuzz/run_case.py --driver cli --case tools/java-bridge-fuzz/cases/smoke-spawn-enumerate.json
 ```
 
+Map canonical tombstone hit points back to the rebuilt local agent image:
+
+```bash
+python3 tools/java-bridge-fuzz/analyze_agent_offsets.py \
+  --tombstone tools/java-bridge-fuzz/outputs/<evidence-dir>/tombstone.txt \
+  --output tools/java-bridge-fuzz/outputs/<evidence-dir>/agent-offset-analysis.json
+```
+
 ## Output Contract
 
 Each run writes to:
@@ -133,3 +141,9 @@ Current repo state:
   - maintained medium-pressure attach stress seed that currently passes
 - `cases/aggressive-attach-flake.reduced.json`
   - reduced historical reproducer that still triggers the older `script has been destroyed` attach failure
+
+For low-level evidence collection against an already running pid, a temporary case may use:
+
+- `launch.strategy = "existing"`
+  - skips force-stop and fresh launch
+  - intended for `lldb-server` / `/proc/<pid>/maps` aligned collection
