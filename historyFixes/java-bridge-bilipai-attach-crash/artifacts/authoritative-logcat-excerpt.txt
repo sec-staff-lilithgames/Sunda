@@ -1,0 +1,10 @@
+04-06 23:27:52.110 12265 12265 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 12265 (id.purebilibili), pid 12265 (id.purebilibili)
+04-06 23:27:52.173 12341 12341 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+04-06 23:27:52.173   736   736 I tombstoned: received crash request for pid 12265
+04-06 23:27:52.174 12341 12341 I crash_dump64: performing dump of process 12265 (target tid = 12265)
+04-06 23:27:52.380   736   736 E tombstoned: Tombstone written to: tombstone_21
+04-06 23:27:52.405  1770  6821 I ActivityManager: Process com.android.purebilibili (pid 12265) has died: fg  TOP
+
+Source:
+
+- `tools/java-bridge-fuzz/outputs/20260406-authoritative-evidence/logcat.txt`

@@ -1,0 +1,17 @@
+Historical hotter-pressure attach profile:
+
+- status:
+  - still open
+- signature:
+  - `python::attach::bridge-operation-error::pid-lost`
+- failure:
+  - `script has been destroyed`
+
+Interpretation:
+
+- this is not the maintained day-to-day baseline
+- it is a preserved hotter-pressure branch for future work
+
+Source:
+
+- `tools/java-bridge-fuzz/outputs/20260406-234212-aggressive-attach-flake-python/result.json`

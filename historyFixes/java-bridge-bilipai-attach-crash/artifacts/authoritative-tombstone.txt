@@ -1,0 +1,26 @@
+Build fingerprint: `google/akita/akita:16/BP4A.260105.004.E1/14587043:user/release-keys`
+Cmdline: `com.android.purebilibili`
+pid/tid: `12265 / 12265`
+signal: `SIGSEGV`
+fault addr: `0x0`
+
+Key registers:
+
+- `pc = 0x769e7804dc`
+- `lr = 0x769e7804cc`
+- `x20 = 0x769e093c00`
+- `x21 = 0x7a863bbee0`
+- `x22 = 0x7a8651d2a0`
+- `x23 = 0x7a8651d2d0`
+
+Canonical memfd chain:
+
+- `#00 pc 0x97d4dc /memfd:sunda-agent-64.so`
+- `#01 pc 0xaa06a4 /memfd:sunda-agent-64.so`
+- `#02 pc 0xaa0ac0 /memfd:sunda-agent-64.so`
+- `#03 art_quick_generic_jni_trampoline`
+- `#05..#21 android.view accessibility event path`
+
+Source:
+
+- `tools/java-bridge-fuzz/outputs/20260406-authoritative-evidence/tombstone.txt`

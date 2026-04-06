@@ -1,0 +1,26 @@
+{
+  "status": "fixed-current-baseline",
+  "passing_regressions": [
+    {
+      "case": "aggressive-attach-flake.reduced.json",
+      "result_source": "tools/java-bridge-fuzz/outputs/20260406-234008-aggressive-attach-flake-python/result.json"
+    },
+    {
+      "case": "aggressive-attach-flake.json",
+      "result_source": "tools/java-bridge-fuzz/outputs/20260406-234105-aggressive-attach-flake-python/result.json"
+    },
+    {
+      "case": "smoke-attach-core.json",
+      "result_source": "tools/java-bridge-fuzz/outputs/20260406-234117-smoke-attach-core-python/result.json"
+    },
+    {
+      "case": "smoke-spawn-enumerate.json",
+      "result_source": "tools/java-bridge-fuzz/outputs/20260406-234147-smoke-spawn-enumerate-python/result.json"
+    }
+  ],
+  "historical_open_branch": {
+    "case_source": "tools/java-bridge-fuzz/outputs/20260406-224241-aggressive-attach-flake-python/case.json",
+    "result_source": "tools/java-bridge-fuzz/outputs/20260406-234212-aggressive-attach-flake-python/result.json",
+    "signature": "python::attach::bridge-operation-error::pid-lost"
+  }
+}

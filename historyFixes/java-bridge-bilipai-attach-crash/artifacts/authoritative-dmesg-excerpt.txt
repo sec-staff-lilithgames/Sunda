@@ -1,0 +1,8 @@
+[Mon Apr  6 22:05:37 2026] [+] KP I commit_common_su: pid: 12032, tgid: 12032, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[Mon Apr  6 22:05:37 2026] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 15
+[Mon Apr  6 22:05:37 2026] [+] KP I commit_common_su: pid: 12038, tgid: 12038, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[Mon Apr  6 22:05:37 2026] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 15
+
+Source:
+
+- `tools/java-bridge-fuzz/outputs/20260406-authoritative-evidence/dmesg.txt`

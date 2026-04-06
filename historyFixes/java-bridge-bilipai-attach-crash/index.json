@@ -1,0 +1,59 @@
+{
+  "slug": "java-bridge-bilipai-attach-crash",
+  "title": "Java bridge attach crash audit archive",
+  "status": [
+    "fixed-current-baseline",
+    "historical-hotter-branch-open"
+  ],
+  "root_cause_summary": "Canonical memfd offsets map to the QuickJS native callback invoke path in our own injected agent. The stable fix keeps QuickJS native callbacks alive for the script lifetime through callback-owned references plus GumQuickCore tracking.",
+  "key_code_paths": [
+    "frida17.8.0/subprojects/frida-gum/bindings/gumjs/gumquickcore.c",
+    "frida17.8.0/subprojects/frida-gum/bindings/gumjs/gumquickcore.h",
+    "tools/java-bridge-fuzz/analyze_agent_offsets.py"
+  ],
+  "key_offsets": [
+    {
+      "offset": "0x97d4dc",
+      "symbol": "gum_quick_native_callback_invoke"
+    },
+    {
+      "offset": "0xaa06a4",
+      "symbol": "ffi_closure_SYSV_inner"
+    },
+    {
+      "offset": "0xaa0ac0",
+      "symbol": "ffi_closure_SYSV"
+    }
+  ],
+  "key_artifacts": [
+    "artifacts/authoritative-tombstone.txt",
+    "artifacts/authoritative-logcat-excerpt.txt",
+    "artifacts/authoritative-dmesg-excerpt.txt",
+    "artifacts/authoritative-offset-analysis.json",
+    "artifacts/authoritative-lldb-summary.txt",
+    "artifacts/historical-hot-attach-failure-summary.txt",
+    "artifacts/current-regression-summary.json"
+  ],
+  "key_scripts": [
+    "scripts/repro-reduced.sh",
+    "scripts/repro-tracked-attach.sh",
+    "scripts/run-regression.sh",
+    "scripts/collect-authoritative-evidence.sh",
+    "scripts/analyze-agent-offsets.sh"
+  ],
+  "regressions": {
+    "passing": [
+      "aggressive-attach-flake.reduced.json",
+      "aggressive-attach-flake.json",
+      "smoke-attach-core.json",
+      "smoke-spawn-enumerate.json"
+    ],
+    "historical_open_branch": [
+      "retained hotter attach crash-first case"
+    ]
+  },
+  "open_followups": [
+    "Continue investigating the retained hotter-pressure attach branch separately from the current green baseline.",
+    "Keep bilipai framed as a trigger-only test target; do not reframe it as the bug owner."
+  ]
+}

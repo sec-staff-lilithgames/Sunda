@@ -1,0 +1,29 @@
+Reduced reproducer early `lldb` stop:
+
+- primary stop thread:
+  - `id.purebilibili`
+- secondary crashing thread:
+  - `Okio Watchdog`
+- primary pc:
+  - `0x7289dc78`
+- secondary pc:
+  - `0x724eaf78`
+- key register clue:
+  - `x21 = 0`
+
+Authoritative existing-pid `lldb` stop:
+
+- first stop:
+  - `Okio Watchdog @ 0x72270070`
+- second stop:
+  - `DefaultDispatch @ 0x722f02e0`
+- key register clue at second stop:
+  - `x20 = 0`
+  - `x21 = 0`
+
+These are early transient crash surfaces that precede the final canonical tombstone chain.
+
+Sources:
+
+- `tools/java-bridge-fuzz/outputs/20260406-230954-aggressive-attach-flake-reduced-lldb/lldb-summary.txt`
+- `tools/java-bridge-fuzz/outputs/20260406-authoritative-evidence-existing/lldb-stop.txt`

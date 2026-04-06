@@ -1,0 +1,1406 @@
+{
+  "binary": "/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so",
+  "tombstone": "/Users/siberia/Desktop/sunda/Sunda/tools/java-bridge-fuzz/outputs/20260406-authoritative-evidence/tombstone.txt",
+  "offsets": [
+    {
+      "relative_offset": "0x97d4dc",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x97d43c",
+            "type": "t",
+            "name": "gum_quick_ffi_abi_get"
+          },
+          {
+            "address": "0x97d484",
+            "type": "t",
+            "name": "$x.458"
+          },
+          {
+            "address": "0x97d484",
+            "type": "t",
+            "name": "gum_quick_native_callback_invoke"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x97d750",
+            "type": "t",
+            "name": "$x.459"
+          },
+          {
+            "address": "0x97d750",
+            "type": "t",
+            "name": "OUTLINED_FUNCTION_0"
+          },
+          {
+            "address": "0x97d768",
+            "type": "t",
+            "name": "$x.460"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n000000000097d484 <gum_quick_native_callback_invoke>:\n; gum_quick_native_callback_invoke():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4965\n  97d4bc: b81f43a0     \tstur\tw0, [x29, #-0xc]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4997\n  97d4c0: d102e3a0     \tsub\tx0, x29, #0xb8\n  97d4c4: aa1803e1     \tmov\tx1, x24\n  97d4c8: 97ffd3c9     \tbl\t0x9723ec <_gum_quick_scope_enter>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4999\n  97d4cc: b94012c8     \tldr\tw8, [x22, #0x10]\n; /Users/siberia/Desktop/sunda/Sunda/frida17.8.0/deps/sdk-android-arm64/include/quickjs/quickjs.h:812\n;     if (JS_VALUE_HAS_REF_COUNT(v)) {\n  97d4d0: 31002d1f     \tcmn\tw8, #0xb\n  97d4d4: 540000a3     \tb.lo\t0x97d4e8 <gum_quick_native_callback_invoke+0x64>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4999\n  97d4d8: f94006c8     \tldr\tx8, [x22, #0x8]\n; /Users/siberia/Desktop/sunda/Sunda/frida17.8.0/deps/sdk-android-arm64/include/quickjs/quickjs.h:814\n;         p->ref_count++;\n  97d4dc: b9400109     \tldr\tw9, [x8]\n  97d4e0: 11000529     \tadd\tw9, w9, #0x1\n  97d4e4: b9000109     \tstr\tw9, [x8]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5001\n  97d4e8: f0ffc888     \tadrp\tx8, 0x290000 <org_gtk_Debugging_xml+0x46>\n  97d4ec: 912ca108     \tadd\tx8, x8, #0xb28\n  97d4f0: eb08029f     \tcmp\tx20, x8\n  97d4f4: 54000040     \tb.eq\t0x97d4fc <gum_quick_native_callback_invoke+0x78>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5008\n  97d4f8: f900035f     \tstr\txzr, [x26]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5011\n  97d4fc: f9400f08     \tldr\tx8, [x24, #0x18]\n  97d500: f9001676     \tstr\tx22, [x19, #0x28]\n  97d504: f900027a     \tstr\tx26, [x19]\n  97d508: b40001e8     \tcbz\tx8, 0x97d544 <gum_quick_native_callback_invoke+0xc0>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5013\n  97d50c: f94002c0     \tldr\tx0, [x22]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5012\n  97d510: 97ff57a4     \tbl\t0x9533a0 <gum_interceptor_get_live_replacement_invocation>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5011\n  97d514: b4000180     \tcbz\tx0, 0x97d544 <gum_quick_native_callback_invoke+0xc0>\n  97d518: aa0003f4     \tmov\tx20, x0\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5015\n  97d51c: f9400f00     \tldr\tx0, [x24, #0x18]\n  97d520: 94004898     \tbl\t0x98f780 <_gum_quick_interceptor_obtain_invocation_context>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5016\n  97d524: aa1403e1     \tmov\tx1, x20\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5015\n  97d528: aa0003f6     \tmov\tx22, x0\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5016\n  97d52c: 94004879     \tbl\t0x98f710 <_gum_quick_invocation_context_reset>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5018\n  97d530: f94002c9     \tldr\tx9, [x22]\n  97d534: a901fe76     \tstp\tx22, xzr, [x19, #0x18]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5018\n  97d538: f94006c8     \tldr\tx8, [x22, #0x8]\n"
+    },
+    {
+      "relative_offset": "0xaa06a4",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xaa03bc",
+            "type": "t",
+            "name": "ffi_prep_closure_loc"
+          },
+          {
+            "address": "0xaa0458",
+            "type": "t",
+            "name": "$x.10"
+          },
+          {
+            "address": "0xaa0458",
+            "type": "t",
+            "name": "ffi_closure_SYSV_inner"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xaa06d4",
+            "type": "t",
+            "name": "$x.11"
+          },
+          {
+            "address": "0xaa06d4",
+            "type": "t",
+            "name": "allocate_int_to_reg_or_stack"
+          },
+          {
+            "address": "0xaa0728",
+            "type": "t",
+            "name": "$x.12"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000aa0458 <ffi_closure_SYSV_inner>:\n; ffi_closure_SYSV_inner():\n  aa0684: b85fc3a8     \tldur\tw8, [x29, #-0x4]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:1134\n  aa0688: aa1503e0     \tmov\tx0, x21\n  aa068c: aa1a03e2     \tmov\tx2, x26\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:1131\n  aa0690: 721b011f     \ttst\tw8, #0x20\n  aa0694: 12177918     \tand\tw24, w8, #0xfffffeff\n  aa0698: a97ba3a9     \tldp\tx9, x8, [x29, #-0x48]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:1131\n  aa069c: 9a880121     \tcsel\tx1, x9, x8, eq\n  aa06a0: a97ca3a3     \tldp\tx3, x8, [x29, #-0x38]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:1134\n  aa06a4: d63f0100     \tblr\tx8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:1136\n  aa06a8: 2a1803e0     \tmov\tw0, w24\n  aa06ac: d10043bf     \tsub\tsp, x29, #0x10\n  aa06b0: a9464ff4     \tldp\tx20, x19, [sp, #0x60]\n  aa06b4: a94557f6     \tldp\tx22, x21, [sp, #0x50]\n  aa06b8: a9445ff8     \tldp\tx24, x23, [sp, #0x40]\n  aa06bc: a94367fa     \tldp\tx26, x25, [sp, #0x30]\n  aa06c0: a9426ffc     \tldp\tx28, x27, [sp, #0x20]\n  aa06c4: a9417bfd     \tldp\tx29, x30, [sp, #0x10]\n  aa06c8: fc4707e8     \tldr\td8, [sp], #0x70\n  aa06cc: d65f03c0     \tret\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:1118\n  aa06d0: 942fa488     \tbl\t0x16898f0 <abort@plt>\n\n0000000000aa06d4 <allocate_int_to_reg_or_stack>:\n; allocate_int_to_reg_or_stack():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:522\n  aa06d4: b9400028     \tldr\tw8, [x1]\n  aa06d8: 71001d1f     \tcmp\tw8, #0x7\n  aa06dc: 540000c8     \tb.hi\t0xaa06f4 <allocate_int_to_reg_or_stack+0x20>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:523\n  aa06e0: 11000509     \tadd\tw9, w8, #0x1\n  aa06e4: 8b080c08     \tadd\tx8, x0, x8, lsl #3\n  aa06e8: 91020100     \tadd\tx0, x8, #0x80\n  aa06ec: b9000029     \tstr\tw9, [x1]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:527\n  aa06f0: d65f03c0     \tret\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:289\n  aa06f4: f9400428     \tldr\tx8, [x1, #0x8]\n  aa06f8: 52800109     \tmov\tw9, #0x8                // =8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/ffi.c:297\n  aa06fc: f100207f     \tcmp\tx3, #0x8\n  aa0700: 9a89806a     \tcsel\tx10, x3, x9, hi\n"
+    },
+    {
+      "relative_offset": "0xaa0ac0",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xaa08e0",
+            "type": "t",
+            "name": "ffi_call_SYSV"
+          },
+          {
+            "address": "0xaa0a70",
+            "type": "t",
+            "name": "ffi_closure_SYSV_V"
+          },
+          {
+            "address": "0xaa0a90",
+            "type": "t",
+            "name": "ffi_closure_SYSV"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xaa0be0",
+            "type": "t",
+            "name": "ffi_go_closure_SYSV_V"
+          },
+          {
+            "address": "0xaa0c00",
+            "type": "t",
+            "name": "ffi_go_closure_SYSV"
+          },
+          {
+            "address": "0xaa0c24",
+            "type": "t",
+            "name": "$x.0"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000aa0a90 <ffi_closure_SYSV>:\n; ffi_closure_SYSV():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:284\n  aa0aa0: a90b17e4     \tstp\tx4, x5, [sp, #0xb0]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:285\n  aa0aa4: a90c1fe6     \tstp\tx6, x7, [sp, #0xc0]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:288\n  aa0aa8: a9418620     \tldp\tx0, x1, [x17, #0x18]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:289\n  aa0aac: f9401622     \tldr\tx2, [x17, #0x28]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:293\n  aa0ab0: 910043e3     \tadd\tx3, sp, #0x10\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:294\n  aa0ab4: 910443e4     \tadd\tx4, sp, #0x110\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:295\n  aa0ab8: 910343e5     \tadd\tx5, sp, #0xd0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:296\n  aa0abc: aa0803e6     \tmov\tx6, x8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:297\n  aa0ac0: 97fffe66     \tbl\t0xaa0458 <ffi_closure_SYSV_inner>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:300\n  aa0ac4: 100000e1     \tadr\tx1, 0xaa0ae0 <ffi_closure_SYSV+0x50>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:301\n  aa0ac8: 12001000     \tand\tw0, w0, #0x1f\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:302\n  aa0acc: 8b000c21     \tadd\tx1, x1, x0, lsl #3\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:303\n  aa0ad0: 910343e3     \tadd\tx3, sp, #0xd0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:304\n  aa0ad4: d61f0020     \tbr\tx1\n  aa0ad8: d503201f     \tnop\n  aa0adc: d503201f     \tnop\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:308\n  aa0ae0: 1400003e     \tb\t0xaa0bd8 <ffi_closure_SYSV+0x148>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:309\n  aa0ae4: d503201f     \tnop\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:310\n  aa0ae8: f9400060     \tldr\tx0, [x3]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:311\n  aa0aec: 1400003b     \tb\t0xaa0bd8 <ffi_closure_SYSV+0x148>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:312\n  aa0af0: a9400460     \tldp\tx0, x1, [x3]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:313\n  aa0af4: 14000039     \tb\t0xaa0bd8 <ffi_closure_SYSV+0x148>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:314\n  aa0af8: d4207d00     \tbrk\t#0x3e8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:315\n  aa0afc: d503201f     \tnop\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:316\n  aa0b00: d4207d00     \tbrk\t#0x3e8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:317\n  aa0b04: d503201f     \tnop\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:318\n  aa0b08: d4207d00     \tbrk\t#0x3e8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:319\n  aa0b0c: d503201f     \tnop\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:320\n  aa0b10: d4207d00     \tbrk\t#0x3e8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:321\n  aa0b14: d503201f     \tnop\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:322\n  aa0b18: d4207d00     \tbrk\t#0x3e8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/libffi/../../../libffi/src/aarch64/sysv.S:323\n  aa0b1c: d503201f     \tnop\n"
+    },
+    {
+      "relative_offset": "0xab4bac",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xab4a44",
+            "type": "t",
+            "name": "g_main_context_pending"
+          },
+          {
+            "address": "0xab4a8c",
+            "type": "t",
+            "name": "$x.94"
+          },
+          {
+            "address": "0xab4a8c",
+            "type": "t",
+            "name": "g_main_context_iterate"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xab4bfc",
+            "type": "t",
+            "name": "$x.95"
+          },
+          {
+            "address": "0xab4bfc",
+            "type": "t",
+            "name": "g_main_context_iteration"
+          },
+          {
+            "address": "0xab4c48",
+            "type": "t",
+            "name": "$x.96"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000ab4a8c <g_main_context_iterate>:\n; g_main_context_iterate():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4651\n  ab4b8c: 34000128     \tcbz\tw8, 0xab4bb0 <g_main_context_iterate+0x124>\n  ab4b90: 94000342     \tbl\t0xab5898 <OUTLINED_FUNCTION_0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4675\n  ab4b94: aa1303e0     \tmov\tx0, x19\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4670\n  ab4b98: f9404e78     \tldr\tx24, [x19, #0x98]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4675\n  ab4b9c: 9400a130     \tbl\t0xadd05c <g_mutex_unlock>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4771\n  ab4ba0: aa1603e0     \tmov\tx0, x22\n  ab4ba4: 2a1703e1     \tmov\tw1, w23\n  ab4ba8: 2a1503e2     \tmov\tw2, w21\n  ab4bac: d63f0300     \tblr\tx24\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4362\n  ab4bb0: b85fc3a1     \tldur\tw1, [x29, #-0x4]\n  ab4bb4: aa1303e0     \tmov\tx0, x19\n  ab4bb8: aa1603e2     \tmov\tx2, x22\n  ab4bbc: 2a1703e3     \tmov\tw3, w23\n  ab4bc0: 97fffea6     \tbl\t0xab4658 <g_main_context_check>\n  ab4bc4: 2a0003f5     \tmov\tw21, w0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4364\n  ab4bc8: 34000074     \tcbz\tw20, 0xab4bd4 <g_main_context_iterate+0x148>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4365\n  ab4bcc: aa1303e0     \tmov\tx0, x19\n  ab4bd0: 97ffff3c     \tbl\t0xab48c0 <g_main_context_dispatch>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4367\n  ab4bd4: aa1303e0     \tmov\tx0, x19\n  ab4bd8: 97fffb1c     \tbl\t0xab3848 <g_main_context_release>\n  ab4bdc: 9400032f     \tbl\t0xab5898 <OUTLINED_FUNCTION_0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4376\n  ab4be0: 2a1503e0     \tmov\tw0, w21\n  ab4be4: a9444ff4     \tldp\tx20, x19, [sp, #0x40]\n  ab4be8: a94357f6     \tldp\tx22, x21, [sp, #0x30]\n  ab4bec: a9425ff8     \tldp\tx24, x23, [sp, #0x20]\n  ab4bf0: a9417bfd     \tldp\tx29, x30, [sp, #0x10]\n  ab4bf4: 910143ff     \tadd\tsp, sp, #0x50\n  ab4bf8: d65f03c0     \tret\n\n0000000000ab4bfc <g_main_context_iteration>:\n; g_main_context_iteration():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4423\n  ab4bfc: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  ab4c00: a9014ff4     \tstp\tx20, x19, [sp, #0x10]\n  ab4c04: 910003fd     \tmov\tx29, sp\n  ab4c08: aa0003f3     \tmov\tx19, x0\n"
+    },
+    {
+      "relative_offset": "0xab4d84",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xab4c9c",
+            "type": "t",
+            "name": "g_main_loop_unref"
+          },
+          {
+            "address": "0xab4ce0",
+            "type": "t",
+            "name": "$x.99"
+          },
+          {
+            "address": "0xab4ce0",
+            "type": "t",
+            "name": "g_main_loop_run"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xab4db8",
+            "type": "t",
+            "name": "$x.100"
+          },
+          {
+            "address": "0xab4db8",
+            "type": "t",
+            "name": "g_main_loop_quit"
+          },
+          {
+            "address": "0xab4dfc",
+            "type": "t",
+            "name": "$x.106"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000ab4ce0 <g_main_loop_run>:\n; g_main_loop_run():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4563\n  ab4d64: 91002274     \tadd\tx20, x19, #0x8\n  ab4d68: 52800028     \tmov\tw8, #0x1                // =1\n  ab4d6c: 889ffe88     \tstlr\tw8, [x20]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4564\n  ab4d70: 88dffe88     \tldar\tw8, [x20]\n  ab4d74: f9400260     \tldr\tx0, [x19]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4564\n  ab4d78: 340000a8     \tcbz\tw8, 0xab4d8c <g_main_loop_run+0xac>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4565\n  ab4d7c: 52800021     \tmov\tw1, #0x1                // =1\n  ab4d80: 52800022     \tmov\tw2, #0x1                // =1\n  ab4d84: 97ffff42     \tbl\t0xab4a8c <g_main_context_iterate>\n  ab4d88: 17fffffa     \tb\t0xab4d70 <g_main_loop_run+0x90>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4567\n  ab4d8c: 9400a0b4     \tbl\t0xadd05c <g_mutex_unlock>\n  ab4d90: 14000004     \tb\t0xab4da0 <g_main_loop_run+0xc0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4543\n  ab4d94: f9400260     \tldr\tx0, [x19]\n  ab4d98: 9400a0b1     \tbl\t0xadd05c <g_mutex_unlock>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4544\n  ab4d9c: 34000074     \tcbz\tw20, 0xab4da8 <g_main_loop_run+0xc8>\n  ab4da0: f9400260     \tldr\tx0, [x19]\n  ab4da4: 97fffaa9     \tbl\t0xab3848 <g_main_context_release>\n  ab4da8: aa1303e0     \tmov\tx0, x19\n  ab4dac: 940002ce     \tbl\t0xab58e4 <OUTLINED_FUNCTION_8>\n  ab4db0: a8c37bfd     \tldp\tx29, x30, [sp], #0x30\n  ab4db4: 17ffffba     \tb\t0xab4c9c <g_main_loop_unref>\n\n0000000000ab4db8 <g_main_loop_quit>:\n; g_main_loop_quit():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4586\n  ab4db8: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  ab4dbc: f9000bf3     \tstr\tx19, [sp, #0x10]\n  ab4dc0: 910003fd     \tmov\tx29, sp\n  ab4dc4: aa0003f3     \tmov\tx19, x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4590\n  ab4dc8: f9400000     \tldr\tx0, [x0]\n  ab4dcc: 9400a094     \tbl\t0xadd01c <g_mutex_lock>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4591\n  ab4dd0: 91002268     \tadd\tx8, x19, #0x8\n  ab4dd4: 889ffd1f     \tstlr\twzr, [x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4592\n  ab4dd8: f9400268     \tldr\tx8, [x19]\n  ab4ddc: 94000332     \tbl\t0xab5aa4 <OUTLINED_FUNCTION_47>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4594\n  ab4de0: f9400268     \tldr\tx8, [x19]\n"
+    },
+    {
+      "relative_offset": "0x948234",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x948050",
+            "type": "T",
+            "name": "frida_agent_main"
+          },
+          {
+            "address": "0x948070",
+            "type": "t",
+            "name": "$x.1"
+          },
+          {
+            "address": "0x948070",
+            "type": "t",
+            "name": "frida_agent_runner_create_and_run"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x9483e8",
+            "type": "t",
+            "name": "$x.2"
+          },
+          {
+            "address": "0x9483e8",
+            "type": "t",
+            "name": "frida_agent_runner_resume_after_transition"
+          },
+          {
+            "address": "0x9484c0",
+            "type": "t",
+            "name": "$x.3"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000948070 <frida_agent_runner_create_and_run>:\n; frida_agent_runner_create_and_run():\n; /sunda-src/core/lib/agent/agent.vala:14\n  948214: f9401720     \tldr\tx0, [x25, #0x28]\n  948218: f9001328     \tstr\tx8, [x25, #0x20]\n  94821c: b4000040     \tcbz\tx0, 0x948224 <frida_agent_runner_create_and_run+0x1b4>\n  948220: 94035d95     \tbl\t0xa1f874 <frida_file_descriptor_table_padder_unref>\n  948224: aa1903e0     \tmov\tx0, x25\n  948228: f9001737     \tstr\tx23, [x25, #0x28]\n  94822c: 940002fa     \tbl\t0x948e14 <frida_agent_runner_start_co>\n; /sunda-src/core/lib/agent/agent.vala:274\n  948230: f9400f08     \tldr\tx8, [x24, #0x18]\n  948234: 94002294     \tbl\t0x950c84 <OUTLINED_FUNCTION_88>\n; /sunda-src/core/lib/agent/agent.vala:276\n  948238: f9400f08     \tldr\tx8, [x24, #0x18]\n  94823c: 9400230c     \tbl\t0x950e6c <OUTLINED_FUNCTION_125>\n; /sunda-src/core/lib/agent/agent.vala:278\n  948240: f9400f08     \tldr\tx8, [x24, #0x18]\n  948244: f9403100     \tldr\tx0, [x8, #0x60]\n  948248: b4000660     \tcbz\tx0, 0x948314 <frida_agent_runner_create_and_run+0x2a4>\n; /sunda-src/core/lib/agent/agent.vala:279\n  94824c: 94058f8a     \tbl\t0xaac074 <g_error_copy>\n  948250: f9000fe0     \tstr\tx0, [sp, #0x18]\n  948254: aa0003f7     \tmov\tx23, x0\n  948258: b9400018     \tldr\tw24, [x0]\n  94825c: 94028ff9     \tbl\t0x9ec240 <frida_error_quark>\n  948260: 6b00031f     \tcmp\tw24, w0\n  948264: 54000421     \tb.ne\t0x9482e8 <frida_agent_runner_create_and_run+0x278>\n  948268: 910063a0     \tadd\tx0, x29, #0x18\n  94826c: aa1703e1     \tmov\tx1, x23\n  948270: 94058fd8     \tbl\t0xaac1d0 <g_propagate_error>\n; /sunda-src/core/lib/agent/agent.vala:163\n  948274: f9400fa8     \tldr\tx8, [x29, #0x18]\n  948278: b40004e8     \tcbz\tx8, 0x948314 <frida_agent_runner_create_and_run+0x2a4>\n  94827c: b9400117     \tldr\tw23, [x8]\n  948280: 94028ff0     \tbl\t0x9ec240 <frida_error_quark>\n  948284: 6b0002ff     \tcmp\tw23, w0\n  948288: 540008c1     \tb.ne\t0x9483a0 <frida_agent_runner_create_and_run+0x330>\n; /sunda-src/core/lib/agent/agent.vala:162\n  94828c: f9400fb7     \tldr\tx23, [x29, #0x18]\n; /sunda-src/core/lib/agent/agent.vala:165\n  948290: f0ffc5e0     \tadrp\tx0, 0x207000 <hex_digits+0x6f89>\n"
+    },
+    {
+      "relative_offset": "0xab4c30",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xab4a8c",
+            "type": "t",
+            "name": "g_main_context_iterate"
+          },
+          {
+            "address": "0xab4bfc",
+            "type": "t",
+            "name": "$x.95"
+          },
+          {
+            "address": "0xab4bfc",
+            "type": "t",
+            "name": "g_main_context_iteration"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xab4c48",
+            "type": "t",
+            "name": "$x.96"
+          },
+          {
+            "address": "0xab4c48",
+            "type": "t",
+            "name": "g_main_loop_new"
+          },
+          {
+            "address": "0xab4c9c",
+            "type": "t",
+            "name": "$x.98"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000ab4bfc <g_main_context_iteration>:\n; g_main_context_iteration():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4426\n  ab4c10: b5000060     \tcbnz\tx0, 0xab4c1c <g_main_context_iteration+0x20>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4427\n  ab4c14: 97fffab2     \tbl\t0xab36dc <g_main_context_default>\n  ab4c18: aa0003f3     \tmov\tx19, x0\n  ab4c1c: 9400031f     \tbl\t0xab5898 <OUTLINED_FUNCTION_0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4430\n  ab4c20: 94004d0d     \tbl\t0xac8054 <g_thread_self>\n  ab4c24: aa1303e0     \tmov\tx0, x19\n  ab4c28: 2a1403e1     \tmov\tw1, w20\n  ab4c2c: 52800022     \tmov\tw2, #0x1                // =1\n  ab4c30: 97ffff97     \tbl\t0xab4a8c <g_main_context_iterate>\n  ab4c34: 2a0003f4     \tmov\tw20, w0\n  ab4c38: 9400031a     \tbl\t0xab58a0 <OUTLINED_FUNCTION_1>\n  ab4c3c: 94000332     \tbl\t0xab5904 <OUTLINED_FUNCTION_14>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4433\n  ab4c40: a8c27bfd     \tldp\tx29, x30, [sp], #0x20\n  ab4c44: d65f03c0     \tret\n\n0000000000ab4c48 <g_main_loop_new>:\n; g_main_loop_new():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4450\n  ab4c48: a9bd7bfd     \tstp\tx29, x30, [sp, #-0x30]!\n  ab4c4c: f9000bf5     \tstr\tx21, [sp, #0x10]\n  ab4c50: 910003fd     \tmov\tx29, sp\n  ab4c54: a9024ff4     \tstp\tx20, x19, [sp, #0x20]\n  ab4c58: aa0003f3     \tmov\tx19, x0\n  ab4c5c: 2a0103f4     \tmov\tw20, w1\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4453\n  ab4c60: b5000060     \tcbnz\tx0, 0xab4c6c <g_main_loop_new+0x24>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4454\n  ab4c64: 97fffa9e     \tbl\t0xab36dc <g_main_context_default>\n  ab4c68: aa0003f3     \tmov\tx19, x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:647\n  ab4c6c: 9100c261     \tadd\tx1, x19, #0x30\n  ab4c70: 94000374     \tbl\t0xab5a40 <OUTLINED_FUNCTION_37>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4458\n  ab4c74: 52800200     \tmov\tw0, #0x10               // =16\n  ab4c78: 94000ebb     \tbl\t0xab8764 <g_malloc0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4460\n  ab4c7c: 7100029f     \tcmp\tw20, #0x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4459\n  ab4c80: f9000013     \tstr\tx19, [x0]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4460\n  ab4c84: 1a9f07e8     \tcset\tw8, ne\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4465\n  ab4c88: a9424ff4     \tldp\tx20, x19, [sp, #0x20]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4460\n  ab4c8c: 29015408     \tstp\tw8, w21, [x0, #0x8]\n"
+    },
+    {
+      "relative_offset": "0xab5858",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xab57c8",
+            "type": "t",
+            "name": "unref_unix_signal_handler_unlocked"
+          },
+          {
+            "address": "0xab5820",
+            "type": "t",
+            "name": "$x.149"
+          },
+          {
+            "address": "0xab5820",
+            "type": "t",
+            "name": "glib_worker_main"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xab5888",
+            "type": "t",
+            "name": "$x.150"
+          },
+          {
+            "address": "0xab5888",
+            "type": "t",
+            "name": "glib_worker_do_stop"
+          },
+          {
+            "address": "0xab5898",
+            "type": "t",
+            "name": "$x.151"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000ab5820 <glib_worker_main>:\n; glib_worker_main():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:6778\n  ab5838: f0006634     \tadrp\tx20, 0x177c000 <static_fundamental_type_nodes+0x508>\n  ab583c: 912962b5     \tadd\tx21, x21, #0xa58\n  ab5840: 912a0273     \tadd\tx19, x19, #0xa80\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:6779\n  ab5844: 39694288     \tldrb\tw8, [x20, #0xa50]\n  ab5848: 7100051f     \tcmp\tw8, #0x1\n  ab584c: 54000141     \tb.ne\t0xab5874 <glib_worker_main+0x54>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:6781\n  ab5850: f94026a0     \tldr\tx0, [x21, #0x48]\n  ab5854: 52800021     \tmov\tw1, #0x1                // =1\n  ab5858: 97fffce9     \tbl\t0xab4bfc <g_main_context_iteration>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:6784\n  ab585c: 88dffea8     \tldar\tw8, [x21]\n  ab5860: 34ffff28     \tcbz\tw8, 0xab5844 <glib_worker_main+0x24>\n  ab5864: 9400000d     \tbl\t0xab5898 <OUTLINED_FUNCTION_0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:5905\n  ab5868: 97fffdbf     \tbl\t0xab4f64 <dispatch_unix_signals_unlocked>\n  ab586c: 9400000d     \tbl\t0xab58a0 <OUTLINED_FUNCTION_1>\n  ab5870: 17fffff5     \tb\t0xab5844 <glib_worker_main+0x24>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:6789\n  ab5874: a9424ff4     \tldp\tx20, x19, [sp, #0x20]\n  ab5878: aa1f03e0     \tmov\tx0, xzr\n  ab587c: f9400bf5     \tldr\tx21, [sp, #0x10]\n  ab5880: a8c37bfd     \tldp\tx29, x30, [sp], #0x30\n  ab5884: d65f03c0     \tret\n\n0000000000ab5888 <glib_worker_do_stop>:\n; glib_worker_do_stop():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:6795\n  ab5888: f0006628     \tadrp\tx8, 0x177c000 <static_fundamental_type_nodes+0x508>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:6797\n  ab588c: 2a1f03e0     \tmov\tw0, wzr\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:6795\n  ab5890: 3929411f     \tstrb\twzr, [x8, #0xa50]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:6797\n  ab5894: d65f03c0     \tret\n\n0000000000ab5898 <OUTLINED_FUNCTION_0>:\n; OUTLINED_FUNCTION_0():\n  ab5898: aa1303e0     \tmov\tx0, x19\n  ab589c: 14009de0     \tb\t0xadd01c <g_mutex_lock>\n\n0000000000ab58a0 <OUTLINED_FUNCTION_1>:\n; OUTLINED_FUNCTION_1():\n  ab58a0: aa1303e0     \tmov\tx0, x19\n  ab58a4: 14009dee     \tb\t0xadd05c <g_mutex_unlock>\n\n0000000000ab58a8 <OUTLINED_FUNCTION_2>:\n; OUTLINED_FUNCTION_2():\n  ab58a8: f9400bf7     \tldr\tx23, [sp, #0x10]\n  ab58ac: a9434ff4     \tldp\tx20, x19, [sp, #0x30]\n  ab58b0: a94257f6     \tldp\tx22, x21, [sp, #0x20]\n  ab58b4: d65f03c0     \tret\n"
+    },
+    {
+      "relative_offset": "0xac81d4",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xac8104",
+            "type": "t",
+            "name": "g_thread_unref"
+          },
+          {
+            "address": "0xac8178",
+            "type": "t",
+            "name": "$x.14"
+          },
+          {
+            "address": "0xac8178",
+            "type": "t",
+            "name": "g_thread_proxy"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xac81f0",
+            "type": "t",
+            "name": "$x.16"
+          },
+          {
+            "address": "0xac81f0",
+            "type": "t",
+            "name": "g_thread_new"
+          },
+          {
+            "address": "0xac822c",
+            "type": "t",
+            "name": "$x.17"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000ac8178 <g_thread_proxy>:\n; g_thread_proxy():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1048\n  ac81b4: 940053ba     \tbl\t0xadd09c <g_system_thread_set_name>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1049\n  ac81b8: f9401260     \tldr\tx0, [x19, #0x20]\n  ac81bc: 97ffc17b     \tbl\t0xab87a8 <g_free>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1050\n  ac81c0: f900127f     \tstr\txzr, [x19, #0x20]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1053\n  ac81c4: f9400288     \tldr\tx8, [x20]\n  ac81c8: f9400508     \tldr\tx8, [x8, #0x8]\n  ac81cc: d63f0100     \tblr\tx8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1055\n  ac81d0: a9400268     \tldp\tx8, x0, [x19]\n  ac81d4: d63f0100     \tblr\tx8\n  ac81d8: aa0003e8     \tmov\tx8, x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1057\n  ac81dc: aa1f03e0     \tmov\tx0, xzr\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1055\n  ac81e0: f9001668     \tstr\tx8, [x19, #0x28]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1057\n  ac81e4: a9414ff4     \tldp\tx20, x19, [sp, #0x10]\n  ac81e8: a8c27bfd     \tldp\tx29, x30, [sp], #0x20\n  ac81ec: d65f03c0     \tret\n\n0000000000ac81f0 <g_thread_new>:\n; g_thread_new():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1108\n  ac81f0: d10083ff     \tsub\tsp, sp, #0x20\n  ac81f4: a9017bfd     \tstp\tx29, x30, [sp, #0x10]\n  ac81f8: 910043fd     \tadd\tx29, sp, #0x10\n  ac81fc: aa0203e3     \tmov\tx3, x2\n  ac8200: aa0103e2     \tmov\tx2, x1\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1112\n  ac8204: 90000001     \tadrp\tx1, 0xac8000 <g_thread_private_destroy_later>\n  ac8208: 910023e6     \tadd\tx6, sp, #0x8\n  ac820c: 9105e021     \tadd\tx1, x1, #0x178\n  ac8210: aa1f03e4     \tmov\tx4, xzr\n  ac8214: aa1f03e5     \tmov\tx5, xzr\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1109\n  ac8218: f90007ff     \tstr\txzr, [sp, #0x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1112\n  ac821c: 94000004     \tbl\t0xac822c <g_thread_new_internal>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1117\n  ac8220: a9417bfd     \tldp\tx29, x30, [sp, #0x10]\n  ac8224: 910083ff     \tadd\tsp, sp, #0x20\n  ac8228: d65f03c0     \tret\n\n0000000000ac822c <g_thread_new_internal>:\n; g_thread_new_internal():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread.c:1154\n  ac822c: a9bb7bfd     \tstp\tx29, x30, [sp, #-0x50]!\n  ac8230: a90167fa     \tstp\tx26, x25, [sp, #0x10]\n"
+    },
+    {
+      "relative_offset": "0xa2179c",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xa21778",
+            "type": "t",
+            "name": "OUTLINED_FUNCTION_23"
+          },
+          {
+            "address": "0xa21780",
+            "type": "t",
+            "name": "$x.0"
+          },
+          {
+            "address": "0xa21780",
+            "type": "t",
+            "name": "syscall"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xa217b0",
+            "type": "t",
+            "name": "_frida_on_syscall_error"
+          },
+          {
+            "address": "0xa217bc",
+            "type": "t",
+            "name": "$x.0"
+          },
+          {
+            "address": "0xa217bc",
+            "type": "t",
+            "name": "gio_init"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000a21778 <OUTLINED_FUNCTION_23>:\n; OUTLINED_FUNCTION_23():\n  a2177c: 17fffc50     \tb\t0xa208bc <frida_stdio_register_stream>\n\n0000000000a21780 <syscall>:\n; syscall():\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:39\n  a21780: aa0003e8     \tmov\tx8, x0\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:41\n  a21784: aa0103e0     \tmov\tx0, x1\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:42\n  a21788: aa0203e1     \tmov\tx1, x2\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:43\n  a2178c: aa0303e2     \tmov\tx2, x3\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:44\n  a21790: aa0403e3     \tmov\tx3, x4\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:45\n  a21794: aa0503e4     \tmov\tx4, x5\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:46\n  a21798: aa0603e5     \tmov\tx5, x6\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:47\n  a2179c: d4000001     \tsvc\t#0\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:50\n  a217a0: b140041f     \tcmn\tx0, #0x1, lsl #12       // =0x1000\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:51\n  a217a4: da809400     \tcneg\tx0, x0, hi\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:52\n  a217a8: 54000048     \tb.hi\t0xa217b0 <_frida_on_syscall_error>\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:54\n  a217ac: d65f03c0     \tret\n\n0000000000a217b0 <_frida_on_syscall_error>:\n; _frida_on_syscall_error():\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:58\n  a217b0: 90000000     \tadrp\tx0, 0xa21000 <frida_fseek_impl+0x54>\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:59\n  a217b4: 9116e000     \tadd\tx0, x0, #0x5b8\n; /sunda-src/core/lib/payload/syscall-linux-arm64.S:60\n  a217b8: d61f0000     \tbr\tx0\n\n0000000000a217bc <gio_init>:\n; gio_init():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-init.c:26\n  a217bc: d65f03c0     \tret\n\n0000000000a217c0 <gio_shutdown>:\n; gio_shutdown():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-init.c:30\n  a217c0: a9bf7bfd     \tstp\tx29, x30, [sp, #-0x10]!\n  a217c4: 910003fd     \tmov\tx29, sp\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-init.c:31\n  a217c8: 940156ad     \tbl\t0xa7727c <_g_dbus_shutdown>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-init.c:32\n  a217cc: a8c17bfd     \tldp\tx29, x30, [sp], #0x10\n  a217d0: 14003af5     \tb\t0xa303a4 <_g_task_shutdown>\n\n0000000000a217d4 <gio_deinit>:\n; gio_deinit():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-init.c:37\n  a217d4: a9bf7bfd     \tstp\tx29, x30, [sp, #-0x10]!\n  a217d8: 910003fd     \tmov\tx29, sp\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-init.c:38\n  a217dc: 97fffff9     \tbl\t0xa217c0 <gio_shutdown>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-init.c:40\n  a217e0: a8c17bfd     \tldp\tx29, x30, [sp], #0x10\n  a217e4: 140156ed     \tb\t0xa77398 <_g_dbus_deinit>\n\n0000000000a217e8 <gio_prepare_to_fork>:\n; gio_prepare_to_fork():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-fork.c:23\n  a217e8: 140156fc     \tb\t0xa773d8 <_g_dbus_prepare_to_fork>\n\n0000000000a217ec <gio_recover_from_fork_in_parent>:\n; gio_recover_from_fork_in_parent():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-fork.c:29\n  a217ec: 14015751     \tb\t0xa77530 <_g_dbus_recover_from_fork_in_parent>\n\n0000000000a217f0 <gio_recover_from_fork_in_child>:\n; gio_recover_from_fork_in_child():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gio-fork.c:35\n  a217f0: 14015788     \tb\t0xa77610 <_g_dbus_recover_from_fork_in_child>\n\n0000000000a217f4 <g_async_initable_get_type>:\n; g_async_initable_get_type():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gasyncinitable.c:149\n  a217f4: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  a217f8: f9000bf3     \tstr\tx19, [sp, #0x10]\n"
+    },
+    {
+      "relative_offset": "0xadd290",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xadd1e4",
+            "type": "t",
+            "name": "g_cond_broadcast"
+          },
+          {
+            "address": "0xadd208",
+            "type": "t",
+            "name": "$x.47"
+          },
+          {
+            "address": "0xadd208",
+            "type": "t",
+            "name": "g_cond_wait_until"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xadd2d8",
+            "type": "t",
+            "name": "$x.48"
+          },
+          {
+            "address": "0xadd2d8",
+            "type": "t",
+            "name": "g_thread_lifetime_beacon_new"
+          },
+          {
+            "address": "0xadd30c",
+            "type": "t",
+            "name": "$x.49"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000add208 <g_cond_wait_until>:\n; g_cond_wait_until():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1767\n  add270: aa1303e0     \tmov\tx0, x19\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1733\n  add274: 8b0a012a     \tadd\tx10, x9, x10\n  add278: 9a89b149     \tcsel\tx9, x10, x9, lt\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1766\n  add27c: b8408e95     \tldr\tw21, [x20, #0x8]!\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1763\n  add280: a90027e8     \tstp\tx8, x9, [sp]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1767\n  add284: 97ffff76     \tbl\t0xadd05c <g_mutex_unlock>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1768\n  add288: 910003e4     \tmov\tx4, sp\n  add28c: 940000bc     \tbl\t0xadd57c <OUTLINED_FUNCTION_11>\n  add290: 97fd113c     \tbl\t0xa21780 <syscall>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1769\n  add294: 37f800a0     \ttbnz\tw0, #0x1f, 0xadd2a8 <g_cond_wait_until+0xa0>\n  add298: 52800034     \tmov\tw20, #0x1               // =1\n  add29c: 14000007     \tb\t0xadd2b8 <g_cond_wait_until+0xb0>\n  add2a0: 2a1f03f4     \tmov\tw20, wzr\n  add2a4: 14000007     \tb\t0xadd2c0 <g_cond_wait_until+0xb8>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1769\n  add2a8: 942eb1b6     \tbl\t0x1689980 <__errno@plt>\n  add2ac: b9400008     \tldr\tw8, [x0]\n  add2b0: 7101b91f     \tcmp\tw8, #0x6e\n  add2b4: 1a9f07f4     \tcset\tw20, ne\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1770\n  add2b8: aa1303e0     \tmov\tx0, x19\n  add2bc: 97ffff58     \tbl\t0xadd01c <g_mutex_lock>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1773\n  add2c0: 2a1403e0     \tmov\tw0, w20\n  add2c4: f9401bf5     \tldr\tx21, [sp, #0x30]\n  add2c8: a9444ff4     \tldp\tx20, x19, [sp, #0x40]\n  add2cc: a9427bfd     \tldp\tx29, x30, [sp, #0x20]\n  add2d0: 910143ff     \tadd\tsp, sp, #0x50\n  add2d4: d65f03c0     \tret\n\n0000000000add2d8 <g_thread_lifetime_beacon_new>:\n; g_thread_lifetime_beacon_new():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1826\n  add2d8: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  add2dc: f9000bf3     \tstr\tx19, [sp, #0x10]\n  add2e0: 910003fd     \tmov\tx29, sp\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthread-posix.c:1829\n  add2e4: 52800080     \tmov\tw0, #0x4                // =4\n  add2e8: 97ff96a9     \tbl\t0xac2d8c <g_slice_alloc>\n  add2ec: aa0003f3     \tmov\tx19, x0\n"
+    },
+    {
+      "relative_offset": "0xac9510",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xac9480",
+            "type": "t",
+            "name": "g_async_queue_pop"
+          },
+          {
+            "address": "0xac94b0",
+            "type": "t",
+            "name": "$x.15"
+          },
+          {
+            "address": "0xac94b0",
+            "type": "t",
+            "name": "g_async_queue_pop_intern_unlocked"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xac9544",
+            "type": "t",
+            "name": "$x.16"
+          },
+          {
+            "address": "0xac9544",
+            "type": "t",
+            "name": "g_async_queue_pop_unlocked"
+          },
+          {
+            "address": "0xac9550",
+            "type": "t",
+            "name": "$x.19"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000ac94b0 <g_async_queue_pop_intern_unlocked>:\n; g_async_queue_pop_intern_unlocked():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:422\n  ac94f0: aa1303e0     \tmov\tx0, x19\n  ac94f4: 97ffdc3b     \tbl\t0xac05e0 <g_queue_peek_tail_link>\n  ac94f8: b5000160     \tcbnz\tx0, 0xac9524 <g_async_queue_pop_intern_unlocked+0x74>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:428\n  ac94fc: aa1603e0     \tmov\tx0, x22\n  ac9500: aa1403e1     \tmov\tx1, x20\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:424\n  ac9504: b10006bf     \tcmn\tx21, #0x1\n  ac9508: 540000a0     \tb.eq\t0xac951c <g_async_queue_pop_intern_unlocked+0x6c>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:428\n  ac950c: aa1503e2     \tmov\tx2, x21\n  ac9510: 94004f3e     \tbl\t0xadd208 <g_cond_wait_until>\n  ac9514: 35fffee0     \tcbnz\tw0, 0xac94f0 <g_async_queue_pop_intern_unlocked+0x40>\n  ac9518: 14000003     \tb\t0xac9524 <g_async_queue_pop_intern_unlocked+0x74>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:425\n  ac951c: 94004f18     \tbl\t0xadd17c <g_cond_wait>\n  ac9520: 17fffff4     \tb\t0xac94f0 <g_async_queue_pop_intern_unlocked+0x40>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:432\n  ac9524: b9403a88     \tldr\tw8, [x20, #0x38]\n  ac9528: 51000508     \tsub\tw8, w8, #0x1\n  ac952c: b9003a88     \tstr\tw8, [x20, #0x38]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:435\n  ac9530: aa1303e0     \tmov\tx0, x19\n  ac9534: a9424ff4     \tldp\tx20, x19, [sp, #0x20]\n  ac9538: a94157f6     \tldp\tx22, x21, [sp, #0x10]\n  ac953c: a8c37bfd     \tldp\tx29, x30, [sp], #0x30\n  ac9540: 17ffdc2a     \tb\t0xac05e8 <g_queue_pop_tail>\n\n0000000000ac9544 <g_async_queue_pop_unlocked>:\n; g_async_queue_pop_unlocked():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:481\n  ac9544: 52800021     \tmov\tw1, #0x1                // =1\n  ac9548: 92800002     \tmov\tx2, #-0x1               // =-1\n  ac954c: 17ffffd9     \tb\t0xac94b0 <g_async_queue_pop_intern_unlocked>\n\n0000000000ac9550 <g_async_queue_timeout_pop>:\n; g_async_queue_timeout_pop():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:544\n  ac9550: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  ac9554: a9014ff4     \tstp\tx20, x19, [sp, #0x10]\n  ac9558: 910003fd     \tmov\tx29, sp\n  ac955c: 94000060     \tbl\t0xac96dc <OUTLINED_FUNCTION_6>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:545\n  ac9560: 8b130013     \tadd\tx19, x0, x19\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:550\n  ac9564: aa1403e0     \tmov\tx0, x20\n  ac9568: 94004ead     \tbl\t0xadd01c <g_mutex_lock>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gasyncqueue.c:551\n  ac956c: aa1403e0     \tmov\tx0, x20\n"
+    },
+    {
+      "relative_offset": "0xac8eb4",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xac8db4",
+            "type": "t",
+            "name": "_g_thread_pool_recover_from_fork"
+          },
+          {
+            "address": "0xac8e1c",
+            "type": "t",
+            "name": "$x.25"
+          },
+          {
+            "address": "0xac8e1c",
+            "type": "t",
+            "name": "g_thread_pool_thread_proxy"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xac90bc",
+            "type": "t",
+            "name": "$x.26"
+          },
+          {
+            "address": "0xac90bc",
+            "type": "t",
+            "name": "g_thread_pool_resume_spawner"
+          },
+          {
+            "address": "0xac90f8",
+            "type": "t",
+            "name": "$x.27"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000ac8e1c <g_thread_pool_thread_proxy>:\n; g_thread_pool_thread_proxy():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:268\n  ac8e94: 54000288     \tb.hi\t0xac8ee4 <g_thread_pool_thread_proxy+0xc8>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:274\n  ac8e98: b94012c8     \tldr\tw8, [x22, #0x10]\n  ac8e9c: f94012c0     \tldr\tx0, [x22, #0x20]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:274\n  ac8ea0: 34000068     \tcbz\tw8, 0xac8eac <g_thread_pool_thread_proxy+0x90>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:277\n  ac8ea4: 940001a8     \tbl\t0xac9544 <g_async_queue_pop_unlocked>\n  ac8ea8: 14000004     \tb\t0xac8eb8 <g_thread_pool_thread_proxy+0x9c>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:294\n  ac8eac: 52942401     \tmov\tw1, #0xa120             // =41248\n  ac8eb0: 72a000e1     \tmovk\tw1, #0x7, lsl #16\n  ac8eb4: 940001b9     \tbl\t0xac9598 <g_async_queue_timeout_pop_unlocked>\n  ac8eb8: aa0003f7     \tmov\tx23, x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:365\n  ac8ebc: b4000140     \tcbz\tx0, 0xac8ee4 <g_thread_pool_thread_proxy+0xc8>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:367\n  ac8ec0: b94042c8     \tldr\tw8, [x22, #0x40]\n  ac8ec4: 35000068     \tcbnz\tw8, 0xac8ed0 <g_thread_pool_thread_proxy+0xb4>\n  ac8ec8: b94046c8     \tldr\tw8, [x22, #0x44]\n  ac8ecc: 35fffcc8     \tcbnz\tw8, 0xac8e64 <g_thread_pool_thread_proxy+0x48>\n  ac8ed0: 94000102     \tbl\t0xac92d8 <OUTLINED_FUNCTION_17>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:375\n  ac8ed4: a94006c8     \tldp\tx8, x1, [x22]\n  ac8ed8: aa1703e0     \tmov\tx0, x23\n  ac8edc: d63f0100     \tblr\tx8\n  ac8ee0: 17ffffdf     \tb\t0xac8e5c <g_thread_pool_thread_proxy+0x40>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:386\n  ac8ee4: 2947a6c8     \tldp\tw8, w9, [x22, #0x3c]\n  ac8ee8: 51000508     \tsub\tw8, w8, #0x1\n  ac8eec: b9003ec8     \tstr\tw8, [x22, #0x3c]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:388\n  ac8ef0: 35000269     \tcbnz\tw9, 0xac8f3c <g_thread_pool_thread_proxy+0x120>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:390\n  ac8ef4: b9404ac9     \tldr\tw9, [x22, #0x48]\n  ac8ef8: 340000c9     \tcbz\tw9, 0xac8f10 <g_thread_pool_thread_proxy+0xf4>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:414\n  ac8efc: b94046c8     \tldr\tw8, [x22, #0x44]\n  ac8f00: 34000188     \tcbz\tw8, 0xac8f30 <g_thread_pool_thread_proxy+0x114>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:423\n  ac8f04: 9100a2c0     \tadd\tx0, x22, #0x28\n  ac8f08: 940050b7     \tbl\t0xadd1e4 <g_cond_broadcast>\n  ac8f0c: 1400000c     \tb\t0xac8f3c <g_thread_pool_thread_proxy+0x120>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gthreadpool.c:392\n  ac8f10: 340008a8     \tcbz\tw8, 0xac9024 <g_thread_pool_thread_proxy+0x208>\n"
+    },
+    {
+      "relative_offset": "0xa78d14",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xa78ce0",
+            "type": "t",
+            "name": "quit_main_loop"
+          },
+          {
+            "address": "0xa78cf8",
+            "type": "t",
+            "name": "$x.64"
+          },
+          {
+            "address": "0xa78cf8",
+            "type": "t",
+            "name": "gdbus_shared_thread_func"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xa78d30",
+            "type": "t",
+            "name": "$x.65"
+          },
+          {
+            "address": "0xa78d30",
+            "type": "t",
+            "name": "OUTLINED_FUNCTION_0"
+          },
+          {
+            "address": "0xa78d38",
+            "type": "t",
+            "name": "$x.66"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000a78ce0 <quit_main_loop>:\n; quit_main_loop():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gdbusprivate.c:303\n  a78cf4: d65f03c0     \tret\n\n0000000000a78cf8 <gdbus_shared_thread_func>:\n; gdbus_shared_thread_func():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gdbusprivate.c:288\n  a78cf8: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  a78cfc: f9000bf3     \tstr\tx19, [sp, #0x10]\n  a78d00: 910003fd     \tmov\tx29, sp\n  a78d04: aa0003f3     \tmov\tx19, x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gdbusprivate.c:291\n  a78d08: f9400800     \tldr\tx0, [x0, #0x10]\n  a78d0c: 9400ea87     \tbl\t0xab3728 <g_main_context_push_thread_default>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gdbusprivate.c:292\n  a78d10: f9400e60     \tldr\tx0, [x19, #0x18]\n  a78d14: 9400eff3     \tbl\t0xab4ce0 <g_main_loop_run>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gdbusprivate.c:293\n  a78d18: f9400a60     \tldr\tx0, [x19, #0x10]\n  a78d1c: 9400eab7     \tbl\t0xab37f8 <g_main_context_pop_thread_default>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/gio/gdbusprivate.c:295\n  a78d20: f9400bf3     \tldr\tx19, [sp, #0x10]\n  a78d24: aa1f03e0     \tmov\tx0, xzr\n  a78d28: a8c27bfd     \tldp\tx29, x30, [sp], #0x20\n  a78d2c: d65f03c0     \tret\n\n0000000000a78d30 <OUTLINED_FUNCTION_0>:\n; OUTLINED_FUNCTION_0():\n  a78d30: aa1403e0     \tmov\tx0, x20\n  a78d34: 140190ba     \tb\t0xadd01c <g_mutex_lock>\n\n0000000000a78d38 <OUTLINED_FUNCTION_1>:\n; OUTLINED_FUNCTION_1():\n  a78d38: aa1403e0     \tmov\tx0, x20\n  a78d3c: 140190c8     \tb\t0xadd05c <g_mutex_unlock>\n\n0000000000a78d40 <OUTLINED_FUNCTION_2>:\n; OUTLINED_FUNCTION_2():\n  a78d40: 52800020     \tmov\tw0, #0x1                // =1\n  a78d44: aa1303e1     \tmov\tx1, x19\n  a78d48: 14303282     \tb\t0x1685750 <__aarch64_ldadd4_acq_rel>\n\n0000000000a78d4c <OUTLINED_FUNCTION_3>:\n; OUTLINED_FUNCTION_3():\n  a78d4c: f0006808     \tadrp\tx8, 0x177b000 <g_subprocess_launcher_parent_class>\n  a78d50: b945f108     \tldr\tw8, [x8, #0x5f0]\n  a78d54: d65f03c0     \tret\n\n0000000000a78d58 <OUTLINED_FUNCTION_4>:\n; OUTLINED_FUNCTION_4():\n  a78d58: d0ffffe1     \tadrp\tx1, 0xa76000 <async_init_get_name_owner_cb+0xc>\n  a78d5c: f9400680     \tldr\tx0, [x20, #0x8]\n  a78d60: 91296021     \tadd\tx1, x1, #0xa58\n  a78d64: aa1f03e2     \tmov\tx2, xzr\n  a78d68: 14012fac     \tb\t0xac4c18 <g_slist_copy_deep>\n\n0000000000a78d6c <OUTLINED_FUNCTION_5>:\n; OUTLINED_FUNCTION_5():\n  a78d6c: a9454ff4     \tldp\tx20, x19, [sp, #0x50]\n  a78d70: a94457f6     \tldp\tx22, x21, [sp, #0x40]\n"
+    },
+    {
+      "relative_offset": "0x972670",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x9725a8",
+            "type": "t",
+            "name": "_gum_quick_scope_suspend"
+          },
+          {
+            "address": "0x972634",
+            "type": "t",
+            "name": "$x.29"
+          },
+          {
+            "address": "0x972634",
+            "type": "t",
+            "name": "_gum_quick_scope_resume"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x9726a8",
+            "type": "t",
+            "name": "$x.30"
+          },
+          {
+            "address": "0x9726a8",
+            "type": "t",
+            "name": "_gum_quick_scope_call"
+          },
+          {
+            "address": "0x9726f0",
+            "type": "t",
+            "name": "$x.31"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000972634 <_gum_quick_scope_resume>:\n; _gum_quick_scope_resume():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1999\n  972650: b4000068     \tcbz\tx8, 0x97265c <_gum_quick_scope_resume+0x28>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2000\n  972654: f9400500     \tldr\tx0, [x8, #0x8]\n  972658: 97ff82e0     \tbl\t0x9531d8 <gum_interceptor_begin_transaction>\n  97265c: 2a1f03f5     \tmov\tw21, wzr\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2002\n  972660: b9401a68     \tldr\tw8, [x19, #0x18]\n  972664: 6b0802bf     \tcmp\tw21, w8\n  972668: 540000a0     \tb.eq\t0x97267c <_gum_quick_scope_resume+0x48>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2003\n  97266c: f9403a80     \tldr\tx0, [x20, #0x70]\n  972670: 9405a8c4     \tbl\t0xadc980 <g_rec_mutex_lock>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2002\n  972674: 110006b5     \tadd\tw21, w21, #0x1\n  972678: 17fffffa     \tb\t0x972660 <_gum_quick_scope_resume+0x2c>\n; /Users/siberia/Desktop/sunda/Sunda/frida17.8.0/deps/sdk-android-arm64/include/glib-2.0/glib/gmem.h:221\n;   ref = *ptr;\n  97267c: a940a668     \tldp\tx8, x9, [x19, #0x8]\n; /Users/siberia/Desktop/sunda/Sunda/frida17.8.0/deps/sdk-android-arm64/include/glib-2.0/glib/gmem.h:222\n;   *ptr = NULL;\n  972680: f900067f     \tstr\txzr, [x19, #0x8]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2012\n  972684: 91007261     \tadd\tx1, x19, #0x1c\n  972688: f9402680     \tldr\tx0, [x20, #0x48]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2009\n  97268c: b9007e95     \tstr\tw21, [x20, #0x7c]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2010\n  972690: b9001a7f     \tstr\twzr, [x19, #0x18]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2012\n  972694: f9400bf5     \tldr\tx21, [sp, #0x10]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2006\n  972698: a9062688     \tstp\tx8, x9, [x20, #0x60]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2012\n  97269c: a9424ff4     \tldp\tx20, x19, [sp, #0x20]\n  9726a0: a8c37bfd     \tldp\tx29, x30, [sp], #0x30\n  9726a4: 14072bb4     \tb\t0xb3d574 <JS_Resume>\n\n00000000009726a8 <_gum_quick_scope_call>:\n; _gum_quick_scope_call():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2021\n  9726a8: a9bd7bfd     \tstp\tx29, x30, [sp, #-0x30]!\n  9726ac: f9000bf5     \tstr\tx21, [sp, #0x10]\n  9726b0: 910003fd     \tmov\tx29, sp\n  9726b4: a9024ff4     \tstp\tx20, x19, [sp, #0x20]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2023\n  9726b8: f9400008     \tldr\tx8, [x0]\n  9726bc: aa0003f3     \tmov\tx19, x0\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2024\n  9726c0: f9402900     \tldr\tx0, [x8, #0x50]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2026\n  9726c4: 94074e72     \tbl\t0xb4608c <JS_Call>\n  9726c8: aa0003f4     \tmov\tx20, x0\n  9726cc: aa0103f5     \tmov\tx21, x1\n"
+    },
+    {
+      "relative_offset": "0x976a14",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x976568",
+            "type": "t",
+            "name": "$x.158"
+          },
+          {
+            "address": "0x976568",
+            "type": "t",
+            "name": "gum_quick_ffi_function_invoke"
+          },
+          {
+            "address": "0x976936",
+            "type": "N",
+            "name": "$d.14"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x976b04",
+            "type": "t",
+            "name": "$x.159"
+          },
+          {
+            "address": "0x976b04",
+            "type": "t",
+            "name": "gum_quick_value_to_ffi"
+          },
+          {
+            "address": "0x976e1c",
+            "type": "t",
+            "name": "$x.160"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000976568 <gum_quick_ffi_function_invoke>:\n; gum_quick_ffi_function_invoke():\n  9769f4: aa1503f7     \tmov\tx23, x21\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4407\n  9769f8: 3500011a     \tcbnz\tw26, 0x976a18 <gum_quick_ffi_function_invoke+0x4b0>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4409\n  9769fc: 710006df     \tcmp\tw22, #0x1\n  976a00: 54000080     \tb.eq\t0x976a10 <gum_quick_ffi_function_invoke+0x4a8>\n  976a04: 34000074     \tcbz\tw20, 0x976a10 <gum_quick_ffi_function_invoke+0x4a8>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4410\n  976a08: aa1903e0     \tmov\tx0, x25\n  976a0c: 97ff7002     \tbl\t0x952a14 <gum_interceptor_ignore_current_thread>\n  976a10: 91024260     \tadd\tx0, x19, #0x90\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4412\n  976a14: 97ffef08     \tbl\t0x972634 <_gum_quick_scope_resume>\n  976a18: b9402e68     \tldr\tw8, [x19, #0x2c]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4416\n  976a1c: 34000548     \tcbz\tw8, 0x976ac4 <gum_quick_ffi_function_invoke+0x55c>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4424\n  976a20: aa1c03e0     \tmov\tx0, x28\n  976a24: aa1b03e1     \tmov\tx1, x27\n  976a28: f9403e62     \tldr\tx2, [x19, #0x78]\n  976a2c: aa1703e3     \tmov\tx3, x23\n  976a30: 940000fb     \tbl\t0x976e1c <gum_quick_value_from_ffi>\n  976a34: b9406668     \tldr\tw8, [x19, #0x64]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4424\n  976a38: aa0103f6     \tmov\tx22, x1\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4426\n  976a3c: 7100051f     \tcmp\tw8, #0x1\n  976a40: 540003a1     \tb.ne\t0x976ab4 <gum_quick_ffi_function_invoke+0x54c>\n  976a44: f9000278     \tstr\tx24, [x19]\n  976a48: aa0003f8     \tmov\tx24, x0\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4428\n  976a4c: aa1c03e0     \tmov\tx0, x28\n  976a50: 94072602     \tbl\t0xb40258 <JS_NewObject>\n  976a54: aa0003f9     \tmov\tx25, x0\n  976a58: aa0103fa     \tmov\tx26, x1\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4443\n  976a5c: 92607c15     \tand\tx21, x0, #0xffffffff00000000\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4428\n  976a60: aa0003f4     \tmov\tx20, x0\n  976a64: aa0103fb     \tmov\tx27, x1\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4430\n  976a68: b94292e3     \tldr\tw3, [x23, #0x290]\n  976a6c: 528000e6     \tmov\tw6, #0x7                // =7\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4429\n  976a70: aa1c03e0     \tmov\tx0, x28\n"
+    },
+    {
+      "relative_offset": "0x976550",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x9764c0",
+            "type": "t",
+            "name": "gum_quick_ffi_function_finalize"
+          },
+          {
+            "address": "0x97650c",
+            "type": "t",
+            "name": "$x.157"
+          },
+          {
+            "address": "0x97650c",
+            "type": "t",
+            "name": "gumjs_ffi_function_invoke"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x976568",
+            "type": "t",
+            "name": "$x.158"
+          },
+          {
+            "address": "0x976568",
+            "type": "t",
+            "name": "gum_quick_ffi_function_invoke"
+          },
+          {
+            "address": "0x976936",
+            "type": "N",
+            "name": "$d.14"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n000000000097650c <gumjs_ffi_function_invoke>:\n; gumjs_ffi_function_invoke():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4454\n  976530: 97ffe45b     \tbl\t0x96f69c <_gum_quick_unwrap>\n  976534: 34000120     \tcbz\tw0, 0x976558 <gumjs_ffi_function_invoke+0x4c>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4457\n  976538: f9400fa0     \tldr\tx0, [x29, #0x18]\n  97653c: aa1503e1     \tmov\tx1, x21\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4458\n  976540: b9400a83     \tldr\tw3, [x20, #0x8]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4457\n  976544: aa1303e5     \tmov\tx5, x19\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4458\n  976548: f9400a84     \tldr\tx4, [x20, #0x10]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4457\n  97654c: f9400402     \tldr\tx2, [x0, #0x8]\n  976550: 94000006     \tbl\t0x976568 <gum_quick_ffi_function_invoke>\n  976554: 14000002     \tb\t0x97655c <gumjs_ffi_function_invoke+0x50>\n  976558: 94001c9b     \tbl\t0x97d7c4 <OUTLINED_FUNCTION_4>\n  97655c: 94001cee     \tbl\t0x97d914 <OUTLINED_FUNCTION_21>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4459\n  976560: a8c37bfd     \tldp\tx29, x30, [sp], #0x30\n  976564: d65f03c0     \tret\n\n0000000000976568 <gum_quick_ffi_function_invoke>:\n; gum_quick_ffi_function_invoke():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4246\n  976568: a9ba7bfd     \tstp\tx29, x30, [sp, #-0x60]!\n  97656c: a9016ffc     \tstp\tx28, x27, [sp, #0x10]\n  976570: 94001d9b     \tbl\t0x97dbdc <OUTLINED_FUNCTION_63>\n  976574: d11783ff     \tsub\tsp, sp, #0x5e0\n  976578: 910003f3     \tmov\tx19, sp\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4269\n  97657c: 29492009     \tldp\tw9, w8, [x0, #0x48]\n  976580: aa0503f7     \tmov\tx23, x5\n  976584: aa0403f8     \tmov\tx24, x4\n  976588: aa0003f0     \tmov\tx16, x0\n  97658c: 2a0303fa     \tmov\tw26, w3\n  976590: aa0103ef     \tmov\tx15, x1\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4268\n  976594: b9401c0a     \tldr\tw10, [x0, #0x1c]\n  976598: aa1f03eb     \tmov\tx11, xzr\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4258\n  97659c: f81d03bf     \tstur\txzr, [x29, #-0x30]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4272\n  9765a0: 34000069     \tcbz\tw9, 0x9765ac <gum_quick_ffi_function_invoke+0x44>\n  9765a4: 6b1a011f     \tcmp\tw8, w26\n  9765a8: 540000c8     \tb.hi\t0x9765c0 <gum_quick_ffi_function_invoke+0x58>\n  9765ac: 2a0a03f6     \tmov\tw22, w10\n"
+    },
+    {
+      "relative_offset": "0x9764ac",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x97644c",
+            "type": "t",
+            "name": "gumjs_native_function_finalize"
+          },
+          {
+            "address": "0x976480",
+            "type": "t",
+            "name": "$x.155"
+          },
+          {
+            "address": "0x976480",
+            "type": "t",
+            "name": "gumjs_native_function_invoke"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x9764c0",
+            "type": "t",
+            "name": "$x.156"
+          },
+          {
+            "address": "0x9764c0",
+            "type": "t",
+            "name": "gum_quick_ffi_function_finalize"
+          },
+          {
+            "address": "0x97650c",
+            "type": "t",
+            "name": "$x.157"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000976480 <gumjs_native_function_invoke>:\n; gumjs_native_function_invoke():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:3996\n  97648c: a9065ff8     \tstp\tx24, x23, [sp, #0x60]\n  976490: a90757f6     \tstp\tx22, x21, [sp, #0x70]\n  976494: a9084ff4     \tstp\tx20, x19, [sp, #0x80]\n  976498: aa0603f3     \tmov\tx19, x6\n  97649c: 2a0503f4     \tmov\tw20, w5\n  9764a0: 94001cf7     \tbl\t0x97d87c <OUTLINED_FUNCTION_13>\n  9764a4: 94001ccb     \tbl\t0x97d7d0 <OUTLINED_FUNCTION_5>\n  9764a8: 94001ee8     \tbl\t0x97e048 <OUTLINED_FUNCTION_108>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:3998\n  9764ac: 94000018     \tbl\t0x97650c <gumjs_ffi_function_invoke>\n  9764b0: 94001cfe     \tbl\t0x97d8a8 <OUTLINED_FUNCTION_15>\n  9764b4: 94001cdf     \tbl\t0x97d830 <OUTLINED_FUNCTION_10>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:3996\n  9764b8: a9457bfd     \tldp\tx29, x30, [sp, #0x50]\n  9764bc: 14001d2e     \tb\t0x97d974 <OUTLINED_FUNCTION_26>\n\n00000000009764c0 <gum_quick_ffi_function_finalize>:\n; gum_quick_ffi_function_finalize():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4227\n  9764c0: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  9764c4: a9014ff4     \tstp\tx20, x19, [sp, #0x10]\n  9764c8: 910003fd     \tmov\tx29, sp\n  9764cc: aa0003f3     \tmov\tx19, x0\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4228\n  9764d0: f9402c14     \tldr\tx20, [x0, #0x58]\n  9764d4: b40000f4     \tcbz\tx20, 0x9764f0 <gum_quick_ffi_function_finalize+0x30>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4231\n  9764d8: f9400280     \tldr\tx0, [x20]\n  9764dc: 940508b3     \tbl\t0xab87a8 <g_free>\n  9764e0: 940020b3     \tbl\t0x97e7ac <OUTLINED_FUNCTION_222>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4232\n  9764e4: aa0003f4     \tmov\tx20, x0\n  9764e8: f9002e60     \tstr\tx0, [x19, #0x58]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4228\n  9764ec: b5ffff74     \tcbnz\tx20, 0x9764d8 <gum_quick_ffi_function_finalize+0x18>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4234\n  9764f0: f9401e60     \tldr\tx0, [x19, #0x38]\n  9764f4: 940508ad     \tbl\t0xab87a8 <g_free>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:4236\n  9764f8: aa1303e1     \tmov\tx1, x19\n  9764fc: 52800c00     \tmov\tw0, #0x60               // =96\n  976500: a9414ff4     \tldp\tx20, x19, [sp, #0x10]\n  976504: a8c27bfd     \tldp\tx29, x30, [sp], #0x20\n  976508: 140534a5     \tb\t0xac379c <g_slice_free1>\n"
+    },
+    {
+      "relative_offset": "0xb462a0",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb4608c",
+            "type": "t",
+            "name": "JS_Call"
+          },
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "$x.262"
+          },
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "JS_CallInternal"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb46bdd",
+            "type": "N",
+            "name": "$d.15"
+          },
+          {
+            "address": "0xb47381",
+            "type": "N",
+            "name": "$d.17"
+          },
+          {
+            "address": "0xb47e54",
+            "type": "N",
+            "name": "$d.32"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b460b0 <JS_CallInternal>:\n; JS_CallInternal():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16421\n  b46280: 9b0a2508     \tmadd\tx8, x8, x10, x9\n  b46284: f9400d08     \tldr\tx8, [x8, #0x18]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16422\n  b46288: b4000548     \tcbz\tx8, 0xb46330 <JS_CallInternal+0x280>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16426\n  b4628c: aa1803e0     \tmov\tx0, x24\n  b46290: 9400f4fc     \tbl\t0xb83680 <OUTLINED_FUNCTION_50>\n  b46294: f9406663     \tldr\tx3, [x19, #0xc8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16426\n  b46298: aa1903e4     \tmov\tx4, x25\n  b4629c: 2a1703e5     \tmov\tw5, w23\n  b462a0: d63f0100     \tblr\tx8\n  b462a4: 94010646     \tbl\t0xb87bbc <OUTLINED_FUNCTION_1284>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:18887\n  b462a8: 92607c18     \tand\tx24, x0, #0xffffffff00000000\n  b462ac: 140000ad     \tb\t0xb46560 <JS_CallInternal+0x4b0>\n  b462b0: 6b17013f     \tcmp\tw9, w23\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16453\n  b462b4: 910020ca     \tadd\tx10, x6, #0x8\n  b462b8: 1a89c2e9     \tcsel\tw9, w23, w9, gt\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16453\n  b462bc: 9100220b     \tadd\tx11, x16, #0x8\n  b462c0: 7100013f     \tcmp\tw9, #0x0\n  b462c4: 1a9fc129     \tcsel\tw9, w9, wzr, gt\n  b462c8: aa0903ec     \tmov\tx12, x9\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16453\n  b462cc: b400018c     \tcbz\tx12, 0xb462fc <JS_CallInternal+0x24c>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16454\n  b462d0: a97fb54e     \tldp\tx14, x13, [x10, #-0x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/./quickjs.h:812\n  b462d4: 31002dbf     \tcmn\tw13, #0xb\n  b462d8: 54000083     \tb.lo\t0xb462e8 <JS_CallInternal+0x238>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/./quickjs.h:814\n  b462dc: b94001cf     \tldr\tw15, [x14]\n  b462e0: 110005ef     \tadd\tw15, w15, #0x1\n  b462e4: b90001cf     \tstr\tw15, [x14]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16454\n  b462e8: a93fb56e     \tstp\tx14, x13, [x11, #-0x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16453\n  b462ec: d100058c     \tsub\tx12, x12, #0x1\n  b462f0: 9100414a     \tadd\tx10, x10, #0x10\n  b462f4: 9100416b     \tadd\tx11, x11, #0x10\n  b462f8: b5fffecc     \tcbnz\tx12, 0xb462d0 <JS_CallInternal+0x220>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16455\n  b462fc: 8b09120a     \tadd\tx10, x16, x9, lsl #4\n"
+    },
+    {
+      "relative_offset": "0xb47220",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "$x.262"
+          },
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "JS_CallInternal"
+          },
+          {
+            "address": "0xb46bdd",
+            "type": "N",
+            "name": "$d.15"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb47381",
+            "type": "N",
+            "name": "$d.17"
+          },
+          {
+            "address": "0xb47e54",
+            "type": "N",
+            "name": "$d.32"
+          },
+          {
+            "address": "0xb4a4d9",
+            "type": "N",
+            "name": "$d.17"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b460b0 <JS_CallInternal>:\n; JS_CallInternal():\n  b47200: a956a67c     \tldp\tx28, x9, [x19, #0x168]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16795\n  b47204: 4b1703e8     \tneg\tw8, w23\n  b47208: 8b28d368     \tadd\tx8, x27, w8, sxtw #4\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16796\n  b4720c: f9001d39     \tstr\tx25, [x9, #0x38]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16797\n  b47210: a97f0901     \tldp\tx1, x2, [x8, #-0x10]\n  b47214: 9400f9e6     \tbl\t0xb859ac <OUTLINED_FUNCTION_652>\n  b47218: 2a1703e7     \tmov\tw7, w23\n  b4721c: b9000bff     \tstr\twzr, [sp, #0x8]\n  b47220: 9401004d     \tbl\t0xb87354 <OUTLINED_FUNCTION_1110>\n  b47224: 910043ff     \tadd\tsp, sp, #0x10\n  b47228: 9400f06a     \tbl\t0xb833d0 <OUTLINED_FUNCTION_8>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16799\n  b4722c: 54ff88c0     \tb.eq\t0xb46344 <JS_CallInternal+0x294>\n  b47230: aa0003f6     \tmov\tx22, x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16801\n  b47234: 71008ebf     \tcmp\tw21, #0x23\n  b47238: 54001500     \tb.eq\t0xb474d8 <JS_CallInternal+0x1428>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16803\n  b4723c: cb37d368     \tsub\tx8, x27, w23, sxtw #4\n  b47240: 93407ef5     \tsxtw\tx21, w23\n  b47244: d1002118     \tsub\tx24, x8, #0x8\n  b47248: 9280001a     \tmov\tx26, #-0x1              // =-1\n  b4724c: eb15035f     \tcmp\tx26, x21\n  b47250: 540000ea     \tb.ge\t0xb4726c <JS_CallInternal+0x11bc>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16804\n  b47254: a97f8b01     \tldp\tx1, x2, [x24, #-0x8]\n  b47258: f940c660     \tldr\tx0, [x19, #0x188]\n  b4725c: 97ffd937     \tbl\t0xb3d738 <JS_FreeValue>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16803\n  b47260: 9100075a     \tadd\tx26, x26, #0x1\n  b47264: 91004318     \tadd\tx24, x24, #0x10\n  b47268: 17fffff9     \tb\t0xb4724c <JS_CallInternal+0x119c>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16805\n  b4726c: 2a3703e8     \tmvn\tw8, w23\n  b47270: f0005b18     \tadrp\tx24, 0x16aa000 <native_error_name+0x30>\n  b47274: 9401000d     \tbl\t0xb872a8 <OUTLINED_FUNCTION_1099>\n  b47278: 8b28d368     \tadd\tx8, x27, w8, sxtw #4\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16808\n  b4727c: 9100073c     \tadd\tx28, x25, #0x1\n"
+    },
+    {
+      "relative_offset": "0xb4734c",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "$x.262"
+          },
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "JS_CallInternal"
+          },
+          {
+            "address": "0xb46bdd",
+            "type": "N",
+            "name": "$d.15"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb47381",
+            "type": "N",
+            "name": "$d.17"
+          },
+          {
+            "address": "0xb47e54",
+            "type": "N",
+            "name": "$d.32"
+          },
+          {
+            "address": "0xb4a4d9",
+            "type": "N",
+            "name": "$d.17"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b460b0 <JS_CallInternal>:\n; JS_CallInternal():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16833\n  b4732c: a97e1103     \tldp\tx3, x4, [x8, #-0x20]\n  b47330: d10043ff     \tsub\tsp, sp, #0x10\n  b47334: aa1f03e5     \tmov\tx5, xzr\n  b47338: aa1a03e0     \tmov\tx0, x26\n  b4733c: 52800066     \tmov\tw6, #0x3                // =3\n  b47340: 2a1503e7     \tmov\tw7, w21\n  b47344: b9000bff     \tstr\twzr, [sp, #0x8]\n  b47348: f90003e8     \tstr\tx8, [sp]\n  b4734c: 97fffb59     \tbl\t0xb460b0 <JS_CallInternal>\n  b47350: 910043ff     \tadd\tsp, sp, #0x10\n  b47354: aa0103f4     \tmov\tx20, x1\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16835\n  b47358: 71001a9f     \tcmp\tw20, #0x6\n  b4735c: 54000840     \tb.eq\t0xb47464 <JS_CallInternal+0x13b4>\n  b47360: aa0003f6     \tmov\tx22, x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16837\n  b47364: 7100977f     \tcmp\tw27, #0x25\n  b47368: 54000220     \tb.eq\t0xb473ac <JS_CallInternal+0x12fc>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16839\n  b4736c: cb1513f8     \tneg\tx24, x21, lsl #4\n  b47370: f100831f     \tcmp\tx24, #0x20\n  b47374: 540000e0     \tb.eq\t0xb47390 <JS_CallInternal+0x12e0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16840\n  b47378: 8b1802e8     \tadd\tx8, x23, x24\n  b4737c: aa1a03e0     \tmov\tx0, x26\n  b47380: a97e0901     \tldp\tx1, x2, [x8, #-0x20]\n  b47384: 97ffd8ed     \tbl\t0xb3d738 <JS_FreeValue>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16839\n  b47388: 91004318     \tadd\tx24, x24, #0x10\n  b4738c: 17fffff9     \tb\t0xb47370 <JS_CallInternal+0x12c0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16841\n  b47390: cb1512e8     \tsub\tx8, x23, x21, lsl #4\n  b47394: 9400ffd0     \tbl\t0xb872d4 <OUTLINED_FUNCTION_1102>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16842\n  b47398: a93e5116     \tstp\tx22, x20, [x8, #-0x20]\n  b4739c: aa1703f6     \tmov\tx22, x23\n  b473a0: 3940033b     \tldrb\tw27, [x25]\n  b473a4: 9400f032     \tbl\t0xb8346c <OUTLINED_FUNCTION_18>\n  b473a8: d61f0100     \tbr\tx8\n"
+    },
+    {
+      "relative_offset": "0xb460a4",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb45ff0",
+            "type": "t",
+            "name": "JS_NewBigUint64"
+          },
+          {
+            "address": "0xb4608c",
+            "type": "t",
+            "name": "$x.261"
+          },
+          {
+            "address": "0xb4608c",
+            "type": "t",
+            "name": "JS_Call"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "$x.262"
+          },
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "JS_CallInternal"
+          },
+          {
+            "address": "0xb46bdd",
+            "type": "N",
+            "name": "$d.15"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b45ff0 <JS_NewBigUint64>:\n; JS_NewBigUint64():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:12387\n  b46084: a8c37bfd     \tldp\tx29, x30, [sp], #0x30\n  b46088: d65f03c0     \tret\n\n0000000000b4608c <JS_Call>:\n; JS_Call():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:18891\n  b4608c: d10083ff     \tsub\tsp, sp, #0x20\n  b46090: a9017bfd     \tstp\tx29, x30, [sp, #0x10]\n  b46094: 910043fd     \tadd\tx29, sp, #0x10\n  b46098: 940100f9     \tbl\t0xb8647c <OUTLINED_FUNCTION_844>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:18892\n  b4609c: f90003e8     \tstr\tx8, [sp]\n  b460a0: b9000be9     \tstr\tw9, [sp, #0x8]\n  b460a4: 94000003     \tbl\t0xb460b0 <JS_CallInternal>\n  b460a8: a9417bfd     \tldp\tx29, x30, [sp, #0x10]\n  b460ac: 1400f8af     \tb\t0xb84368 <OUTLINED_FUNCTION_267>\n\n0000000000b460b0 <JS_CallInternal>:\n; JS_CallInternal():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16356\n  b460b0: fc190fe8     \tstr\td8, [sp, #-0x70]!\n  b460b4: a9017bfd     \tstp\tx29, x30, [sp, #0x10]\n  b460b8: 9400fe29     \tbl\t0xb8595c <OUTLINED_FUNCTION_646>\n  b460bc: d10d03ff     \tsub\tsp, sp, #0x340\n  b460c0: 910003f3     \tmov\tx19, sp\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16357\n  b460c4: f9400c16     \tldr\tx22, [x0, #0x18]\n  b460c8: 2a0703f7     \tmov\tw23, w7\n  b460cc: aa0603fb     \tmov\tx27, x6\n  b460d0: aa0003f8     \tmov\tx24, x0\n  b460d4: aa0503fc     \tmov\tx28, x5\n  b460d8: aa0403f9     \tmov\tx25, x4\n  b460dc: aa0303fa     \tmov\tx26, x3\n  b460e0: 940106c7     \tbl\t0xb87bfc <OUTLINED_FUNCTION_1288>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16390\n  b460e4: 94004344     \tbl\t0xb56df4 <js_poll_interrupts>\n  b460e8: 34000080     \tcbz\tw0, 0xb460f8 <JS_CallInternal+0x48>\n  b460ec: 940105a0     \tbl\t0xb8776c <OUTLINED_FUNCTION_1199>\n  b460f0: 528000d4     \tmov\tw20, #0x6               // =6\n  b460f4: 1400011b     \tb\t0xb46560 <JS_CallInternal+0x4b0>\n  b460f8: b9406ba7     \tldr\tw7, [x29, #0x68]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16392\n  b460fc: 3100069f     \tcmn\tw20, #0x1\n  b46100: f94033a6     \tldr\tx6, [x29, #0x60]\n"
+    },
+    {
+      "relative_offset": "0xb52370",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb521cc",
+            "type": "t",
+            "name": "js_async_generator_function_call"
+          },
+          {
+            "address": "0xb52290",
+            "type": "t",
+            "name": "$x.350"
+          },
+          {
+            "address": "0xb52290",
+            "type": "t",
+            "name": "js_promise_constructor"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb523fc",
+            "type": "t",
+            "name": "$x.351"
+          },
+          {
+            "address": "0xb523fc",
+            "type": "t",
+            "name": "js_function_constructor"
+          },
+          {
+            "address": "0xb52614",
+            "type": "t",
+            "name": "$x.352"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b52290 <js_promise_constructor>:\n; js_promise_constructor():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48460\n  b52350: 9400c91d     \tbl\t0xb847c4 <OUTLINED_FUNCTION_343>\n  b52354: a9437bfd     \tldp\tx29, x30, [sp, #0x30]\n  b52358: 1400c5ad     \tb\t0xb83a0c <OUTLINED_FUNCTION_107>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48440\n  b5235c: 910043e6     \tadd\tx6, sp, #0x10\n  b52360: aa1403e0     \tmov\tx0, x20\n  b52364: aa1603e1     \tmov\tx1, x22\n  b52368: aa1703e2     \tmov\tx2, x23\n  b5236c: 9400cc83     \tbl\t0xb85578 <OUTLINED_FUNCTION_582>\n  b52370: 97ffcf47     \tbl\t0xb4608c <JS_Call>\n  b52374: aa0003f7     \tmov\tx23, x0\n  b52378: 9400c4dc     \tbl\t0xb836e8 <OUTLINED_FUNCTION_57>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48441\n  b5237c: 540002c1     \tb.ne\t0xb523d4 <js_promise_constructor+0x144>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:6595\n  b52380: f9400e88     \tldr\tx8, [x20, #0x18]\n  b52384: 52800049     \tmov\tw9, #0x2                // =2\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48444\n  b52388: a9420be1     \tldp\tx1, x2, [sp, #0x20]\n  b5238c: 910003e6     \tmov\tx6, sp\n  b52390: aa1403e0     \tmov\tx0, x20\n  b52394: 9400ca29     \tbl\t0xb84c38 <OUTLINED_FUNCTION_413>\n  b52398: aa0103f8     \tmov\tx24, x1\n  b5239c: aa0003f9     \tmov\tx25, x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48445\n  b523a0: a9400be1     \tldp\tx1, x2, [sp]\n  b523a4: 9400c528     \tbl\t0xb83844 <OUTLINED_FUNCTION_77>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48446\n  b523a8: 71001b1f     \tcmp\tw24, #0x6\n  b523ac: 540000e1     \tb.ne\t0xb523c8 <js_promise_constructor+0x138>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48455\n  b523b0: a9410be1     \tldp\tx1, x2, [sp, #0x10]\n  b523b4: aa1403e0     \tmov\tx0, x20\n  b523b8: 97fface0     \tbl\t0xb3d738 <JS_FreeValue>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48456\n  b523bc: a9420be1     \tldp\tx1, x2, [sp, #0x20]\n  b523c0: 9400c521     \tbl\t0xb83844 <OUTLINED_FUNCTION_77>\n  b523c4: 17ffffdd     \tb\t0xb52338 <js_promise_constructor+0xa8>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48448\n  b523c8: aa1403e0     \tmov\tx0, x20\n  b523cc: aa1903e1     \tmov\tx1, x25\n"
+    },
+    {
+      "relative_offset": "0xb3cf4c",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb3ce30",
+            "type": "t",
+            "name": "init_class_range"
+          },
+          {
+            "address": "0xb3cea8",
+            "type": "t",
+            "name": "$x.20"
+          },
+          {
+            "address": "0xb3cea8",
+            "type": "t",
+            "name": "js_call_c_function"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb3d158",
+            "type": "t",
+            "name": "$x.22"
+          },
+          {
+            "address": "0xb3d158",
+            "type": "t",
+            "name": "js_c_function_data_call"
+          },
+          {
+            "address": "0xb3d214",
+            "type": "t",
+            "name": "$x.23"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b3cea8 <js_call_c_function>:\n; js_call_c_function():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16219\n  b3cf2c: 37000087     \ttbnz\tw7, #0x0, 0xb3cf3c <js_call_c_function+0x94>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16220\n  b3cf30: 7100093f     \tcmp\tw9, #0x2\n  b3cf34: 54000160     \tb.eq\t0xb3cf60 <js_call_c_function+0xb8>\n  b3cf38: 94011e89     \tbl\t0xb8495c <OUTLINED_FUNCTION_365>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16231\n  b3cf3c: 92407c69     \tand\tx9, x3, #0xffffffff\n  b3cf40: aa1303e0     \tmov\tx0, x19\n  b3cf44: aa0a0121     \torr\tx1, x9, x10\n  b3cf48: 9401268f     \tbl\t0xb86984 <OUTLINED_FUNCTION_931>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16231\n  b3cf4c: d63f02c0     \tblr\tx22\n  b3cf50: 14000056     \tb\t0xb3d0a8 <js_call_c_function+0x200>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16235\n  b3cf54: 370009e7     \ttbnz\tw7, #0x0, 0xb3d090 <js_call_c_function+0x1e8>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16236\n  b3cf58: 71000d3f     \tcmp\tw9, #0x3\n  b3cf5c: 54000981     \tb.ne\t0xb3d08c <js_call_c_function+0x1e4>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16222\n  b3cf60: b0ffb801     \tadrp\tx1, 0x23d000 <sqlite3_str_vappendf.zOrd+0x2aeb>\n  b3cf64: aa1303e0     \tmov\tx0, x19\n  b3cf68: 91368021     \tadd\tx1, x1, #0xda0\n  b3cf6c: 94000eb7     \tbl\t0xb40a48 <JS_ThrowTypeError>\n  b3cf70: 94012677     \tbl\t0xb8694c <OUTLINED_FUNCTION_928>\n  b3cf74: 14000050     \tb\t0xb3d0b4 <js_call_c_function+0x20c>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16263\n  b3cf78: a9400e82     \tldp\tx2, x3, [x20]\n  b3cf7c: d10163a1     \tsub\tx1, x29, #0x58\n  b3cf80: 9401206f     \tbl\t0xb8513c <OUTLINED_FUNCTION_504>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16263\n  b3cf84: 35ffff60     \tcbnz\tw0, 0xb3cf70 <js_call_c_function+0xc8>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16267\n  b3cf88: fc5a83a0     \tldur\td0, [x29, #-0x58]\n  b3cf8c: d63f02c0     \tblr\tx22\n  b3cf90: 1400000b     \tb\t0xb3cfbc <js_call_c_function+0x114>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16274\n  b3cf94: a9400e82     \tldp\tx2, x3, [x20]\n  b3cf98: d10163a1     \tsub\tx1, x29, #0x58\n  b3cf9c: 94012068     \tbl\t0xb8513c <OUTLINED_FUNCTION_504>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16274\n  b3cfa0: 35fffe80     \tcbnz\tw0, 0xb3cf70 <js_call_c_function+0xc8>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16278\n  b3cfa4: a9410e82     \tldp\tx2, x3, [x20, #0x10]\n  b3cfa8: d10183a1     \tsub\tx1, x29, #0x60\n"
+    },
+    {
+      "relative_offset": "0xb4bfe8",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb4beb0",
+            "type": "t",
+            "name": "JS_CallConstructor2"
+          },
+          {
+            "address": "0xb4beb8",
+            "type": "t",
+            "name": "$x.265"
+          },
+          {
+            "address": "0xb4beb8",
+            "type": "t",
+            "name": "JS_CallConstructorInternal"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb4c000",
+            "type": "t",
+            "name": "$x.266"
+          },
+          {
+            "address": "0xb4c000",
+            "type": "t",
+            "name": "JS_CallConstructor"
+          },
+          {
+            "address": "0xb4c018",
+            "type": "t",
+            "name": "$x.267"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b4beb8 <JS_CallConstructorInternal>:\n; JS_CallConstructorInternal():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:18999\n  b4bfc8: f9400d08     \tldr\tx8, [x8, #0x18]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:19000\n  b4bfcc: b4000128     \tcbz\tx8, 0xb4bff0 <JS_CallConstructorInternal+0x138>\n  b4bfd0: 9400de84     \tbl\t0xb839e0 <OUTLINED_FUNCTION_102>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:19004\n  b4bfd4: aa1703e3     \tmov\tx3, x23\n  b4bfd8: aa1603e4     \tmov\tx4, x22\n  b4bfdc: 2a1503e5     \tmov\tw5, w21\n  b4bfe0: aa1403e6     \tmov\tx6, x20\n  b4bfe4: 2a1a03e7     \tmov\tw7, w26\n  b4bfe8: d63f0100     \tblr\tx8\n  b4bfec: 17ffffe6     \tb\t0xb4bf84 <JS_CallConstructorInternal+0xcc>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:19002\n  b4bff0: b0ffb721     \tadrp\tx1, 0x230000 <hex+0x1b275>\n  b4bff4: 910d1021     \tadd\tx1, x1, #0x344\n  b4bff8: 9400e1a9     \tbl\t0xb8469c <OUTLINED_FUNCTION_321>\n  b4bffc: 17ffffbf     \tb\t0xb4bef8 <JS_CallConstructorInternal+0x40>\n\n0000000000b4c000 <JS_CallConstructor>:\n; JS_CallConstructor():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:19040\n  b4c000: aa0403e6     \tmov\tx6, x4\n  b4c004: 2a0303e5     \tmov\tw5, w3\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:19041\n  b4c008: aa0103e3     \tmov\tx3, x1\n  b4c00c: aa0203e4     \tmov\tx4, x2\n  b4c010: 52800047     \tmov\tw7, #0x2                // =2\n  b4c014: 17ffffa9     \tb\t0xb4beb8 <JS_CallConstructorInternal>\n\n0000000000b4c018 <JS_Invoke>:\n; JS_Invoke():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:19048\n  b4c018: a9bc7bfd     \tstp\tx29, x30, [sp, #-0x40]!\n  b4c01c: f9000bf7     \tstr\tx23, [sp, #0x10]\n  b4c020: 910003fd     \tmov\tx29, sp\n  b4c024: a90257f6     \tstp\tx22, x21, [sp, #0x20]\n  b4c028: a9034ff4     \tstp\tx20, x19, [sp, #0x30]\n  b4c02c: aa0503f3     \tmov\tx19, x5\n  b4c030: 2a0403f4     \tmov\tw20, w4\n  b4c034: 9400e3b0     \tbl\t0xb84ef4 <OUTLINED_FUNCTION_455>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/./quickjs.h:876\n  b4c038: aa0003e3     \tmov\tx3, x0\n  b4c03c: 9400e163     \tbl\t0xb845c8 <OUTLINED_FUNCTION_308>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:19051\n  b4c040: 540000e1     \tb.ne\t0xb4c05c <JS_Invoke+0x44>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:19054\n  b4c044: a9434ff4     \tldp\tx20, x19, [sp, #0x30]\n"
+    },
+    {
+      "relative_offset": "0xb472c0",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "$x.262"
+          },
+          {
+            "address": "0xb460b0",
+            "type": "t",
+            "name": "JS_CallInternal"
+          },
+          {
+            "address": "0xb46bdd",
+            "type": "N",
+            "name": "$d.15"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb47381",
+            "type": "N",
+            "name": "$d.17"
+          },
+          {
+            "address": "0xb47e54",
+            "type": "N",
+            "name": "$d.32"
+          },
+          {
+            "address": "0xb4a4d9",
+            "type": "N",
+            "name": "$d.17"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b460b0 <JS_CallInternal>:\n; JS_CallInternal():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16815\n  b472a0: aa1a03e0     \tmov\tx0, x26\n  b472a4: 2a1f03e7     \tmov\tw7, wzr\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/cutils.h:271\n  b472a8: 78402734     \tldrh\tw20, [x25], #0x2\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16814\n  b472ac: f9001d19     \tstr\tx25, [x8, #0x38]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16813\n  b472b0: cb3452e6     \tsub\tx6, x23, w20, uxtw #4\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16815\n  b472b4: 2a1403e5     \tmov\tw5, w20\n  b472b8: a97e08c1     \tldp\tx1, x2, [x6, #-0x20]\n  b472bc: a97f10c3     \tldp\tx3, x4, [x6, #-0x10]\n  b472c0: 940012fe     \tbl\t0xb4beb8 <JS_CallConstructorInternal>\n  b472c4: aa0103f6     \tmov\tx22, x1\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16818\n  b472c8: 71001adf     \tcmp\tw22, #0x6\n  b472cc: 54000cc0     \tb.eq\t0xb47464 <JS_CallInternal+0x13b4>\n  b472d0: aa0003f5     \tmov\tx21, x0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16820\n  b472d4: cb1413f8     \tneg\tx24, x20, lsl #4\n  b472d8: f100831f     \tcmp\tx24, #0x20\n  b472dc: 540000e0     \tb.eq\t0xb472f8 <JS_CallInternal+0x1248>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16821\n  b472e0: 8b1802e8     \tadd\tx8, x23, x24\n  b472e4: aa1a03e0     \tmov\tx0, x26\n  b472e8: a97e0901     \tldp\tx1, x2, [x8, #-0x20]\n  b472ec: 97ffd913     \tbl\t0xb3d738 <JS_FreeValue>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16820\n  b472f0: 91004318     \tadd\tx24, x24, #0x10\n  b472f4: 17fffff9     \tb\t0xb472d8 <JS_CallInternal+0x1228>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16822\n  b472f8: cb1412e8     \tsub\tx8, x23, x20, lsl #4\n  b472fc: 9400fff6     \tbl\t0xb872d4 <OUTLINED_FUNCTION_1102>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:16823\n  b47300: a93e5915     \tstp\tx21, x22, [x8, #-0x20]\n  b47304: aa1703f6     \tmov\tx22, x23\n  b47308: 3940033b     \tldrb\tw27, [x25]\n  b4730c: 9400f058     \tbl\t0xb8346c <OUTLINED_FUNCTION_18>\n  b47310: d61f0100     \tbr\tx8\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/cutils.h:271\n  b47314: aa1c03f9     \tmov\tx25, x28\n  b47318: f940ba68     \tldr\tx8, [x19, #0x170]\n  b4731c: 78402735     \tldrh\tw21, [x25], #0x2\n"
+    },
+    {
+      "relative_offset": "0xb5ddd8",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb5dd34",
+            "type": "t",
+            "name": "promise_reaction_data_free"
+          },
+          {
+            "address": "0xb5dd74",
+            "type": "t",
+            "name": "$x.630"
+          },
+          {
+            "address": "0xb5dd74",
+            "type": "t",
+            "name": "promise_reaction_job"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb5de8c",
+            "type": "t",
+            "name": "$x.631"
+          },
+          {
+            "address": "0xb5de8c",
+            "type": "t",
+            "name": "js_create_module_function"
+          },
+          {
+            "address": "0xb5dff4",
+            "type": "t",
+            "name": "$x.632"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b5dd74 <promise_reaction_job>:\n; promise_reaction_job():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/./quickjs.h:812\n  b5ddb8: 31002c5f     \tcmn\tw2, #0xb\n  b5ddbc: 54000043     \tb.lo\t0xb5ddc4 <promise_reaction_job+0x50>\n  b5ddc0: 94009573     \tbl\t0xb8338c <OUTLINED_FUNCTION_2>\n  b5ddc4: 94009a2d     \tbl\t0xb84678 <OUTLINED_FUNCTION_318>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48145\n  b5ddc8: 97ff8ae0     \tbl\t0xb40948 <JS_Throw>\n  b5ddcc: 1400000f     \tb\t0xb5de08 <promise_reaction_job+0x94>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48150\n  b5ddd0: 910043e6     \tadd\tx6, sp, #0x10\n  b5ddd4: 94009695     \tbl\t0xb83828 <OUTLINED_FUNCTION_75>\n  b5ddd8: 940097c2     \tbl\t0xb83ce0 <OUTLINED_FUNCTION_156>\n  b5dddc: 94009fb9     \tbl\t0xb85cc0 <OUTLINED_FUNCTION_706>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48150\n  b5dde0: f90003e0     \tstr\tx0, [sp]\n  b5dde4: 14000006     \tb\t0xb5ddfc <promise_reaction_job+0x88>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48147\n  b5dde8: f9400fe2     \tldr\tx2, [sp, #0x18]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/./quickjs.h:812\n  b5ddec: 31002c5f     \tcmn\tw2, #0xb\n  b5ddf0: 54000043     \tb.lo\t0xb5ddf8 <promise_reaction_job+0x84>\n  b5ddf4: 94009566     \tbl\t0xb8338c <OUTLINED_FUNCTION_2>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48147\n  b5ddf8: f90003e8     \tstr\tx8, [sp]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48153\n  b5ddfc: 7100185f     \tcmp\tw2, #0x6\n  b5de00: f90007e2     \tstr\tx2, [sp, #0x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48153\n  b5de04: 54000121     \tb.ne\t0xb5de28 <promise_reaction_job+0xb4>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:6595\n  b5de08: f9400e69     \tldr\tx9, [x19, #0x18]\n  b5de0c: 5280004b     \tmov\tw11, #0x2               // =2\n  b5de10: 5280002a     \tmov\tw10, #0x1               // =1\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:6596\n  b5de14: a94e0928     \tldp\tx8, x2, [x9, #0xe0]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:6597\n  b5de18: b900e13f     \tstr\twzr, [x9, #0xe0]\n  b5de1c: f900752b     \tstr\tx11, [x9, #0xe8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48154\n  b5de20: a9000be8     \tstp\tx8, x2, [sp]\n  b5de24: 14000002     \tb\t0xb5de2c <promise_reaction_job+0xb8>\n  b5de28: aa1f03ea     \tmov\tx10, xzr\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48155\n  b5de2c: 8b0a1289     \tadd\tx9, x20, x10, lsl #4\n  b5de30: f9400529     \tldr\tx9, [x9, #0x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:48159\n  b5de34: 71000d3f     \tcmp\tw9, #0x3\n"
+    },
+    {
+      "relative_offset": "0xb3d6c4",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xb3d5cc",
+            "type": "t",
+            "name": "JS_EnqueueJob"
+          },
+          {
+            "address": "0xb3d678",
+            "type": "t",
+            "name": "$x.41"
+          },
+          {
+            "address": "0xb3d678",
+            "type": "t",
+            "name": "JS_ExecutePendingJob"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xb3d738",
+            "type": "t",
+            "name": "$x.42"
+          },
+          {
+            "address": "0xb3d738",
+            "type": "t",
+            "name": "JS_FreeValue"
+          },
+          {
+            "address": "0xb3d758",
+            "type": "t",
+            "name": "$x.44"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000b3d678 <JS_ExecutePendingJob>:\n; JS_ExecutePendingJob():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1953\n  b3d6a4: a9412ab4     \tldp\tx20, x10, [x21, #0x10]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1954\n  b3d6a8: 9100a2a2     \tadd\tx2, x21, #0x28\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/list.h:91\n  b3d6ac: a94026a8     \tldp\tx8, x9, [x21]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1954\n  b3d6b0: b94022a1     \tldr\tw1, [x21, #0x20]\n  b3d6b4: aa1403e0     \tmov\tx0, x20\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/list.h:93\n  b3d6b8: f9000509     \tstr\tx9, [x8, #0x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/list.h:94\n  b3d6bc: f9000128     \tstr\tx8, [x9]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/list.h:96\n  b3d6c0: a9007ebf     \tstp\txzr, xzr, [x21]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1954\n  b3d6c4: d63f0140     \tblr\tx10\n  b3d6c8: 94011aa6     \tbl\t0xb84160 <OUTLINED_FUNCTION_233>\n  b3d6cc: aa1f03f8     \tmov\tx24, xzr\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1955\n  b3d6d0: 9100c2b9     \tadd\tx25, x21, #0x30\n  b3d6d4: b98022a8     \tldrsw\tx8, [x21, #0x20]\n  b3d6d8: eb08031f     \tcmp\tx24, x8\n  b3d6dc: 540000ca     \tb.ge\t0xb3d6f4 <JS_ExecutePendingJob+0x7c>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1956\n  b3d6e0: a97f8b21     \tldp\tx1, x2, [x25, #-0x8]\n  b3d6e4: 94011858     \tbl\t0xb83844 <OUTLINED_FUNCTION_77>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1955\n  b3d6e8: 91000718     \tadd\tx24, x24, #0x1\n  b3d6ec: 91004339     \tadd\tx25, x25, #0x10\n  b3d6f0: 17fffff9     \tb\t0xb3d6d4 <JS_ExecutePendingJob+0x5c>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1961\n  b3d6f4: aa1403e0     \tmov\tx0, x20\n  b3d6f8: 9401194b     \tbl\t0xb83c24 <OUTLINED_FUNCTION_143>\n  b3d6fc: 71001aff     \tcmp\tw23, #0x6\n  b3d700: 12800008     \tmov\tw8, #-0x1               // =-1\n  b3d704: 5a880518     \tcneg\tw24, w8, ne\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1961\n  b3d708: 9400000c     \tbl\t0xb3d738 <JS_FreeValue>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1433\n  b3d70c: f9400e88     \tldr\tx8, [x20, #0x18]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/quickjs/../../../quickjs/quickjs.c:1378\n  b3d710: aa1503e1     \tmov\tx1, x21\n  b3d714: 94011717     \tbl\t0xb83370 <OUTLINED_FUNCTION_0>\n  b3d718: 14000003     \tb\t0xb3d724 <JS_ExecutePendingJob+0xac>\n  b3d71c: aa1f03f4     \tmov\tx20, xzr\n  b3d720: 2a1f03f8     \tmov\tw24, wzr\n"
+    },
+    {
+      "relative_offset": "0x9727c8",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x972754",
+            "type": "t",
+            "name": "_gum_quick_scope_call_void"
+          },
+          {
+            "address": "0x9727a4",
+            "type": "t",
+            "name": "$x.33"
+          },
+          {
+            "address": "0x9727a4",
+            "type": "t",
+            "name": "_gum_quick_scope_perform_pending_io"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x97286c",
+            "type": "t",
+            "name": "$x.34"
+          },
+          {
+            "address": "0x97286c",
+            "type": "t",
+            "name": "gumjs_set_timeout"
+          },
+          {
+            "address": "0x9728b0",
+            "type": "t",
+            "name": "$x.35"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n00000000009727a4 <_gum_quick_scope_perform_pending_io>:\n; _gum_quick_scope_perform_pending_io():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2070\n  9727a8: 94002f59     \tbl\t0x97e50c <OUTLINED_FUNCTION_174>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2071\n  9727ac: aa0003f5     \tmov\tx21, x0\n  9727b0: aa0003f3     \tmov\tx19, x0\n  9727b4: 91018014     \tadd\tx20, x0, #0x60\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2071\n  9727b8: f84786b8     \tldr\tx24, [x21], #0x78\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2072\n  9727bc: f9402b16     \tldr\tx22, [x24, #0x50]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2085\n  9727c0: f9402700     \tldr\tx0, [x24, #0x48]\n  9727c4: 910063a1     \tadd\tx1, x29, #0x18\n  9727c8: 94072bac     \tbl\t0xb3d678 <JS_ExecutePendingJob>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2086\n  9727cc: 3100041f     \tcmn\tw0, #0x1\n  9727d0: 54000061     \tb.ne\t0x9727dc <_gum_quick_scope_perform_pending_io+0x38>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2087\n  9727d4: aa1303e0     \tmov\tx0, x19\n  9727d8: 97ffffc6     \tbl\t0x9726f0 <_gum_quick_scope_catch_and_emit>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2089\n  9727dc: f9400fa8     \tldr\tx8, [x29, #0x18]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2088\n  9727e0: b5ffff08     \tcbnz\tx8, 0x9727c0 <_gum_quick_scope_perform_pending_io+0x1c>\n  9727e4: 2a1f03f9     \tmov\tw25, wzr\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2091\n  9727e8: aa1403e0     \tmov\tx0, x20\n  9727ec: 94053766     \tbl\t0xac0584 <g_queue_pop_head>\n  9727f0: b4000300     \tcbz\tx0, 0x972850 <_gum_quick_scope_perform_pending_io+0xac>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2093\n  9727f4: a9400801     \tldp\tx1, x2, [x0]\n  9727f8: aa0003f7     \tmov\tx23, x0\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2093\n  9727fc: aa1303e0     \tmov\tx0, x19\n  972800: 94002e53     \tbl\t0x97e14c <OUTLINED_FUNCTION_120>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2095\n  972804: a9400ae1     \tldp\tx1, x2, [x23]\n  972808: aa1603e0     \tmov\tx0, x22\n  97280c: 97fffa99     \tbl\t0x971270 <JS_FreeValue>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2096\n  972810: 52800200     \tmov\tw0, #0x10               // =16\n  972814: aa1703e1     \tmov\tx1, x23\n  972818: 940543e1     \tbl\t0xac379c <g_slice_free1>\n  97281c: 52800039     \tmov\tw25, #0x1               // =1\n  972820: 17fffff2     \tb\t0x9727e8 <_gum_quick_scope_perform_pending_io+0x44>\n  972824: aa0003f7     \tmov\tx23, x0\n"
+    },
+    {
+      "relative_offset": "0x972488",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x9723ec",
+            "type": "t",
+            "name": "_gum_quick_scope_enter"
+          },
+          {
+            "address": "0x97246c",
+            "type": "t",
+            "name": "$x.24"
+          },
+          {
+            "address": "0x97246c",
+            "type": "t",
+            "name": "_gum_quick_scope_leave"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x972564",
+            "type": "t",
+            "name": "$x.25"
+          },
+          {
+            "address": "0x972564",
+            "type": "t",
+            "name": "_gum_quick_core_push_job"
+          },
+          {
+            "address": "0x97256c",
+            "type": "t",
+            "name": "$x.26"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n00000000009723ec <_gum_quick_scope_enter>:\n; _gum_quick_scope_enter():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1968\n  972468: d65f03c0     \tret\n\n000000000097246c <_gum_quick_scope_leave>:\n; _gum_quick_scope_leave():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2119\n  97246c: a9bc7bfd     \tstp\tx29, x30, [sp, #-0x40]!\n  972470: a9015ff8     \tstp\tx24, x23, [sp, #0x10]\n  972474: 910003fd     \tmov\tx29, sp\n  972478: a90257f6     \tstp\tx22, x21, [sp, #0x20]\n  97247c: a9034ff4     \tstp\tx20, x19, [sp, #0x30]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2120\n  972480: f9400016     \tldr\tx22, [x0]\n  972484: aa0003f3     \tmov\tx19, x0\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2125\n  972488: 940000c7     \tbl\t0x9727a4 <_gum_quick_scope_perform_pending_io>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2127\n  97248c: b9407ec8     \tldr\tw8, [x22, #0x7c]\n  972490: 7100051f     \tcmp\tw8, #0x1\n  972494: 540000c1     \tb.ne\t0x9724ac <_gum_quick_scope_leave+0x40>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2129\n  972498: f94026c0     \tldr\tx0, [x22, #0x48]\n  97249c: 94072c4a     \tbl\t0xb3d5c4 <JS_Leave>\n  9724a0: 92800009     \tmov\tx9, #-0x1               // =-1\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2135\n  9724a4: b9407ec8     \tldr\tw8, [x22, #0x7c]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2131\n  9724a8: a90626df     \tstp\txzr, x9, [x22, #0x60]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1866\n  9724ac: b9407ac9     \tldr\tw9, [x22, #0x78]\n  9724b0: aa1f03f5     \tmov\tx21, xzr\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2135\n  9724b4: 5100050a     \tsub\tw10, w8, #0x1\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2138\n  9724b8: f94042c8     \tldr\tx8, [x22, #0x80]\n  9724bc: aa1f03f7     \tmov\tx23, xzr\n  9724c0: aa1f03f8     \tmov\tx24, xzr\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1866\n  9724c4: 51000529     \tsub\tw9, w9, #0x1\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2135\n  9724c8: 290f2ac9     \tstp\tw9, w10, [x22, #0x78]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2138\n  9724cc: b40000c8     \tcbz\tx8, 0x9724e4 <_gum_quick_scope_leave+0x78>\n  9724d0: 350000a9     \tcbnz\tw9, 0x9724e4 <_gum_quick_scope_leave+0x78>\n; /Users/siberia/Desktop/sunda/Sunda/frida17.8.0/deps/sdk-android-arm64/include/glib-2.0/glib/gmem.h:221\n;   ref = *ptr;\n  9724d4: a948e2d7     \tldp\tx23, x24, [x22, #0x88]\n  9724d8: aa0803f5     \tmov\tx21, x8\n; /Users/siberia/Desktop/sunda/Sunda/frida17.8.0/deps/sdk-android-arm64/include/glib-2.0/glib/gmem.h:222\n;   *ptr = NULL;\n  9724dc: a9087edf     \tstp\txzr, xzr, [x22, #0x80]\n  9724e0: f9004adf     \tstr\txzr, [x22, #0x90]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:2145\n  9724e4: f9403ac0     \tldr\tx0, [x22, #0x70]\n"
+    },
+    {
+      "relative_offset": "0x9723a0",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x97224c",
+            "type": "t",
+            "name": "_gum_quick_core_on_unhandled_exception"
+          },
+          {
+            "address": "0x9722cc",
+            "type": "t",
+            "name": "$x.22"
+          },
+          {
+            "address": "0x9722cc",
+            "type": "t",
+            "name": "_gum_quick_core_post"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x9723ec",
+            "type": "t",
+            "name": "$x.23"
+          },
+          {
+            "address": "0x9723ec",
+            "type": "t",
+            "name": "_gum_quick_scope_enter"
+          },
+          {
+            "address": "0x97246c",
+            "type": "t",
+            "name": "$x.24"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n00000000009722cc <_gum_quick_core_post>:\n; _gum_quick_core_post():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5799\n  972380: 52800064     \tmov\tw4, #0x3                // =3\n  972384: 52800045     \tmov\tw5, #0x2                // =2\n  972388: 940000f3     \tbl\t0x972754 <_gum_quick_scope_call_void>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5802\n  97238c: a97f0ba1     \tldp\tx1, x2, [x29, #-0x10]\n  972390: 94002e28     \tbl\t0x97dc30 <OUTLINED_FUNCTION_68>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:5803\n  972394: a97e0ba1     \tldp\tx1, x2, [x29, #-0x20]\n  972398: 94002e26     \tbl\t0x97dc30 <OUTLINED_FUNCTION_68>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1897\n  97239c: 910003e0     \tmov\tx0, sp\n  9723a0: 94000033     \tbl\t0x97246c <_gum_quick_scope_leave>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1901\n  9723a4: 91028274     \tadd\tx20, x19, #0xa0\n  9723a8: aa1403e0     \tmov\tx0, x20\n  9723ac: 9405ab1c     \tbl\t0xadd01c <g_mutex_lock>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1902\n  9723b0: b940ba68     \tldr\tw8, [x19, #0xb8]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1903\n  9723b4: 9102a260     \tadd\tx0, x19, #0xa8\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1902\n  9723b8: 11000508     \tadd\tw8, w8, #0x1\n  9723bc: b900ba68     \tstr\tw8, [x19, #0xb8]\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1903\n  9723c0: 9405ab89     \tbl\t0xadd1e4 <g_cond_broadcast>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1904\n  9723c4: aa1403e0     \tmov\tx0, x20\n  9723c8: 9405ab25     \tbl\t0xadd05c <g_mutex_unlock>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1906\n  9723cc: f9404e60     \tldr\tx0, [x19, #0x98]\n  9723d0: 94050a7a     \tbl\t0xab4db8 <g_main_loop_quit>\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1912\n  9723d4: a9504ff4     \tldp\tx20, x19, [sp, #0x100]\n  9723d8: a94f57f6     \tldp\tx22, x21, [sp, #0xf0]\n  9723dc: a94e5ffc     \tldp\tx28, x23, [sp, #0xe0]\n  9723e0: a94d7bfd     \tldp\tx29, x30, [sp, #0xd0]\n  9723e4: 910443ff     \tadd\tsp, sp, #0x110\n  9723e8: d65f03c0     \tret\n\n00000000009723ec <_gum_quick_scope_enter>:\n; _gum_quick_scope_enter():\n; /sunda-src/gum/bindings/gumjs/gumquickcore.c:1942\n  9723ec: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  9723f0: a9014ff4     \tstp\tx20, x19, [sp, #0x10]\n  9723f4: 910003fd     \tmov\tx29, sp\n  9723f8: aa0103f4     \tmov\tx20, x1\n  9723fc: aa0003f3     \tmov\tx19, x0\n"
+    },
+    {
+      "relative_offset": "0x9691e4",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x969198",
+            "type": "t",
+            "name": "gum_script_job_new"
+          },
+          {
+            "address": "0x9691d8",
+            "type": "t",
+            "name": "$x.11"
+          },
+          {
+            "address": "0x9691d8",
+            "type": "t",
+            "name": "gum_script_scheduler_perform_js_job"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x9691f4",
+            "type": "t",
+            "name": "$x.12"
+          },
+          {
+            "address": "0x9691f4",
+            "type": "t",
+            "name": "gum_script_job_free"
+          },
+          {
+            "address": "0x969228",
+            "type": "t",
+            "name": "$x.13"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000969198 <gum_script_job_new>:\n; gum_script_job_new():\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:228\n  9691c4: a9015813     \tstp\tx19, x22, [x0, #0x10]\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:232\n  9691c8: a9424ff4     \tldp\tx20, x19, [sp, #0x20]\n  9691cc: a94157f6     \tldp\tx22, x21, [sp, #0x10]\n  9691d0: a8c37bfd     \tldp\tx29, x30, [sp], #0x30\n  9691d4: d65f03c0     \tret\n\n00000000009691d8 <gum_script_scheduler_perform_js_job>:\n; gum_script_scheduler_perform_js_job():\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:192\n  9691d8: a9bf7bfd     \tstp\tx29, x30, [sp, #-0x10]!\n  9691dc: 910003fd     \tmov\tx29, sp\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:193\n  9691e0: a9400008     \tldp\tx8, x0, [x0]\n  9691e4: d63f0100     \tblr\tx8\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:195\n  9691e8: 2a1f03e0     \tmov\tw0, wzr\n  9691ec: a8c17bfd     \tldp\tx29, x30, [sp], #0x10\n  9691f0: d65f03c0     \tret\n\n00000000009691f4 <gum_script_job_free>:\n; gum_script_job_free():\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:237\n  9691f4: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  9691f8: f9000bf3     \tstr\tx19, [sp, #0x10]\n  9691fc: 910003fd     \tmov\tx29, sp\n  969200: aa0003f3     \tmov\tx19, x0\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:238\n  969204: f9400808     \tldr\tx8, [x0, #0x10]\n  969208: b4000068     \tcbz\tx8, 0x969214 <gum_script_job_free+0x20>\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:239\n  96920c: f9400660     \tldr\tx0, [x19, #0x8]\n  969210: d63f0100     \tblr\tx8\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:241\n  969214: aa1303e1     \tmov\tx1, x19\n  969218: f9400bf3     \tldr\tx19, [sp, #0x10]\n  96921c: 52800400     \tmov\tw0, #0x20               // =32\n  969220: a8c27bfd     \tldp\tx29, x30, [sp], #0x20\n  969224: 1405695e     \tb\t0xac379c <g_slice_free1>\n\n0000000000969228 <gum_script_scheduler_push_job_on_thread_pool>:\n; gum_script_scheduler_push_job_on_thread_pool():\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:174\n  969228: a9bc7bfd     \tstp\tx29, x30, [sp, #-0x40]!\n  96922c: f9000bf7     \tstr\tx23, [sp, #0x10]\n  969230: 910003fd     \tmov\tx29, sp\n  969234: a90257f6     \tstp\tx22, x21, [sp, #0x20]\n  969238: a9034ff4     \tstp\tx20, x19, [sp, #0x30]\n  96923c: aa0303f3     \tmov\tx19, x3\n  969240: aa0203f4     \tmov\tx20, x2\n"
+    },
+    {
+      "relative_offset": "0xab49a0",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xab4658",
+            "type": "t",
+            "name": "g_main_context_check"
+          },
+          {
+            "address": "0xab48c0",
+            "type": "t",
+            "name": "$x.92"
+          },
+          {
+            "address": "0xab48c0",
+            "type": "t",
+            "name": "g_main_context_dispatch"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xab4a44",
+            "type": "t",
+            "name": "$x.93"
+          },
+          {
+            "address": "0xab4a44",
+            "type": "t",
+            "name": "g_main_context_pending"
+          },
+          {
+            "address": "0xab4a8c",
+            "type": "t",
+            "name": "$x.94"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000ab48c0 <g_main_context_dispatch>:\n; g_main_context_dispatch():\n  ab4980: 940003c8     \tbl\t0xab58a0 <OUTLINED_FUNCTION_1>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3554\n  ab4984: b9400288     \tldr\tw8, [x20]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3560\n  ab4988: aa1503e0     \tmov\tx0, x21\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3552\n  ab498c: f940069c     \tldr\tx28, [x20, #0x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3553\n  ab4990: f9000695     \tstr\tx21, [x20, #0x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3554\n  ab4994: 11000508     \tadd\tw8, w8, #0x1\n  ab4998: b9000288     \tstr\tw8, [x20]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3560\n  ab499c: a9400be1     \tldp\tx1, x2, [sp]\n  ab49a0: d63f02e0     \tblr\tx23\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3571\n  ab49a4: b9400288     \tldr\tw8, [x20]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3560\n  ab49a8: 2a0003f7     \tmov\tw23, w0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3570\n  ab49ac: f900069c     \tstr\tx28, [x20, #0x8]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3571\n  ab49b0: 51000508     \tsub\tw8, w8, #0x1\n  ab49b4: b9000288     \tstr\tw8, [x20]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3573\n  ab49b8: b400007b     \tcbz\tx27, 0xab49c4 <g_main_context_dispatch+0x104>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3574\n  ab49bc: f9400768     \tldr\tx8, [x27, #0x8]\n  ab49c0: 94000448     \tbl\t0xab5ae0 <OUTLINED_FUNCTION_53>\n  ab49c4: 940003b5     \tbl\t0xab5898 <OUTLINED_FUNCTION_0>\n  ab49c8: b9402ea8     \tldr\tw8, [x21, #0x2c]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3578\n  ab49cc: 3708007a     \ttbnz\tw26, #0x1, 0xab49d8 <g_main_context_dispatch+0x118>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3579\n  ab49d0: 121e7908     \tand\tw8, w8, #0xfffffffd\n  ab49d4: b9002ea8     \tstr\tw8, [x21, #0x2c]\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3581\n  ab49d8: 6a28033f     \tbics\twzr, w25, w8\n  ab49dc: 54000061     \tb.ne\t0xab49e8 <g_main_context_dispatch+0x128>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3582\n  ab49e0: aa1503e0     \tmov\tx0, x21\n  ab49e4: 940002fb     \tbl\t0xab55d0 <unblock_source>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3587\n  ab49e8: 350000f7     \tcbnz\tw23, 0xab4a04 <g_main_context_dispatch+0x144>\n  ab49ec: 3940b2a8     \tldrb\tw8, [x21, #0x2c]\n  ab49f0: 360000a8     \ttbz\tw8, #0x0, 0xab4a04 <g_main_context_dispatch+0x144>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:3590\n  ab49f4: aa1503e0     \tmov\tx0, x21\n  ab49f8: aa1303e1     \tmov\tx1, x19\n  ab49fc: 52800022     \tmov\tw2, #0x1                // =1\n"
+    },
+    {
+      "relative_offset": "0xab4bd0",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0xab4a44",
+            "type": "t",
+            "name": "g_main_context_pending"
+          },
+          {
+            "address": "0xab4a8c",
+            "type": "t",
+            "name": "$x.94"
+          },
+          {
+            "address": "0xab4a8c",
+            "type": "t",
+            "name": "g_main_context_iterate"
+          }
+        ],
+        "next": [
+          {
+            "address": "0xab4bfc",
+            "type": "t",
+            "name": "$x.95"
+          },
+          {
+            "address": "0xab4bfc",
+            "type": "t",
+            "name": "g_main_context_iteration"
+          },
+          {
+            "address": "0xab4c48",
+            "type": "t",
+            "name": "$x.96"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n0000000000ab4a8c <g_main_context_iterate>:\n; g_main_context_iterate():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4362\n  ab4bb0: b85fc3a1     \tldur\tw1, [x29, #-0x4]\n  ab4bb4: aa1303e0     \tmov\tx0, x19\n  ab4bb8: aa1603e2     \tmov\tx2, x22\n  ab4bbc: 2a1703e3     \tmov\tw3, w23\n  ab4bc0: 97fffea6     \tbl\t0xab4658 <g_main_context_check>\n  ab4bc4: 2a0003f5     \tmov\tw21, w0\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4364\n  ab4bc8: 34000074     \tcbz\tw20, 0xab4bd4 <g_main_context_iterate+0x148>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4365\n  ab4bcc: aa1303e0     \tmov\tx0, x19\n  ab4bd0: 97ffff3c     \tbl\t0xab48c0 <g_main_context_dispatch>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4367\n  ab4bd4: aa1303e0     \tmov\tx0, x19\n  ab4bd8: 97fffb1c     \tbl\t0xab3848 <g_main_context_release>\n  ab4bdc: 9400032f     \tbl\t0xab5898 <OUTLINED_FUNCTION_0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4376\n  ab4be0: 2a1503e0     \tmov\tw0, w21\n  ab4be4: a9444ff4     \tldp\tx20, x19, [sp, #0x40]\n  ab4be8: a94357f6     \tldp\tx22, x21, [sp, #0x30]\n  ab4bec: a9425ff8     \tldp\tx24, x23, [sp, #0x20]\n  ab4bf0: a9417bfd     \tldp\tx29, x30, [sp, #0x10]\n  ab4bf4: 910143ff     \tadd\tsp, sp, #0x50\n  ab4bf8: d65f03c0     \tret\n\n0000000000ab4bfc <g_main_context_iteration>:\n; g_main_context_iteration():\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4423\n  ab4bfc: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  ab4c00: a9014ff4     \tstp\tx20, x19, [sp, #0x10]\n  ab4c04: 910003fd     \tmov\tx29, sp\n  ab4c08: aa0003f3     \tmov\tx19, x0\n  ab4c0c: 2a0103f4     \tmov\tw20, w1\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4426\n  ab4c10: b5000060     \tcbnz\tx0, 0xab4c1c <g_main_context_iteration+0x20>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4427\n  ab4c14: 97fffab2     \tbl\t0xab36dc <g_main_context_default>\n  ab4c18: aa0003f3     \tmov\tx19, x0\n  ab4c1c: 9400031f     \tbl\t0xab5898 <OUTLINED_FUNCTION_0>\n; /__w/frida/frida/deps/src/_sdk.tmp/android-arm64/glib/../../../glib/glib/gmain.c:4430\n  ab4c20: 94004d0d     \tbl\t0xac8054 <g_thread_self>\n  ab4c24: aa1303e0     \tmov\tx0, x19\n  ab4c28: 2a1403e1     \tmov\tw1, w20\n  ab4c2c: 52800022     \tmov\tw2, #0x1                // =1\n"
+    },
+    {
+      "relative_offset": "0x9690f4",
+      "nearest_symbols": {
+        "previous": [
+          {
+            "address": "0x96907c",
+            "type": "t",
+            "name": "gum_script_scheduler_stop"
+          },
+          {
+            "address": "0x9690d8",
+            "type": "t",
+            "name": "$x.7"
+          },
+          {
+            "address": "0x9690d8",
+            "type": "t",
+            "name": "gum_script_scheduler_run_js_loop"
+          }
+        ],
+        "next": [
+          {
+            "address": "0x969110",
+            "type": "t",
+            "name": "$x.8"
+          },
+          {
+            "address": "0x969110",
+            "type": "t",
+            "name": "gum_script_scheduler_push_job_on_js_thread"
+          },
+          {
+            "address": "0x969190",
+            "type": "t",
+            "name": "$x.9"
+          }
+        ]
+      },
+      "disassembly": "\n/Users/siberia/Desktop/sunda/Sunda/frida17.8.0/build-android-arm64-server-cert/subprojects/frida-core/lib/agent/libsunda-agent-raw.so:\tfile format elf64-littleaarch64\n\nDisassembly of section .text:\n\n000000000096907c <gum_script_scheduler_stop>:\n; gum_script_scheduler_stop():\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:137\n  9690d4: d65f03c0     \tret\n\n00000000009690d8 <gum_script_scheduler_run_js_loop>:\n; gum_script_scheduler_run_js_loop():\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:209\n  9690d8: a9be7bfd     \tstp\tx29, x30, [sp, #-0x20]!\n  9690dc: f9000bf3     \tstr\tx19, [sp, #0x10]\n  9690e0: 910003fd     \tmov\tx29, sp\n  9690e4: aa0003f3     \tmov\tx19, x0\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:210\n  9690e8: f9401800     \tldr\tx0, [x0, #0x30]\n  9690ec: 9405298f     \tbl\t0xab3728 <g_main_context_push_thread_default>\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:211\n  9690f0: f9401660     \tldr\tx0, [x19, #0x28]\n  9690f4: 94052efb     \tbl\t0xab4ce0 <g_main_loop_run>\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:212\n  9690f8: f9401a60     \tldr\tx0, [x19, #0x30]\n  9690fc: 940529bf     \tbl\t0xab37f8 <g_main_context_pop_thread_default>\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:214\n  969100: f9400bf3     \tldr\tx19, [sp, #0x10]\n  969104: aa1f03e0     \tmov\tx0, xzr\n  969108: a8c27bfd     \tldp\tx29, x30, [sp], #0x20\n  96910c: d65f03c0     \tret\n\n0000000000969110 <gum_script_scheduler_push_job_on_js_thread>:\n; gum_script_scheduler_push_job_on_js_thread():\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:151\n  969110: a9bd7bfd     \tstp\tx29, x30, [sp, #-0x30]!\n  969114: a90157f6     \tstp\tx22, x21, [sp, #0x10]\n  969118: 910003fd     \tmov\tx29, sp\n  96911c: a9024ff4     \tstp\tx20, x19, [sp, #0x20]\n  969120: 2a0103f3     \tmov\tw19, w1\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:155\n  969124: aa0203e1     \tmov\tx1, x2\n  969128: aa0303e2     \tmov\tx2, x3\n  96912c: aa0403e3     \tmov\tx3, x4\n  969130: aa0003f4     \tmov\tx20, x0\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:155\n  969134: 94000019     \tbl\t0x969198 <gum_script_job_new>\n  969138: aa0003f5     \tmov\tx21, x0\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:157\n  96913c: 94053017     \tbl\t0xab5198 <g_idle_source_new>\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:158\n  969140: 2a1303e1     \tmov\tw1, w19\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:157\n  969144: aa0003f6     \tmov\tx22, x0\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:158\n  969148: 94052b50     \tbl\t0xab3e88 <g_source_set_priority>\n; /sunda-src/gum/bindings/gumjs/gumscriptscheduler.c:159\n  96914c: b0006f43     \tadrp\tx3, 0x1752000 <vtable for __cxxabiv1::__class_type_info+0x20>\n  969150: 90000001     \tadrp\tx1, 0x969000 <gum_script_scheduler_new+0x10>\n"
+    }
+  ]
+}
