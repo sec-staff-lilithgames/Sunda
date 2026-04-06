@@ -1,0 +1,4 @@
+{
+  "seed_case": "../cases/aggressive-attach-flake.json",
+  "notes": "Higher-pressure attach seed intended to surface intermittent bridge failures."
+}

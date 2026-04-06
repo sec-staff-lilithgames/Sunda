@@ -1,1 +1,5 @@
 frida17.8.0/build/
+tools/java-bridge-fuzz/outputs/
+tools/java-bridge-fuzz/tmp/
+tools/java-bridge-fuzz/**/__pycache__/
+tools/java-bridge-fuzz/**/*.pyc

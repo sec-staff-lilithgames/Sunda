@@ -1,0 +1,92 @@
+{
+  "id": "smoke-attach-core",
+  "package": "com.android.purebilibili",
+  "mode": "attach",
+  "launch": {
+    "strategy": "delayed_attach",
+    "delay_ms": 1500
+  },
+  "driver": {
+    "repeat_sessions": 1,
+    "timeout_seconds": 20
+  },
+  "entry": [
+    "performNow",
+    "perform"
+  ],
+  "targets": {
+    "classes": [
+      "java.lang.Thread",
+      "android.app.Application",
+      "com.android.purebilibili.app.PureApplication"
+    ],
+    "enumerate_queries": [
+      "java.lang.Thread!*",
+      "android.app.Application!*",
+      "com.android.purebilibili.app.PureApplication!*"
+    ]
+  },
+  "operations": [
+    {
+      "op": "java_use",
+      "class_name": "java.lang.Thread"
+    },
+    {
+      "op": "java_use",
+      "class_name": "android.app.Application"
+    },
+    {
+      "op": "java_use",
+      "class_name": "com.android.purebilibili.app.PureApplication"
+    },
+    {
+      "op": "enumerate_methods",
+      "query": "java.lang.Thread!*"
+    },
+    {
+      "op": "enumerate_methods",
+      "query": "android.app.Application!*"
+    },
+    {
+      "op": "hook_method",
+      "class_name": "java.lang.Thread",
+      "method_name": "getName"
+    },
+    {
+      "op": "hook_method",
+      "class_name": "android.app.Application",
+      "method_name": "getPackageName"
+    },
+    {
+      "op": "call_static",
+      "class_name": "java.lang.Thread",
+      "method_name": "currentThread"
+    },
+    {
+      "op": "call_instance",
+      "class_name": "java.lang.Thread",
+      "method_name": "getName"
+    },
+    {
+      "op": "call_current_application",
+      "method_name": "getPackageName"
+    }
+  ],
+  "stress": {
+    "rounds": 2,
+    "calls_per_round": 50,
+    "workers": 1,
+    "sleep_ms_between_rounds": 25
+  },
+  "expect": {
+    "crash_worthy_events": [
+      "transport-closed",
+      "session-detached",
+      "frida-crash",
+      "pid-lost",
+      "pid-drift",
+      "script-load-error",
+      "bridge-operation-error"
+    ]
+  }
+}

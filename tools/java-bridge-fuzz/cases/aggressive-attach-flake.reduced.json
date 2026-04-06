@@ -1,0 +1,57 @@
+{
+  "id": "aggressive-attach-flake",
+  "package": "com.android.purebilibili",
+  "mode": "attach",
+  "launch": {
+    "strategy": "cold",
+    "delay_ms": 0
+  },
+  "driver": {
+    "repeat_sessions": 12,
+    "timeout_seconds": 35
+  },
+  "entry": [
+    "performNow",
+    "perform",
+    "performNow"
+  ],
+  "targets": {
+    "classes": [
+      "java.lang.Thread",
+      "android.app.Application",
+      "com.android.purebilibili.app.PureApplication"
+    ],
+    "enumerate_queries": [
+      "java.lang.Thread!*siu",
+      "android.app.Application!*si",
+      "com.android.purebilibili.app.PureApplication!*si"
+    ]
+  },
+  "operations": [
+    {
+      "op": "hook_remove_all"
+    },
+    {
+      "op": "hook_method",
+      "class_name": "android.app.Application",
+      "method_name": "getPackageName"
+    }
+  ],
+  "stress": {
+    "rounds": 1,
+    "calls_per_round": 125,
+    "workers": 1,
+    "sleep_ms_between_rounds": 10
+  },
+  "expect": {
+    "crash_worthy_events": [
+      "transport-closed",
+      "session-detached",
+      "frida-crash",
+      "pid-lost",
+      "pid-drift",
+      "script-load-error",
+      "bridge-operation-error"
+    ]
+  }
+}

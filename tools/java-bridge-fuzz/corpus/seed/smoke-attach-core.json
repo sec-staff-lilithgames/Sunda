@@ -1,0 +1,4 @@
+{
+  "seed_case": "../cases/smoke-attach-core.json",
+  "notes": "Low-pressure attach seed for Python and CLI harness self-check."
+}

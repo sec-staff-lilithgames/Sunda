@@ -1,0 +1,4 @@
+{
+  "seed_case": "../cases/smoke-spawn-enumerate.json",
+  "notes": "Spawn-oriented enumerateMethods seed for bridge query coverage."
+}

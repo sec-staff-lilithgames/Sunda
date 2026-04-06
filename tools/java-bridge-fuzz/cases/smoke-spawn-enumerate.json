@@ -1,0 +1,83 @@
+{
+  "id": "smoke-spawn-enumerate",
+  "package": "com.android.purebilibili",
+  "mode": "spawn",
+  "launch": {
+    "strategy": "spawn",
+    "delay_ms": 1500
+  },
+  "driver": {
+    "repeat_sessions": 1,
+    "timeout_seconds": 25
+  },
+  "entry": [
+    "performNow",
+    "perform"
+  ],
+  "targets": {
+    "classes": [
+      "java.lang.Thread",
+      "android.app.Application",
+      "com.android.purebilibili.app.PureApplication"
+    ],
+    "enumerate_queries": [
+      "java.lang.Thread!*s",
+      "android.app.Application!*s",
+      "com.android.purebilibili.app.PureApplication!*si"
+    ]
+  },
+  "operations": [
+    {
+      "op": "java_use",
+      "class_name": "com.android.purebilibili.app.PureApplication"
+    },
+    {
+      "op": "enumerate_methods",
+      "query": "java.lang.Thread!*s"
+    },
+    {
+      "op": "enumerate_methods",
+      "query": "android.app.Application!*s"
+    },
+    {
+      "op": "enumerate_methods",
+      "query": "com.android.purebilibili.app.PureApplication!*si"
+    },
+    {
+      "op": "hook_method",
+      "class_name": "java.lang.Thread",
+      "method_name": "getName"
+    },
+    {
+      "op": "hook_method",
+      "class_name": "android.app.Application",
+      "method_name": "getPackageName"
+    },
+    {
+      "op": "call_current_application",
+      "method_name": "getPackageName"
+    },
+    {
+      "op": "call_instance",
+      "class_name": "java.lang.Thread",
+      "method_name": "getName"
+    }
+  ],
+  "stress": {
+    "rounds": 3,
+    "calls_per_round": 100,
+    "workers": 1,
+    "sleep_ms_between_rounds": 50
+  },
+  "expect": {
+    "crash_worthy_events": [
+      "transport-closed",
+      "session-detached",
+      "frida-crash",
+      "pid-lost",
+      "pid-drift",
+      "script-load-error",
+      "bridge-operation-error"
+    ]
+  }
+}
